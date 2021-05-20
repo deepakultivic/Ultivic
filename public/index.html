@@ -60,6 +60,32 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script>
+      const policy = document.permissionsPolicy;
+     
+      // This will be true if this document can use WebUSB.
+      const can_use_usb = policy.allowsFeature('usb');
+     
+      // True if a new frame at https://deepakultivic.github.io/Ultivic/ will be allowed to use WebXR.
+      if (policy.allowsFeature('xr-spatial-tracking', 'https://deepakultivic.github.io/Ultivic/')) {
+        // Show UI to create frame at https://deepakultivic.github.io/Ultivic/.
+      } else {
+        // Show an alternative UI.
+      }
+     
+      // Get the list of origins which are allowed to request payment. The result
+      // will be a list of explicit origins, or the single element ['*'] if all
+      // origins are allowed.
+      const allowed_payment_origins = policy.getAllowlistForFeature('payment');
+     
+      // Get the list of all features supported in this document (even those
+      // which are not allowed). The result will be an array of strings, each
+      // representing a feature.
+      const all_features = policy.features();
+      if (all_features.includes('geolocation')) {
+        // Append a child frame to a third-party map service.
+      }
+     </script>
     <!-- <script src="bundle.js"></script> -->
 </body>
 
