@@ -1,0 +1,11 @@
+.app_dev{
+    background-image: url('../../assets/services/app-development.png');
+  background-size: cover;
+      background-repeat: no-repeat;
+  }
+  div#androidApp {
+    background-image: linear-gradient(90deg, #f6f5fb 70% , transparent 30%);
+}
+div#androidApp .row {
+    flex-direction: row-reverse;
+}
