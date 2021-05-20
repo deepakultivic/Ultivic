@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import './style.css';
+
 const  Header = () => {
   const [scrolled, setScrolled] = React.useState(false);
   const handleScroll = () => {
@@ -18,7 +19,7 @@ const  Header = () => {
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
-
+ 
   return (
     <div>
       <header className={navbarClasses.join(" ")}>
