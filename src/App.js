@@ -11,13 +11,16 @@ import Portfolio from './pages/Portfolio'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/portfolio" exact component={Portfolio} />
       </Switch>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <BrowserRouter basename="/Ultivic"/>
+<Link to="/about"/> 
+<Link to="/portfolio"/> 
     </div>
   );
 }
