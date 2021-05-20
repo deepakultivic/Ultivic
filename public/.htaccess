@@ -1,15 +1,5 @@
 
-<IfModule mod_rewrite.c>
+   Options -MultiViews
     RewriteEngine On
-    RewriteBase /
-    RewriteRule ^index\.html$ - [L]
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule . /index.html [L]
-      Header always set Permissions-Policy: interest-cohort=()
- </IfModule>
-<noscript>
- For full functionality of this site it is necessary to enable JavaScript.
- Here are the <a href="https://www.enable-javascript.com/">
- instructions how to enable JavaScript in your web browser</a>.
-</noscript>
+    RewriteRule ^ index.html [QSA,L]
