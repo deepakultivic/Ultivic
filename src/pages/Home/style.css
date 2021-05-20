@@ -1,0 +1,90 @@
+.baner_design{
+    background-image: url('../../assets/home/home-screen-banner.png');
+    background-size: cover;
+    padding: 20.5em 0;
+    background-position: center;
+}
+.bennr_inner h2, .bennr_inner h4, .bennr_inner h1 {
+    color: #fff;
+}
+
+.home_about_content {
+    margin-top: 50px;
+}
+h4.bar_heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #7e8090;
+}
+.bennr_inner h2 {
+    color: #CE2128;
+    margin: 10px 0px;
+}
+.progress_bars {
+    margin-bottom: 15px;
+}
+.progress {
+    height: 12px;
+    font-size: 10px;
+}
+.services_grid_img img {
+    width: 64px;
+    height: 64px;
+}
+
+.services_grid_img {
+    background: #f7f9fd;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 16px;
+    border: 1px solid;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.services_grid {
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 20px 0px 20px 20px;
+}
+
+section.services {
+    background: #F8F8F9;
+    background-image: url(../../assets/home/servicesbg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section.Blogs {
+    background: #F8F8F9;
+    background-image: url(../../assets/home/servicesbg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services_grid_text h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.services_grid_text {
+    padding: 0px 10px;
+}
+
+.services_grid_text p {
+    font-size: 14px;
+}
+
+p.about_description {
+    margin-bottom: 15px;
+}
+section.testimonial{
+    background-image: url(../../assets/home/testimonils-bg.jpg);
+}

@@ -1,0 +1,64 @@
+.footer .copyright {
+  background: #1b2032;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+}
+.footer .footer_sec {
+  background: #151823;
+  padding: 50px;
+}
+
+.footer .footer_sec p,
+.footer .footer_sec ul li a,
+.footer .footer_sec p,
+.footer .footer_sec ul li {
+  color: #7e8090;
+  line-height: 26px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer .footer_sec h5.footer_heading {
+  color: #fff;
+  margin: 10px 0 25px;
+}
+
+.footer .footer_sec ul.footer_icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer .footer_sec ul.footer_icons li a {
+  color: #fff;
+  padding-right: 14px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.footer .footer_sec a.footer_logo img {
+  width: 130px;
+  height: 100%;
+  margin-bottom: 15px;
+}
+.footer .footer_sec ul.rent_news li {
+  margin-bottom: 8px;
+}
+
+.footer .footer_sec ul.rent_news.cont_info li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer .footer_sec ul.rent_news.cont_info li i,
+.footer .footer_sec ul.rent_news.cont_info li a i {
+  flex: 0 0 30px;
+  width: 30px;
+  color: #ce2128;
+}
+
+.footer .footer_sec ul.footer_icons li a:hover {
+  color: #ce2128;
+  transition: 0.5s;
+}

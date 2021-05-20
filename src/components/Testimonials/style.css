@@ -1,0 +1,57 @@
+.testimonails_outer {
+    padding-right: 24px;
+}
+
+.testimonials {
+    border: 1px dashed #959595;
+    padding: 30px 40px 80px;
+    border-radius: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.client-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.client-image {
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+}
+.qoute_icon {
+    position: absolute;
+    bottom: -24px;
+    right: 40px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4.client-name {
+    text-align: right;
+    font-size: 18px;
+    color: #ce2128;
+    margin: 15px 0px;
+}
+
+h5.client-designation {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.testimonials {
+    text-align: right;
+    margin-bottom: 130px;
+}
+.headings_outer.space {
+    padding-bottom: 20px;
+}

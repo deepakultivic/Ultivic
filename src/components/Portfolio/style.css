@@ -1,0 +1,79 @@
+.protfolio_logo img {
+    width: 70px;
+}
+
+.protfolio_logo {
+    margin-bottom: 12px;
+}
+
+h4.project_tagline {
+    margin-bottom: 10px;
+}
+
+ul.imp_points li {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+ul.imp_points {
+    margin: 10px 0px;
+}
+.views_details {
+    display: flex;
+}
+
+.views {
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid;
+}
+
+.rating {
+    padding: 0px 20px;
+}
+.slider_inner.fitzu {
+    background-image: linear-gradient(to right bottom, #d85935, #df6a2e, #e47a27, #e68c20, #e79d19);
+
+}
+.slider_inner.space.car_buers {
+    background-image: linear-gradient(to right bottom, #4d90ff, #00acff, #00c4ff, #00daff, #0dedfd);
+}
+.slider_inner.getthem {
+    background-image: linear-gradient(to right bottom, #17376c, #244d88, #3063a5, #3b7bc3, #4594e1);
+}
+.slick-dots {
+    bottom: 20px;
+}
+.portfolio_btn a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+.portfolio_btn {
+    margin-top: 15px;
+}
+.views_details {
+    padding: 15px 0px;
+}
+.slider_inner.loudly.space {
+    background-image: linear-gradient(to right bottom, #b131d2, #c833c7, #da39bc, #e843b3, #f350aa);
+}
+.slider_inner.fitzuapp {
+background-color:#23282d;
+}
+.portfolio_constent h4, .portfolio_constent p {
+    color: #fff;
+}
+.slider_inner{
+    display: flex !important;
+    align-items: center;
+    min-height: 874px;
+}
+ul.imp_points li {
+    color: #fff;
+}
+section.portfolio {
+    overflow: hidden;
+}
