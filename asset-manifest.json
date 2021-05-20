@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Ultivic/static/css/main.6f2cbc0a.chunk.css",
+    "main.js": "/Ultivic/static/js/main.1bdb8e6c.chunk.js",
+    "main.js.map": "/Ultivic/static/js/main.1bdb8e6c.chunk.js.map",
+    "runtime-main.js": "/Ultivic/static/js/runtime-main.852fe352.js",
+    "runtime-main.js.map": "/Ultivic/static/js/runtime-main.852fe352.js.map",
+    "static/css/2.595f62b0.chunk.css": "/Ultivic/static/css/2.595f62b0.chunk.css",
+    "static/js/2.efc62149.chunk.js": "/Ultivic/static/js/2.efc62149.chunk.js",
+    "static/js/2.efc62149.chunk.js.map": "/Ultivic/static/js/2.efc62149.chunk.js.map",
+    "static/js/3.29b037a0.chunk.js": "/Ultivic/static/js/3.29b037a0.chunk.js",
+    "static/js/3.29b037a0.chunk.js.map": "/Ultivic/static/js/3.29b037a0.chunk.js.map",
+    "index.html": "/Ultivic/index.html",
+    "static/css/2.595f62b0.chunk.css.map": "/Ultivic/static/css/2.595f62b0.chunk.css.map",
+    "static/css/main.6f2cbc0a.chunk.css.map": "/Ultivic/static/css/main.6f2cbc0a.chunk.css.map",
+    "static/js/2.efc62149.chunk.js.LICENSE.txt": "/Ultivic/static/js/2.efc62149.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/Ultivic/static/media/testimonils-bg.3f60e141.jpg",
+    "static/media/slick-theme.css": "/Ultivic/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.852fe352.js",
+    "static/css/2.595f62b0.chunk.css",
+    "static/js/2.efc62149.chunk.js",
+    "static/css/main.6f2cbc0a.chunk.css",
+    "static/js/main.1bdb8e6c.chunk.js"
+  ]
+}
