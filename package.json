@@ -1,6 +1,6 @@
 {
-  "name": "ultivic",
   "homepage": "https://deepakultivic.github.io/Ultivic",
+  "name": "ultivic",  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
