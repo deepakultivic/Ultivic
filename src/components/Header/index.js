@@ -47,6 +47,12 @@ const  Header = () => {
                 </a>
                 <a href="#" className="nav-item nav-link">
                 Services
+                <ul className="drop_menu">
+                  <li><a href="/web">Web Development</a></li>
+                  <li><a href="/graphic">Graphic Design</a></li>
+                  <li><a href="/app">App Development</a></li>
+                </ul>
+                <i className="	fa fa-angle-down"></i>
                 </a>
                 <a href="#" className="nav-item nav-link">
                 Blog

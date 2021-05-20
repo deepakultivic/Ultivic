@@ -36,3 +36,33 @@ a.navbar-brand img {
 .navbar-nav a.nav-item.nav-link:last-child {
     padding-right: 0;
 }
+.navbar-nav a.nav-item.nav-link ul.drop_menu {
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: .5s;
+    position: absolute;
+    top: 58px;
+}
+
+ul.drop_menu li a {
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px;
+    display: block;
+}
+
+.navbar-nav a.nav-item.nav-link:hover ul.drop_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(8px);
+    transition: .5s;
+}
+.navbar-nav a.nav-item.nav-link i.fa.fa-angle-down {
+    margin-left: 7px;
+}
