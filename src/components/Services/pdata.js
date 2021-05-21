@@ -55,6 +55,15 @@ const tbdata = [
     },
 ];
 
+const gridgallery =[
+    {
+        img1:"/assets/services/carbuyers_screen.png",
+        img2:"/assets/services/fitzulatest.png",
+        img3:"/assets/services/kravmaga.png",
+        img4:"/assets/services/lalu_latest.png",
+        img5:'/assets/services/fitzulatest.png',
+    }
+]
 
 export default pdata;
-export {tbdata};
+export {tbdata, gridgallery};

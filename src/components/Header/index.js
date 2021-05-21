@@ -34,7 +34,7 @@ const  Header = () => {
               data-toggle="collapse"
               data-target="#navbarCollapse"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="fa fa-bars"></span>
             </button>
 
             <div className="collapse navbar-collapse " id="navbarCollapse">
@@ -54,13 +54,13 @@ const  Header = () => {
                 </ul>
                 <i className="	fa fa-angle-down"></i>
                 </a>
-                <a href="#" className="nav-item nav-link">
+                <a href="/blogs" className="nav-item nav-link">
                 Blog
                 </a>
-                <a href="#" className="nav-item nav-link">
+                <a href="/career" className="nav-item nav-link">
                   Career
                 </a>
-                <a href="#" className="nav-item nav-link">
+                <a href="/contact" className="nav-item nav-link">
                   Contact
                 </a>
               </div>

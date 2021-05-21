@@ -58,6 +58,9 @@ h2.common_heading {
   padding: 50px 0;
   border-radius: 10px;
 }
+section.grid.gallery {
+  padding-bottom: 70px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -79,7 +82,31 @@ h2.common_heading {
 .App-link {
   color: #61dafb;
 }
+/* grid galleryt */
+.grdi_space {
+  margin: 10px;
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 9%);
+}
 
+.top_img img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.grdi_space.big_img {
+  height: 286px;
+}
+
+.grdi_space.big_img img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.grdi_space.left_img img {
+  height: 170px;
+  object-fit: cover;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

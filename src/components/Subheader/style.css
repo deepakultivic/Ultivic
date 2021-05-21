@@ -2,6 +2,7 @@
 .subhead {
     display: flex;
     align-items: center;
-    height: 550px;
+    height: 500px;
     color: #fff;
+    font-size: 60px;
 }

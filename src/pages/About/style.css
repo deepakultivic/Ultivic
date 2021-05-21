@@ -152,4 +152,5 @@ section.inner_about.inner_mision {
   background-image: url('../../assets/about/Ultivic_about.png');
 background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }

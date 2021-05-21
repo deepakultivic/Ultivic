@@ -2,4 +2,16 @@
     background-image: url('../../assets/services/ui-ux-banner-2.png');
   background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
   }
+  .graphics_gallery{
+      padding-bottom: 70px;
+  }
+.graphics_img img{
+    border-radius: 7px;
+    margin-bottom: 25px;
+    
+}
+section.graphics_gallery .headings_outer {
+    margin-bottom: 40px;
+}

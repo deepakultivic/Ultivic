@@ -1,5 +1,8 @@
 .portfolios{
     background-image: url('../../assets/portfolio/portfolio-banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image-card{
     padding: 15px;
