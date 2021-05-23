@@ -61,7 +61,21 @@ h2.common_heading {
 section.grid.gallery {
   padding-bottom: 70px;
 }
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ce2128;
+}
 
+.slick-dots li button:before {
+  font-size: 20px;
+}
+.subhead {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  color: #fff;
+  font-size: 60px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -114,4 +128,23 @@ section.grid.gallery {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*  */
+@media(max-width:1440px){
+  h2.subhead {
+    font-size: 42px;
+}
+}
+@media(max-width:1199){
+
+}
+@media(max-width:1024){
+
+}
+@media(max-width:991){
+
+}
+@media(max-width:767){
+
 }

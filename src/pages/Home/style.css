@@ -88,3 +88,8 @@ p.about_description {
 section.testimonial{
     background-image: url(../../assets/home/testimonils-bg.jpg);
 }
+@media screen and (max-width:1440px){
+    .baner_design{
+        padding: 15.5em 0;
+    }
+}

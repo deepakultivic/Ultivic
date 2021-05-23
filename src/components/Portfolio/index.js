@@ -15,7 +15,7 @@ function Portfolio() {
   return (
     <div className="portfolio_outer">
       <Slider {...settings}>
-        <div className="slider_inner fitzu space">
+        <div className="slider_inner fitzu ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
@@ -59,7 +59,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="slider_inner getthem space">
+        <div className="slider_inner getthem ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
@@ -100,7 +100,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="slider_inner loudly space">
+        <div className="slider_inner loudly ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
@@ -142,7 +142,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="slider_inner fitzuapp space">
+        <div className="slider_inner fitzuapp ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">
@@ -186,7 +186,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="slider_inner space car_buers">
+        <div className="slider_inner  car_buers">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">

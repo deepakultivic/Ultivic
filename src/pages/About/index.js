@@ -25,7 +25,7 @@ function About() {
       <Header />
       <Subheader title="About" clases="about"/>
       <div className="inner_wrap">
-        <section className="inner_about space comn_half_bg">
+        <section className="inner_about space ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-5">
@@ -111,7 +111,7 @@ function About() {
 
         <section className="inner_about inner_achivement">
           <div className="container">
-            <div className="inner_achivement_sec">
+            <div className="inner_achivement_sec comn_half_bg">
               <div className="row align-items-center">
                 <div className="col-md-5">
                   <div className="about_cont_box">
