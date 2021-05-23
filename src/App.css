@@ -27,7 +27,8 @@ ul {
   list-style: none;
 }
 img {
-  width: 100%;
+  max-width:100% ;
+  width: auto;
   height: auto;
 }
 .sub_heading {
@@ -61,13 +62,12 @@ h2.common_heading {
 section.grid.gallery {
   padding-bottom: 70px;
 }
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #ce2128;
+button.slick-next {
+  right: 40px;
 }
-
-.slick-dots li button:before {
-  font-size: 20px;
+button.slick-prev {
+  left: 40px;
+  z-index: 1;
 }
 .subhead {
   display: flex;

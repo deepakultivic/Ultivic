@@ -66,10 +66,10 @@ background-color:#23282d;
 .portfolio_constent h4, .portfolio_constent p {
     color: #fff;
 }
-.slider_inner{
+.slider_inner {
     display: flex !important;
     align-items: center;
-    min-height: 685px;
+    min-height: 537px;
 }
 ul.imp_points li {
     color: #fff;

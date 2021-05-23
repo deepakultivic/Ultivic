@@ -6,11 +6,12 @@ import "./style.css";
 
 function Portfolio() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrow:true
   };
   return (
     <div className="portfolio_outer">
@@ -62,12 +63,12 @@ function Portfolio() {
         <div className="slider_inner getthem ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <div className="portfolio_image">
                   <img src="/assets/home/getthem_slider.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-8">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/getthemlogo.png" alt="logo" />
@@ -103,12 +104,12 @@ function Portfolio() {
         <div className="slider_inner loudly ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <div className="portfolio_image">
                   <img src="/assets/home/louble_img.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-8">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/louble_logo.png" alt="logo" />
@@ -145,12 +146,12 @@ function Portfolio() {
         <div className="slider_inner fitzuapp ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <div className="portfolio_image">
                   <img src="/assets/home/fitzuclien3.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-8">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/Fitzu_logo.png" alt="logo" />
