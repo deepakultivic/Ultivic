@@ -15,3 +15,8 @@
 section.graphics_gallery .headings_outer {
     margin-bottom: 40px;
 }
+@media screen and (max-width:991px){
+    .graphics_img {
+        margin-bottom: 30px;
+    }
+}

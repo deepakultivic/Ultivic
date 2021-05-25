@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer_sec">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="footer_box">
             <a href="/" className="footer_logo">
               <img src="assets/header/logo-white.png" height="100" alt="CoolBrand" />
@@ -21,7 +21,7 @@ function Footer() {
             </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="footer_box">
                 <h5 className="footer_heading">Recent Posts</h5>
                 <ul className="rent_news">
@@ -31,7 +31,7 @@ function Footer() {
                 </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4">
           <div className="footer_box">
                 <h5 className="footer_heading">Get in Touch</h5>
                 <ul className="rent_news cont_info">

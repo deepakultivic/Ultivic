@@ -19,3 +19,12 @@
   width: 80px;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width:991px){
+  .technology{
+      background: #f6f5fb;
+  }
+  .techn4ology_cont {
+      padding: 0px 0px 30px 0px ;
+  }
+}

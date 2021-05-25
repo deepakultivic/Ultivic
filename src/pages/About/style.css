@@ -154,3 +154,24 @@ background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+@media  screen and (max-width:991px){
+  .about_img_box {
+    margin-bottom: 30px;
+}
+section.inner_about.inner_mision .about_exp {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin: 20px 0px;
+}
+section.inner_about.inner_achivement {
+  background: #f7f6fc;
+}
+.inner_achivement .inner_achivement_sec .about_cont_box{
+  padding: 0;
+}
+.team_box{
+  margin-bottom: 30px;
+}
+} 

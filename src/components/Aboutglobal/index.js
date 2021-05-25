@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 function Aboutglobal(props) {
 
 
@@ -9,7 +8,7 @@ function Aboutglobal(props) {
         <section className="inner_about space inner_mision">
           <div className="container">
             <div className="row ">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="about_img_box">
                   <img src={props.imgsrc} alt="" />
                   <div className="about_exp ">
@@ -19,7 +18,7 @@ function Aboutglobal(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="about_cont_box">
                   <div className="headings_outer ">
                     <h6 className="sub_heading">{props.sub_heading}</h6>

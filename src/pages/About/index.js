@@ -28,7 +28,7 @@ function About() {
         <section className="inner_about space ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-5">
+              <div className="col-lg-5">
                 <div className="about_cont_box">
                   <div className="headings_outer ">
                     <h6 className="sub_heading ">About us</h6>
@@ -56,7 +56,7 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-7">
+              <div className="col-lg-7">
                 <div className="about_img_box">
                   <img src="/assets/about/about_demo.png" alt="" />
                   <div className="about_exp">
@@ -113,7 +113,7 @@ function About() {
           <div className="container">
             <div className="inner_achivement_sec comn_half_bg">
               <div className="row align-items-center">
-                <div className="col-md-5">
+                <div className="col-lg-5 col-12">
                   <div className="about_cont_box">
                     <div className="headings_outer ">
                       <h6 className="sub_heading">Our Achievements</h6>
@@ -130,10 +130,10 @@ function About() {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-7">
+                <div className="col-lg-7 col-12">
                   <div className="about_achive_box">
                     <div className="row">
-                      <div className="col-lg-6 extra_space">
+                      <div className="col-md-6  extra_space">
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -143,7 +143,7 @@ function About() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6 extra_space">
+                      <div className="col-md-6 extra_space">
                         <div className="achive_cont">
                       <img src="/assets/about/favourite.png" alt="" /> 
                           <h3>Up work</h3>
@@ -153,7 +153,7 @@ function About() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6 extra_space">
+                      <div className="col-md-6 extra_space">
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -163,7 +163,7 @@ function About() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6 extra_space">
+                      <div className="col-md-6 extra_space">
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -184,7 +184,7 @@ function About() {
         <section className="inner_about space ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-3">
+              <div className="col-lg-3">
                 <div className="about_cont_box">
                   <div className="headings_outer ">
                     <h6 className="sub_heading">Our Team Members</h6>
@@ -192,7 +192,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-9">
+              <div className="col-lg-9">
                 <div className="about_cont_box">
                   <p className="about_info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -208,7 +208,7 @@ function About() {
             </div>
             <div className="team_cont">
               <div className="row ">
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
                       <a href="#">
@@ -224,7 +224,7 @@ function About() {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
                       <a href="#">
@@ -240,7 +240,7 @@ function About() {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
                       <a href="#">

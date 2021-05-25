@@ -24,13 +24,13 @@ const  Header = () => {
     <div>
       <header className={navbarClasses.join(" ")}>
         <div className="container">
-          <nav className="navbar navbar-expand-md navbar-light ">
+          <nav className="navbar navbar-expand-lg navbar-light ">
             <a href="/" className="navbar-brand">
               <img src="assets/header/logo-white.png" height="100" alt="CoolBrand" />
             </a>
             <button
               type="button"
-              className="navbar-toggler"
+              className="navbar-toggler ml-auto"
               data-toggle="collapse"
               data-target="#navbarCollapse"
             >
@@ -38,7 +38,7 @@ const  Header = () => {
             </button>
 
             <div className="collapse navbar-collapse " id="navbarCollapse">
-              <div className="navbar-nav ">
+              <div className="navbar-nav ml-auto">
                 <a href="/about" className="nav-item nav-link active">
                   About
                 </a>
@@ -46,13 +46,12 @@ const  Header = () => {
                   Portfolio
                 </a>
                 <a href="#" className="nav-item nav-link">
-                Services
+                Services <i className="	fa fa-angle-down"></i>
                 <ul className="drop_menu">
                   <li><a href="/web">Web Development</a></li>
                   <li><a href="/graphic">Graphic Design</a></li>
                   <li><a href="/app">App Development</a></li>
                 </ul>
-                <i className="	fa fa-angle-down"></i>
                 </a>
                 <a href="/blogs" className="nav-item nav-link">
                 Blog

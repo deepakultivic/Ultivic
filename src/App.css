@@ -20,7 +20,7 @@ span {
   margin: 0;
   font-size: 16px;
   line-height: 2em;
-}
+}h2.common_heading
 ul {
   padding: 0;
   margin: 0;
@@ -131,7 +131,7 @@ button.slick-prev {
 }
 
 /*  */
-@media(max-width:1440px){
+@media screen and (max-width:1440px){
   h2.subhead {
     font-size: 42px;
 }
@@ -142,9 +142,52 @@ button.slick-prev {
 @media(max-width:1024){
 
 }
-@media(max-width:991){
-
+@media(max-width:991px){
+  .subhead{
+    height: 380px;
+  }
+  .about_counter .main_count{
+    padding: 20px 30px;
+  }
+  .about_counter .main_count .four {
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
-@media(max-width:767){
-
+.comn_half_bg{
+  background: none;
+}
+}
+@media screen and (max-width:1199px){
+  .subhead{
+    bottom: -130px;
+  }
+  section.inner_about.inner_mision {
+    padding-bottom: 185px;
+  }
+}
+@media screen and (max-width:991px){
+  section.inner_about.inner_mision {
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width:767px){
+  h2.common_heading {
+    font-size: 25px;
+  }
+  .space{
+    padding: 40px 0px;
+  }
+  .container{
+    max-width: 100%;
+  }
+  section.inner_about.inner_mision {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width:575px){
+  .subhead{
+    font-size: 28px !important;
+    height: 320px;
+  }
 }

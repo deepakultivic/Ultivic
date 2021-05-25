@@ -1,3 +1,8 @@
+ul{
+  padding: 0px;
+  margin-bottom:0px;
+  list-style: none;
+}
 .footer .copyright {
   background: #1b2032;
   color: #fff;
@@ -6,7 +11,7 @@
 }
 .footer .footer_sec {
   background: #151823;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .footer .footer_sec p,
@@ -61,4 +66,12 @@
 .footer .footer_sec ul.footer_icons li a:hover {
   color: #ce2128;
   transition: 0.5s;
+}
+@media screen and (max-width:991px){
+  .footer_box {
+    margin-bottom: 30px;
+  }
+  .footer .footer_sec{
+    padding-bottom:30px;
+  }
 }

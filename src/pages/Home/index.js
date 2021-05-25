@@ -6,6 +6,7 @@ import Portfolio from "../../components/Portfolio";
 import Testimonials from "../../components/Testimonials";
 import Blogs from "../../components/Blogs";
 import Homecontact from "../../components/Homecontact"; 
+import blogdata from "../../components/Blogs/blogdata"
 import {WOW} from 'wowjs'
 
 function Home() {
@@ -14,8 +15,20 @@ function Home() {
     mobile: false,
     live: true
 })
+function blogs(val, i){
+ return(
+  <Blogs 
+  blog_imgs={val.blog_imgs}
+  tittle={val.tittle} 
+  description={val.description}
+  blog_link={val.blog_link}
+  date={val.date}
+ />
+ )
 
+}
 wow.init();
+
   return (
     <div>
       <Header />
@@ -24,15 +37,15 @@ wow.init();
           <div className="container">
             <div className="bennr_inner">
               <h4>We build</h4>
-              <h2>Brand</h2>
-              <h1>Experience</h1>
+              <h1> <span className="banner_brand">Brand</span> Experience</h1>
+              <a href="/contact" className="banner_link">Get In Touch <i className="fa fa-long-arrow-right"></i></a>
             </div>
           </div>
         </section>
         <section className="home_about space">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="home_about_img wow slideInLeft" ata-wow-delay="0.3s">
                   <img
                     src="./assets/home/about_image.png"
@@ -40,7 +53,7 @@ wow.init();
                   />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="home_about_content wow slideInRight" ata-wow-delay="0.3s">
                   <div className="headings_outer">
                     <h6 className="sub_heading">About us</h6>
@@ -99,7 +112,7 @@ wow.init();
               <h2 className="common_heading">Services we Provide</h2>
             </div>
             <div className="row wow slideInLeft" ata-wow-delay="0.3s"> 
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -117,7 +130,7 @@ wow.init();
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -135,7 +148,7 @@ wow.init();
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -153,9 +166,7 @@ wow.init();
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="pt-5 row wow slideInRight" ata-wow-delay="0.3s">
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -173,7 +184,7 @@ wow.init();
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -191,7 +202,7 @@ wow.init();
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
                     <img
@@ -210,6 +221,7 @@ wow.init();
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
         <section className=" portfolio">
@@ -239,8 +251,21 @@ wow.init();
               <h2 className="common_heading">More than 500+ happy Clients</h2>
             </div>
           </div>
-
-          <Blogs />
+          <div className="container">
+        <div className="row">
+       
+     
+   {  blogdata.map(blogs)}
+     
+     
+        </div>
+        <div className="global_btn">
+            <a href="cm-btn">
+              View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+      </div>      
+          
          
         </section>
         <section className="contact_us space">

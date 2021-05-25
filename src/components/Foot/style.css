@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 70px;
+    padding: 70px 0;
 }
 .foot_outer::before{
     content: "";
@@ -50,4 +50,23 @@
 .foot_info li a {
     color: #fff;
     font-weight: 500;
+}
+@media screen and (max-width:991px){
+    .foot_inner {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    .foot_info ul {
+        flex-direction: column;
+    }
+    .foot_info ul li {
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width:575px){
+    .foot_inner h2 a {
+        font-size: 19px;
+        line-height: 30px;
+    }
 }

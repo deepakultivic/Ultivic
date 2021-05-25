@@ -19,12 +19,12 @@ function Portfolio() {
         <div className="slider_inner fitzu ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="portfolio_image">
                   <img src="/assets/home/fitzuScreen.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/Fitzu_logo.png" alt="logo" />
@@ -63,12 +63,12 @@ function Portfolio() {
         <div className="slider_inner getthem ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-4">
+              <div className="col-lg-6">
                 <div className="portfolio_image">
                   <img src="/assets/home/getthem_slider.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-8">
+              <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/getthemlogo.png" alt="logo" />
@@ -104,12 +104,12 @@ function Portfolio() {
         <div className="slider_inner loudly ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-4">
+              <div className="col-lg-6">
                 <div className="portfolio_image">
                   <img src="/assets/home/louble_img.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-8">
+              <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/louble_logo.png" alt="logo" />
@@ -146,12 +146,12 @@ function Portfolio() {
         <div className="slider_inner fitzuapp ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-4">
+              <div className="col-lg-6">
                 <div className="portfolio_image">
                   <img src="/assets/home/fitzuclien3.png" alt="carbuyers" />
                 </div>
               </div>
-              <div className="col-md-8">
+              <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/Fitzu_logo.png" alt="logo" />
@@ -190,7 +190,7 @@ function Portfolio() {
         <div className="slider_inner  car_buers">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
                     <img src="/assets/home/carbuyes-logo.png" alt="logo" />
@@ -220,7 +220,7 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="portfolio_image">
                   <img
                     src="/assets/home/carbuyers_screen.png"

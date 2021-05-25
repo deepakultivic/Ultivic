@@ -77,3 +77,28 @@ ul.imp_points li {
 section.portfolio {
     overflow: hidden;
 }
+@media screen and (max-width:991px){
+    .slider_inner {
+        min-height: 900px;
+    }
+    .portfolio_image img {
+        margin: auto;
+    }
+    .portfolio_constent {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    .slider_inner {
+        min-height: 940px;
+    }
+}
+@media screen  and (max-width:475px){
+    .slider_inner {
+        min-height: 1030px;
+    }   
+    h4.project_tagline {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

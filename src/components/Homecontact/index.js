@@ -9,7 +9,7 @@ function Homecontact() {
         <div className="home_contact">
           <div className="row">
 
-            <div className="col-md-4 addres_block wow slideInLeft" ata-wow-delay="0.3s">
+            <div className="col-xl-4 col-lg-5 addres_block wow slideInLeft" ata-wow-delay="0.3s">
               
                 <div className="addres_blocks">
                   <h2 className="common_heading">Contact us</h2>
@@ -38,7 +38,7 @@ function Homecontact() {
             
             </div>
 
-            <div className="col-md-8">
+            <div className="col-xl-8 col-lg-7">
               <div className="home_form wow slideInRight" ata-wow-delay="0.3s">
                 <div className="headings_outer ">
                   <h6 className="sub_heading">Get in Touch

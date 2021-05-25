@@ -47,7 +47,7 @@ function Filter() {
         <div className="row">
          
             {filterimages.map((image) => (
-              <div key={image.id} className="image-card col-md-4">
+              <div key={image.id} className="image-card col-md-6 col-lg-4">
                 <a href={`/assets/${image.imageName}`}>
                   <img
                     className="image"

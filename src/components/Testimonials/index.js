@@ -10,6 +10,27 @@ function Testimonials() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   };
   return (
     <div className="container">
@@ -25,7 +46,7 @@ function Testimonials() {
           <h5 className="client-designation">CLIENT</h5>
           <div className="client-image">
             <img
-              src="/assets/home/cleint2.png"
+              src="/assets/home/cleint1.png"
               className="tfree-client-image wp-post-image"
               alt=""
             />
@@ -65,7 +86,7 @@ function Testimonials() {
           <h5 className="client-designation">CLIENT</h5>
           <div className="client-image">
             <img
-              src="/assets/home/cleint2.png"
+              src="/assets/home/cleint3.png"
               className="tfree-client-image wp-post-image"
               alt=""
             />

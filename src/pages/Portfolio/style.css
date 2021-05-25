@@ -33,3 +33,8 @@ button.filt_button {
 button.active:focus, button.filt_button:focus{
    outline: none;
 }
+@media screen and (max-width:767px){
+    .filter_inner {
+        margin-bottom: 40px;
+    }  
+}

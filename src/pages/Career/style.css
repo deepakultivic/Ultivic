@@ -44,3 +44,18 @@ h3.job_heading a{
 .jobs a i {
     padding-left: 5px;
 }
+@media screen and (max-width:575px){
+    .jobs {
+        flex-direction: column;
+        text-align: center;
+    }
+    .jobs h3.job_heading a{
+        padding: 10px 0;
+        line-height: 30px;
+        display: block;
+    }
+    .job_img img {
+        width: 100px;
+        height: 100px;
+    }
+}
