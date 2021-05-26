@@ -6,8 +6,19 @@ import Foot from "../../components/Foot";
 import Aboutglobal from '../../components/Aboutglobal'
 import content from '../../components/Aboutglobal/content'
 import Technology from "../../components/Services/Technology";
+import Jobs from "../../components/Jobs/jobscontent"
+import jobsarr from "../../components/Jobs/jobsarr"
 import "./style.css";
 
+function job(val, i){
+  return(
+    <Jobs
+    imgurl={val.imgurl}
+    jobTitle={val.jobTitle}
+    joblink={val.joblink}
+    />
+  );
+}
 function Career() {
   return (
     <div>
@@ -23,42 +34,9 @@ function Career() {
       <Technology />
       <section className="jobs_sections space">
         <div className="container">
-          <div class="headings_outer text-center mb-4"><h6 class="sub_heading">Opportunities</h6><h2 class="common_heading mb-4">Vacancy Available ​</h2> <p>We are a team of digital gurus with the ever-present eagerness to take up challenges and deliver the digital revolution beyond expectations without compromising on fun and the little good-things in life like morning sunshine and a good cup of coffee and daily gossip</p></div>
-          <div className="jobs">
-            <div className="job_img">
-              <img src="/assets/home/blog-1.jpg" alt="" />
-            </div>
-            <h3 className="job_heading"> <a href="#">Magento Developer</a> </h3>
-            <a href="#"> More Details <i className="fa fa-long-arrow-right"></i></a>
-          </div>
-          <div className="jobs">
-            <div className="job_img">
-              <img src="/assets/home/blog-1.jpg" alt="" />
-            </div>
-            <h3 className="job_heading"> <a href="#">Dotnet+ReactJS Developer</a> </h3>
-            <a href="#"> More Details <i className="fa fa-long-arrow-right"></i></a>
-          </div>
-          <div className="jobs">
-            <div className="job_img">
-              <img src="/assets/home/blog-1.jpg" alt="" />
-            </div>
-            <h3 className="job_heading"> <a href="#">Data Entry</a> </h3>
-            <a href="#"> More Details <i className="fa fa-long-arrow-right"></i></a>
-          </div>
-          <div className="jobs">
-            <div className="job_img">
-              <img src="/assets/home/blog-1.jpg" alt="" />
-            </div>
-            <h3 className="job_heading"> <a href="#">Android Developer</a> </h3>
-            <a href="#"> More Details <i className="fa fa-long-arrow-right"></i></a>
-          </div>
-          <div className="jobs">
-            <div className="job_img">
-              <img src="/assets/home/blog-1.jpg" alt="" />
-            </div>
-            <h3 className="job_heading"> <a href="#">IOS Developer</a> </h3>
-            <a href="#"> More Details <i className="fa fa-long-arrow-right"></i></a>
-          </div>
+          <div className="headings_outer text-center mb-4"><h6 className="sub_heading">Opportunities</h6><h2 className="common_heading mb-4">Vacancy Available ​</h2> <p>We are a team of digital gurus with the ever-present eagerness to take up challenges and deliver the digital revolution beyond expectations without compromising on fun and the little good-things in life like morning sunshine and a good cup of coffee and daily gossip</p></div>
+         
+          {jobsarr.map(job)}
         </div>
       </section>
       <Foot />

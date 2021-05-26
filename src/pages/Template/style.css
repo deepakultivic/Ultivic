@@ -1,0 +1,32 @@
+.job_content li {
+    list-style: initial;
+    margin: 12px 0px;
+    margin-left: 19px;
+}
+.job_contact {
+    padding: 30px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+    border-radius: 7px;
+}
+.job_contact h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.job_contact .inline-errormsgs {
+    color: #fb0202;
+}
+
+button.brn-sm {
+    background: #fff;
+    border: 2px solid #ce2128;
+    border-radius: 35px;
+    padding: 10px 30px;
+    color: #000;
+}
+
+p.filetype {}
+
+p.filetype {
+    margin-bottom: 14px;
+}

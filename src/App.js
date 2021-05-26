@@ -14,6 +14,7 @@ import Graphic from './pages/Graphic_designer';
 import Our_blogs from "./pages/Our_blogs";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
+import blogtemplate from "./pages/Template/blogtemplate";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/blogtemplate" exact component={blogtemplate} />
       </Switch>
     </BrowserRouter>
     </div>

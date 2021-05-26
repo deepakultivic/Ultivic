@@ -35,9 +35,9 @@ function Graphic() {
       />
       <section className="graphics_gallery">
         <div className="container">
-          <div class="headings_outer  text-center">
-            <h6 class="sub_heading ">Technologies</h6>
-            <h2 class="common_heading">Lorem ipsum dolor sit</h2>
+          <div classNAme="headings_outer  text-center">
+            <h6 classNAme="sub_heading ">Technologies</h6>
+            <h2 classNAme="common_heading">Lorem ipsum dolor sit</h2>
           </div>
           <div className="row">
             <div className="col-md-6 ">

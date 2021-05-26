@@ -6,7 +6,7 @@ import Foot from "../../components/Foot";
 import Blogs from "../../components/Blogs";
 import blogdata from "../../components/Blogs/blogdata"
 import "./style.css";
-function blogs(val, i){
+function blogs(val, d){
     return(
      <Blogs 
      blog_imgs={val.blog_imgs}
