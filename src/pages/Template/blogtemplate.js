@@ -6,7 +6,7 @@ import blogdata from "../../components/Blogs/blogdata";
 
 import "./style.css";
 
-function Blogtemplate() {
+function BlogTemplate() {
   const { tittle } = useParams();
   const [myblog, setMyblog] = useState({});
   useEffect(() => {
@@ -56,4 +56,4 @@ function Blogtemplate() {
   );
 }
 
-export default Blogtemplate;
+export default BlogTemplate;
