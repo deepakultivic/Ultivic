@@ -6,7 +6,8 @@ import Portfolio from "../../components/Portfolio";
 import Testimonials from "../../components/Testimonials";
 import Blogs from "../../components/Blogs";
 import Homecontact from "../../components/Homecontact"; 
-import blogdata from "../../components/Blogs/blogdata"
+import blogdata from "../../components/Blogs/blogdata";
+import Steps from "../../components/steps/Steps";
 import {WOW} from 'wowjs'
 
 function Home() {
@@ -234,6 +235,7 @@ wow.init();
 
           <Portfolio />
         </section>
+        <Steps/>
         <section className="testimonial">
           <div className="container">
             <div className="headings_outer text-center space">

@@ -1,84 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Jobcontact from '../../components/Contactforms/jobcontact'
-import './style.css'
-function blogtemplate() {
+import blogdata from "../../components/Blogs/blogdata";
+
+import "./style.css";
+
+function Blogtemplate() {
+  const { tittle } = useParams();
+  const [myblog, setMyblog] = useState({});
+  useEffect(() => {
+    const filter = blogdata.filter((item) => item.tittle === tittle);
+    setMyblog(filter[0]);
+    console.log(filter[0]);
+  }, []);
   return (
     <div>
       <Header />
-      <section className="jobtemplate">
+      <section className="jobtemplate" style={{backgroundImage: `url(${myblog.blog_imgs})`}}>
         <h2>
           <div className="container">
-            <h2 className="subhead">Career</h2>
+            <h2 className="subhead">{myblog.tittle}</h2>
           </div>
         </h2>
       </section>
-      <section className="jobinfo">
+      <section className="blog-info space">
         <div className="container">
-          <h4 className="desctitle">Job Description:</h4>
-          <div className="job_content">
-            <ul className="job_desc">
-              <li>
-                Candidate will work in PHP/MySQL/Magento. Job responsibilities
-                include laying out the architecture / base for Magento based
-                websites, full lifecycle application development including
-                analysis, design and coding.
-              </li>
-              <li>
-                Candidate will be required to create and maintain technical
-                documentation. Candidate will work in a team environment, as
-                well as independently. He is also required to adhere to coding
-                standards and other development processes (using tools like
-                Jira, SVN etc).
-              </li>
-              <li>
-                The candidate should be able to work without supervision to
-                complete project task and must possess initiative to address
-                issues and opportunities.
-              </li>
-              <li>
-                Candidate would be required to lead and guide the
-                junior/mid-level developers over their implementations,
-                integrate their works and maintain integrity of application and
-                its architecture
-              </li>
-              <li>
-                Candidate would be required to participate in client calls,
-                gather requirements to be led by him and members working under
-                him, prepare WBS (work breakdown structure), provide estimates
-                and cover deliveries of assigned modules.
-              </li>
-            </ul>
-            <ul className="designation_text">
-              <li>
-                Job Title: <span>Magento Developer</span>
-              </li>
-              <li>
-                Total Openings : <span>10</span>
-              </li>
-              <li>
-                Experience : <span>2-10 years</span>
-              </li>
-              <li>
-                Skill Set :{" "}
-                <span>
-                  Good knowledge of PHP and MySQL, Magento 1.x (must have) and
-                  Magento 2.x exposure (good to have), Good knowledge of OOPs
-                </span>
-              </li>
-              <li>
-                Joining Period : <span>30 days</span>
-              </li>
-            </ul>
-           <div className="space">
-           <div className="job_contact ">
-              <h2>
-              Apply for this position
-              </h2>
-                <Jobcontact/>
-            </div>
-             </div>
+          <div className="blogsingle">
+            <p>
+              Exercitation photo booth stumptown tote bag Banksy, elit small
+              batch freegan sed. Craft beer elit seitan exercitation, photo
+              booth et 8-bit kale chips proident chillwave deep v laborum.
+              Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami
+              readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean
+              vinegar stumptown yr pop-up artisan.
+            </p>
+            <h3>A wonderful serenity</h3>
+            <p>
+              Meh synth Schlitz, tempor duis single-origin coffee ea next level
+              ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit
+              hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil,
+              flexitarian Truffaut synth art party deep v chillwave. Seitan High
+              Life reprehenderit consectetur cupidatat kogi. Et leggings fanny
+              pack. Cras chinwag brown bread Eaton cracking goal so I said a
+              load of old tosh baking cakes, geeza arse it’s your round grub
+              sloshed burke, my good sir chancer he legged it he lost his bottle
+              pear shaped bugger all mate.
+            </p>
+            <img src="/assets/home/blog-1.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -87,4 +56,4 @@ function blogtemplate() {
   );
 }
 
-export default blogtemplate;
+export default Blogtemplate;

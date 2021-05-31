@@ -14,8 +14,10 @@ import Graphic from './pages/Graphic_designer';
 import Our_blogs from "./pages/Our_blogs";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
-import blogtemplate from "./pages/Template/blogtemplate";
-function App() {
+import Blogtemplate from "./pages/Template/Blogtemplate";
+import Jobs from "./pages/Template/Jobs";
+function App(props) {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -29,7 +31,8 @@ function App() {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/blogtemplate" exact component={blogtemplate} />
+        <Route path="/blog/:tittle" exact component={Blogtemplate} />
+        <Route path="/carrer/:jobTitle" exact component={Jobs} />
       </Switch>
     </BrowserRouter>
     </div>

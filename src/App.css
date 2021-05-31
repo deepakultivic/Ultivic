@@ -62,10 +62,10 @@ h2.common_heading {
 section.grid.gallery {
   padding-bottom: 70px;
 }
-button.slick-next {
+.portfolio button.slick-next {
   right: 40px;
 }
-button.slick-prev {
+.portfolio button.slick-prev {
   left: 40px;
   z-index: 1;
 }

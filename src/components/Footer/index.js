@@ -11,7 +11,7 @@ function Footer() {
           <div className="col-lg-4">
             <div className="footer_box">
             <a href="/" className="footer_logo">
-              <img src="assets/header/logo-white.png" height="100" alt="CoolBrand" />
+              <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" />
             </a>
             <p className="comp_info">Share your IDEA and We Will Make It Real”. We ensure true worth of your valuable time and money you invested on us by delivering the perfect product</p>
             <ul className="footer_icons">

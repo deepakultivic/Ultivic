@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import './style.css';
 function Blogs(props) {
+  
   return (
   
       
@@ -12,7 +14,7 @@ function Blogs(props) {
               </div>
               <div className="blog_content">
                   <h5>
-                      <a href="#">{props.tittle}</a>
+                   <Link to={`/blog/${props.tittle}`}>{props.tittle}</Link>   
                   </h5>
                 <p>
                 {props.description}

@@ -1,6 +1,6 @@
 .job_content li {
     list-style: initial;
-    margin: 12px 0px;
+    margin: 10px 0px;
     margin-left: 19px;
 }
 .job_contact {
@@ -25,8 +25,36 @@ button.brn-sm {
     color: #000;
 }
 
-p.filetype {}
-
+h4.desctitle {
+    margin-top: 50px;
+}
+section.jobtemplate {
+    background-image: url(../../assets/Career/career_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.job_contact label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #7e8090;
+    margin-bottom: 5px;
+}
 p.filetype {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+}
+.blogsingle {
+    box-shadow: 0px 0px 4px rgba(0,0,0,20%);
+    padding: 30px;
+    background: #fff;
+    margin-top: -122px;
+    border-radius: 7px;
+}
+
+.blogsingle img {
+    width: 100%;
+}
+.blogsingle p {
+    margin: 15px 0px;
 }

@@ -4,9 +4,11 @@ import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import Foot from "../../components/Foot";
 import Aboutglobal from "../../components/Aboutglobal";
-import content from '../../components/Aboutglobal/content'
+import content from "../../components/Aboutglobal/content";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import "./style.css";
-
 
 function About() {
   // const Aboutdata=[
@@ -19,11 +21,36 @@ function About() {
 
   //   },
   // ];
-
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  };
   return (
     <div>
       <Header />
-      <Subheader title="About" clases="about"/>
+      <Subheader title="About" clases="about" />
       <div className="inner_wrap">
         <section className="inner_about space ">
           <div className="container">
@@ -94,26 +121,28 @@ function About() {
                 <div className="four col-md-3">
                   <div className="counter-box">
                     <span className="counter">20</span>
-                    <p className="animate__animated animate__bounce">Awards wining</p>
+                    <p className="animate__animated animate__bounce">
+                      Awards wining
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      <Aboutglobal
-         imgsrc={content[0].imgsrc}
-         about_exp  = {content[0].about_exp}                  
-         sub_heading={content[0].sub_heading}     
-         common_heading ={content[0].common_heading}
-         about_info={content[0].about_info}
-      />
+        <Aboutglobal
+          imgsrc={content[0].imgsrc}
+          about_exp={content[0].about_exp}
+          sub_heading={content[0].sub_heading}
+          common_heading={content[0].common_heading}
+          about_info={content[0].about_info}
+        />
 
-        <section className="inner_about inner_achivement">
+        <section className="inner_about inner_achivement space">
           <div className="container">
-            <div className="inner_achivement_sec comn_half_bg">
+            <div className="inner_achivement_sec">
               <div className="row align-items-center">
-                <div className="col-lg-5 col-12">
+                <div className="col-lg-4 col-12">
                   <div className="about_cont_box">
                     <div className="headings_outer ">
                       <h6 className="sub_heading">Our Achievements</h6>
@@ -122,18 +151,14 @@ function About() {
                     <p className="about_info">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                      mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Ut elit tellus, luctus nec
-                      ullamcorper mattis, pulvinar dapibus leo.
+                      dapibus leo.
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-7 col-12">
+                <div className="col-lg-8 col-12">
                   <div className="about_achive_box">
-                    <div className="row">
-                      <div className="col-md-6  extra_space">
+                    <Slider {...settings}>
+                      <div>
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -143,17 +168,7 @@ function About() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-6 extra_space">
-                        <div className="achive_cont">
-                      <img src="/assets/about/favourite.png" alt="" /> 
-                          <h3>Up work</h3>
-                          <p className="text-center about_info">
-                            5 Start rating Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut elit tellus, luctus
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6 extra_space">
+                      <div>
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -163,7 +178,7 @@ function About() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-6 extra_space">
+                      <div>
                         <div className="achive_cont">
                           <img src="/assets/about/favourite.png" alt="" />
                           <h3>Up work</h3>
@@ -173,7 +188,17 @@ function About() {
                           </p>
                         </div>
                       </div>
-                    </div>
+                      <div>
+                        <div className="achive_cont">
+                          <img src="/assets/about/favourite.png" alt="" />
+                          <h3>Up work</h3>
+                          <p className="text-center about_info">
+                            5 Start rating Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Ut elit tellus, luctus
+                          </p>
+                        </div>
+                      </div>
+                    </Slider>
                   </div>
                 </div>
               </div>
@@ -261,7 +286,7 @@ function About() {
           </div>
         </section>
       </div>
-      <Foot/>
+      <Foot />
       <Footer />
     </div>
   );

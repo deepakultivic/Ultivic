@@ -1,14 +1,15 @@
 import React from 'react'
 import jobsarr from './jobsarr'
+import {Link} from "react-router-dom";
 function jobscontent(props) {
     return (
         <div className="jobs">
             <div className="job_img">
               <img src={props.imgurl} alt="" />
             </div>
-            <h3 className="job_heading"> <a href="#">{props.jobTitle}</a> </h3>
-            <a href="#"> {props.joblink
-            }<i className="fa fa-long-arrow-right"></i></a>
+            <h3 className="job_heading"> <Link to={`/carrer/${props.jobTitle}`}>{props.jobTitle}</Link>  </h3>
+            <Link to={`/carrer/${props.jobTitle}`}> {props.joblink
+            }<i className="fa fa-long-arrow-right"></i></Link>  
           </div>
     )
 }

@@ -26,7 +26,7 @@ const  Header = () => {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light ">
             <a href="/" className="navbar-brand">
-              <img src="assets/header/logo-white.png" height="100" alt="CoolBrand" />
+              <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" />
             </a>
             <button
               type="button"

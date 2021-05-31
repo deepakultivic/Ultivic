@@ -77,7 +77,7 @@ if (!input["name"]) {
     isValid = false;
     errors["name"] = "Please enter name .";
   }
-  if (!name["desc"]) {
+  if (!input["desc"]) {
     isValid = false;
     errors["desc"] = "Please enter cover .";
   }

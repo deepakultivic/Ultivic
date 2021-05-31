@@ -77,6 +77,9 @@ ul.imp_points li {
 section.portfolio {
     overflow: hidden;
 }
+.filter_inner {
+    margin-bottom: 60px;
+}
 @media screen and (max-width:991px){
     .slider_inner {
         min-height: 900px;
