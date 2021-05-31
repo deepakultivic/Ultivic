@@ -27,7 +27,7 @@ function Steps() {
             <div className="col-lg-4">
               <div className="step_item center_step">
                 <div className="steps_icon">
-                  <span className="steps_icon_nbr">1</span>
+                  <span className="steps_icon_nbr">2</span>
                   <i className="fa fa-edit"></i>
                 </div>
                 <div class="item-text">
@@ -40,7 +40,7 @@ function Steps() {
             <div className="col-lg-4">
               <div className="step_item last_step">
                 <div className="steps_icon">
-                  <span className="steps_icon_nbr">1</span>
+                  <span className="steps_icon_nbr">3</span>
                   <i className="fa fa-edit"></i>
                 </div>
                 <div class="item-text">
