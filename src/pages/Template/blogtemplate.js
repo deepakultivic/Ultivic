@@ -47,7 +47,7 @@ function Blogtemplate() {
               sloshed burke, my good sir chancer he legged it he lost his bottle
               pear shaped bugger all mate.
             </p>
-            <img src="/assets/home/blog-1.jpg" alt="" />
+            <img src="/assets/home/blog-1.jpg" alt="" />    
           </div>
         </div>
       </section>
