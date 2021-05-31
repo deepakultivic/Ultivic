@@ -49,7 +49,7 @@ span.steps_icon_nbr {
 }
 .step_item.last_step::after {
     display: none;
-}
+}  
 h5 {
     font-size: 14px;
     line-height: 24px;
