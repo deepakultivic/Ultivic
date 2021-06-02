@@ -17,7 +17,7 @@ function Steps() {
                   <span className="steps_icon_nbr">1</span>
                   <i className="fa fa-edit"></i>
                 </div>
-                <div class="item-text">
+                <div className="item-text">
                   <h5>
                     We Plan <br /> Sketch .
                   </h5>
@@ -30,7 +30,7 @@ function Steps() {
                   <span className="steps_icon_nbr">2</span>
                   <i className="fa fa-edit"></i>
                 </div>
-                <div class="item-text">
+                <div className="item-text">
                   <h5>
                     WE DESIGN & <br /> DEVELOP .
                   </h5>
@@ -43,7 +43,7 @@ function Steps() {
                   <span className="steps_icon_nbr">3</span>
                   <i className="fa fa-edit"></i>
                 </div>
-                <div class="item-text">
+                <div className="item-text">
                   <h5>
                     WE TEST & <br /> DELIVER .
                   </h5>

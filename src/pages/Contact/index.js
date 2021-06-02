@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import "./style.css";
+import { Link } from 'react-router-dom'
 
 
 
@@ -128,16 +129,16 @@ function Contact() {
                     </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="tel:+91 8360249058​">
                       <i className="fa fa-phone"></i>
                       <span>+91 8360249058​</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="mailto:harmanpreet.kaur@ultivic.com">
                       <i className="fa fa-envelope-o"></i>
                       <span>harmanpreet.kaur@ultivic.com</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

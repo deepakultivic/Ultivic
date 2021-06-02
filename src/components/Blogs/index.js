@@ -10,7 +10,7 @@ function Blogs(props) {
           <div className=" col-lg-4">
             <div className="blog_inner">
               <div className="blog_img">
-                <a href="#"><img src={props.blog_imgs} alt="ultivic blog" /></a>
+              <Link to={`/blog/${props.tittle}`}><img src={props.blog_imgs} alt="ultivic blog" /></Link>
               </div>
               <div className="blog_content">
                   <h5>
@@ -20,7 +20,7 @@ function Blogs(props) {
                 {props.description}
                 </p>
                 <div className="blog_btn">
-                    <a href="">{props.blog_link}</a>
+                <Link to={`/blog/${props.tittle}`}>{props.blog_link}</Link>
                 </div>
                 <p className="date">{props.date}</p>
               </div>

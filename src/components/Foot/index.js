@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+
 import "./style.css"
 function Foot() {
   return (
@@ -8,15 +10,15 @@ function Foot() {
           <div className="foot_inner">
             <h4>GET IN TOUCH</h4>
             <h2>
-              <a href="tel:+91 8360249058">Call Now: +91 8360249058</a>
+              <Link to="tel:+91 8360249058">+91 8360249058</Link>
+             
             </h2>
             <div className="foot_info">
               <ul>
                 <li>
-                  <a href="mailto: harmanpreet.kaur@ultivic.com">
-                    <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
-                    harmanpreet.kaur@ultivic.com
-                  </a>
+                  <Link to="mailto: harmanpreet.kaur@ultivic.com"> <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
+                    harmanpreet.kaur@ultivic.com</Link>
+            
                 </li>
                 <li>
                   <p>

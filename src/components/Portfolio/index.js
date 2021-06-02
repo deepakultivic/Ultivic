@@ -2,6 +2,8 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom'
+
 import "./style.css";
 
 function Portfolio() {
@@ -53,7 +55,7 @@ function Portfolio() {
                       </div>
                     </div> */}
                   <div className="portfolio_btn">
-                    <a href="#">Visit Site</a>
+                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>
@@ -94,7 +96,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a href="#">Visit Site</a>
+                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>
@@ -136,7 +138,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a href="#">Visit Site</a>
+                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>
@@ -180,7 +182,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a href="#">Visit Site</a>
+                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>
@@ -216,7 +218,7 @@ function Portfolio() {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                   <div className="portfolio_btn">
-                    <a href="#">Visit Site</a>
+                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>

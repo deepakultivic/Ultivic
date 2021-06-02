@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom'
+
 import './style.css';
 
 const  Header = () => {
@@ -25,9 +27,8 @@ const  Header = () => {
       <header className={navbarClasses.join(" ")}>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light ">
-            <a href="/" className="navbar-brand">
-              <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" />
-            </a>
+            <Link to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></Link>
+          
             <button
               type="button"
               className="navbar-toggler ml-auto"
@@ -39,29 +40,21 @@ const  Header = () => {
 
             <div className="collapse navbar-collapse " id="navbarCollapse">
               <div className="navbar-nav ml-auto">
-                <a href="/about" className="nav-item nav-link active">
-                  About
-                </a>
-                <a href="/portfolio" className="nav-item nav-link">
-                  Portfolio
-                </a>
-                <a href="#" className="nav-item nav-link">
+                <Link to="/about" className="nav-item nav-link active">About</Link>
+                <Link to="/portfolio" className="nav-item nav-link ">Portfolio</Link>
+                <li  className="nav-item nav-link ">
+           
                 Services <i className="	fa fa-angle-down"></i>
                 <ul className="drop_menu">
-                  <li><a href="/web">Web Development</a></li>
-                  <li><a href="/graphic">Graphic Design</a></li>
-                  <li><a href="/app">App Development</a></li>
+                  <li><Link to="/web">Web Development</Link></li>
+                  <li><Link to="/graphic">Graphic Design</Link></li>
+                  <li><Link to="/app">App Development</Link></li>
                 </ul>
-                </a>
-                <a href="/blogs" className="nav-item nav-link">
-                Blog
-                </a>
-                <a href="/career" className="nav-item nav-link">
-                  Career
-                </a>
-                <a href="/contact" className="nav-item nav-link">
-                  Contact
-                </a>
+               </li>
+               <Link to="/blogs" className="nav-item nav-link">  Blog</Link>
+               <Link to="/career" className="nav-item nav-link">Career</Link>
+               <Link to="/contact" className="nav-item nav-link">Contact</Link>
+               
               </div>
              
              

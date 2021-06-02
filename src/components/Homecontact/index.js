@@ -1,7 +1,7 @@
 import React, {useState,  useEffect} from "react";
+import { Link } from 'react-router-dom'
 
 import "./style.css";
-import { WOW } from "wowjs";
 function Homecontact() {
   const [input, setInput] = useState({
     name:"",
@@ -91,16 +91,16 @@ return isValid;
                     </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="tel:+91 8360249058">
                       <i className="fa fa-phone"></i>
                       <span>+91 8360249058</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="mailto:harmanpreet.kaur@ultivic.com">
                       <i className="fa fa-envelope-o"></i>
                       <span>harmanpreet.kaur@ultivic.com</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

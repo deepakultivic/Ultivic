@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
+import { Link } from 'react-router-dom'
+
 const images = [
   { id: "1", imageName: "contact_bottom.jpg", tag: "web" },
   { id: "2", imageName: "contact_bottom.jpg", tag: "web" },
@@ -48,13 +50,13 @@ function Filter() {
          
             {filterimages.map((image) => (
               <div key={image.id} className="image-card col-md-6 col-lg-4">
-                <a href={`/assets/${image.imageName}`}>
+                <Link to={`/assets/${image.imageName}`}>
                   <img
                     className="image"
                     src={`/assets/${image.imageName}`}
                     alt=""
                   />
-                </a>
+              </Link>
 
                 {/* {image.imageName} */}
               </div>

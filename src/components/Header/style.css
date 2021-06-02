@@ -20,23 +20,25 @@ header.navbar {
 header.navbar.scrolled {
   background: #23282d;
 }
-.navbar-nav a.nav-item.nav-link {
+.navbar-nav .nav-item.nav-link {
   color: #fff;
   padding: 0px 20px;
   font-weight: 600;
 }
-.navbar-nav a.nav-item.nav-link.active,
-.navbar-nav a.nav-item.nav-link:hover {
+.navbar-nav .nav-item.nav-link.active,
+.navbar-nav .nav-item.nav-link:hover {
   color: #fff;
 }
 a.navbar-brand img {
   width: 220px;
 }
-
-.navbar-nav a.nav-item.nav-link:last-child {
+.navbar-nav {
+  align-items: center;
+}
+.navbar-nav .nav-item.nav-link:last-child {
   padding-right: 0;
 }
-.navbar-nav a.nav-item.nav-link ul.drop_menu {
+.navbar-nav .nav-item.nav-link ul.drop_menu {
   background: #fff;
   padding: 0 10px;
   border-radius: 4px;
@@ -57,7 +59,7 @@ ul.drop_menu li a {
   display: block;
 }
 
-.navbar-nav a.nav-item.nav-link:hover ul.drop_menu {
+.navbar-nav .nav-item.nav-link:hover ul.drop_menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(8px);

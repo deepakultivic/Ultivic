@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./style.css";
+import { Link } from 'react-router-dom'
+
 
 function About() {
   // const Aboutdata=[
@@ -236,9 +238,9 @@ function About() {
                 <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
-                      <a href="#">
+                      <Link to="#">
                         <img src="/assets/about/1.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <span className="sub_head_team">Co-Founder / Partner</span>
                     <h5 className="team_heading">Harmanpreet Kaur</h5>
@@ -252,9 +254,9 @@ function About() {
                 <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
-                      <a href="#">
+                      <Link to="#">
                         <img src="/assets/about/rakshak.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <span className="sub_head_team">Co-Founder / Partner</span>
                     <h5 className="team_heading">Rakshak Gaind</h5>
@@ -268,9 +270,9 @@ function About() {
                 <div className="col-lg-4 col-md-6">
                   <div className="team_box">
                     <div className="team_img">
-                      <a href="#">
+                      <Link to="#">
                         <img src="/assets/about/harpreet.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <span className="sub_head_team">Lead Developer</span>
                     <h5 className="team_heading">Harmanpreet Kaur</h5>

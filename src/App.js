@@ -2,8 +2,9 @@
 import {
   BrowserRouter,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
+import ScrollToTop from './components/Scrolltotop'
 import Home from './pages/Home';
 import About from './pages/About';
 import './App.css';
@@ -16,11 +17,13 @@ import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Blogtemplate from "./pages/Template/Blogtemplate";
 import Jobs from "./pages/Template/Jobs";
+
 function App(props) {
 
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -34,6 +37,7 @@ function App(props) {
         <Route path="/blog/:tittle" exact component={Blogtemplate} />
         <Route path="/carrer/:jobTitle" exact component={Jobs} />
       </Switch>
+      
     </BrowserRouter>
     </div>
   );

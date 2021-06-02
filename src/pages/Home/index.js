@@ -9,6 +9,7 @@ import Homecontact from "../../components/Homecontact";
 import blogdata from "../../components/Blogs/blogdata";
 import Steps from "../../components/steps/Steps";
 import {WOW} from 'wowjs'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const wow = new WOW({
@@ -19,6 +20,7 @@ function Home() {
 function blogs(val, i){
  return(
   <Blogs 
+  key={val.id}
   blog_imgs={val.blog_imgs}
   tittle={val.tittle} 
   description={val.description}
@@ -39,7 +41,7 @@ wow.init();
             <div className="bennr_inner">
               <h4>We build</h4>
               <h1> <span className="banner_brand">Brand</span> Experience</h1>
-              <a href="/contact" className="banner_link">Get In Touch <i className="fa fa-long-arrow-right"></i></a>
+              <Link to="/contact" className="banner_link">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
             </div>
           </div>
         </section>
@@ -262,9 +264,9 @@ wow.init();
      
         </div>
         <div className="global_btn">
-            <a href="cm-btn">
+            <Link to="/blog">
               View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
+            </Link>
           </div>
       </div>      
           
