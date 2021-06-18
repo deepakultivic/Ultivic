@@ -43,7 +43,6 @@ const  Header = () => {
                 <Link to="/about" className="nav-item nav-link active">About</Link>
                 <Link to="/portfolio" className="nav-item nav-link ">Portfolio</Link>
                 <li  className="nav-item nav-link ">
-           
                 Services <i className="	fa fa-angle-down"></i>
                 <ul className="drop_menu">
                   <li><Link to="/web">Web Development</Link></li>

@@ -11,7 +11,7 @@ function Steps() {
         </div>
         <div className="steps_process">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-sm-4 col-12">
               <div className="step_item">
                 <div className="steps_icon">
                   <span className="steps_icon_nbr">1</span>
@@ -24,7 +24,7 @@ function Steps() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-sm-4 col-12">
               <div className="step_item center_step">
                 <div className="steps_icon">
                   <span className="steps_icon_nbr">2</span>
@@ -37,7 +37,7 @@ function Steps() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-sm-4 col-12">
               <div className="step_item last_step">
                 <div className="steps_icon">
                   <span className="steps_icon_nbr">3</span>

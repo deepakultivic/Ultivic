@@ -17,19 +17,19 @@ function Home() {
     mobile: false,
     live: true
 })
-function blogs(val, i){
- return(
-  <Blogs 
-  key={val.id}
-  blog_imgs={val.blog_imgs}
-  tittle={val.tittle} 
-  description={val.description}
-  blog_link={val.blog_link}
-  date={val.date}
- />
- )
+// function blogs(val, i){
+//  return(
+//   <Blogs 
+//   key={val.id}
+//   blog_imgs={val.blog_imgs}
+//   tittle={val.tittle} 
+//   description={val.description}
+//   blog_link={val.blog_link}
+//   date={val.date}
+//  />
+//  )
 
-}
+// }
 wow.init();
 
   return (
@@ -259,7 +259,8 @@ wow.init();
         <div className="row">
        
      
-   {  blogdata.map(blogs)}
+   <Blogs  blogs={blogdata}/>
+   
      
      
         </div>
