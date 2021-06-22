@@ -104,7 +104,7 @@ return isValid;
                     Looking to start project ? Browse our contact details below
                   </h2>
                 </div>
-                <form action="" onSubmit={handleSubmit}>
+                <form  onSubmit={handleSubmit}>
                   <div className="form-group">
                     <input
                       type="text"
@@ -150,7 +150,7 @@ return isValid;
                   </div>
                   <div className="global_btn">
                   <button type="submit" className="btn  brn-sm">Submit</button>
-                  </div>
+                  </div>  
                 </form>
               </div>
             </div>
