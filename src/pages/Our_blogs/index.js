@@ -6,17 +6,17 @@ import Foot from "../../components/Foot";
 import Blogs from "../../components/Blogs";
 import blogdata from "../../components/Blogs/blogdata"
 import "./style.css";
-function blogs(val, d){
-    return(
-     <Blogs 
-     blog_imgs={val.blog_imgs}
-     tittle={val.tittle} 
-     description={val.description}
-     blog_link={val.blog_link}
-     date={val.date}
-    />
-    );
-}
+// function blogs(val, d){
+//     return(
+//      <Blogs 
+//      blog_imgs={val.blog_imgs}
+//      tittle={val.tittle} 
+//      description={val.description}
+//      blog_link={val.blog_link}
+//      date={val.date}
+//     />
+//     );
+// }
 function Our_blogs() {
 
     return (
@@ -28,7 +28,7 @@ function Our_blogs() {
         <div className="row">
        
      
-   {  blogdata.map(blogs)}
+<Blogs blogs={blogdata}/>
      
      
         </div>
