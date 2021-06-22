@@ -265,7 +265,7 @@ wow.init();
      
         </div>
         <div className="global_btn">
-            <Link to="/blog">
+            <Link to="/blogs">
               View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </Link>
           </div>
