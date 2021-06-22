@@ -56,6 +56,7 @@
 button.brn-sm:hover {
     background: #ce2128;
     color: #fff;
+    border-color: #ce2128;
 }
 @media screen and (max-width:1199px){
     .home_form {
