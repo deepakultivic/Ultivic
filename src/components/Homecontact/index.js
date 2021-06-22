@@ -7,7 +7,7 @@ function Homecontact() {
     name:"",
   email:"",
   desc:"",
-  })
+  }); 
 
 const {name,email,desc} = input;
 const [submitted, setSubmitted] = useState(false);
@@ -17,18 +17,14 @@ useEffect(() => {
 },[input])
 const handleSubmit = (e) => {
   e.preventDefault()
-  //  alert("SUBMITTED");
-  
-  //    if(!name || !email || !desc  ){
-  //        return;
-  //    }
+
   setSubmitted(true);
   if(handleValidate(input)){
       setInput({name:"", email:"", desc:""})
   }
 };
 function onChange (event){
-  setInput({...input, [event.taget.name]:event.target.value})
+  setInput({...input, [event.target.name]:event.target.value})
 };
 const handleValidate =(input) => {
   console.log(input)
@@ -47,22 +43,17 @@ if (!input["email"]) {
   isValid = false;
   errors["email"] = "Please enter email address.";
 }
-if(typeof input["name"] !== "undefined"){
-  let pattern = new RegExp('^[a-zA-Z]+$');
-  if(!pattern.test(input["name"])){
-      isValid=false;
-      errors["name"]="please enter character";
+if (typeof input["name"] !== "undefined") {
+  let pattern = new RegExp("^[a-zA-Z]+$");
+  if (!pattern.test(input["name"])) {
+    isValid = false;
+    errors["name"] = "please enter character";
+  } else if (input["name"].length <= 2) {
+    isValid = false;
+    errors["name"] = "max 3 words";
   }
-  else if(input["name"].length <=2 ) {
-      isValid=false;
-      errors["name"]="max 3 words";
-  }
-}   
+} 
 
-if (!input["name"]) {
-  isValid = false;
-  errors["name"] = "Please enter name .";
-}
 if (!input["desc"]) {
   isValid = false;
   errors["desc"] = "Please enter cover message .";

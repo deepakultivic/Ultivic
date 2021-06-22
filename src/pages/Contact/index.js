@@ -11,11 +11,11 @@ function Contact() {
     const [input, setInputs] = useState({
         fullname: "",
         email: "",
-        tel: "",
-        desc: "",
-        subject: ""
+        tel: "",       
+        subject: "",
+        description: ""
       });
-      const { fullname, email, tel, desc, subject } = input;
+      const { fullname, email, tel, subject,  description } = input;
       const [submitted, setSubmitted] = useState(false);
       const [errors, setError] = useState(input);
       useEffect(() => {
@@ -25,12 +25,12 @@ function Contact() {
         e.preventDefault();
         //  alert("SUBMITTED");
     
-        //    if(!name || !email || !tel || !desc || !file ){
+        //    if(!name || !email || !tel || !description || !file ){
         //        return;
         //    }
         setSubmitted(true);
         if (handleValidate(input)) {
-          setInputs({ fullname: "", email: "", tel: "", desc: "", subject: "" });
+          setInputs({ fullname: "", email: "", tel: "", subject: "", description: ""  });
         }
       };
       function onChange(event) {
@@ -83,9 +83,9 @@ function Contact() {
           isValid = false;
           errors["name"] = "Please enter name .";
         }
-        if (!input["desc"]) {
+        if (!input["description"]) {
           isValid = false;
-          errors["desc"] = "Please enter cover message .";
+          errors["description"] = "Please enter cover message .";
         }
         setError(errors);
         console.log(errors);
@@ -189,10 +189,11 @@ function Contact() {
                       className="form-control"
                       id="message"
                       rows="3"
-                      name="desc" value={desc}
+                      name="description" value={description}
+                      onChange={onChange}
                     ></textarea>
-                    {submitted && !!errors.desc && (
-                      <div className="inline-errormsgs">{errors.desc}</div>
+                    {submitted && !!errors.description && (
+                      <div className="inline-errormsgs">{errors.description}</div>
                     )}
                   </div>
                   <button type="submit" className="btn">
