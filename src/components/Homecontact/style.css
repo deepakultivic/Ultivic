@@ -53,6 +53,10 @@
 .inline-errormsgs {
     color: #f00;
 }
+button.brn-sm:hover {
+    background: #ce2128;
+    color: #fff;
+}
 @media screen and (max-width:1199px){
     .home_form {
         padding: 30px;

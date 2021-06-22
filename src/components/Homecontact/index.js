@@ -149,7 +149,7 @@ return isValid;
           ) }
                   </div>
                   <div className="global_btn">
-                  <button type="submit" className="btn btn-primary brn-sm">Submit</button>
+                  <button type="submit" className="btn  brn-sm">Submit</button>
                   </div>
                 </form>
               </div>
