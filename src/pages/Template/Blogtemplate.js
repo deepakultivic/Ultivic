@@ -7,10 +7,10 @@ import blogdata from "../../components/Blogs/blogdata";
 import "./style.css";
 
 function Blogtemplate() {
-  const { tittle } = useParams();
+  const { slug } = useParams();
   const [myblog, setMyblog] = useState({});
   useEffect(() => {
-    const filter = blogdata.filter((item) => item.tittle === tittle);
+    const filter = blogdata.filter((item) => item.slug === slug);
     setMyblog(filter[0]);
     console.log(filter[0]);
   }, []);
