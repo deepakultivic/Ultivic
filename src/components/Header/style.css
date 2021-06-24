@@ -24,6 +24,7 @@ header.navbar.scrolled {
   color: #fff;
   padding: 0px 20px;
   font-weight: 600;
+  font-family: 'Montserrat';
 }
 .navbar-nav .nav-item.nav-link.active,
 .navbar-nav .nav-item.nav-link:hover {
