@@ -107,6 +107,7 @@ p.about_description {
 }
 section.testimonial{
     background-image: url(../../assets/home/testimonils-bg.jpg);
+    overflow: hidden;
 }
 @media screen and (max-width:1440px){
     .baner_design{
@@ -126,6 +127,7 @@ section.testimonial{
     .global_btn{
         margin-top:15px;
     }
+    
 }
 @media screen and (max-width:575px){
     .bennr_inner h1, .bennr_inner h1 span{

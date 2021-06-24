@@ -37,4 +37,8 @@ button.active:focus, button.filt_button:focus{
     .filter_inner {
         margin-bottom: 40px;
     }  
+    button.filt_button {
+        padding: 5px 3px;
+        
+}
 }

@@ -95,6 +95,9 @@ section.portfolio {
     .slider_inner {
         min-height: 940px;
     }
+    button.slick-arrow {
+        display: none !important;
+    }
 }
 @media screen  and (max-width:475px){
     .slider_inner {

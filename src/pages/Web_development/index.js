@@ -8,7 +8,7 @@ import Technology from '../../components/Services/Technology';
 import Foot from "../../components/Foot";
 import "./style.css";
 import Gallery from '../../components/Services/Gallery';
-import {gridgallery} from "../../components/Services/pdata";
+import { gridgallery } from "../../components/Services/pdata";
 import SimpleReactLightbox from 'simple-react-lightbox'
 function Web() {
     return (
@@ -22,14 +22,10 @@ function Web() {
                 common_heading={content[2].common_heading}
                 about_info={content[2].about_info}
             />
-            <Technology/>
-            <SimpleReactLightbox>     <Gallery
-                img1={gridgallery[0].img1}
-                img2={gridgallery[0].img2}
-                img3={gridgallery[0].img3}
-                img4={gridgallery[0].img4}
-                img5={gridgallery[0].img5}
-                />   </SimpleReactLightbox>
+            <Technology />
+            <SimpleReactLightbox> 
+                    <Gallery gallery={gridgallery} />   
+                    </SimpleReactLightbox>
             <Foot />
             <Footer />
         </div>

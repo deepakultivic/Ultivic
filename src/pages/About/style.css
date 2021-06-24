@@ -173,8 +173,8 @@ section.inner_about.inner_mision .about_exp {
     width: 100%;
     margin: 20px 0px;
 }
-section.inner_about.inner_achivement {
-  background: #f7f6fc;
+.about_cont_box {
+  margin-bottom: 40px;
 }
 .team_box{
   margin-bottom: 30px;

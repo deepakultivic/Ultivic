@@ -54,7 +54,7 @@ ul.drop_menu li a {
   color: #000;
   font-weight: 500;
   font-size: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333;
   padding: 10px 10px;
   display: block;
 }
@@ -93,8 +93,9 @@ ul.drop_menu li a {
     color: #ce2128;
   }
 
-  .navbar-nav .nav-item.nav-link {
+  .navbar .navbar-nav .nav-item.nav-link{
     color: #333;
+    padding: 10px;;
   }
 
   .navbar-nav {
@@ -108,9 +109,12 @@ ul.drop_menu li a {
   .navbar-nav .nav-item.nav-link:hover ul.drop_menu {
     padding: 0;
     position: relative;
-    top: 0;
+    top: -8px;
   }
   .nav-item.nav-link {
     width: 100%;
   }
+  ul.drop_menu li:last-child a {
+    border: unset;
+}
 }

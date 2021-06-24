@@ -14,18 +14,17 @@ function Jobcontact() {
   useEffect(() => {
     handleValidate(input)
 },[input])
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    //  alert("SUBMITTED");
-    
-    //    if(!name || !email || !tel || !desc || !file ){
-    //        return;
-    //    }
+   
     setSubmitted(true);
     if(handleValidate(input)){
+     
         setInputs({name:"", email:"", tel:"", desc:"", file:""})
     }
   };
+
   function onChange(event) {
         setInputs({...input,[event.target.name]:event.target.value})
         console.log(event.target.value)
@@ -36,8 +35,10 @@ let errors ={};
 let isValid = true;
 if (typeof input["email"] !== "undefined") {
     let pattern = new RegExp(
-      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+))|("[\w-\s]+")([\w-]+(?:\.[\w-]+)))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+ /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
     );
+
     if (!pattern.test(input["email"])) {
       isValid = false;
       errors["email"] = "Please enter valid email address.";
@@ -48,7 +49,7 @@ if (typeof input["email"] !== "undefined") {
     errors["email"] = "Please enter email address.";
   }
   if(typeof input["name"] !== "undefined"){
-    let pattern = new RegExp('^[a-zA-Z]+$');
+    let pattern = new RegExp('^[a-zA-Z ]+$');
     if(!pattern.test(input["name"])){
         isValid=false;
         errors["name"]="please enter character";

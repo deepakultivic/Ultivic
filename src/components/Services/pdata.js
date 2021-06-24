@@ -56,13 +56,14 @@ const tbdata = [
 ];
 
 const gridgallery =[
-    {
-        img1:"/assets/services/carbuyers_screen.png",
-        img2:"/assets/services/fitzulatest.png",
-        img3:"/assets/services/kravmaga.png",
-        img4:"/assets/services/lalu_latest.png",
-        img5:'/assets/services/fitzulatest.png',
-    }
+    
+    { img:"/assets/services/kravmaga.png"},
+       { img:"/assets/services/fitzulatest.png"},
+       { img:"/assets/services/kravmaga.png"},
+       { img:"/assets/services/lalu_latest.png"},
+       { img:'/assets/services/fitzulatest.png'},
+       { img:"/assets/services/kravmaga.png"},
+    
 ]
 
 export default pdata;

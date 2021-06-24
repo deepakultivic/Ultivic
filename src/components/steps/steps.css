@@ -78,6 +78,12 @@ h5 {
     margin-bottom: 12px;
     line-height: 32px;
 }
+@media screen and(mx-width:991px){
+    .steps_cont_img {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
 @media screen and (max-width:575px) {
     .step_item::after{
         display: none;

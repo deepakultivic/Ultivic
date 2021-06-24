@@ -74,7 +74,7 @@ section.grid.gallery {
   align-items: center;
   height: 500px;
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -99,28 +99,50 @@ section.grid.gallery {
 /* grid galleryt */
 .grdi_space {
   margin: 10px;
-  box-shadow: 0px 0px 12px rgb(0 0 0 / 9%);
+
 }
 
-.top_img img {
-  height: 250px;
+section.grid.gallery img {
+  height: 350px;
   object-fit: cover;
   width: 100%;
 }
 
-.grdi_space.big_img {
-  height: 286px;
+.grdi_space i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  opacity: 0;
+  transition: ease all .3s;
+  webkit-transition: ease all .3s;
+  color: #ce2128;
 }
 
-.grdi_space.big_img img {
-  height: 350px;
-  object-fit: cover;
+.grdi_space:hover i {
+  opacity: 1;
+  transition: ease all .3s;
+  webkit-transition: ease all .3s;
 }
 
-.grdi_space.left_img img {
-  height: 170px;
-  object-fit: cover;
+.grdi_space:hover .top_img::before {
+  position: absolute;
+  content: "";
+  background: rgb(0 0 0 / 42%);
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
+.top_img  {
+  position: relative;
+}
+/*  */
+
+/*  */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -156,6 +178,9 @@ section.grid.gallery {
 }
 .comn_half_bg{
   background: none;
+}
+h2.subhead {
+  font-size: 30px;
 }
 }
 @media screen and (max-width:1199px){
