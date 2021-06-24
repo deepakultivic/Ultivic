@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-
+import blogdata from '../Blogs/blogdata';
 import "./style.css";
 
 function Footer() {
@@ -27,9 +27,14 @@ function Footer() {
             <div className="footer_box">
                 <h5 className="footer_heading">Recent Posts</h5>
                 <ul className="rent_news">
-                  <li><Link to="#">A wonderful serenity Loreum</Link></li>
-                  <li><Link to="#">A wonderful serenity</Link></li>
-                  <li><Link to="#">10 Things Successful Mompreneurs Do Different</Link></li>
+                 
+                 
+                  {blogdata.map((item,index)=>{
+
+                    return(
+                      <li key={index}><Link to={`/blog/${item.slug}`}>{item.tittle}</Link></li>
+                    )
+                  })}
                 </ul>
             </div>
           </div>
@@ -40,6 +45,7 @@ function Footer() {
                   <li><i className="fa fa-location-arrow"></i><span>Office-09, Floor-10, TDI Business Center, Sector 118, Sahibzada Ajit Singh Nagar, Punjab 140308​</span></li>
                   <li><Link to="#"><i className="fa fa-phone"></i><span>+91 8360249058​</span></Link></li>
                   <li><Link to="#"><i className="fa fa-envelope-o"></i><span>harmanpreet.kaur@ultivic.com</span></Link></li>
+                 
                 </ul>
             </div>
           </div>

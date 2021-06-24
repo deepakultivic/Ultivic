@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import Blogtemplate from "./pages/Template/Blogtemplate";
 import Jobs from "./pages/Template/Jobs";
 
+
 function App(props) {
 
   return (
@@ -34,7 +35,7 @@ function App(props) {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/blog/:tittle" exact component={Blogtemplate} />
+        <Route path="/blog/:slug" exact component={Blogtemplate} />
         <Route path="/carrer/:jobTitle" exact component={Jobs} />
       </Switch>
       
