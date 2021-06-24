@@ -109,6 +109,12 @@ section.testimonial{
     background-image: url(../../assets/home/testimonils-bg.jpg);
     overflow: hidden;
 }
+.bennr_inner h1, .bennr_inner h4 {
+    text-shadow: 7px 7px 6px rgb(0 0 0 / 70%);
+}
+.bennr_inner a{
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 70%);
+}
 @media screen and (max-width:1440px){
     .baner_design{
         padding: 15.5em 0;
