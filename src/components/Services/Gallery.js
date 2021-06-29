@@ -21,7 +21,7 @@ function Gallery({gallery }) {
                   <div className="grdi_space ">
                     <div className="top_img">
                     <img src={item.img} alt="img" />
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                   
                       </div>
 
                   </div>

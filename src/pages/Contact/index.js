@@ -56,7 +56,7 @@ function Contact() {
       let pattern = new RegExp("^[a-zA-Z ]+$");
       if (!pattern.test(input["fullname"])) {
         isValid = false;
-        errors["fullname"] = "please enter character";
+        errors["fullname"] = "This field accept only alphabets";
       } else if (input["fullname"].length <= 2) {
         isValid = false;
         errors["fullname"] = "max 3 words";

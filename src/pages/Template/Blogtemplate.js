@@ -17,12 +17,12 @@ function Blogtemplate() {
   return (
     <div>
       <Header />
-      <section className="jobtemplate" style={{backgroundImage: `url(${myblog.blog_imgs})`}}>
-        <h2>
+      <section className="jobtemplate job_outer" style={{backgroundImage: `url(${myblog.blog_imgs})`}}>
+       
           <div className="container">
             <h2 className="subhead">{myblog.tittle}</h2>
           </div>
-        </h2>
+    
       </section>
       <section className="blog-info space">
         <div className="container">

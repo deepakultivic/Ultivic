@@ -5,6 +5,7 @@
     background-size: cover;
     position: relative;
     padding: 70px 0;
+    background-position: center center;
 }
 .foot_outer::before{
     content: "";

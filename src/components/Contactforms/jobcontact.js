@@ -52,7 +52,7 @@ if (typeof input["email"] !== "undefined") {
     let pattern = new RegExp('^[a-zA-Z ]+$');
     if(!pattern.test(input["name"])){
         isValid=false;
-        errors["name"]="please enter character";
+        errors["name"]="This field accept only alphabets";
     }
     else if(input["name"].length <=2 ) {
         isValid=false;
@@ -71,16 +71,16 @@ if (typeof input["tel"] !== "undefined") {
       }
       if (!input["tel"]) {
         isValid = false;
-        errors["tel"] = "Please enter tel number.";
+        errors["tel"] = "Please enter mobile number.";
       }
 
 if (!input["name"]) {
     isValid = false;
-    errors["name"] = "Please enter name .";
+    errors["name"] = "Please enter the name ";
   }
   if (!input["desc"]) {
     isValid = false;
-    errors["desc"] = "Please enter cover .";
+    errors["desc"] = "Please enter cover ";
   }
 setError(errors);
 console.log(errors)

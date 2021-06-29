@@ -176,7 +176,23 @@ section.inner_about.inner_mision .about_exp {
 .about_cont_box {
   margin-bottom: 40px;
 }
+
 .team_box{
   margin-bottom: 30px;
 }
 } 
+
+@media  screen and (max-width:767px){
+.team_img {
+  text-align: center;
+  width: 100%;
+}
+
+.team_img img {
+  width: 100%;
+}
+
+.team_box {
+  text-align: center;
+}
+}

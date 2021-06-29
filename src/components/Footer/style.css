@@ -67,6 +67,9 @@ ul{
   color: #ce2128;
   transition: 0.5s;
 }
+ul.rent_news.cont_info li:first-child i {
+  padding-top: 10px;
+}
 @media screen and (max-width:991px){
   .footer_box {
     margin-bottom: 30px;

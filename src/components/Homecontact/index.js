@@ -51,7 +51,7 @@ if (typeof input["name"] !== "undefined") {
   let pattern = new RegExp("^[a-zA-Z ]+$");
   if (!pattern.test(input["name"])) {
     isValid = false;
-    errors["name"] = "please enter character";
+    errors["name"] = "This field accept only alphabets";
   } else if (input["name"].length <= 2) {
     isValid = false;
     errors["name"] = "max 3 words";

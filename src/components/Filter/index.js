@@ -18,7 +18,7 @@ function Filter() {
   useEffect(() => {
     tag == "all"
       ? setFilterimages(images)
-      : setFilterimages(images.filter((image) => image.tag == tag));
+      : setFilterimages(images.filter((image) => image.tag == tag));   
   }, [tag]);
   return (
     <div className="container">
