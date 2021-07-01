@@ -47,6 +47,8 @@ if (!input["email"]) {
   isValid = false;
   errors["email"] = "Please enter email address.";
 }
+
+
 if (typeof input["name"] !== "undefined") {
   let pattern = new RegExp("^[a-zA-Z ]+$");
   if (!pattern.test(input["name"])) {
@@ -57,7 +59,10 @@ if (typeof input["name"] !== "undefined") {
     errors["name"] = "max 3 words";
   }
 } 
-
+if (!input["name"]) {
+  isValid = false;
+  errors["name"] = "Please enter name";
+}
 if (!input["desc"]) {
   isValid = false;
   errors["desc"] = "Please enter cover message .";

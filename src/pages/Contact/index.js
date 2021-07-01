@@ -62,25 +62,29 @@ function Contact() {
         errors["fullname"] = "max 3 words";
       }
     }
+    if (!input["fullname"]) {
+      isValid = false;
+      errors["fullname"] = "Please enter name";
+    }
     if (typeof input["tel"] !== "undefined") {
       var pattern = new RegExp(/^[0-9\b]+$/);
       if (!pattern.test(input["tel"])) {
         isValid = false;
-        errors["tel"] = "Please enter valid tel number.";
+        errors["tel"] = "Please enter valid tel number";
       } else if (input["tel"].length != 10) {
         isValid = false;
-        errors["tel"] = "Please enter valid tel number.";
+        errors["tel"] = "Please enter valid tel number";
       }
     }
     if (!input["tel"]) {
       isValid = false;
-      errors["tel"] = "Please enter tel number.";
+      errors["tel"] = "Please enter mobile number";
     }
 
    
     if (!input["description"]) {
       isValid = false;
-      errors["description"] = "Please enter cover message .";
+      errors["description"] = "Please enter cover message ";
     }
     setError(errors);
     // console.log(errors);
