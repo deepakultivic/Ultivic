@@ -110,8 +110,7 @@ return isValid;
                 <div className="headings_outer ">
                   <h6 className="sub_heading">Get in Touch</h6>
                   <h2 className="common_heading">
-                    Looking to start project ? Browse our contact details below
-                  </h2>
+                  Let’s create digital revolution together    </h2>
                 </div>
                 <form  onSubmit={handleSubmit}>
                   <div className="form-group">

@@ -25,11 +25,11 @@ function Career() {
       <Header />
       <Subheader title="Career" clases="career" />
       <Aboutglobal
-        imgsrc={content[0].imgsrc}
-        about_exp={content[0].about_exp}
-        sub_heading={content[0].sub_heading}
-        common_heading={content[0].common_heading}
-        about_info={content[0].about_info}
+        imgsrc={content[4].imgsrc}
+        about_exp={content[4].about_exp}
+        sub_heading={content[4].sub_heading}
+        common_heading={content[4].common_heading}
+        about_info={content[4].about_info}
       />
       <Technology />
       <section className="jobs_sections space">

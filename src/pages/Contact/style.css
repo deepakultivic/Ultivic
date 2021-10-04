@@ -53,6 +53,11 @@
     margin: 0;
     color: #7e8090;
 }
+p.form_info {
+  color: #808291;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
 @media screen and (max-width:991px){
   .contact_form {
     margin: 0;

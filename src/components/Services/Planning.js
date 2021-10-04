@@ -25,6 +25,8 @@ function Planning(props) {
                       <li><i className="fa fa-check"></i>{props.planing_pts02}</li>
                       <li><i className="fa fa-check"></i>{props.planing_pts03}</li>
                       <li><i className="fa fa-check"></i>{props.planing_pts04}</li>
+                      <li><i className="fa fa-check"></i>{props.planing_pts05}</li>
+                      <li><i className="fa fa-check"></i>{props.planing_pts06}</li>
                   </ul>
                 </div>
               </div>

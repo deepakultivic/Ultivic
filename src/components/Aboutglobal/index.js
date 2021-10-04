@@ -1,11 +1,7 @@
 import React from 'react';
 function Aboutglobal(props) {
-
-
     return (
-      
-           
-        <section className="inner_about space inner_mision">
+         <section className="inner_about space inner_mision">
           <div className="container">
             <div className="row ">
               <div className="col-lg-6">

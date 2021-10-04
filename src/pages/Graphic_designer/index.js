@@ -23,7 +23,8 @@ function Graphic() {
         about_info={content[1].about_info}
       />
       <Technology />
-      <Planning
+     <section className="space">
+     <Planning
         imgsrc={pdata[0].imgsrc}
         sub_heading={pdata[0].sub_heading}
         common_heading={pdata[0].common_heading}
@@ -32,12 +33,15 @@ function Graphic() {
         planing_pts02={pdata[0].planing_pts02}
         planing_pts03={pdata[0].planing_pts03}
         planing_pts04={pdata[0].planing_pts04}
+        planing_pts05={pdata[0].planing_pts05}
+        planing_pts06={pdata[0].planing_pts06}
       />
+     </section>
       <section className="graphics_gallery">
         <div className="container">
-          <div classNAme="headings_outer  text-center">
-            <h6 classNAme="sub_heading ">Technologies</h6>
-            <h2 classNAme="common_heading">Lorem ipsum dolor sit</h2>
+          <div className="headings_outer  text-center">
+            <h6 className="sub_heading ">Technologies</h6>
+            <h2 className="common_heading">Lorem ipsum dolor sit</h2>
           </div>
           <div className="row">
             <div className="col-md-6 ">

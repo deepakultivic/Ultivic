@@ -17,13 +17,15 @@ function App_dev() {
         <div>
             <Header />
             <Subheader title="App Development   " clases="app_dev"/>
-            <Aboutglobal
+           <div className="app_dev_inner">
+           <Aboutglobal
                 imgsrc={content[3].imgsrc}
                 about_exp={content[3].about_exp}
                 sub_heading={content[3].sub_heading}
                 common_heading={content[3].common_heading}
                 about_info={content[3].about_info}
             />
+           </div>
             <Planning
             imgsrc={pdata[1].imgsrc}
             sub_heading={pdata[1].sub_heading}
@@ -33,6 +35,8 @@ function App_dev() {
             planing_pts02={pdata[1].planing_pts02}
             planing_pts03={pdata[1].planing_pts03}
             planing_pts04={pdata[1].planing_pts04}
+            planing_pts05={pdata[1].planing_pts05}
+            planing_pts06={pdata[1].planing_pts06}
             />
             <Planning
             clases={pdata[2].clases}
@@ -44,6 +48,8 @@ function App_dev() {
             planing_pts02={pdata[2].planing_pts02}
             planing_pts03={pdata[2].planing_pts03}
             planing_pts04={pdata[2].planing_pts04}
+            planing_pts05={pdata[2].planing_pts05}
+            planing_pts06={pdata[2].planing_pts06}
             />
              <SimpleReactLightbox>     <Gallery gallery={gridgallery}
                 />   </SimpleReactLightbox>

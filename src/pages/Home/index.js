@@ -5,10 +5,10 @@ import "./style.css";
 import Portfolio from "../../components/Portfolio";
 import Testimonials from "../../components/Testimonials";
 import Blogs from "../../components/Blogs";
-import Homecontact from "../../components/Homecontact"; 
+import Homecontact from "../../components/Homecontact";
 import blogdata from "../../components/Blogs/blogdata";
 import Steps from "../../components/steps/Steps";
-import {WOW} from 'wowjs'
+import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -16,21 +16,21 @@ function Home() {
     offset: 100,
     mobile: false,
     live: true
-})
-// function blogs(val, i){
-//  return(
-//   <Blogs 
-//   key={val.id}
-//   blog_imgs={val.blog_imgs}
-//   tittle={val.tittle} 
-//   description={val.description}
-//   blog_link={val.blog_link}
-//   date={val.date}
-//  />
-//  )
+  })
+  // function blogs(val, i){
+  //  return(
+  //   <Blogs 
+  //   key={val.id}
+  //   blog_imgs={val.blog_imgs}
+  //   tittle={val.tittle} 
+  //   description={val.description}
+  //   blog_link={val.blog_link}
+  //   date={val.date}
+  //  />
+  //  )
 
-// }
-wow.init();
+  // }
+  wow.init();
 
   return (
     <div>
@@ -39,8 +39,8 @@ wow.init();
         <section className="baner_design">
           <div className="container">
             <div className="bennr_inner">
-              <h4>We build</h4>
-              <h1> <span className="banner_brand">Brand</span> Experience</h1>
+              <h4>We incorporate</h4>
+              <h1> <span className="banner_brand">Innovation</span> With your vision </h1>
               <Link to="/contact" className="banner_link">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
             </div>
           </div>
@@ -61,14 +61,11 @@ wow.init();
                   <div className="headings_outer">
                     <h6 className="sub_heading">About us</h6>
                     <h2 className="common_heading">
-                      IT Solution Agency For Your Business
+                      We Provide IT solutions that performs.
                     </h2>
                   </div>
                   <p className="about_description">
-                    Share your IDEA and We Will Make It Real”. We ensure true
-                    worth of your valuable time and money you invested on us by
-                    delivering the perfect product deliver solutions that meet
-                    client’s needs, expectations and budget.
+                    You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.
                   </p>
                   <div className="progress_bars">
                     <h4 className="bar_heading">Web Development</h4>
@@ -114,7 +111,7 @@ wow.init();
               <h6 className="sub_heading">Services</h6>
               <h2 className="common_heading">Services we Provide</h2>
             </div>
-            <div className="row wow slideInLeft" ata-wow-delay="0.3s"> 
+            <div className="row wow slideInLeft" ata-wow-delay="0.3s">
               <div className="col-lg-4 col-md-6">
                 <div className="services_grid">
                   <div className="services_grid_img">
@@ -126,9 +123,9 @@ wow.init();
                   <div className="services_grid_text">
                     <h4>Graphic Design</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We focus on creating aesthetics that maximize usability & serve a purpose to your brand.
+
+
                     </p>
                   </div>
                 </div>
@@ -144,9 +141,9 @@ wow.init();
                   <div className="services_grid_text">
                     <h4>Web Development</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We make a website that looks great, work fast and perform well with a seamless user experience.
+
+
                     </p>
                   </div>
                 </div>
@@ -162,9 +159,9 @@ wow.init();
                   <div className="services_grid_text">
                     <h4>App Development</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      With the mobile web revolution at it’s peak We provide you a customized app with user centered approach.
+
+
                     </p>
                   </div>
                 </div>
@@ -180,10 +177,7 @@ wow.init();
                   <div className="services_grid_text">
                     <h4>UI/UX</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
-                    </p>
+                      We centre on creating user interface that helps users easily interact with your digital product.  </p>
                   </div>
                 </div>
               </div>
@@ -198,10 +192,7 @@ wow.init();
                   <div className="services_grid_text">
                     <h4 >Game Development</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
-                    </p>
+                      To help you turn your vision into reality we build amazing games & maximize reach.</p>
                   </div>
                 </div>
               </div>
@@ -216,28 +207,26 @@ wow.init();
                   <div className="services_grid_text">
                     <h4>Testing</h4>
                     <p  >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
-                    </p>
+                      We evaluate your brand’s product so that it satisfies your specified requirements. </p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
           </div>
         </section>
         <section className=" portfolio">
           <div className="container">
             <div className="headings_outer text-center space">
               <h6 className="sub_heading">Services</h6>
-              <h2 className="common_heading">Services we Provide</h2>
+              <h2 className="common_heading">Some brands that we’ve helped
+              </h2>
             </div>
           </div>
 
           <Portfolio />
         </section>
-        <Steps/>
+        <Steps />
         <section className="testimonial">
           <div className="container">
             <div className="headings_outer text-center space">
@@ -251,30 +240,30 @@ wow.init();
         <section className="Blogs space animate__animated animate__bounce">
           <div className="container">
             <div className="headings_outer text-center ">
-              <h6 className="sub_heading">Happy Clients</h6>
-              <h2 className="common_heading">More than 500+ happy Clients</h2>
+              <h6 className="sub_heading">Latest Blogs</h6>
+              <h2 className="common_heading">Grow your knowledge with us  </h2>
             </div>
           </div>
           <div className="container">
-        <div className="row">
-       
-     
-   <Blogs  blogs={blogdata}/>
-   
-     
-     
-        </div>
-        <div className="global_btn">
-            <Link to="/blogs">
-              View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </Link>
+            <div className="row">
+
+
+              <Blogs blogs={blogdata} />
+
+
+
+            </div>
+            <div className="global_btn">
+              <Link to="/blogs">
+                View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </div>
           </div>
-      </div>      
-          
-         
+
+
         </section>
         <section className="contact_us space">
-        <Homecontact/>
+          <Homecontact />
         </section>
       </div>
 

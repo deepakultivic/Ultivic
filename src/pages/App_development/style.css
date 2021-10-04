@@ -10,6 +10,9 @@
 div#androidApp .row {
     flex-direction: row-reverse;
 }
+.app_dev_inner .row{
+align-items: center;
+}
 @media(max-width:767px){
     .app_dev::before{
       position: absolute;

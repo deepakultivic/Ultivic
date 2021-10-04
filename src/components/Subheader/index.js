@@ -1,11 +1,13 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 function Subheader(props) {
+    const location = useLocation();
     return (
         <div>
             <section className={props.clases} >
                 <div className="container">
                 <h2 className="subhead">
-                    {props.title}
+                   {location.pathname.replace("/","")}
 
                     </h2>
                 </div>
@@ -15,3 +17,4 @@ function Subheader(props) {
 }
 
 export default Subheader
+ 

@@ -1,6 +1,6 @@
 import React from "react";
 import Techbox from "./Techbox";
-import {tbdata} from "./pdata";
+import { tbdata } from "./pdata";
 
 function Technology() {
   return (
@@ -13,16 +13,10 @@ function Technology() {
                 <div className="techn4ology_cont">
                   <div className="headings_outer ">
                     <h6 className="sub_heading ">Technologies</h6>
-                    <h2 className="common_heading">Lorem ipsum dolor sit</h2>
+                    <h2 className="common_heading">Why you should choose ultivic</h2>
                   </div>
                   <p className="tech_info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                    pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Ut elit tellus, luctus nec
-                    ullamcorper mattis, pulvinar dapibus leo.
+                    Ultivic have a highly skilled team of web developers who have vast knowledge of the technologies that are used in web development whether it’s content management system, custom web software development or any other latest technology. We believe that access to a stellar web development team can be the difference maker that you require for your digital success.
                   </p>
                 </div>
               </div>

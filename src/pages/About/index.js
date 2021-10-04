@@ -13,16 +13,7 @@ import { Link } from 'react-router-dom'
 
 
 function About() {
-  // const Aboutdata=[
-  //   {
-  //     imgsrc:"/assets/about/mision.jpg",
-  //     about_exp :"“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.”",
-  //     sub_heading:"We are global",
-  //     common_heading:"Lorem ipsum sit dolloar",
-  //     about_info:"Nulla tincidunt nulla sit amet sem vehicula, nec malesuada nulla lobortis. Mauris imperdiet nulla nec nibh pharetra a molestie. In accumsan elit est a tincidunt dignissim. Vivamus eu dictum lorem. Aenean vulputate sem a ex tempor ultrices. Sed egestas elit sed dapibus ultrices. Pellentesque at libero libero.",
-
-  //   },
-  // ];
+ 
   var settings = {
     dots: false,
     infinite: true,
@@ -49,6 +40,7 @@ function About() {
       // instead of a settings object
     ],
   };
+
   return (
     <div>
       <Header />
@@ -148,12 +140,13 @@ function About() {
                   <div className="about_cont_box">
                     <div className="headings_outer ">
                       <h6 className="sub_heading">Our Achievements</h6>
-                      <h2 className="common_heading">Lorem Ipsum Sit dollar</h2>
+                      <h2 className="common_heading">What we’ve achieved
+                      </h2>
                     </div>
                     <p className="about_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We strive for excellence. Our motivation for every project rests on our desire to deliver the best experience possible through a consistent product line and innovative technologies. Here are some of our many achievements.
+
+
                     </p>
                   </div>
                 </div>
@@ -222,13 +215,9 @@ function About() {
               <div className="col-lg-9">
                 <div className="about_cont_box">
                   <p className="about_info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                    pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Ut elit tellus, luctus nec
-                    ullamcorper mattis, pulvinar dapibus leo.
+                    We have a team of talented highly skilled and creative professionals who are looking to get out and make a difference in the world. That is our vision. We aim for growth, not just numbers. Here are some of our many team members.
+
+
                   </p>
                 </div>
               </div>

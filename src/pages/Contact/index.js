@@ -26,9 +26,9 @@ function Contact() {
     // alert('testing');
     setSubmitted(true);
     if (handleValidate(input)) {
-     
+
       setInputs({ fullname: "", email: "", tel: "", subject: "", description: "" })
-      
+
     }
   };
   function onChange(event) {
@@ -81,7 +81,7 @@ function Contact() {
       errors["tel"] = "Please enter mobile number";
     }
 
-   
+
     if (!input["description"]) {
       isValid = false;
       errors["description"] = "Please enter cover message ";
@@ -110,7 +110,7 @@ function Contact() {
                 </p>
                 <div className="map">
                   <iframe
-                   
+
                     src="https://maps.google.com/maps?q=Ultivic%20Technologies%2C%20Office-09%2C%20Floor-10%2C%20TDI%20Business%20Center%2C%20Sector%20118%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140308&amp;t=m&amp;z=11&amp;output=embed&amp;iwloc=near"
                     title="Ultivic Technologies, Office-09, Floor-10, TDI Business Center, Sector 118, Sahibzada Ajit Singh Nagar, Punjab 140308"
                     aria-label="Ultivic Technologies, Office-09, Floor-10, TDI Business Center, Sector 118, Sahibzada Ajit Singh Nagar, Punjab 140308"
@@ -148,8 +148,9 @@ function Contact() {
                   </h2>
                 </div>
                 <p className="form_info">
-                  Please complete the details below and then click on Submit and
-                  we’ll be in contact
+                  Discuss your ideas with us to make it reality.
+
+
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
