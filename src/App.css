@@ -110,7 +110,7 @@ section.grid.gallery {
 }
 
 section.grid.gallery img {
-  height: 350px;
+  height: 250px;
   object-fit: cover;
   width: 100%;
 }
