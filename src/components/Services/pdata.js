@@ -64,12 +64,12 @@ const tbdata = [
 
 const gridgallery =[
     
-    { img:"/assets/services/kravmaga.png"},
-       { img:"/assets/services/fitzulatest.png"},
-       { img:"/assets/services/kravmaga.png"},
-       { img:"/assets/services/lalu_latest.png"},
-       { img:'/assets/services/fitzulatest.png'},
-       { img:"/assets/services/kravmaga.png"},
+    { img:"/assets/portfolio/ultivic-01.png"},
+       { img:"/assets/portfolio/ultivic-02.png"},
+       { img:"/assets/portfolio/ultivic-03.png"},
+       { img:"/assets/portfolio/ultivic-04.png"},
+       { img:'/assets/portfolio/ultivic-05.png'},
+       { img:"/assets/portfolio/ultivic-06.png"},
     
 ]
 

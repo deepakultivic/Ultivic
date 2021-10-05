@@ -17,6 +17,7 @@ import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Blogtemplate from "./pages/Template/Blogtemplate";
 import Jobs from "./pages/Template/Jobs";
+import Landing from "./pages/Landing";
 
 
 function App(props) {
@@ -37,6 +38,7 @@ function App(props) {
         <Route path="/contact" exact component={Contact} />
         <Route path="/blog/:slug" exact component={Blogtemplate} />
         <Route path="/carrer/:jobTitle" exact component={Jobs} />
+        <Route path="/landing" exact component={Landing} />
       </Switch>
       
     </BrowserRouter>

@@ -103,8 +103,10 @@ section.grid.gallery {
 }
 /* grid galleryt */
 .grdi_space {
-  margin: 10px;
-
+  margin: 4px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1px;
 }
 
 section.grid.gallery img {
@@ -113,7 +115,9 @@ section.grid.gallery img {
   width: 100%;
 }
 
-
+.graphics_img {
+  margin-bottom: 35px;
+}
 
 
 
