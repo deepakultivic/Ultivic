@@ -72,31 +72,31 @@ function Home() {
                     <div className="progress">
                       <div
                         className="progress-bar progress-bar-striped bg-danger"
-                        style={{ width: "80%" }}
+                        style={{ width: "95%" }}
                       >
-                        80%
+                        95%
                       </div>
                     </div>
                   </div>
                   <div className="progress_bars">
-                    <h4 className="bar_heading">Web Development</h4>
+                    <h4 className="bar_heading">App Development</h4>
                     <div className="progress">
                       <div
                         className="progress-bar progress-bar-striped bg-danger"
-                        style={{ width: "80%" }}
+                        style={{ width: "92%" }}
                       >
-                        80%
+                        92%
                       </div>
                     </div>
                   </div>
                   <div className="progress_bars">
-                    <h4 className="bar_heading">Web Development</h4>
+                    <h4 className="bar_heading">Graphics Design</h4>
                     <div className="progress">
                       <div
                         className="progress-bar progress-bar-striped bg-danger"
-                        style={{ width: "80%" }}
+                        style={{ width: "88%" }}
                       >
-                        80%
+                        88%
                       </div>
                     </div>
                   </div>

@@ -44,7 +44,7 @@ function About() {
   return (
     <div>
       <Header />
-      <Subheader title="About" clases="about" />
+      <Subheader title="About" clases="about" shortdesc="We are Creative And Professional Agency"/>
       <div className="inner_wrap">
         <section className="inner_about space ">
           <div className="container">

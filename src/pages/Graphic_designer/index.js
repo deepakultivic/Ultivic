@@ -14,7 +14,7 @@ function Graphic() {
   return (
     <div>
       <Header />
-      <Subheader title="Graphic Design" clases="graphic" />
+      <Subheader title="Graphic Design" clases="graphic" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
       <Aboutglobal
         imgsrc={content[1].imgsrc}
         about_exp={content[1].about_exp}

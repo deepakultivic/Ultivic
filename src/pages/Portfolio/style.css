@@ -10,8 +10,8 @@
 }
 .image {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 170px;
+    object-fit: fill;
 }
 .tagsfilter {
     margin-bottom: 41px;
@@ -40,5 +40,8 @@ button.active:focus, button.filt_button:focus{
     button.filt_button {
         padding: 5px 3px;
         
+}
+.image {
+    height: unset;
 }
 }

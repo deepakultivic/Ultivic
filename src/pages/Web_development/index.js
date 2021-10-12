@@ -14,7 +14,7 @@ function Web() {
     return (
         <div>
             <Header />
-            <Subheader title="Web Development" clases="web" />
+            <Subheader title="Web Development" clases="web" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
             <Aboutglobal
                 imgsrc={content[2].imgsrc}
                 about_exp={content[2].about_exp}

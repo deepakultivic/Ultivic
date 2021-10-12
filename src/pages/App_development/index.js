@@ -16,7 +16,7 @@ function App_dev() {
     return (
         <div>
             <Header />
-            <Subheader title="App Development   " clases="app_dev"/>
+            <Subheader title="App Development" clases="app_dev" shortdesc="Application development is the process of creating a computer program"/>
            <div className="app_dev_inner">
            <Aboutglobal
                 imgsrc={content[3].imgsrc}

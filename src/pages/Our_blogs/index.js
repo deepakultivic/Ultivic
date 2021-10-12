@@ -22,7 +22,7 @@ function Our_blogs() {
     return (
         <div>
             <Header/>
-            <Subheader title="Our Blogs" clases="blogs_sec"/>
+            <Subheader title="Our Blogs" clases="blogs_sec" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
             <section className="Blogs space animate__animated animate__bounce">
           <div className="container">
         <div className="row">

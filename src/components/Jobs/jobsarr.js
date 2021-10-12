@@ -1,33 +1,51 @@
 const jobsarr =[
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"Magento Developer",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"Dotnet+ReactJS Developer",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"Magento Developer",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"Data Entry",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"Android Developer",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
     {
-        imgurl:"/assets/home/blog-1.jpg",
+        
         jobTitle:"IOS Developer",
-        joblink:"More Details"
+        joblink:"Apply Now",
+        joblocation:"Mohali",
+        jobdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        updatedtime:'2h'
     },
 ]
 export default jobsarr;

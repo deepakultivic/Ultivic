@@ -76,10 +76,21 @@ section.grid.gallery {
 .subhead {
   display: flex;
   align-items: center;
-  height: 500px;
+  
   color: #fff;
   font-size: 50px;
   text-transform: capitalize;
+}
+.subhead_outer {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+.subhead_outer p{
+  font-weight:500;
+  font-size:16px;
+  color:#fff;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -110,8 +121,8 @@ section.grid.gallery {
 }
 
 section.grid.gallery img {
-  height: 250px;
-  object-fit: cover;
+  height: 170px;
+  object-fit: fill;
   width: 100%;
 }
 
@@ -146,9 +157,7 @@ section.grid.gallery img {
 
 }
 @media(max-width:991px){
-  .subhead{
-    height: 380px;
-  }
+
   .about_counter .main_count{
     padding: 20px 30px;
   }
@@ -165,9 +174,7 @@ h2.subhead {
 }
 }
 @media screen and (max-width:1199px){
-  .subhead{
-    bottom: -130px;
-  }
+ 
   section.inner_about.inner_mision {
     padding-bottom: 185px;
   }
@@ -190,10 +197,12 @@ h2.subhead {
   section.inner_about.inner_mision {
     padding-bottom: 40px;
   }
+  section.grid.gallery img {
+    height: unset;
+}
 }
 @media screen and (max-width:575px){
   .subhead{
     font-size: 28px !important;
-    height: 320px;
   }
 }

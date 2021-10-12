@@ -13,6 +13,7 @@ const images = [
   { id: "8", imageName: "ultivic-08.png", tag: "web" },
   { id: "9", imageName: "ultivic-09.png", tag: "web" },
   { id: "10", imageName: "ultivic-10.png", tag: "web" },
+  { id: "11", imageName: "ultivic-11.png", tag: "web" },
 ];
 function Filter() {
   const [tag, setTag] = useState("all");

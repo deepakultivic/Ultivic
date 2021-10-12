@@ -12,7 +12,7 @@ function Portfolio() {
     return (
         <div>
             <Header/>
-            <Subheader title="Portfolio" clases="portfolios"/>
+            <Subheader title="Portfolio" clases="portfolios" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
             <Aboutglobal
          imgsrc={content[0].imgsrc}
          about_exp  = {content[0].about_exp}                  
