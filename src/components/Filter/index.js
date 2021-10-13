@@ -28,12 +28,7 @@ function Filter() {
       setFilterimages(defaultimages)
     }
     someFunc();
-  
-      tag == "all"
-        ? setFilterimages(images)
-        : setFilterimages(images.filter((image) => image.tag == tag));   
-   
-  },[tag]);
+  },[]);
   function handleclick () {
     console.log(filterimages)
      setinitial(previnitial=>initial+3)
