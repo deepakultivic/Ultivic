@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "./style.css";
 function Testimonials() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
