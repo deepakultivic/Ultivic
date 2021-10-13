@@ -23,7 +23,10 @@ function Filter() {
       let defaultimages = [
         { id: "1", imageName: "ultivic-01.png", tag: "web" },
         { id: "2", imageName: "ultivic-02.png", tag: "web" },
-        { id: "3", imageName: "ultivic-03.png", tag: "android" }]
+        { id: "3", imageName: "ultivic-03.png", tag: "android" },
+        { id: "4", imageName: "ultivic-04.png", tag: "ios" },
+        { id: "5", imageName: "ultivic-05.png", tag: "ios" },
+        { id: "6", imageName: "ultivic-06.png", tag: "web" }]
       console.log("Function being run after/on mount")
       setFilterimages(defaultimages)
     }
