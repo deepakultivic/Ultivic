@@ -16,7 +16,7 @@ const images = [
 function Filter() {
   const [tag, setTag] = useState("all");
   const [filterimages, setFilterimages] = useState([]);
-  const [initial, setinitial] = useState(3);
+  const [initial, setinitial] = useState(6);
   const [incremented, setincremented] = useState(0);
   useEffect(() => {
     const someFunc = () => {
