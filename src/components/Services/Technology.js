@@ -7,7 +7,7 @@ function Technology() {
     <div>
       <div className="technology ">
         <div className="container">
-          <div className="inner_tech comn_half_bg">
+          <div className="inner_tech ">
             <div className="row align-items-center">
               <div className="col-lg-5">
                 <div className="techn4ology_cont">

@@ -204,7 +204,7 @@ function About() {
         <section className="inner_about space ">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-3">
+              <div className="col-lg-4 col-xl-3">
                 <div className="about_cont_box">
                   <div className="headings_outer ">
                     <h6 className="sub_heading">Our Team Members</h6>
@@ -224,51 +224,91 @@ function About() {
             </div>
             <div className="team_cont">
               <div className="row ">
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-xl-3 col-md-6">
                   <div className="team_box">
+                  <div className="team_head">
                     <div className="team_img">
                       <Link to="#">
                         <img src="/assets/about/1.jpg" alt="" />
                       </Link>
                     </div>
-                    <span className="sub_head_team">Co-Founder / Partner</span>
                     <h5 className="team_heading">Harmanpreet Kaur</h5>
+                    <a className="mail_text" href="mailto:harmanpreet.kaur@gmail.com">harmanpreet.kaur@gmail.com</a>
+                    <ul className="team_links">
+                        <li><a href=""><i className="fa fa-skype"></i></a></li>
+                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                    </ul>
+                   </div>
                     <p>
-                      The creators of the theme are happy with the response and
-                      have vowed to create further themes exploring the same
-                      concepts
+                    <span className="sub_head_team">Co-Founder / Partner</span>
+                      
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-xl-3 col-md-6">
                   <div className="team_box">
+                  <div className="team_head">
                     <div className="team_img">
                       <Link to="#">
                         <img src="/assets/about/rakshak.jpg" alt="" />
                       </Link>
                     </div>
-                    <span className="sub_head_team">Co-Founder / Partner</span>
                     <h5 className="team_heading">Rakshak Gaind</h5>
+                    <a className="mail_text" href="mailto:rakshakgaind02@gmail.com">rakshakgaind02@gmail.com</a>
+                     <ul className="team_links">
+                        <li><a href=""><i className="fa fa-skype"></i></a></li>
+                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    </div>
                     <p>
-                      The creators of the theme are happy with the response and
-                      have vowed to create further themes exploring the same
-                      concepts
+                    <span className="sub_head_team">Co-Founder / Partner</span>
+                      
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-xl-3 col-md-6">
                   <div className="team_box">
+                  <div className="team_head">
                     <div className="team_img">
                       <Link to="#">
-                        <img src="/assets/about/harpreet.jpg" alt="" />
+                        <img src="/assets/about/savita.png" alt="" />
                       </Link>
                     </div>
-                    <span className="sub_head_team">Lead Developer</span>
-                    <h5 className="team_heading">Harmanpreet Kaur</h5>
+                    <h5 className="team_heading">Savita Rawat</h5>
+                    <a className="mail_text" href="mailto:savita.rawat@ultivic.com">savita.rawat@ultivic.com</a>
+                     <ul className="team_links">
+                        <li><a href=""><i className="fa fa-skype"></i></a></li>
+                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    </div>
                     <p>
-                      The creators of the theme are happy with the response and
-                      have vowed to create further themes exploring the same
-                      concepts
+                    <span className="sub_head_team">Lead Developer</span>
+                     
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-xl-3 col-md-6">
+                  <div className="team_box">
+                   <div className="team_head">
+                   <div className="team_img">
+                      <Link to="#">
+                        <img src="/assets/about/ashish.png" alt="" />
+                      </Link>
+                    </div>
+                    <h5 className="team_heading">Ashish David</h5>
+                    <a className="mail_text" href="mailto:ashish.david@ultivic.com">ashish.david@ultivic.com</a>
+                     <ul className="team_links">
+                        <li><a href=""><i className="fa fa-skype"></i></a></li>
+                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                    </ul>
+                   </div>
+                    <p>
+                    <span className="sub_head_team">Team Lead Mobile</span>
+                     
                     </p>
                   </div>
                 </div>

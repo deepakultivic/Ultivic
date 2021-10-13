@@ -64,7 +64,9 @@ function Filter() {
                 {/* {image.imageName} */}
               </div>
             ))}
-        
+          {/* <div className="show_more">
+          <button onClick={handleclick}>more</button>;
+          </div> */}
         </div>
         </SRLWrapper>
       </div>

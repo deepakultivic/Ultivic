@@ -1,11 +1,14 @@
 body{
   font-size: 14px;
+ 
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+p{
+  color: #8f8faf;
+}
 h1,
 h2,
 h3,

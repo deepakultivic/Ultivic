@@ -5,7 +5,7 @@ function Techbox(props) {
     return (
         <>
 
-            <div className="col-md-6 extra_space">
+            <div className="col-md-6 extra_space">  
                 <div className="technology_box_sec">
                     <div className="tech_box_img">
                         <img src={props.textimgsrc} alt="" />

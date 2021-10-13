@@ -26,7 +26,9 @@
     z-index: 1;
     position: relative;
 }
-
+.foot_info p {
+    color: #fff;
+}
 .foot_inner h2 a {
     color: #fff;
     font-size: 30px;

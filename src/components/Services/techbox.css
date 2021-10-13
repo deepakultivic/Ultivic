@@ -5,18 +5,28 @@
   padding: 50px;
 }
 .technology_box_sec {
-  padding: 20px 20px 20px 20px;
-  background-color: #ce2128;
-  border-radius: 20px 0px 20px 20px;
-  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 29%);
-  color: #fff;
-  text-align: center;
+  box-shadow: 0 15px 50px #ececf0;
+  padding: 35px 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: .3s;
+ 
 }
 .technology_box_sec h5 {
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.technology_box_sec p{
+   color: #8f8faf;
 }
 .technology_box_sec .tech_box_img img {
   width: 80px;
+}
+.tech_box_img {
+  background: #f7f7fc;
+  display: inline-block;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
