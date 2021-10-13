@@ -3,9 +3,6 @@ import { SRLWrapper } from "simple-react-lightbox";
 import { Link } from 'react-router-dom'
 
 const images = [
-  { id: "4", imageName: "ultivic-04.png", tag: "ios" },
-  { id: "5", imageName: "ultivic-05.png", tag: "ios" },
-  { id: "6", imageName: "ultivic-06.png", tag: "web" },
   { id: "7", imageName: "ultivic-07.png", tag: "android" },
   { id: "8", imageName: "ultivic-08.png", tag: "web" },
   { id: "9", imageName: "ultivic-09.png", tag: "web" },
