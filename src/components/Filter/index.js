@@ -3,9 +3,6 @@ import { SRLWrapper } from "simple-react-lightbox";
 import { Link } from 'react-router-dom'
 
 const images = [
-  { id: "1", imageName: "ultivic-01.png", tag: "web" },
-  { id: "2", imageName: "ultivic-02.png", tag: "web" },
-  { id: "3", imageName: "ultivic-03.png", tag: "android" },
   { id: "4", imageName: "ultivic-04.png", tag: "ios" },
   { id: "5", imageName: "ultivic-05.png", tag: "ios" },
   { id: "6", imageName: "ultivic-06.png", tag: "web" },
@@ -14,15 +11,37 @@ const images = [
   { id: "9", imageName: "ultivic-09.png", tag: "web" },
   { id: "10", imageName: "ultivic-10.png", tag: "web" },
   { id: "11", imageName: "ultivic-11.png", tag: "web" },
+  { id: "12", imageName: "ultivic-11.png", tag: "web" },
 ];
 function Filter() {
   const [tag, setTag] = useState("all");
   const [filterimages, setFilterimages] = useState([]);
+  const [initial, setinitial] = useState(3);
+  const [incremented, setincremented] = useState(0);
   useEffect(() => {
-    tag == "all"
-      ? setFilterimages(images)
-      : setFilterimages(images.filter((image) => image.tag == tag));   
-  }, [tag]);
+    const someFunc = () => {
+      let defaultimages = [
+        { id: "1", imageName: "ultivic-01.png", tag: "web" },
+        { id: "2", imageName: "ultivic-02.png", tag: "web" },
+        { id: "3", imageName: "ultivic-03.png", tag: "android" }]
+      console.log("Function being run after/on mount")
+      setFilterimages(defaultimages)
+    }
+    someFunc();
+  
+      tag == "all"
+        ? setFilterimages(images)
+        : setFilterimages(images.filter((image) => image.tag == tag));   
+   
+  },[tag]);
+  function handleclick () {
+    console.log(filterimages)
+     setinitial(previnitial=>initial+3)
+     for(let k=incremented; k<initial; k++){
+      setFilterimages(filterimages => ([...filterimages, images[k]]));
+     }
+     setincremented(incremented=>initial)
+  }
   return (
     <div className="container">
       <div className="filter_inner">
@@ -51,8 +70,8 @@ function Filter() {
         <SRLWrapper>
         <div className="row">
          
-            {filterimages.map((image) => (
-              <div key={image.id} className="image-card col-md-6 col-lg-4">
+            {filterimages.map((image, index) => (
+              <div key={index} className="image-card col-md-6 col-lg-4">
                 <Link to={`/assets/portfolio/${image.imageName}`}>
                   <img
                     className="image"
@@ -61,13 +80,17 @@ function Filter() {
                   />
               </Link>
 
-                {/* {image.imageName} */}
+                
               </div>
             ))}
-          {/* <div className="show_more">
-          <button onClick={handleclick}>more</button>;
-          </div> */}
+          
+      
         </div>
+        {incremented != images.length && 
+                <div className="show_more global_btn mt-5">
+                <a onClick={handleclick}>more</a>
+                </div>
+            }
         </SRLWrapper>
       </div>
     </div>
@@ -79,7 +102,7 @@ const TagButton = ({ name, handleSetTag, tagActive }) => {
       className={`tag ${tagActive ? "active" : "filt_button"}`}
       onClick={() => handleSetTag(name)}
     >
-      {" "}
+   
       {name.toUpperCase()}
     </button>
   );
