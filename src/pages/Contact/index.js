@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import "./style.css";
 import { Link } from 'react-router-dom'
-
+import axios from "axios";
 
 
 function Contact() {
@@ -26,9 +26,23 @@ function Contact() {
     // alert('testing');
     setSubmitted(true);
     if (handleValidate(input)) {
-
+      setSubmitted(false);
       setInputs({ fullname: "", email: "", tel: "", subject: "", description: "" })
-
+            let headers = {
+        'Content-Type': 'application/json'
+      }
+      let contactData ={
+        name :fullname,
+        email: email,
+        tel: tel,
+        subject : subject,
+        description :description,
+      }
+      axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
+        .then((response)=>{
+            const homeCtc = response.data.data;
+            console.log('CONTACT DATA',homeCtc)
+        })
     }
   };
   function onChange(event) {

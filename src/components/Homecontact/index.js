@@ -1,6 +1,6 @@
 import React, {useState,  useEffect} from "react";
 import { Link } from 'react-router-dom'
-
+import axios from "axios";
 import "./style.css";
 function Homecontact() {
   const [input, setInput] = useState({
@@ -19,12 +19,28 @@ useEffect(() => {
 const handleSubmit = (e) => {
   e.preventDefault()
   
+ 
   setSubmitted(true);
-
   if(handleValidate(input)){
       setInput({name:"", email:"", desc:""})
+      setSubmitted(false);
+      
+      let headers = {
+        'Content-Type': 'application/json'
+      }
+      let contactData ={
+        name :name,
+        email: email,
+        desc: desc
+      }
+      axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
+        .then((response)=>{
+            const homeCtc = response.data.data;
+            console.log('CONTACT DATA',homeCtc)
+        })
   }
 };
+
 
 function onChange (event){
   setInput({...input, [event.target.name]:event.target.value})

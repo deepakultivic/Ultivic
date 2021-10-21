@@ -161,10 +161,7 @@ section.inner_about.inner_mision {
   border-radius: 50%;
   object-fit: cover;
 }
-.team_box:hover .team_img::after {
-  border-color: #61d9ff;
-  transition: ease all .5s;
-}
+
 .team_box {
   transition: ease all .5s;
   box-shadow: 0px 0px 9px rgba(0,0,0,10%);
@@ -257,19 +254,7 @@ span.sub_head_team {
   position: relative;
 }
 
-.team_img::after {
-  width: 145px;
-  height: 145px;
-  margin: auto;
-  content: "";
-  position: absolute;
-  border: 2px solid #fdffff;
-  border-radius: 50%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
+
 .about{
   background-image: url('../../assets/about/Ultivic_about.png');
 background-size: cover;

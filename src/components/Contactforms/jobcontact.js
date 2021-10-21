@@ -1,5 +1,5 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
-
 function Jobcontact() {
   const [input, setInputs] = useState({
     name: "",
@@ -20,14 +20,30 @@ function Jobcontact() {
    
     setSubmitted(true);
     if(handleValidate(input)){
-     
+      setSubmitted(false);
         setInputs({name:"", email:"", tel:"", desc:"", file:""})
+        const headers ={
+          'Content-Type': 'application/json'
+        }
+        let myblogForm = {
+          name:name,
+          email:email,
+          tel:tel,
+          desc:desc,
+          file:file
+        }
+        axios.post('https://ums.ultivic.com/api/development/job-form',myblogForm,headers)
+        .then((response)=>{
+            const myjobs = response.data.data;
+            console.log(myjobs);
+        })
+
     }
   };
 
   function onChange(event) {
         setInputs({...input,[event.target.name]:event.target.value})
-        console.log(event.target.value)
+        // console.log(event.target.value)
   }
 const handleValidate =(input) => {
     console.log(input)
@@ -64,7 +80,7 @@ if (typeof input["tel"] !== "undefined") {
         if (!pattern.test(input["tel"])) {
           isValid = false;
           errors["tel"] = "Please enter valid tel number.";
-        } else if (input["tel"].length != 10) {
+        } else if (input["tel"].length !== 10) {
           isValid = false;
           errors["tel"] = "Please enter valid tel number.";
         }

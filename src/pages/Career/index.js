@@ -3,11 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import Foot from "../../components/Foot";
-import Aboutglobal from '../../components/Aboutglobal'
-import content from '../../components/Aboutglobal/content'
-import Technology from "../../components/Services/Technology";
 import Jobs from "../../components/Jobs/jobscontent"
-import jobsarr from "../../components/Jobs/jobsarr"
 import "./style.css";
 
 function Career() {

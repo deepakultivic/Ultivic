@@ -15,23 +15,42 @@
 .tagsfilter {
     margin-bottom: 41px;
 }
-button.active {
-    background: #ce2128;
-    margin: 0px 10px;
-    padding: 5px 25px;
-    color: #fff;
-    border: transparent;
-}
-button.filt_button {
+
+
+button.Inactive {
     background: transparent;
-    margin: 0px 10px;
-    padding: 5px 25px;
-    color: #000;
     border: transparent;
+    padding: 10px;
+    margin: 0px 10px;
+    outline: unset;
 }
-button.active:focus, button.filt_button:focus{
-   outline: none;
+button.Active:focus {
+    outline: unset;
 }
+button.cm_btn {
+    color: #000;
+    border: 2px solid #ce2128;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 35px;
+    background: transparent;
+    padding: 10px 20px;
+    outline: unset;
+}
+button.Active {
+    background: #ce2128;
+    border: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    outline: unset;
+    }
+    .hide {
+        display: none;
+    }
+    .image-card img {
+        height: 168px;
+        object-fit: fill;
+    }
 @media screen and (max-width:767px){
     .filter_inner {
         margin-bottom: 40px;

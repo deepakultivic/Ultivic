@@ -1,80 +1,77 @@
-.career{
-    background-image: url('../../assets/Career/career_bg.png');
+.career {
+  background-image: url("../../assets/Career/career_bg.png");
   background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-  }
- 
-
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .job_img img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin: 0;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 0;
 }
-
-h3.job_heading{
-    flex-grow: 1;
+h3.job_heading {
+  flex-grow: 1;
 }
-
-h3.job_heading a{
-    color: #181b31;
-    font-size: 14px;
-    font-weight: 600;
+h3.job_heading a {
+  color: #181b31;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
-.jobs:hover a{
-    color: #ce2128;
+.jobs:hover a {
+  color: #ce2128;
 }
 .job_head {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
 }
 .jobs .global_btn {
-    text-align: left;
+  text-align: left;
 }
-.jobs:hover {transform: scale(1.1);transition: ease all .5s;}
-
-
-
-
+.jobs:hover {
+  transform: scale(1.1);
+  transition: ease all 0.5s;
+}
 p.job_info {
-    font-size: 13px;
-    margin-bottom: 15px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .jobs {
-    box-shadow: 0 5px 17px 0 rgb(133 34 34 / 13%);
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 7px;
+  box-shadow: 0 5px 17px 0 rgb(133 34 34 / 13%);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
 }
 div.global_btn a {
-    font-size: 12px;
+  font-size: 12px;
 }
 .jobs a {
-    color: #131b1b;
-    font-size: 14px;
-    text-decoration: none;
+  color: #131b1b;
+  font-size: 14px;
+  text-decoration: none;
 }
 .jobs a i {
-    padding-left: 5px;
+  padding-left: 5px;
 }
-@media screen and (max-width:575px){
-    .jobs {
-        flex-direction: column;
-        text-align: center;
-    }
-    .jobs h3.job_heading a{
-        padding: 10px 0;
-        line-height: 30px;
-        display: block;
-    }
-    .job_img img {
-        width: 100px;
-        height: 100px;
-    }
-    .jobs .global_btn {
-        text-align: center;
-    }
+@media screen and (max-width: 575px) {
+  .jobs {
+    flex-direction: column;
+    text-align: center;
+  }
+  .jobs h3.job_heading a {
+    padding: 10px 0;
+    line-height: 30px;
+    display: block;
+  }
+  .job_img img {
+    width: 100px;
+    height: 100px;
+  }
+  .jobs .global_btn {
+    text-align: center;
+  }
 }

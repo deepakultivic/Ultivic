@@ -6,7 +6,6 @@ import Portfolio from "../../components/Portfolio";
 import Testimonials from "../../components/Testimonials";
 import Blogs from "../../components/Blogs";
 import Homecontact from "../../components/Homecontact";
-import blogdata from "../../components/Blogs/blogdata";
 import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
@@ -17,19 +16,7 @@ function Home() {
     mobile: false,
     live: true
   })
-  // function blogs(val, i){
-  //  return(
-  //   <Blogs 
-  //   key={val.id}
-  //   blog_imgs={val.blog_imgs}
-  //   tittle={val.tittle} 
-  //   description={val.description}
-  //   blog_link={val.blog_link}
-  //   date={val.date}
-  //  />
-  //  )
 
-  // }
   wow.init();
 
   return (
@@ -245,14 +232,14 @@ function Home() {
             </div>
           </div>
           <div className="container">
-            <div className="row">
+         
 
 
-              <Blogs blogs={blogdata} />
+              <Blogs/>
 
 
 
-            </div>
+          
             <div className="global_btn">
               <Link to="/blogs">
                 View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>

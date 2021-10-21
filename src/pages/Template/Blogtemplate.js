@@ -2,52 +2,43 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import blogdata from "../../components/Blogs/blogdata";
-
+import axios from "axios";
 import "./style.css";
 
 function Blogtemplate() {
-  const { slug } = useParams();
+  const { id } = useParams();
   const [myblog, setMyblog] = useState({});
   useEffect(() => {
-    const filter = blogdata.filter((item) => item.slug === slug);
-    setMyblog(filter[0]);
-    console.log(filter[0]);
+    // const filter = blogdata.filter((item) => item.slug === slug);
+    // setMyblog(filter[0]);
+    // console.log(filter[0]);
+    function showBlogs (){
+      axios.get('https://ums.ultivic.com/api/development/blog',{
+        params:{
+          id:id
+        }
+      })
+      .then((response)=>{
+        const myblogTemplate = response.data.data;
+        setMyblog(myblogTemplate);
+      })
+    }
+    showBlogs();
   }, []);
   return (
     <div>
       <Header />
-      <section className="jobtemplate job_outer" style={{backgroundImage: `url(${myblog.blog_imgs})`}}>
+      <section className="jobtemplate job_outer" style={{backgroundImage: `url(${myblog.image})`}}>
        
           <div className="container">
-            <h2 className="subhead">{myblog.tittle}</h2>
+            <h2 className="subhead">{myblog.title}</h2>
           </div>
     
       </section>
       <section className="blog-info space">
         <div className="container">
           <div className="blogsingle">
-            <p>
-              Exercitation photo booth stumptown tote bag Banksy, elit small
-              batch freegan sed. Craft beer elit seitan exercitation, photo
-              booth et 8-bit kale chips proident chillwave deep v laborum.
-              Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami
-              readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean
-              vinegar stumptown yr pop-up artisan.
-            </p>
-            <h3>A wonderful serenity</h3>
-            <p>
-              Meh synth Schlitz, tempor duis single-origin coffee ea next level
-              ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit
-              hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil,
-              flexitarian Truffaut synth art party deep v chillwave. Seitan High
-              Life reprehenderit consectetur cupidatat kogi. Et leggings fanny
-              pack. Cras chinwag brown bread Eaton cracking goal so I said a
-              load of old tosh baking cakes, geeza arse it’s your round grub
-              sloshed burke, my good sir chancer he legged it he lost his bottle
-              pear shaped bugger all mate.
-            </p>
-            <img src="/assets/home/blog-1.jpg" alt="" />    
+         { myblog.description}
           </div>
         </div>
       </section>

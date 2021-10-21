@@ -1,30 +1,43 @@
 import React, {useEffect,useState} from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Jobcontact from '../../components/Contactforms/jobcontact'
-import blogdata from '../../components/Blogs/blogdata'
-import jobsarr from '../../components/Jobs/jobsarr'
+
 
 import './style.css'
+import axios from "axios";
 
 
 function Jobs() {
-  const{jobTitle} =useParams();
-const [myjobs, setMyjobs] = useState({});
-useEffect(() => {
-const filter = jobsarr.filter((item )=> item.jobTitle === jobTitle)
-setMyjobs(filter[0]);
- console.log(filter[0])
+
  
+  var { id } = useParams();
+ 
+const [myjobs, setMyjobs] = useState([]);
+useEffect(() => {
+
+function myJobtem (){
+  axios.get('https://ums.ultivic.com/api/development/job',{
+    params:{
+      id:id
+    }
+  })
+  .then((response)=>{
+    const mysingletempplate = response.data.data
+    console.log(mysingletempplate)
+    setMyjobs(mysingletempplate);
+  })
+}
+myJobtem();
 }, [])
   return (
     <div>
       <Header />
-      <section className="jobtemplate" style={{backgroundImage: `url(${myjobs.imgurl})`}}>
+      <section className="jobtemplate" >
         <h2>
           <div className="container">
-            <h2 className="subhead">{myjobs.jobTitle}</h2>
+            <h2 className="subhead"></h2>
           </div>
         </h2>
       </section>
@@ -32,59 +45,8 @@ setMyjobs(filter[0]);
         <div className="container">
           <h4 className="desctitle">Job Description:</h4>
           <div className="job_content">
-            <ul className="job_desc">
-              <li>
-                Candidate will work in PHP/MySQL/Magento. Job responsibilities
-                include laying out the architecture / base for Magento based
-                websites, full lifecycle application development including
-                analysis, design and coding.
-              </li>
-              <li>
-                Candidate will be required to create and maintain technical
-                documentation. Candidate will work in a team environment, as
-                well as independently. He is also required to adhere to coding
-                standards and other development processes (using tools like
-                Jira, SVN etc).
-              </li>
-              <li>
-                The candidate should be able to work without supervision to
-                complete project task and must possess initiative to address
-                issues and opportunities.
-              </li>
-              <li>
-                Candidate would be required to lead and guide the
-                junior/mid-level developers over their implementations,
-                integrate their works and maintain integrity of application and
-                its architecture
-              </li>
-              <li>
-                Candidate would be required to participate in client calls,
-                gather requirements to be led by him and members working under
-                him, prepare WBS (work breakdown structure), provide estimates
-                and cover deliveries of assigned modules.
-              </li>
-            </ul>
-            <ul className="designation_text">
-              <li>
-                Job Title: <span>Magento Developer</span>
-              </li>
-              <li>
-                Total Openings : <span>10</span>
-              </li>
-              <li>
-                Experience : <span>2-10 years</span>
-              </li>
-              <li>
-                Skill Set :{" "}
-                <span>
-                  Good knowledge of PHP and MySQL, Magento 1.x (must have) and
-                  Magento 2.x exposure (good to have), Good knowledge of OOPs
-                </span>
-              </li>
-              <li>
-                Joining Period : <span>30 days</span>
-              </li>
-            </ul>
+           
+         <p>{myjobs.description}</p>
            <div className="space">
            <div className="job_contact ">
               <h2>

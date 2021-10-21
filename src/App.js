@@ -36,8 +36,8 @@ function App(props) {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/blog/:slug" exact component={Blogtemplate} />
-        <Route path="/carrer/:jobTitle" exact component={Jobs} />
+        <Route path="/blog/:id" exact component={Blogtemplate} />
+        <Route path="/carrer/:id" exact component={Jobs} />
         <Route path="/landing" exact component={Landing} />
       </Switch>
       
