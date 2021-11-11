@@ -224,7 +224,7 @@ function About() {
             </div>
             <div className="team_cont">
               <div className="row ">
-                <div className="col-lg-4 col-xl-3 col-md-6">
+                <div className="col-lg-4 col-xl-4 col-md-6">
                   <div className="team_box">
                   <div className="team_head">
                     <div className="team_img">
@@ -233,20 +233,20 @@ function About() {
                       </Link>
                     </div>
                     <h5 className="team_heading">Harmanpreet Kaur</h5>
-                    <a className="mail_text" href="mailto:harmanpreet.kaur@gmail.com">harmanpreet.kaur@gmail.com</a>
+                    <p>
+                    <span className="sub_head_team">Co-Founder / Partner</span>
+                      
+                    </p>
+                    <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                     <ul className="team_links">
                         <li><a href=""><i className="fa fa-skype"></i></a></li>
                         <li><a href=""><i className="fa fa-facebook"></i></a></li>
                         <li><a href=""><i className="fa fa-linkedin"></i></a></li>
                     </ul>
                    </div>
-                    <p>
-                    <span className="sub_head_team">Co-Founder / Partner</span>
-                      
-                    </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-xl-3 col-md-6">
+                <div className="col-lg-4 col-xl-4 col-md-6">
                   <div className="team_box">
                   <div className="team_head">
                     <div className="team_img">
@@ -255,20 +255,20 @@ function About() {
                       </Link>
                     </div>
                     <h5 className="team_heading">Rakshak Gaind</h5>
-                    <a className="mail_text" href="mailto:rakshakgaind02@gmail.com">rakshakgaind02@gmail.com</a>
+                    <p>
+                    <span className="sub_head_team">Co-Founder / Partner</span>
+                      
+                    </p>
+                    <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                      <ul className="team_links">
                         <li><a href=""><i className="fa fa-skype"></i></a></li>
                         <li><a href=""><i className="fa fa-facebook"></i></a></li>
                         <li><a href=""><i className="fa fa-linkedin"></i></a></li>
                     </ul>
                     </div>
-                    <p>
-                    <span className="sub_head_team">Co-Founder / Partner</span>
-                      
-                    </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-xl-3 col-md-6">
+                <div className="col-lg-4 col-xl-4 col-md-6">
                   <div className="team_box">
                   <div className="team_head">
                     <div className="team_img">
@@ -277,41 +277,20 @@ function About() {
                       </Link>
                     </div>
                     <h5 className="team_heading">Savita Rawat</h5>
-                    <a className="mail_text" href="mailto:savita.rawat@ultivic.com">savita.rawat@ultivic.com</a>
-                     <ul className="team_links">
-                        <li><a href=""><i className="fa fa-skype"></i></a></li>
-                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                    </ul>
-                    </div>
                     <p>
                     <span className="sub_head_team">Lead Developer</span>
                      
                     </p>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-xl-3 col-md-6">
-                  <div className="team_box">
-                   <div className="team_head">
-                   <div className="team_img">
-                      <Link to="#">
-                        <img src="/assets/about/ashish.png" alt="" />
-                      </Link>
-                    </div>
-                    <h5 className="team_heading">Ashish David</h5>
-                    <a className="mail_text" href="mailto:ashish.david@ultivic.com">ashish.david@ultivic.com</a>
+                    <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                      <ul className="team_links">
                         <li><a href=""><i className="fa fa-skype"></i></a></li>
                         <li><a href=""><i className="fa fa-facebook"></i></a></li>
                         <li><a href=""><i className="fa fa-linkedin"></i></a></li>
                     </ul>
-                   </div>
-                    <p>
-                    <span className="sub_head_team">Team Lead Mobile</span>
-                     
-                    </p>
+                    </div>
                   </div>
                 </div>
+              
               </div>
             </div>
           </div>

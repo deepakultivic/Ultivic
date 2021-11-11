@@ -61,6 +61,7 @@ p.form_info {
 @media screen and (max-width:991px){
   .contact_form {
     margin: 0;
+    margin-top: 30px;
   }
 }
 

@@ -35,11 +35,13 @@ myJobtem();
     <div>
       <Header />
       <section className="jobtemplate" >
+        <div className="container">
         <h2>
           <div className="container">
-            <h2 className="subhead"></h2>
+            <h2 className="subhead">{myjobs.title}</h2>
           </div>
         </h2>
+        </div>
       </section>
       <section className="jobinfo">
         <div className="container">

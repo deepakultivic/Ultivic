@@ -9,9 +9,7 @@ function Blogtemplate() {
   const { id } = useParams();
   const [myblog, setMyblog] = useState({});
   useEffect(() => {
-    // const filter = blogdata.filter((item) => item.slug === slug);
-    // setMyblog(filter[0]);
-    // console.log(filter[0]);
+
     function showBlogs (){
       axios.get('https://ums.ultivic.com/api/development/blog',{
         params:{

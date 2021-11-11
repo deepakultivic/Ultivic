@@ -181,6 +181,13 @@ h2.subhead {
   section.inner_about.inner_mision {
     padding-bottom: 185px;
   }
+  .subhead_outer {
+    height: 300px;
+}
+h2.subhead {
+  font-size: 32px;
+  margin-top: 85px;
+}
 }
 @media screen and (max-width:991px){
   section.inner_about.inner_mision {

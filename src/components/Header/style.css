@@ -78,9 +78,9 @@ ul.drop_menu li a {
   }
 }
 @media screen and (max-width: 991px) {
-  .navbar .container {
+  /* .navbar .container {
     max-width: 100%;
-  }
+  } */
   .navbar-toggler span.fa.fa-bars {
     color: #fff;
   }

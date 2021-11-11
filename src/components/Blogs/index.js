@@ -28,10 +28,10 @@ console.log(myBogs)
   {ourblog.slice(0, 3).map((curelem, index) => {
           const {title,description,image,id} = curelem;
           return (
-            <div className=" col-lg-4 col-md-6" key={index}>
+            <div className=" col-lg-4 col-sm-6" key={index}>
               <div className="blog_inner">
                 <div className="blog_img">
-                  <Link to={`/blog/${title}`}><img src={image} alt="ultivic blog" /></Link>
+                  <Link to={`/blog/${id}`}><img src={image} alt="ultivic blog" /></Link>
                 </div>
                 <div className="blog_content">
                   <h5>

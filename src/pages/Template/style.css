@@ -29,15 +29,18 @@ h4.desctitle {
     margin-top: 50px;
 }
 section.jobtemplate {
-    background-image: url(../../assets/Career/career_bg.png);
+    background-image: url(../../assets/Career/ultivic12.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     position: relative;
-    min-height: 250px;
+    min-height: 350px;
     display: flex;
     align-items: center;
+}
+section.jobtemplate.job_outer h2 {
+    font-size: 30px;
 }
 section.jobtemplate::after {
     position: absolute;
@@ -46,7 +49,14 @@ section.jobtemplate::after {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(0 0 0 / 35%);
+    background: rgb(0 0 0 / 50%);
+}
+.blog_inner {
+    border-radius: 7px;
+}
+.blog_img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 .job_contact label {
     font-size: 14px;

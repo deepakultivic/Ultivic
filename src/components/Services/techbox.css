@@ -10,7 +10,7 @@
   margin-bottom: 30px;
   cursor: pointer;
   transition: .3s;
- 
+ border-radius: 7px;
 }
 .technology_box_sec h5 {
   margin-bottom: 12px;
