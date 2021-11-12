@@ -1,5 +1,5 @@
 
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -18,13 +18,13 @@ const Item = ({ children, reference }) => {
 const Loader = () => {
     return (
         <div className="w-100 text-center">
-               <p></p><div className="loader1">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+            <p></p><div className="loader1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     )
 }
@@ -99,95 +99,97 @@ function Our_blogs() {
         // Loading function to load data or 
         // fake it using setTimeout;
         const loadData = async () => {
-    
-          // Wait for two second
-          await new Promise((r) => setTimeout(r, 1000));
-    
-          // Toggle loading state
-          setLoading((loading) => !loading);
+
+            // Wait for two second
+            await new Promise((r) => setTimeout(r, 1000));
+
+            // Toggle loading state
+            setLoading((loading) => !loading);
         };
-          
+
         loadData();
-      }, [])
-        
-      // If page is in loading state, display 
-      // loading message. Modify it as per your 
-      // requirement.
-      if (loading) {
-          return   <div className="w-100 text-center my_loader">
-          <p></p><div className="loader1">
-          <div>
-            <img src="/assets/header/logo-white.png" alt="logo" />
-            </div>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    </div>
-    </div>
-      }
-      else{
-    return (
-        <>
-            <Header />
-            <Subheader title="Our Blogs" clases="blogs_sec" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
-            <section className="our_blogs_outer space">
-                <div className="container mx-auto px-4 ">
-                    <div className="row">
+    }, [])
 
-                        {items.map((item, index) =>
-                            index + 1 === items.length ? (
-                                <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
-                                    <Item reference={lastItemRef} >
-                                        <div className="blog_inner_data">
-                                            <div className="blog_img">
-                                                <img src={item.image} alt={`Image ${index}`} className="img-fluid" width="150" height="150" />
-                                            </div>
-                                            <div className="blog_content">
-                                                <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
-                                                <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
-                                                    {dateformat(item.created_at)}</p>
-                                                <p className="blogdesc">
-                                                    {item.description}
-                                                </p>
-                                                <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
-                                            </div>
-                                        </div>
-
-                                    </Item>
-                                </div>
-                            ) : (
-                                <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
-                                    <Item >
-                                        <div className="blog_inner_data">
-                                            <div className="blog_img">
-                                                <img src={item.image} className="img-fluid" width="150" height="150" />
-                                            </div>
-                                            <div className="blog_content">
-                                                <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
-                                                <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
-                                                    {dateformat(item.created_at)}</p>
-                                                <p className="blogdesc">
-                                                    {item.description.slice(0, 120)}
-                                                </p>
-                                                <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
-                                            </div>
-                                        </div>
-
-                                    </Item>
-                                </div>
-                            )
-                        )}
-
-                        {isLoading && <Loader />}
-                    </div>
+    // If page is in loading state, display 
+    // loading message. Modify it as per your 
+    // requirement.
+    if (loading) {
+        return <div className="w-100 text-center my_loader">
+            <p></p><div className="loader1">
+                <div>
+                    <img src="/assets/header/logo-white.png" alt="logo" />
                 </div>
-            </section>
-            <Footer />
-        </>
-    );
-}
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    }
+    else {
+        return (
+            <>
+                <Header />
+                <Subheader title="Our Blogs" clases="blogs_sec" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+                <section className="our_blogs_outer space">
+                    <div className="container mx-auto px-4 ">
+                        <div className="row">
+
+                            {items.map((item, index) =>
+                                index + 1 === items.length ? (
+                                    <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
+                                        <Item reference={lastItemRef} >
+                                            <div className="blog_inner_data">
+                                                <div className="blog_img">
+                                                    <img src={item.image} alt={`Image ${index}`} className="img-fluid" width="150" height="150" />
+                                                </div>
+                                                <div className="blog_content">
+                                                    <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
+                                                    <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
+                                                        {dateformat(item.created_at)}</p>
+                                                        <p className="blogdesc" dangerouslySetInnerHTML={{
+                                                        __html: item.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 120)
+                                                    }} ></p>
+                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                </div>
+                                            </div>
+
+                                        </Item>
+                                    </div>
+                                ) : (
+                                    <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
+                                        <Item >
+                                            <div className="blog_inner_data">
+                                                <div className="blog_img">
+                                                    <img src={item.image} className="img-fluid" width="150" height="150" />
+                                                </div>
+                                                <div className="blog_content">
+                                                    <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
+                                                    <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
+                                                        {dateformat(item.created_at)}</p>
+                                                    <p className="blogdesc" dangerouslySetInnerHTML={{
+                                                        __html: item.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 120)
+                                                    }} >
+                                                        
+                                                    </p>
+                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                </div>
+                                            </div>
+
+                                        </Item>
+                                    </div>
+                                )
+                            )}
+
+                            {isLoading && <Loader />}
+                        </div>
+                    </div>
+                </section>
+                <Footer />
+            </>
+        );
+    }
 }
 
 
