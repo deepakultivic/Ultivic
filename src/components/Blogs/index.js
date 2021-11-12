@@ -37,8 +37,10 @@ console.log(myBogs)
                   <h5>
                     <Link to={`/blog/${id}`}>{title}</Link>
                   </h5>
-                  <p>
-                    {description.slice(0, 75)}
+                  <p dangerouslySetInnerHTML={{
+                    __html: description.replace(/<\/?[^>]+(>|$)/g, "").slice(0,70)
+                  }}>   
+                      
                   </p>
                   <div className="blog_btn">
                     <Link to={`/blog/${id}`}>Continue Reading</Link>

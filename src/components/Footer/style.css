@@ -23,6 +23,9 @@ ul{
   display: inline-block;
   text-decoration: none;
 }
+ul.rent_news li a {
+  text-transform: capitalize;
+}
 
 .footer .footer_sec h5.footer_heading {
   color: #fff;

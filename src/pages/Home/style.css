@@ -1,17 +1,17 @@
 .baner_design{
-    background-image: url('../../assets/home/home-screen-banner.png');
+    background-image: url('../../assets/home/home_bg.png');
     background-size: cover;
-    padding: 20.5em 0;
+    padding: 16em 0;
     background-position: center;
 }
 .bennr_inner h1{
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
 }
 .bennr_inner h1 span{
     display: block;
     color: #CE2128;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 70px;
 }
@@ -85,6 +85,7 @@ section.Blogs {
     background-image: url(../../assets/home/servicesbg-2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .services_grid_text h4 {
@@ -100,6 +101,7 @@ section.Blogs {
 
 .services_grid_text p {
     font-size: 14px;
+    min-height: 100px;
 }
 
 p.about_description {
@@ -135,6 +137,9 @@ section.testimonial{
 @media screen and (max-width:767px){
     .global_btn{
         margin-top:15px;
+    }
+    .services_grid_text p {
+        min-height: unset;
     }
     
 }

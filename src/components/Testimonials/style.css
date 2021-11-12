@@ -12,13 +12,13 @@
 }
 
 .client-image img {
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
 }
 .client-image {
     position: absolute;
-    bottom: -50px;
+    bottom: -29px;
     left: 30px;
 }
 .qoute_icon {

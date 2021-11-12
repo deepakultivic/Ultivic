@@ -1,10 +1,28 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom'
 import blogdata from '../Blogs/blogdata';
+import axios from 'axios';
 import "./style.css";
 
 function Footer() {
+  const [footerBlog, setFooterBlog] = useState([])
 
+
+  useEffect(() => {
+    function myblogData () {
+      axios.get("https://ums.ultivic.com/api/development/blogs?page=1")
+      .then((response)=>{
+        const myBogs = response.data.data.data;
+      
+console.log(myBogs)
+setFooterBlog(myBogs);
+
+      })
+    }
+    myblogData();
+
+  }, [])
   return (
     <div className="footer">
       <div className="footer_sec">
@@ -17,9 +35,9 @@ function Footer() {
             </Link>
             <p className="comp_info">Share your IDEA and We Will Make It Real”. We ensure true worth of your valuable time and money you invested on us by delivering the perfect product</p>
             <ul className="footer_icons">
-              <li><Link to="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></Link></li>
-              <li><Link to="https://www.instagram.com" target="_blank"><i className="fa fa-instagram"></i></Link></li>
-              <li><Link to="https://www.linkedin.com" target="_blank"><i className="fa fa-linkedin"></i></Link></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com" target="_blank"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i className="fa fa-linkedin"></i></a></li>
             </ul>
             </div>
           </div>
@@ -29,10 +47,10 @@ function Footer() {
                 <ul className="rent_news">
                  
                  
-                  {blogdata.map((item,index)=>{
-
+                  {footerBlog.map((item,index)=>{
+                       const {title,id} = item;
                     return(
-                      <li key={index}><Link to={`/blog/${item.slug}`}>{item.tittle}</Link></li>
+                      <li key={index}>  <Link to={`/blog/${id}`}>{title.slice(0, 40)}</Link></li>
                     )
                   })}
                 </ul>
@@ -43,8 +61,8 @@ function Footer() {
                 <h5 className="footer_heading">Get in Touch</h5>
                 <ul className="rent_news cont_info">
                   <li><i className="fa fa-location-arrow"></i><span>Office-09, Floor-10, TDI Business Center, Sector 118, Sahibzada Ajit Singh Nagar, Punjab 140308​</span></li>
-                  <li><Link to="#"><i className="fa fa-phone"></i><span>+91 8360249058​</span></Link></li>
-                  <li><Link to="#"><i className="fa fa-envelope-o"></i><span>harmanpreet.kaur@ultivic.com</span></Link></li>
+                  <li><a href="tel:+91 8360249058​"><i className="fa fa-phone"></i><span>+91 8360249058​</span></a></li>
+                  <li><a href="mailto:hr@ultivic.com"><i className="fa fa-envelope-o"></i><span>hr@ultivic.com</span></a></li>
                  
                 </ul>
             </div>

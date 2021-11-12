@@ -10,14 +10,14 @@ function Foot() {
           <div className="foot_inner">
             <h4>GET IN TOUCH</h4>
             <h2>
-              <Link to="tel:+91 8360249058">+91 8360249058</Link>
+              <a href="tel:+91 8360249058">+91 8360249058</a>
              
             </h2>
             <div className="foot_info">
               <ul>
                 <li>
-                  <Link to="mailto: harmanpreet.kaur@ultivic.com"> <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
-                    harmanpreet.kaur@ultivic.com</Link>
+                  <a href="mailto:hr@ultivic.com"> <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
+                   hr@ultivic.com</a>
             
                 </li>
                 <li>

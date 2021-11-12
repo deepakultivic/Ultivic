@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Link } from 'react-router-dom'
+import { a } from 'react-router-dom'
 
 import "./style.css";
 
@@ -13,7 +13,7 @@ function Portfolio() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrow:true
+    arrow: true
   };
   return (
     <div className="portfolio_outer">
@@ -44,18 +44,9 @@ function Portfolio() {
                     most localised and experienced trainers in the category you
                     choose, ensuring you get the most out of your training.
                   </p>
-                  {/* <div className="views_details">
-                      <div className="views">
-                        <h4>5 Millions</h4>
-                        <p>Downloads</p>
-                      </div>
-                      <div className="rating">
-                        <h4>4.6</h4>
-                        <p>Rating</p>
-                      </div>
-                    </div> */}
+                 
                   <div className="portfolio_btn">
-                    <Link to="#">Visit Site</Link>
+                    <a target="_blank" href="https://fitzu.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -96,7 +87,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <Link to="#">Visit Site</Link>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.fvd&hl=en_IN&gl=US">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -138,7 +129,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <Link to="#">Visit Site</Link>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -182,7 +173,6 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <Link to="#">Visit Site</Link>
                   </div>
                 </div>
               </div>
@@ -199,26 +189,16 @@ function Portfolio() {
                   </div>
                   <h4 className="project_tagline">"Sell your car today"</h4>
                   <p className="tech_used">
-                    Technologies used : php, Jquery ,mySQOL
+                    Technologies used : Wordpress
                   </p>
-                  <ul className="imp_points">
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    
-                  </ul>
+
                   <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    Carbuyers.com.au has pioneered the industry and we are proud of our success and dedication to customer satisfaction since our inception. We have evolved to offer same day money transfers, the most competitive prices, on site vehicle inspections, free valuations and extremely efficient mobile pick-ups and transfers.
+
+                    We are the purchasing subsidiary of Australian Automotive Sales, a brand known for our quality vehicles, service excellence and great prices.
+                  </p>
                   <div className="portfolio_btn">
-                    <Link to="#">Visit Site</Link>
+                    <a target="_blank" href="https://www.carbuyers.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>
