@@ -3,6 +3,7 @@ import {
   BrowserRouter,
   Switch,
   Route,
+  Router
 } from "react-router-dom";
 import ScrollToTop from './components/Scrolltotop'
 import Home from './pages/Home';
@@ -17,10 +18,10 @@ import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Blogtemplate from "./pages/Template/Blogtemplate";
 import Jobs from "./pages/Template/Jobs";
-
+import { createBrowserHistory } from 'history';
 
 function App(props) {
-
+  const history = createBrowserHistory();
   return (
     <div className="App">
       <BrowserRouter>
@@ -35,10 +36,9 @@ function App(props) {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/blog/:id" exact component={Blogtemplate} />
+        <Route exact path="/blog/:id"  component={Blogtemplate} />
         <Route path="/carrer/:id" exact component={Jobs} />
-      </Switch>
-      
+      </Switch> 
     </BrowserRouter>
     </div>
   );
