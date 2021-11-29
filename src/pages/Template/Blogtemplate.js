@@ -5,8 +5,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import axios from "axios";
 import "./style.css";
-
 function Blogtemplate(props) {
+
    const { id } = useParams();
   // const [currentId, setCurrentId] = useState();
   const [myblog, setMyblog] = useState({});
@@ -39,6 +39,7 @@ console.log(myBogs)
     }
     myblogData();
   }, [props.match.params.id]);
+
 
   function dateformat(myBlogsDatas) {
     var date = new Date(myBlogsDatas)
@@ -134,8 +135,7 @@ console.log(myBogs)
               {ourblog.slice(0, 3).map((curelem, index) => {
                // console.log(currentId);
                
-              // console.log(curelem['id'])
-              // console.log(myblog.id)
+
           const {title,image,id} = curelem;
           return <div key={index}>
           {curelem['id'] != myblog.id &&
@@ -145,11 +145,11 @@ console.log(myBogs)
                 </div>
                 <div className="recent_content">
                   <h5>{title}</h5>
-                  <Link  to={`/blog/${id}`} >Read More <i className="fa fa-arrow-right"></i></Link>
+                  <Link to={`/blog/${id}`}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
             </div> 
               
-      }
+          }
           </div>
         })
       }
