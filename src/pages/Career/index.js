@@ -5,11 +5,6 @@ import Subheader from "../../components/Subheader";
 import Foot from "../../components/Foot";
 import Jobs from "../../components/Jobs/jobscontent"
 import "./style.css";
-<<<<<<< HEAD
-// this
-=======
-
->>>>>>> dd43daf116e48ec2bdbf5d44dfc4fb9ba91dd7e6
 function Career() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
