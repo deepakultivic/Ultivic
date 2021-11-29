@@ -1,0 +1,39 @@
+.graphic{
+    background-image: url('../../assets/services/ui-ux-banner-2.png');
+  background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .graphics_gallery{
+      padding-bottom: 70px;
+  }
+.graphics_img img{
+    border-radius: 7px;
+    margin-bottom: 25px;
+    
+}
+section.graphics_gallery .headings_outer {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:991px){
+    .graphics_img {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:767px){
+    .graphic::before{
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      content: "";
+      background: rgb(0 0 0 / 35%);
+    }
+    section.graphic h2.subhead {
+      position: relative;
+      z-index: 2;
+      bottom: 0;
+  }
+  }

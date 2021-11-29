@@ -1,0 +1,124 @@
+.blogs_sec{
+    background-image: url('../../assets/services/blog-banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2.blog_title_text {
+    font-size: 20px;
+    margin: 15px 0px;
+    color: #000;
+    text-decoration: none;
+}
+h2.blog_title_text {
+    font-size: 18px;
+    margin: 15px 0px;
+    color: #000;
+    text-decoration: none;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.our_blogs_outer .blog_inner_data:hover .blog_img img {
+    margin-left: 0;
+}
+.our_blogs_outer .blog_inner_data {
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 9%);
+    padding: 5px;
+    border-radius: 2px;
+    min-height: 490px;
+}
+.our_blogs_outer .blog_img img {
+    margin-left: 30px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog_img {
+    position: relative;
+    overflow: hidden;
+}
+a.show_more {
+    color: #ce2128;
+    padding-top: 10px;
+    display: block;
+    font-weight: 500;
+}
+ a:hover{
+    text-decoration: none;
+
+}
+
+
+.loader1 {
+    display:inline-block;
+    font-size:0px;
+    padding:0px;
+ }
+ .loader1 span {
+    vertical-align:middle;
+    border-radius:100%;
+    
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:3px 2px;
+    -webkit-animation:loader1 0.8s linear infinite alternate;
+    animation:loader1 0.8s linear infinite alternate;
+ }
+ .loader1 span:nth-child(1) {
+    -webkit-animation-delay:-1s;
+    animation-delay:-1s;
+   background:rgb(245, 103, 115);
+ }
+ .loader1 span:nth-child(2) {
+    -webkit-animation-delay:-0.8s;
+    animation-delay:-0.8s;
+   background:rgba(245, 103, 115,0.8);
+ }
+ .loader1 span:nth-child(3) {
+    -webkit-animation-delay:-0.26666s;
+    animation-delay:-0.26666s;
+   background:rgba(245, 103, 115,1);
+ }
+ .loader1 span:nth-child(4) {
+    -webkit-animation-delay:-0.8s;
+    animation-delay:-0.8s;
+   background:rgba(245, 103, 115,0.8);
+   
+ }
+ .loader1 span:nth-child(5) {
+    -webkit-animation-delay:-1s;
+    animation-delay:-1s;
+   background:rgba(245, 103, 115,0.4);
+ }
+ 
+ @keyframes loader1 {
+    from {transform: scale(0, 0);}
+    to {transform: scale(1, 1);}
+ }
+ @-webkit-keyframes loader1 {
+    from {-webkit-transform: scale(0, 0);}
+    to {-webkit-transform: scale(1, 1);}
+ }
+  @media screen and (max-width:1199px){
+    .our_blogs_outer .blog_inner_data {
+    
+        min-height: 500px;
+    }
+    h2.blog_title_text {
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width:767px){
+    .our_blogs_outer .blog_inner_data {
+    
+        min-height: unset;
+    }
+  }

@@ -1,0 +1,104 @@
+.step_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.steps_icon {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  line-height: 77px;
+  text-align: center;
+  text-indent: 1px;
+  background: #333;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  font-size: 22px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.step_item::after{
+    content: '';
+    display: block;
+    width: 178px;
+    height: 29px;
+    background: url('../../assets/home/step-arrow.png') center no-repeat;
+    position: absolute;
+    top: 130%;
+    right: -32%;
+}
+.steps_icon i {
+    color: #fff;
+}
+
+span.steps_icon_nbr {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    left: 0;
+    background: #ce2128;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    font-size: 11px;
+}
+.step_item.last_step::after {
+    display: none;
+}  
+h5 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.steps_process {
+    margin-top: 70px;
+}
+
+.step_item.center_step span.steps_icon_nbr {
+    background: #333333;
+}
+
+.step_item.center_step .steps_icon {
+    background: #ce2128;
+}
+.steps_cont {
+    padding: 120px 0 0 0;
+}
+
+.steps_cont .steps_cont_text h6 {  
+    margin-bottom: 15px;
+}
+
+.steps_cont .steps_cont_text h5 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 32px;
+}
+@media screen and(mx-width:991px){
+    .steps_cont_img {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:767px){
+    .steps_cont_img {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:575px) {
+    .step_item::after{
+        display: none;
+    }
+    .step_item{
+        margin-bottom: 20px;
+        justify-content: flex-start;
+    }
+    .steps_cont{
+        padding-top:50px ;
+    }
+}

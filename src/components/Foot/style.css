@@ -1,0 +1,75 @@
+.foot_outer{
+    background-image: url(../../assets/about/contact_bottom.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0;
+    background-position: center center;
+}
+.foot_outer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    background-color:rgb(0 0 0 / 55%);
+    height: 100%;
+    width: 100%;
+}
+.foot_inner {
+    border: 1px solid;
+    padding: 80px;
+    text-align: center;
+    border-color: rgba(255,255,255,0.3);
+    z-index: 1;
+    position: relative;
+}
+.foot_info p {
+    color: #fff;
+}
+.foot_inner h2 a {
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 0px;
+    display: block;
+}
+.foot_inner h4{
+    color: #fff;
+}
+.foot_info ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_info ul li {
+    padding: 0px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.foot_info li a {
+    color: #fff;
+    font-weight: 500;
+}
+@media screen and (max-width:991px){
+    .foot_inner {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    .foot_info ul {
+        flex-direction: column;
+    }
+    .foot_info ul li {
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width:575px){
+    .foot_inner h2 a {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}

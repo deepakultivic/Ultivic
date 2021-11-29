@@ -1,0 +1,180 @@
+.job_content li {
+  list-style: initial;
+  margin: 10px 0px;
+  margin-left: 19px;
+}
+.job_contact {
+  padding: 30px;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+  border-radius: 7px;
+}
+.job_contact h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.job_contact .inline-errormsgs {
+  color: #fb0202;
+}
+.social_share_btns {
+  text-align: center;
+}
+button.brn-sm {
+  background: #fff;
+  border: 2px solid #ce2128;
+  border-radius: 35px;
+  padding: 10px 30px;
+  color: #000;
+}
+
+h4.desctitle {
+  margin-top: 50px;
+}
+section.jobtemplate {
+  background-image: url(../../assets/Career/ultivic12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
+section.jobtemplate.job_outer h2 {
+  font-size: 30px;
+}
+section.jobtemplate::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0 0 0 / 50%);
+}
+.blog_inner {
+  border-radius: 7px;
+}
+.blog_img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.job_contact label {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #7e8090;
+  margin-bottom: 5px;
+}
+p.filetype {
+  margin-bottom: 20px;
+}
+.blogsingle {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 20%);
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+}
+.jobtemplate h2.subhead {
+  position: relative;
+  z-index: 2;
+  bottom: unset;
+}
+.blogsingle img {
+  width: 100%;
+}
+.blogsingle p {
+  margin: 15px 0px;
+}
+ul.social_share_btns li {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.social_share_btns li a i{
+    color: #fff;
+}
+.social_share_btns{
+    display: flex;
+}
+ul.social_share_btns li:nth-child(1) {
+    background: #366397;
+}
+
+ul.social_share_btns li:nth-child(2) {
+    background: #1473b3;
+}
+
+ul.social_share_btns li:nth-child(3) {
+    background: #09a8ea;
+}
+.avtar_name {
+  display: flex;
+  align-items: center;
+}
+
+.avtar_letters {
+  background: #ce2128;
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 15px;
+}
+
+p.author {
+  margin: 0;
+}
+.recent_post {margin-top: 25px;}
+
+.recent_post_inner {
+    position: relative;
+}
+
+.recent_content {
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    margin-right: 10px;
+    padding: 6px;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+    margin-top: -21px;
+    padding: 10px 10px;
+}
+
+.recent_post_inner {
+    margin-bottom: 20px;
+}
+.recent_content a {
+  color: #000;
+  font-weight: 600;
+  display: block;
+  margin-top: 8px;
+  transition: ease all .5s;
+  -webkit-transition: ease all .5s;
+}
+.recent_content h5{
+  text-transform: capitalize;
+}
+.recent_content a:hover i {
+  position: relative;
+  left: 5px;
+  transition: ease all .5s;
+  -webkit-transition: ease all .5s;
+}
+@media (max-width: 767px) {
+  .blogsingle h3 {
+    font-size: 20px;
+  }
+}
