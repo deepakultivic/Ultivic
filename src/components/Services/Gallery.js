@@ -7,7 +7,7 @@ function Gallery({ gallery }) {
       <section className="grid gallery space">
         <div className="container gallery-container">
           <div className="headings_outer text-center ">
-            <h6 className="sub_heading ">Technologies</h6>
+            <h6 className="sub_heading ">Our Work</h6>
             <h2 className="common_heading">Lorem ipsum dolor sit</h2>
           </div>
 

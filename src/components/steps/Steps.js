@@ -5,11 +5,11 @@ function Steps() {
   return (
     <div className="space steps">
       <div className="container">
-        <div className="headings_outer text-center">
+        <div className="headings_outer text-center mb-5">
           <h6 className="sub_heading">Our Steps</h6>
           <h2 className="common_heading">Simple Steps. Quick Results</h2>
         </div>
-        <div className="steps_process">
+        {/* <div className="steps_process">
           <div className="row">
             <div className="col-sm-4 col-12">
               <div className="step_item">
@@ -51,10 +51,10 @@ function Steps() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="steps_cont">
           <div className="row align-items-center">
-          <div className="col-lg-6">
+            <div className="col-lg-8">
               <div className="steps_cont_text">
                 <h6>EVERY CUSTOMER IS IMPORTANY TO US!</h6>
                 <h5>
@@ -62,18 +62,11 @@ function Steps() {
                   MAKE THE CLIENTS HAPPY!!
                 </h5>
                 <p>
-                  Amco laboris nisi ut aliquip xea commodo consequt. Duis aute
-                  irure dolor reprehenderit voluptate velit esse cillum dolore
-                  fugiat lore ipsum dolor sit amet consectetur adipisicing elit
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua ut enim ad mid veniam quis nostrud exercitation ullamco
-                  laboris nisid. Lorem ipsum dolor sit amet consectetur adip
-                  isicing elit sed eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  With our expert team, we focus on quality software development. We focus on providing quality software with lowest cost in shortest time possible. We provide well-documented software to our clients an d try to meet all requirement of the client.
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="steps_cont_img">
                 <img src="/assets/home/areas-2.png" alt="" />
               </div>

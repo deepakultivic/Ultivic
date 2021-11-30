@@ -10,14 +10,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./style.css";
 import { Link } from 'react-router-dom'
+import CountUp from 'react-countup';
 
 
 function About() {
  
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
+    arrows:false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -92,22 +94,10 @@ function About() {
                       </h2>
                     </div>
                     <p className="about_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                      leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                      pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Ut elit tellus, luctus nec
-                      ullamcorper mattis, pulvinar dapibus leo.
+                      We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
                     </p>
                     <p className="about_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                      leo. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                      pulvinar dapibus leo. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Ut elit tellus, luctus nec
-                      ullamcorper mattis, pulvinar dapibus leo.
+                      Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development. 
                     </p>
                   </div>
                 </div>
@@ -130,25 +120,49 @@ function About() {
                 <div className="row">
                   <div className="four col-md-3">
                     <div className="counter-box colored">
-                      <span className="counter">100 </span>
+                      <span className="counter"><CountUp start={0} end={100} duration={2.75} delay={0}>
+                        {({ countUpRef }) => (
+                          <div>
+                            <span ref={countUpRef} />
+                          </div>
+                        )}
+                      </CountUp> </span>
                       <p>Happy Customers</p>
                     </div>
                   </div>
                   <div className="four col-md-3">
                     <div className="counter-box">
-                      <span className="counter">500</span>
+                      <span className="counter"><CountUp start={0} end={100} duration={2.75} delay={0}>
+                        {({ countUpRef }) => (
+                          <div>
+                            <span ref={countUpRef} />
+                          </div>
+                        )}
+                      </CountUp></span>
                       <p>Successful Projects</p>
                     </div>
                   </div>
                   <div className="four col-md-3">
                     <div className="counter-box">
-                      <span className="counter">20</span>
+                      <span className="counter"> <CountUp start={0} end={100} duration={2.75} delay={0}>
+                        {({ countUpRef }) => (
+                          <div>
+                            <span ref={countUpRef} />
+                          </div>
+                        )}
+                      </CountUp></span>
                       <p>Team members</p>
                     </div>
                   </div>
                   <div className="four col-md-3">
                     <div className="counter-box">
-                      <span className="counter">20</span>
+                      <span className="counter"> <CountUp start={0} end={50} duration={2.75} delay={0}>
+                        {({ countUpRef }) => (
+                          <div>
+                            <span ref={countUpRef} />
+                          </div>
+                        )}
+                      </CountUp></span>
                       <p className="animate__animated animate__bounce">
                         Awards wining
                       </p>
@@ -158,13 +172,13 @@ function About() {
               </div>
             </div>
           </section>
-          <Aboutglobal
+          {/* <Aboutglobal
             imgsrc={content[0].imgsrc}
             about_exp={content[0].about_exp}
             sub_heading={content[0].sub_heading}
             common_heading={content[0].common_heading}
             about_info={content[0].about_info}
-          />
+          /> */}
   
           <section className="inner_about inner_achivement space">
             <div className="container">
@@ -330,7 +344,7 @@ function About() {
             </div>
           </section>
         </div>
-        <Foot />
+        
         <Footer />
       </div>
     );

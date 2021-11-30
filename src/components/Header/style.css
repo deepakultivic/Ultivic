@@ -1,5 +1,5 @@
 header.navbar {
-  padding: 0;
+  padding: 0 4em;
 }
 .navbar {
   width: 100%;
@@ -7,6 +7,9 @@ header.navbar {
 }
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
+}
+.navbar .navbar-brand{
+  padding: 0;
 }
 header.navbar {
   background: transparent;
@@ -72,6 +75,7 @@ ul.drop_menu li a {
 .navbar-expand-lg {
   justify-content: unset;
 }
+
 @media screen and (max-width: 1440px) {
   a.navbar-brand img {
     width: 200px;

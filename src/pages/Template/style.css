@@ -12,7 +12,9 @@
   margin-bottom: 20px;
   font-size: 25px;
 }
-
+.recent_content h5 {
+  font-size: 15px;
+}
 .job_contact .inline-errormsgs {
   color: #fb0202;
 }

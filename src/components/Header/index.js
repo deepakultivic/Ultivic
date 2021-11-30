@@ -7,7 +7,7 @@ const  Header = () => {
   const [scrolled, setScrolled] = React.useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 200) {
+    if (offset > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -23,9 +23,9 @@ const  Header = () => {
   }
  
   return (
-    <div>
+
       <header className={navbarClasses.join(" ")}>
-        <div className="container">
+       
           <nav className="navbar navbar-expand-lg navbar-light ">
             <Link to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></Link>
           
@@ -59,9 +59,9 @@ const  Header = () => {
              
             </div>
           </nav>
-        </div>
+     
       </header>
-    </div>
+   
   );
 };
 

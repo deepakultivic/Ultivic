@@ -26,7 +26,9 @@ ul{
 ul.rent_news li a {
   text-transform: capitalize;
 }
-
+.copyright p {
+  color: #fff;
+}
 .footer .footer_sec h5.footer_heading {
   color: #fff;
   margin: 10px 0 25px;
@@ -72,6 +74,21 @@ ul.rent_news li a {
 }
 ul.rent_news.cont_info li:first-child i {
   padding-top: 10px;
+}
+ul.rent_news li {
+  position: relative;
+}
+
+ul.rent_news li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul.rent_news.cont_info li::before {
+  content: "";
 }
 @media screen and (max-width:991px){
   .footer_box {

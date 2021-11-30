@@ -144,7 +144,7 @@ console.log(myBogs)
                 <img src={image} alt="post_image" />
                 </div>
                 <div className="recent_content">
-                  <h5>{title}</h5>
+                  <h5>{title.slice(0, 30)}</h5>
                   <Link to={`/blog/${id}`}>Read More <i className="fa fa-arrow-right"></i></Link>
                 </div>
             </div> 

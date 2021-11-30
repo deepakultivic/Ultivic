@@ -105,7 +105,7 @@ function Home() {
                       <h4 className="bar_heading">App Development</h4>
                       <div className="progress">
                         <div
-                          className="progress-bar progress-bar-striped bg-danger"
+                          className="progress-bar progress-bar-striped "
                           style={{ width: "92%" }}
                         >
                           92%
@@ -116,7 +116,7 @@ function Home() {
                       <h4 className="bar_heading">Graphics Design</h4>
                       <div className="progress">
                         <div
-                          className="progress-bar progress-bar-striped bg-danger"
+                          className="progress-bar progress-bar-striped graphic_bg"
                           style={{ width: "88%" }}
                         >
                           88%

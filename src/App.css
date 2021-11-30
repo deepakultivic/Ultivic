@@ -7,7 +7,7 @@ body{
   pointer-events: none;
 }
 p{
-  color: #8f8faf;
+  color: #181818;
 }
 h1,
 h2,
@@ -66,6 +66,7 @@ h2.common_heading {
   padding: 50px 0;
   border-radius: 10px;
 }
+
 section.grid.gallery {
   padding-bottom: 70px;
 }
@@ -75,6 +76,9 @@ section.grid.gallery {
 .portfolio button.slick-prev {
   left: 40px;
   z-index: 1;
+}
+section.about_counter {
+  padding-bottom: 70px;
 }
 .subhead {
   display: flex;

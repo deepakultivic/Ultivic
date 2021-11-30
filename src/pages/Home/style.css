@@ -19,15 +19,16 @@
     font-size: 30px;
     color:#fff;
 }
-
+.graphic_bg{
+    background-color:#3cc340 !important;}
 .home_about_content {
     margin-top: 50px;
 }
 h4.bar_heading {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
-    color: #7e8090;
+    color: #000;
 }
 a.banner_link {
     background: #ce2128;
@@ -51,7 +52,9 @@ a.banner_link {
     width: 64px;
     height: 64px;
 }
-
+.slick-prev:before, .slick-next:before{
+    font-size:30px;
+}
 .services_grid_img {
     background: #f7f9fd;
     padding: 10px;

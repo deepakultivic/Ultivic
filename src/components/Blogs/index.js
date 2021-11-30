@@ -43,7 +43,7 @@ console.log(myBogs)
                       
                   </p>
                   <div className="blog_btn">
-                    <Link to={`/blog/${id}`}>Continue Reading</Link>
+                    <Link to={`/blog/${id}`}>Show More<i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                   </div>
                 </div>
               </div>

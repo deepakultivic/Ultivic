@@ -220,7 +220,8 @@ const Filter = () => {
 
 
     return (
-        <div className="container mb-5">
+        <section className="space">
+            <div className="container">
             <div className="tabs text-center mb-3">
                 <button className={category == 'ALL' ? 'Active' : 'Inactive'} onClick={(() => myimg('ALL'))} >All</button>
                 <button className={category == 'WEB' ? 'Active' : 'Inactive'} onClick={(() => myimg('WEB'))} >Web</button>
@@ -245,6 +246,7 @@ const Filter = () => {
                 <button className="cm_btn mt-3" onClick={(() => myimg())} >Show more</button>
             </div>
         </div>
+        </section>
     )
 }
 

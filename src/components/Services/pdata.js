@@ -60,6 +60,28 @@ const tbdata = [
         tech_box_heading: "PHP & JS",
         tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
     },
+
+
+    {
+        textimgsrc: "/assets/services/illustrator.png",
+        tech_box_heading: "Illustrator",
+        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+    },
+    {
+        textimgsrc: "/assets/services/photoshop.png",
+        tech_box_heading: "Photoshop",
+        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+    },
+    {
+        textimgsrc: "/assets/services/experience.png",
+        tech_box_heading: "Adobe XD",
+        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+    },
+    {
+        textimgsrc: "/assets/services/figma.png",
+        tech_box_heading: "Figma",
+        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+    },
 ];
 
 const gridgallery =[

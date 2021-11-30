@@ -56,7 +56,7 @@
   text-align: center;
   padding: 20px;
 }
-.about_counter .main_count .four span.counter {
+.about_counter .main_count .four span.counter span {
   font-size: 40px;
   font-weight: bold;
   line-height: 45px;
@@ -91,7 +91,24 @@ section.inner_about.inner_mision {
   line-height: 45px;
 }
 .about_counter .main_count .four p {
-  color: #666666;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ce2128;
+}
+.counter span {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+span.counter span::before {
+  position: absolute;
+  content: "+";
+  left: auto;
+  right: -22px;
+  top: -9px;
+  color: #ce2128;
 }
 section.inner_about.inner_mision .about_exp {
   left: 50%;
@@ -163,6 +180,24 @@ section.inner_about.inner_mision {
   border-radius: 50%;
   object-fit: cover;
 }
+.about_achive_box ul.slick-dots {
+  bottom: 0;
+}
+.about_achive_box ul.slick-dots {
+  bottom: 0;
+  position: relative;
+  margin-top: 20px;
+}
+.about_achive_box .slick-dots li button:before{
+  font-size: 16px;
+}
+.about_achive_box .slick-dots li.slick-active button:before{
+  color: #ce2128;
+}
+.about_achive_box .slick-dots li button:before{
+  color: #fff;
+}
+
 .team_box {
   border: 2px solid #e8e9e9;
   border-radius: 7px;
