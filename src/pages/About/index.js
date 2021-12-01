@@ -1,27 +1,25 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
-import Foot from "../../components/Foot";
-import Aboutglobal from "../../components/Aboutglobal";
-import content from "../../components/Aboutglobal/content";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./style.css";
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup';
+import { ourteam } from "../../components/Services/pdata";
 
+function About(props) {
 
-function About() {
- 
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    arrows:false,
+    arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+  
     responsive: [
       {
         breakpoint: 991,
@@ -43,7 +41,7 @@ function About() {
     ],
   };
   const [loading, setLoading] = useState(true);
-      
+
   useEffect(() => {
     // Loading function to load data or 
     // fake it using setTimeout;
@@ -55,32 +53,32 @@ function About() {
       // Toggle loading state
       setLoading((loading) => !loading);
     };
-      
+
     loadData();
   }, [])
-    
+
   // If page is in loading state, display 
   // loading message. Modify it as per your 
   // requirement.
   if (loading) {
-      return   <div className="w-100 text-center my_loader">
+    return <div className="w-100 text-center my_loader">
       <p></p><div className="loader1">
         <div>
-        <img src="/assets/header/logo-white.png" alt="logo" />
+          <img src="/assets/header/logo-white.png" alt="logo" />
         </div>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   }
-  else{
+  else {
     return (
       <div>
         <Header />
-        <Subheader title="About" clases="about" shortdesc="We are Creative And Professional Agency"/>
+        <Subheader title="About" clases="about" shortdesc="We are Creative And Professional Agency" />
         <div className="inner_wrap">
           <section className="inner_about space ">
             <div className="container">
@@ -97,7 +95,7 @@ function About() {
                       We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
                     </p>
                     <p className="about_info">
-                      Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development. 
+                      Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development.
                     </p>
                   </div>
                 </div>
@@ -113,7 +111,7 @@ function About() {
               </div>
             </div>
           </section>
-  
+
           <section className="about_counter">
             <div className="container">
               <div className="main_count">
@@ -127,12 +125,12 @@ function About() {
                           </div>
                         )}
                       </CountUp> </span>
-                      <p>Happy Customers</p>
+                      <p>Happy Clients</p>
                     </div>
                   </div>
                   <div className="four col-md-3">
                     <div className="counter-box">
-                      <span className="counter"><CountUp start={0} end={100} duration={2.75} delay={0}>
+                      <span className="counter"><CountUp start={0} end={50} duration={2.75} delay={0}>
                         {({ countUpRef }) => (
                           <div>
                             <span ref={countUpRef} />
@@ -144,7 +142,7 @@ function About() {
                   </div>
                   <div className="four col-md-3">
                     <div className="counter-box">
-                      <span className="counter"> <CountUp start={0} end={100} duration={2.75} delay={0}>
+                      <span className="counter"> <CountUp start={0} end={20} duration={2.75} delay={0}>
                         {({ countUpRef }) => (
                           <div>
                             <span ref={countUpRef} />
@@ -179,7 +177,7 @@ function About() {
             common_heading={content[0].common_heading}
             about_info={content[0].about_info}
           /> */}
-  
+
           <section className="inner_about inner_achivement space">
             <div className="container">
               <div className="inner_achivement_sec">
@@ -193,8 +191,8 @@ function About() {
                       </div>
                       <p className="about_info">
                         We strive for excellence. Our motivation for every project rests on our desire to deliver the best experience possible through a consistent product line and innovative technologies. Here are some of our many achievements.
-  
-  
+
+
                       </p>
                     </div>
                   </div>
@@ -248,10 +246,10 @@ function About() {
               </div>
             </div>
           </section>
-  
-          <section className="inner_about space ">
-            <div className="container">
-              <div className="row align-items-center">
+
+          {/* <section className="inner_about space ">
+            <div className="container"> */}
+              {/* <div className="row align-items-center">
                 <div className="col-lg-4 col-xl-3">
                   <div className="about_cont_box">
                     <div className="headings_outer ">
@@ -264,8 +262,8 @@ function About() {
                   <div className="about_cont_box">
                     <p className="about_info">
                       We have a team of talented highly skilled and creative professionals who are looking to get out and make a difference in the world. That is our vision. We aim for growth, not just numbers. Here are some of our many team members.
-  
-  
+
+
                     </p>
                   </div>
                 </div>
@@ -274,77 +272,228 @@ function About() {
                 <div className="row ">
                   <div className="col-lg-4 col-xl-4 col-md-6">
                     <div className="team_box">
-                    <div className="team_head">
-                      <div className="team_img">
-                        <Link to="#">
-                          <img src="/assets/about/1.jpg" alt="" />
-                        </Link>
-                      </div>
-                      <h5 className="team_heading">Harmanpreet Kaur</h5>
-                      <p>
-                      <span className="sub_head_team">Co-Founder / Partner</span>
-                        
-                      </p>
-                      <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                      <ul className="team_links">
+                      <div className="team_head">
+                        <div className="team_img">
+                          <Link to="#">
+                            <img src="/assets/about/1.jpg" alt="" />
+                          </Link>
+                        </div>
+                        <h5 className="team_heading">Harmanpreet Kaur</h5>
+                        <p>
+                          <span className="sub_head_team">Co-Founder / Partner</span>
+
+                        </p>
+                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <ul className="team_links">
                           <li><a href=""><i className="fa fa-skype"></i></a></li>
                           <li><a href=""><i className="fa fa-facebook"></i></a></li>
                           <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                      </ul>
-                     </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-xl-4 col-md-6">
-                    <div className="team_box">
-                    <div className="team_head">
-                      <div className="team_img">
-                        <Link to="#">
-                          <img src="/assets/about/rakshak.jpg" alt="" />
-                        </Link>
-                      </div>
-                      <h5 className="team_heading">Rakshak Gaind</h5>
-                      <p>
-                      <span className="sub_head_team">Co-Founder / Partner</span>
-                        
-                      </p>
-                      <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                       <ul className="team_links">
-                          <li><a href=""><i className="fa fa-skype"></i></a></li>
-                          <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                          <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                      </ul>
+                        </ul>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-4 col-xl-4 col-md-6">
                     <div className="team_box">
-                    <div className="team_head">
-                      <div className="team_img">
-                        <Link to="#">
-                          <img src="/assets/about/savita.png" alt="" />
-                        </Link>
-                      </div>
-                      <h5 className="team_heading">Savita Rawat</h5>
-                      <p>
-                      <span className="sub_head_team">Lead Developer</span>
-                       
-                      </p>
-                      <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                       <ul className="team_links">
+                      <div className="team_head">
+                        <div className="team_img">
+                          <Link to="#">
+                            <img src="/assets/about/rakshak.jpg" alt="" />
+                          </Link>
+                        </div>
+                        <h5 className="team_heading">Rakshak Gaind</h5>
+                        <p>
+                          <span className="sub_head_team">Co-Founder / Partner</span>
+
+                        </p>
+                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <ul className="team_links">
                           <li><a href=""><i className="fa fa-skype"></i></a></li>
                           <li><a href=""><i className="fa fa-facebook"></i></a></li>
                           <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                      </ul>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                
+                  <div className="col-lg-4 col-xl-4 col-md-6">
+                    <div className="team_box">
+                      <div className="team_head">
+                        <div className="team_img">
+                          <Link to="#">
+                            <img src="/assets/about/savita.png" alt="" />
+                          </Link>
+                        </div>
+                        <h5 className="team_heading">Savita Rawat</h5>
+                        <p>
+                          <span className="sub_head_team">Lead Developer</span>
+
+                        </p>
+                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <ul className="team_links">
+                          <li><a href=""><i className="fa fa-skype"></i></a></li>
+                          <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                          <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-            </div>
-          </section>
+              </div> */}
+              {/* <div className="our_employees">
+                <ul>
+                  {
+                    ourteam.map((curelem, index) => {
+                      return (
+                        <li class="emp_picture">
+                         <div className="emp_picture_inner">
+                         <a class="emp_link" data-toggle="modal" data-target={`#${index}`}>
+                            <img src={curelem.emp_image} alt="" />
+                          </a>
+                         </div>
+
+
+                          <div class="modal fade" id={index} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  {curelem.emp_name}
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </div> */}
+            {/* </div>
+          </section> */}
+          <section className="space">
+	<div class="container">
+		<div class="row flex-center sm-no-flex">
+
+			<div class="pull-right sm-no-float col-md-8">
+				<ul class="team-members">
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Sahil</h3>
+									<p>UI/UX Team Lead</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Tarun</h3>
+									<p>Backend Developer</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Vinay</h3>
+									<p>iOS Developer</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="https://axis.org/wp-content/uploads/2015/05/evan-headshot.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Mankirat </h3>
+									<p>Android Developer</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Nikhil</h3>
+									<p>Android Developer</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="https://axis.org/wp-content/uploads/2015/12/2015-Dougie-Headshot.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>Manpreet</h3>
+									<p>Sr. Tester</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>John Doe</h3>
+									<p>UI Designer</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>John Doe</h3>
+									<p>UI Designer</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer"/>
+								<div class="member-info">
+									<h3>John Doe</h3>
+									<p>UI Designer</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			
+			<div class="pull-left col-md-4 sm-text-center">
+				<div class="team-overview">
+        <h6 className="sub_heading">Who we are</h6>
+					<h5>Meet the Entire Team</h5>
+					<p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
         </div>
-        
+
         <Footer />
       </div>
     );

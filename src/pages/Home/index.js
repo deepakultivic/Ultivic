@@ -250,16 +250,6 @@ function Home() {
             <Portfolio />
           </section>
           <Steps />
-          <section className="testimonial">
-            <div className="container">
-              <div className="headings_outer text-center space">
-                <h6 className="sub_heading">Happy Clients</h6>
-                <h2 className="common_heading">More than 500+ happy Clients</h2>
-              </div>
-            </div>
-  
-            <Testimonials />
-          </section>
           <section className="Blogs space animate__animated animate__bounce">
             <div className="container">
               <div className="headings_outer text-center ">
@@ -267,11 +257,15 @@ function Home() {
                 <h2 className="common_heading">Grow your knowledge with us  </h2>
               </div>
             </div>
-            <div className="container">
+            <div className="container-fluid">
            
   
   
-                <Blogs/>
+               <div className="row">
+                  <di className="col-xl-9 m-auto col-lg-12">
+                  <Blogs/>
+                  </di>
+               </div>
   
   
   
@@ -285,6 +279,17 @@ function Home() {
   
   
           </section>
+          <section className="testimonial space">
+            <div className="container">
+              <div className="headings_outer text-center mb-4">
+                <h6 className="sub_heading">Happy Clients</h6>
+                <h2 className="common_heading">More than 500+ happy Clients</h2>
+              </div>
+            </div>
+  
+            <Testimonials />
+          </section>
+        
           <section className="contact_us space">
             <Homecontact />
           </section>

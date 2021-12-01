@@ -94,6 +94,26 @@ const gridgallery =[
        { img:"/assets/portfolio/ultivic-06.png"},
     
 ]
+const ourteam = [
+    {
+        emp_name:"Tarun",
+        emp_designation:"Bakend Developer",
+        emp_image:"assets/portfolio/ultivic-02.png"
 
+    },
+    {
+        emp_name:"Netin",
+        emp_designation:"Bakend Developer",
+        emp_image:"assets/portfolio/ultivic-02.png"
+
+    },
+    {
+        emp_name:"Sahil",
+        emp_designation:"Bakend Developer",
+        emp_image:"assets/portfolio/ultivic-02.png"
+
+    },
+
+]
 export default pdata;
-export {tbdata, gridgallery};
+export {tbdata, gridgallery,ourteam};
