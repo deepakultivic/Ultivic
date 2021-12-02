@@ -19,7 +19,7 @@ function About(props) {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-  
+  arrows:false,
     responsive: [
       {
         breakpoint: 991,
@@ -458,7 +458,7 @@ function About(props) {
 							</div>
 						</div>
 						
-						<div class="member-details">
+            						<div class="member-details">
 							<div>
 								<img src="https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png" alt="UI Designer"/>
 								<div class="member-info">
@@ -481,7 +481,25 @@ function About(props) {
 
 				</ul>
 			</div>
-			
+      <div class="modal" id="dee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false"> 
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                               sdfsfsdfd
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 			<div class="pull-left col-md-4 sm-text-center">
 				<div class="team-overview">
         <h6 className="sub_heading">Who we are</h6>

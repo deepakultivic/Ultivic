@@ -8,25 +8,11 @@ function Foot() {
       <section className="foot_outer">
         <div className="container">
           <div className="foot_inner">
-            <h4>GET IN TOUCH</h4>
-            <h2>
-              <a href="tel:+91 8360249058">+91 8360249058</a>
-             
-            </h2>
-            <div className="foot_info">
-              <ul>
-                <li>
-                  <a href="mailto:hr@ultivic.com"> <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
-                   hr@ultivic.com</a>
-            
-                </li>
-                <li>
-                  <p>
-                    <i className="fa fa-clock-o" aria-hidden="true"></i>Mon-Fri 10am - 7pm
-                  </p>
-                </li>
-              </ul>
-            </div>
+            <h4>New Heights With Invision Solutions! </h4>
+            <h2> TAKE YOUR PROJECT TO </h2>
+            <p>Our mobile app developers’ team offers the most incredible mobile solutions in the market within your timeline and budget level. Reach out to us, and we’re going to help extend your horizon to hit new heights!
+          </p>
+          <div class="global_btn mt-3 "><a class="" href="/contact"> Contact Us<i class="fa fa-long-arrow-right ml-2"></i></a></div>
           </div>
         </div>
       </section>

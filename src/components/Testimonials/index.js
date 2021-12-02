@@ -7,9 +7,9 @@ import axios from "axios";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className="prev_arrow">
+    <div className="prev_arrow arrow_bg">
       <i
-        className="fa fa-arrow-right"
+        className="fa fa-angle-double-right"
 
         onClick={onClick}
       ></i>
@@ -20,9 +20,9 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className="next_arrow">
+    <div className="next_arrow arrow_bg">
       <i
-        className="fa fa-arrow-left"
+        className="fa fa-angle-double-left"
 
         onClick={onClick}
       ></i>

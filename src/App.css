@@ -60,6 +60,7 @@ h2.common_heading {
   padding: 5px 20px;
   display: inline-block;
   border-radius: 35px;
+  background: #fff;
 }
 .comn_half_bg {
   background-image: linear-gradient(90deg, #f6f5fb 75%, transparent 25%);

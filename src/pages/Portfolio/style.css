@@ -16,7 +16,15 @@
     margin-bottom: 41px;
 }
 
+.card_inner img {
+    border-radius: 7px;
+}
 
+.card_inner {
+    background: #ddd;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 28%);
+}
 button.Inactive {
     background: transparent;
     border: transparent;

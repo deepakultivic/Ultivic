@@ -98,7 +98,7 @@ section.Blogs {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .services_grid_text {
@@ -136,14 +136,34 @@ section.contact_us.space {
 .next_arrow {
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -27px;
 }
 
 .prev_arrow {
   position: absolute;
-  right: -9px;
+  right: -27px;
   top: 50%;
 }
+
+.grid-outer:nth-child(1) .services_grid_img {
+  background: #0593fc;
+}
+.grid-outer:nth-child(2) .services_grid_img {
+  background: #9fb0fe;
+}
+.grid-outer:nth-child(3) .services_grid_img {
+  background: #3f4bd7;
+}
+.grid-outer:nth-child(4) .services_grid_img {
+  background: #fa759e;
+}
+.grid-outer:nth-child(5) .services_grid_img {
+  background: #4e6fc8;
+}
+.grid-outer:nth-child(6) .services_grid_img {
+  background: #78b75b;
+}
+
 @media screen and (max-width: 1440px) {
   .baner_design {
     padding: 12.5em 0;

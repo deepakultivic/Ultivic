@@ -135,7 +135,7 @@ function Home() {
                 <h2 className="common_heading">Services we Provide</h2>
               </div>
               <div className="row wow slideInLeft" ata-wow-delay="0.3s">
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img
@@ -153,7 +153,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img
@@ -171,7 +171,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img
@@ -189,7 +189,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img
@@ -204,7 +204,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img
@@ -219,7 +219,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
                       <img

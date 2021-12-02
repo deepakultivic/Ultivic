@@ -235,7 +235,9 @@ const Filter = () => {
                             console.log(curelem)
                             return (
                                 <div key={index} className="image-card col-md-6 col-lg-4">
-                                    <img src={curelem.image} alt="" />
+                                  <div className="card_inner">
+                                  <img src={curelem.image} alt="" />
+                                  </div>
                                 </div>
                             )
                         })
