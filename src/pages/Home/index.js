@@ -262,9 +262,9 @@ function Home() {
   
   
                <div className="row">
-                  <di className="col-xl-9 m-auto col-lg-12">
+                  <div className="col-xl-9 m-auto col-lg-12">
                   <Blogs/>
-                  </di>
+                  </div>
                </div>
   
   
@@ -281,10 +281,19 @@ function Home() {
           </section>
           <section className="testimonial space">
             <div className="container">
-              <div className="headings_outer text-center mb-4">
+            <div className="row">
+              <div className="col-lg-8">
+              <div className="headings_outer  mb-4">
                 <h6 className="sub_heading">Happy Clients</h6>
                 <h2 className="common_heading">More than 500+ happy Clients</h2>
+                <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
+Here’s what our clients have to say about us.
+
+testmonial
+We had a ve</p>
               </div>
+              </div>
+            </div>
             </div>
   
             <Testimonials />

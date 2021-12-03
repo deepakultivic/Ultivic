@@ -146,12 +146,12 @@ function Our_blogs() {
                                                 </div>
                                                 <div className="blog_content">
                                                     <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
-                                                    <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
+                                                    <p className="blog_published"><i className="fa fa-clock-o mr-2" aria-hidden="true"></i>
                                                         {dateformat(item.created_at)}</p>
                                                         <p className="blogdesc" dangerouslySetInnerHTML={{
                                                         __html: item.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 120)
                                                     }} ></p>
-                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                                                 </div>
                                             </div>
 
@@ -166,14 +166,14 @@ function Our_blogs() {
                                                 </div>
                                                 <div className="blog_content">
                                                     <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
-                                                    <p className="blog_published"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i>
+                                                    <p className="blog_published"><i className="fa fa-clock-o mr-2" aria-hidden="true"></i>
                                                         {dateformat(item.created_at)}</p>
                                                     <p className="blogdesc" dangerouslySetInnerHTML={{
                                                         __html: item.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 120)
                                                     }} >
                                                         
                                                     </p>
-                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                                                 </div>
                                             </div>
 

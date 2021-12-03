@@ -1,0 +1,16 @@
+.modal-body {
+  display: flex;
+}
+p.emp_designation {
+  font-size: 18px;
+  font-weight: 600;
+  color: #707070;
+}
+.close {
+  font-weight: unset;
+  font-size: 1rem;
+}
+.modal-header .close {
+
+  padding-top: 10px;
+}

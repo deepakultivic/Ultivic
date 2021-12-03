@@ -49,7 +49,7 @@ function Testimonials() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -57,8 +57,7 @@ function Testimonials() {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
           infinite: true,
           dots: false
         }
@@ -76,31 +75,34 @@ function Testimonials() {
     ]
   };
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
-        <div className="col-xl-10 m-auto col-lg-12">
+        <div className="col-12">
           <Slider {...settings}>
             {
               testimonial.map((curelem, index) => {
-                const { image, name, review } = curelem;
+                const { image, name, review,designation } = curelem;
                 return (
                   <div key={index}>
                     <div className="testimonails_outer">
                       <div className="testimonials">
-                        <div className="client-image">
+                   
+                       <div className="client-image">
                           <img
                             src={image}
                             className="tfree-client-image wp-post-image"
                             alt=""
                           />
-                          <div className="project_logo">
-                            {/* <img src="" alt="" />    */}
-                          </div>
+                       
                         </div>
-                        <h4 className="client-name mt-3">{name}</h4>
+                      
+                        <div className="client_text">
                         <p>
                           {review}
                         </p>
+                        <h4 className="client-name mt-2">{name}</h4>
+                        <p className="designation">{designation}</p>
+                        </div>
                       </div>
                     </div>
                   </div>

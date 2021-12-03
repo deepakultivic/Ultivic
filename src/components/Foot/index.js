@@ -12,7 +12,7 @@ function Foot() {
             <h2> TAKE YOUR PROJECT TO </h2>
             <p>Our mobile app developers’ team offers the most incredible mobile solutions in the market within your timeline and budget level. Reach out to us, and we’re going to help extend your horizon to hit new heights!
           </p>
-          <div class="global_btn mt-3 "><a class="" href="/contact"> Contact Us<i class="fa fa-long-arrow-right ml-2"></i></a></div>
+          <div className="global_btn mt-3 "><a className="" href="/contact"> Contact Us<i className="fa fa-long-arrow-right ml-2"></i></a></div>
           </div>
         </div>
       </section>

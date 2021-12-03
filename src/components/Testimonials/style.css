@@ -1,26 +1,11 @@
-.client-image img {
-    height: 300px;
-    max-width: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .testimonails_outer {
     padding: 10px;
     position: relative;
 }
-
-.project_logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .client-image {
     position: relative;
 }
-
 .project_logo img {
     height: unset;
 }
@@ -38,5 +23,83 @@
 .arrow_bg i {
     font-size: 16px;
     line-height: 24px;
+    color: #ce2128;
+}
+
+
+.client-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.client-image img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.client_text {
+    padding: 50px 30px;
+    margin-left: 200px;
+    padding-bottom: 30px;
+}
+
+.client_text {
+    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+}
+.testimonials {
+    position: relative;
+}
+
+
+.testimonials {
+    position: relative;
+}
+
+.client-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+    border:10px solid #fff;
+}
+
+.client_text p {
+    font-size: 16px;
+    color: #6b717f;
+    font-weight: 500;
+}
+
+.client_text {
+    position: relative;
+}
+
+.client_text::before {
+    left: 28px;
+    top: 8px;
+    content: "\f10d ";
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: #ff00007d;
+    font-size: 30px;
+}
+.client_text::after {
+    right: 28px;
+    bottom: 8px;
+    content: "\f10e  ";
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: #ff00007d;
+    font-size: 30px;
+}
+client-name {
+    font-size: 1.5em;
+    margin-bottom: 8px;
     color: #ce2128;
 }

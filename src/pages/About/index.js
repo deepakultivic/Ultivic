@@ -6,12 +6,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./style.css";
-import { Link } from 'react-router-dom'
 import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
+import CustomModal from "../../components/Ourteam";
 
 function About(props) {
-
+  const [showModal, setShow] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [userdata, setUserdata] = useState({});
+  const [teamchunk, setchunk] = useState([]);
   var settings = {
     dots: true,
     infinite: true,
@@ -40,7 +43,7 @@ function About(props) {
       // instead of a settings object
     ],
   };
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     // Loading function to load data or 
@@ -55,7 +58,23 @@ function About(props) {
     };
 
     loadData();
+let chunk;
+let allchunk=[];
+    while (ourteam.length > 0) {
+
+      chunk = ourteam.splice(0,4)
+      allchunk.push(chunk)
+    
+    }
+    setchunk(allchunk)
   }, [])
+
+
+function show_model(data){
+  setShow(true)
+  setUserdata(data)
+  console.log(teamchunk)
+}
 
   // If page is in loading state, display 
   // loading message. Modify it as per your 
@@ -75,6 +94,7 @@ function About(props) {
     </div>
   }
   else {
+    let loopindex=0;
     return (
       <div>
         <Header />
@@ -246,265 +266,49 @@ function About(props) {
               </div>
             </div>
           </section>
+<section className="space">
+	<div className="container space">
+		<div className="row flex-center sm-no-flex">
 
-          {/* <section className="inner_about space ">
-            <div className="container"> */}
-              {/* <div className="row align-items-center">
-                <div className="col-lg-4 col-xl-3">
-                  <div className="about_cont_box">
-                    <div className="headings_outer ">
-                      <h6 className="sub_heading">Our Team Members</h6>
-                      <h2 className="common_heading">Our Creative Team</h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-9">
-                  <div className="about_cont_box">
-                    <p className="about_info">
-                      We have a team of talented highly skilled and creative professionals who are looking to get out and make a difference in the world. That is our vision. We aim for growth, not just numbers. Here are some of our many team members.
-
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="team_cont">
-                <div className="row ">
-                  <div className="col-lg-4 col-xl-4 col-md-6">
-                    <div className="team_box">
-                      <div className="team_head">
-                        <div className="team_img">
-                          <Link to="#">
-                            <img src="/assets/about/1.jpg" alt="" />
-                          </Link>
-                        </div>
-                        <h5 className="team_heading">Harmanpreet Kaur</h5>
-                        <p>
-                          <span className="sub_head_team">Co-Founder / Partner</span>
-
-                        </p>
-                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <ul className="team_links">
-                          <li><a href=""><i className="fa fa-skype"></i></a></li>
-                          <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                          <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-xl-4 col-md-6">
-                    <div className="team_box">
-                      <div className="team_head">
-                        <div className="team_img">
-                          <Link to="#">
-                            <img src="/assets/about/rakshak.jpg" alt="" />
-                          </Link>
-                        </div>
-                        <h5 className="team_heading">Rakshak Gaind</h5>
-                        <p>
-                          <span className="sub_head_team">Co-Founder / Partner</span>
-
-                        </p>
-                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <ul className="team_links">
-                          <li><a href=""><i className="fa fa-skype"></i></a></li>
-                          <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                          <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-xl-4 col-md-6">
-                    <div className="team_box">
-                      <div className="team_head">
-                        <div className="team_img">
-                          <Link to="#">
-                            <img src="/assets/about/savita.png" alt="" />
-                          </Link>
-                        </div>
-                        <h5 className="team_heading">Savita Rawat</h5>
-                        <p>
-                          <span className="sub_head_team">Lead Developer</span>
-
-                        </p>
-                        <p className="emp_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <ul className="team_links">
-                          <li><a href=""><i className="fa fa-skype"></i></a></li>
-                          <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                          <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div> */}
-              {/* <div className="our_employees">
-                <ul>
-                  {
-                    ourteam.map((curelem, index) => {
-                      return (
-                        <li class="emp_picture">
-                         <div className="emp_picture_inner">
-                         <a class="emp_link" data-toggle="modal" data-target={`#${index}`}>
-                            <img src={curelem.emp_image} alt="" />
-                          </a>
-                         </div>
-
-
-                          <div class="modal fade" id={index} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  {curelem.emp_name}
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div> */}
-            {/* </div>
-          </section> */}
-          <section className="space">
-	<div class="container">
-		<div class="row flex-center sm-no-flex">
-
-			<div class="pull-right sm-no-float col-md-8">
-				<ul class="team-members">
-					<li class="clearfix">
-						<div class="member-details">
-							<div>
-								<img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Sahil</h3>
-									<p>UI/UX Team Lead</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="member-details">
-							<div>
-								<img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Tarun</h3>
-									<p>Backend Developer</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="member-details">
-							<div>
-								<img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Vinay</h3>
-									<p>iOS Developer</p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="member-details">
-							<div>
-								<img src="https://axis.org/wp-content/uploads/2015/05/evan-headshot.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Mankirat </h3>
-									<p>Android Developer</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="member-details">
-							<div>
-								<img src="http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Nikhil</h3>
-									<p>Android Developer</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="member-details">
-							<div>
-								<img src="https://axis.org/wp-content/uploads/2015/12/2015-Dougie-Headshot.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>Manpreet</h3>
-									<p>Sr. Tester</p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="member-details">
-							<div>
-								<img src="https://axis.org/wp-content/uploads/2014/10/chris-headshot.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>John Doe</h3>
-									<p>UI Designer</p>
-								</div>
-							</div>
-						</div>
-						
-            						<div class="member-details">
-							<div>
-								<img src="https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>John Doe</h3>
-									<p>UI Designer</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="member-details">
-							<div>
-								<img src="http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png" alt="UI Designer"/>
-								<div class="member-info">
-									<h3>John Doe</h3>
-									<p>UI Designer</p>
-								</div>
-							</div>
-						</div>
-					</li>
+			<div className="pull-right sm-no-float col-md-8">
+				<ul className="team-members">
+					
+						{ teamchunk && 
+            teamchunk.map((emp, index)=>{
+             
+              return <>
+               <li className="clearfix" key={"li"+index}>
+{emp.map((item, ind)=>{
+return     <div className="member-details" key={ind} onClick={()=>show_model(item)}>
+<div>
+  <img src={item.emp_image} alt="UI Designer"/>
+  <div className="member-info">
+    <h3>{item.emp_name}</h3>
+    <p>{item.emp_designation}</p>
+  </div>
+</div>
+</div>
+})}
+                 </li>
+             
+            </>
+            })}
+					
 
 				</ul>
 			</div>
-      <div class="modal" id="dee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false"> 
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                               sdfsfsdfd
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-			<div class="pull-left col-md-4 sm-text-center">
-				<div class="team-overview">
+      {showModal ?
+                        <CustomModal title={"Employee"}
+                                           body={userdata}
+                                           show={showModal}
+                                           setShow={setShow}/> : <></>
+                    }
+      
+			<div className="pull-left col-md-4 sm-text-center">
+				<div className="team-overview">
         <h6 className="sub_heading">Who we are</h6>
 					<h5>Meet the Entire Team</h5>
-					<p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
+					<p><div>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</div></p>
 				</div>
 			</div>
 		</div>

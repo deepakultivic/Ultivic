@@ -135,14 +135,14 @@ section.contact_us.space {
 
 .next_arrow {
   position: absolute;
-  top: 50%;
-  left: -27px;
+  top: -50px;
+  right: 60px;
 }
 
 .prev_arrow {
   position: absolute;
-  right: -27px;
-  top: 50%;
+  right: 20px;
+  top: -50px;
 }
 
 .grid-outer:nth-child(1) .services_grid_img {

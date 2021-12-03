@@ -98,22 +98,54 @@ const ourteam = [
     {
         emp_name:"Tarun",
         emp_designation:"Bakend Developer",
-        emp_image:"assets/portfolio/ultivic-02.png"
+        emp_image:"http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png",
+        emp_about:"A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
 
     },
     {
         emp_name:"Netin",
         emp_designation:"Bakend Developer",
-        emp_image:"assets/portfolio/ultivic-02.png"
+        emp_image:"http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png",
+        emp_about:"A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
 
     },
     {
         emp_name:"Sahil",
         emp_designation:"Bakend Developer",
-        emp_image:"assets/portfolio/ultivic-02.png"
+        emp_image:"http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png",
+        emp_about:"lorem ipsum site dollar",
+
+    },
+    {
+        emp_name:"Manpreet",
+        emp_designation:"Bakend Developer",
+        emp_image:"https://axis.org/wp-content/uploads/2015/12/2015-Dougie-Headshot.png",
+        emp_about:"lorem ipsum site dollar",
+
+    },
+    {
+        emp_name:"John Doe",
+        emp_designation:"Bakend Developer",
+        emp_image:"https://axis.org/wp-content/uploads/2014/10/chris-headshot.png",
+        emp_about:"lorem ipsum site dollar",
+
+    },
+    {
+        emp_name:"John Doe j",
+        emp_designation:"Bakend Developer",
+        emp_image:"https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png",
+        emp_about:"lorem ipsum site dollar",
+
+    },
+    {
+        emp_name:"John Doe h",
+        emp_designation:"Bakend Developer",
+        emp_image:"http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png",
+        emp_about:"lorem ipsum site dollar",
 
     },
 
 ]
+
 export default pdata;
 export {tbdata, gridgallery,ourteam};
