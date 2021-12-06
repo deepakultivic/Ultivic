@@ -11,50 +11,26 @@ import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
 
 function Home() {
-  const wow = new WOW({
-    offset: 100,
-    mobile: false,
-    live: true
-  })
 
-  wow.init();
-  const [loading, setLoading] = useState(true);
-      
-  useEffect(() => {
-    // Loading function to load data or 
-    // fake it using setTimeout;
-    const loadData = async () => {
-
-      // Wait for two second
-      await new Promise((r) => setTimeout(r, 1000));
-
-      // Toggle loading state
-      setLoading((loading) => !loading);
-    };
-      
-    loadData();
-  }, [])
-    
-  // If page is in loading state, display 
-  // loading message. Modify it as per your 
-  // requirement.
-  if (loading) {
-      return   <div className="w-100 text-center my_loader">
-      <p></p><div className="loader1">
-      <div>
-        <img src="/assets/header/logo-white.png" alt="logo" />
-        </div>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
-  }
+  
     
   // If page is not in loading state, display page.
-  else {
+
+  var wow = new WOW(
+    {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       100,          // distance to the element when triggering the animation (default is 0)
+      mobile:       true,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+    }
+  );
+  wow.init();
     return (
       <div>
         <Header />
@@ -62,9 +38,9 @@ function Home() {
           <section className="baner_design">
             <div className="container">
               <div className="bennr_inner">
-                <h4>We incorporate</h4>
-                <h1> <span className="banner_brand">Innovation</span> With your vision </h1>
-                <Link to="/contact" className="banner_link">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
+                <h4 className="wow fadeInUp" data-wow-delay="0.5s">We incorporate</h4>
+                <h1   className="wow fadeInUp" data-wow-delay="0.5s"> <span className="banner_brand">Innovation</span> With your vision </h1>
+                <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
               </div>
             </div>
           </section>
@@ -72,7 +48,7 @@ function Home() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="home_about_img wow slideInLeft" ata-wow-delay="0.3s">
+                  <div className="home_about_img wow fadeInLeft" data-wow-delay="0.3s">
                     <img
                       src="./assets/home/about_image.png"
                       alt="Ultivic about"
@@ -80,9 +56,9 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="home_about_content wow slideInRight" ata-wow-delay="0.3s">
+                  <div className="home_about_content wow fadeInRight" data-wow-delay="0.3s">
                     <div className="headings_outer">
-                      <h6 className="sub_heading">About us</h6>
+                      <h6 className="sub_heading placement">About us</h6>
                       <h2 className="common_heading">
                         We Provide IT solutions that performs.
                       </h2>
@@ -134,7 +110,7 @@ function Home() {
                 <h6 className="sub_heading">Services</h6>
                 <h2 className="common_heading">Services we Provide</h2>
               </div>
-              <div className="row wow slideInLeft" ata-wow-delay="0.3s">
+              <div className="row wow fadeInLeft" data-wow-delay="0.3s">
                 <div className="col-lg-4 col-md-6 grid-outer">
                   <div className="services_grid">
                     <div className="services_grid_img">
@@ -238,10 +214,10 @@ function Home() {
   
             </div>
           </section>
-          <section className=" portfolio">
+          <section className=" portfolio Blogs space wow fadeInRight" data-wow-delay="0.3s">
             <div className="container">
               <div className="headings_outer text-center space">
-                <h6 className="sub_heading">Services</h6>
+                <h6 className="sub_heading">Our Work</h6>
                 <h2 className="common_heading">Some brands that we’ve helped
                 </h2>
               </div>
@@ -249,8 +225,10 @@ function Home() {
   
             <Portfolio />
           </section>
-          <Steps />
-          <section className="Blogs space animate__animated animate__bounce">
+        <div className="wow fadeInDown" data-wow-delay="0.3s">
+        <Steps />
+        </div>
+          <section className="Blogs space wow fadeInUp" data-wow-delay="0.3s">
             <div className="container">
               <div className="headings_outer text-center ">
                 <h6 className="sub_heading">Latest Blogs</h6>
@@ -276,15 +254,15 @@ function Home() {
                 </Link>
               </div>
             </div>
-  
+      
   
           </section>
-          <section className="testimonial space">
+          <section className="testimonial space wow slideInLeft" data-wow-delay="0.3s">
             <div className="container">
             <div className="row">
               <div className="col-lg-8">
               <div className="headings_outer  mb-4">
-                <h6 className="sub_heading">Happy Clients</h6>
+                <h6 className="sub_heading placement">Happy Clients</h6>
                 <h2 className="common_heading">More than 500+ happy Clients</h2>
                 <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
 Here’s what our clients have to say about us.
@@ -310,6 +288,6 @@ We had a ve</p>
   }
 
   
-}
+
 
 export default Home;

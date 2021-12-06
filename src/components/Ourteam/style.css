@@ -11,6 +11,13 @@ p.emp_designation {
   font-size: 1rem;
 }
 .modal-header .close {
-
   padding-top: 10px;
+}
+.modal-dialog {
+  max-width: 700px;
+  margin: 1.75rem auto;
+}
+button.close {
+  position: absolute;
+  right: 15px;
 }

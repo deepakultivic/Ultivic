@@ -40,12 +40,44 @@ img {
 }
 .sub_heading {
   display: inline-block;
-  border: 1px solid #ce2128;
+  /* border: 1px solid #ce2128; */
   padding: 6px 12px;
   color: #000;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: #ce2128;
+}
+.sub_heading {
+  position: relative;
+}
+.sub_heading.placement {
+  margin-left: 60px;
+}
+
+.sub_heading::before {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  content: "";
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  margin-top: -1px;
+  background: #ce2128;
+}
+
+.sub_heading::after {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  content: "";
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  margin-top: -1px;
+  background: #ce2128;
 }
 h2.common_heading {
   font-size: 30px;

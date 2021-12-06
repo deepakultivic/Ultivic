@@ -15,7 +15,7 @@ function Planning(props) {
             <div className="col-lg-6">
               <div className="planning_box">
                 <div className="headings_outer ">
-                  <h6 className="sub_heading ">{props.sub_heading}</h6>
+                  <h6 className="sub_heading placement">{props.sub_heading}</h6>
                   <h2 className="common_heading">
                   {props.common_heading}
                   </h2>

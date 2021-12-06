@@ -28,20 +28,18 @@
 
 
 .client-image {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 .client-image img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 .client_text {
     padding: 50px 30px;
-    margin-left: 200px;
+    margin-left: 230px;
     padding-bottom: 30px;
 }
 
@@ -65,8 +63,8 @@
     bottom: 0;
     margin: auto;
     overflow: hidden;
-    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
-    box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 17%);
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 17%);
     border:10px solid #fff;
 }
 
@@ -98,7 +96,7 @@
     color: #ff00007d;
     font-size: 30px;
 }
-client-name {
+.client-name {
     font-size: 1.5em;
     margin-bottom: 8px;
     color: #ce2128;

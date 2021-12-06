@@ -97,7 +97,7 @@ return isValid;
               ata-wow-delay="0.3s"
             >
               <div className="addres_blocks">
-                <h2 className="common_heading">Contact us</h2>
+                <h2 className="common_heading ">Contact us</h2>
                 <ul className="rent_news cont_info">
                   <li>
                     <i className="fa fa-location-arrow"></i>
@@ -124,7 +124,7 @@ return isValid;
             <div className="col-xl-8 col-lg-7">
               <div className="home_form wow slideInRight" ata-wow-delay="0.3s">
                 <div className="headings_outer ">
-                  <h6 className="sub_heading">Get in Touch</h6>
+                  <h6 className="sub_heading placement">Get in Touch</h6>
                   <h2 className="common_heading">
                   Let’s create digital revolution together    </h2>
                 </div>

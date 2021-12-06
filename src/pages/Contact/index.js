@@ -148,7 +148,7 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact_detail">
                 <div className="headings_outer mb-4">
-                  <h6 className="sub_heading">Our Location</h6>
+                  <h6 className="sub_heading placement">Our Location</h6>
                   <h2 className="common_heading">Get In touch with Us ​</h2>
                 </div>
                 <p>
@@ -190,7 +190,7 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact_form">
                 <div className="headings_outer mb-4">
-                  <h6 className="sub_heading">Contact Us</h6>
+                  <h6 className="sub_heading placement">Contact Us</h6>
                   <h2 className="common_heading mb-4">
                     Book an appointment
                   </h2>

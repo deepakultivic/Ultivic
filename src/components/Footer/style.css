@@ -4,10 +4,11 @@ ul{
   list-style: none;
 }
 .footer .copyright {
-  background: #1b2032;
+  background: #151823;
   color: #fff;
   text-align: center;
   padding: 20px 0px;
+  border-top: 1px solid #fff;
 }
 .footer .footer_sec {
   background: #151823;

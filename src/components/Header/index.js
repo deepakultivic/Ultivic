@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 
 import './style.css';
 
@@ -27,7 +27,7 @@ const  Header = () => {
       <header className={navbarClasses.join(" ")}>
        
           <nav className="navbar navbar-expand-lg navbar-light ">
-            <Link to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></Link>
+            <NavLink to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></NavLink>
           
             <button
               type="button"
@@ -40,19 +40,19 @@ const  Header = () => {
 
             <div className="collapse navbar-collapse " id="navbarCollapse">
               <div className="navbar-nav ml-auto">
-                <Link to="/about" className="nav-item nav-link active">About</Link>
-                <Link to="/portfolio" className="nav-item nav-link ">Portfolio</Link>
+                <NavLink activeClassName="active" to="/about" className="nav-item nav-link ">About</NavLink>
+                <NavLink activeClassName="active" to="/portfolio" className="nav-item nav-link ">Portfolio</NavLink>
                 <li  className="nav-item nav-link ">
                 Services <i className="	fa fa-angle-down"></i>
                 <ul className="drop_menu">
-                  <li><Link to="/web">Web Development</Link></li>
-                  <li><Link to="/graphic">Graphic Design</Link></li>
-                  <li><Link to="/app">App Development</Link></li>
+                  <li><NavLink  activeClassName="active" to="/web">Web Development</NavLink></li>
+                  <li><NavLink  activeClassName="active" to="/graphic">Graphic Design</NavLink></li>
+                  <li><NavLink  activeClassName="active" to="/app">App Development</NavLink></li>
                 </ul>
                </li>
-               <Link to="/blogs" className="nav-item nav-link">  Blog</Link>
-               <Link to="/career" className="nav-item nav-link">Career</Link>
-               <Link to="/contact" className="nav-item nav-link">Contact</Link>
+               <NavLink  activeClassName="active" to="/blogs" className="nav-item nav-link">  Blog</NavLink>
+               <NavLink  activeClassName="active" to="/career" className="nav-item nav-link">Career</NavLink>
+               <NavLink  activeClassName="active" to="/contact" className="nav-item nav-link">Contact</NavLink>
                
               </div>
              

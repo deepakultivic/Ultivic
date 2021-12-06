@@ -3,7 +3,7 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Router
+  NavLink
 } from "react-router-dom";
 import ScrollToTop from './components/Scrolltotop'
 import Home from './pages/Home';

@@ -106,7 +106,7 @@ function show_model(data){
                 <div className="col-lg-5">
                   <div className="about_cont_box">
                     <div className="headings_outer ">
-                      <h6 className="sub_heading ">About us</h6>
+                      <h6 className="sub_heading placement">About us</h6>
                       <h2 className="common_heading">
                         We are Creative And Professional Agency
                       </h2>
@@ -205,7 +205,7 @@ function show_model(data){
                   <div className="col-lg-4 col-12">
                     <div className="about_cont_box">
                       <div className="headings_outer ">
-                        <h6 className="sub_heading">Our Achievements</h6>
+                        <h6 className="sub_heading placement">Our Achievements</h6>
                         <h2 className="common_heading">What we’ve achieved
                         </h2>
                       </div>
@@ -306,7 +306,7 @@ return     <div className="member-details" key={ind} onClick={()=>show_model(ite
       
 			<div className="pull-left col-md-4 sm-text-center">
 				<div className="team-overview">
-        <h6 className="sub_heading">Who we are</h6>
+        <h6 className="sub_heading placement">Who we are</h6>
 					<h5>Meet the Entire Team</h5>
 					<p><div>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</div></p>
 				</div>

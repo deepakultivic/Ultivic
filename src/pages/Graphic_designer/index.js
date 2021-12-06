@@ -63,7 +63,7 @@ function Graphic() {
           <div className="col-lg-5">
                 <div className="techn4ology_cont">
                   <div className="headings_outer ">
-                    <h6 className="sub_heading ">Technologies</h6>
+                    <h6 className="sub_heading placement">Technologies</h6>
                     <h2 className="common_heading">Why you should choose ultivic</h2>
                   </div>
                   <p className="tech_info">
