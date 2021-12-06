@@ -23,13 +23,13 @@ export default function CustomModal({ title, body, show, setShow }) {
 
                         </button>
                         <div className="row">
-                            <div className="col-md-5"  style={{ backgroundImage: `url(${body.emp_image})`}}>
-                                <div className="img">
+                            <div className="col-md-4"  style={{ backgroundImage: `url(${body.emp_image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+                                {/* <div className="img">
                                     <img src={body.emp_image} alt="" />
-                                </div>
+                                </div> */}
 
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-8">
                                 <div className="emp_content">
                                     <h4 className="">{body.emp_name}</h4>
                                     <p className="emp_designation">{body.emp_designation}</p>

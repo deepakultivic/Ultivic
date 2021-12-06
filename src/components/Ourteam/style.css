@@ -1,5 +1,6 @@
 .modal-body {
   display: flex;
+  padding: 0px 15px;
 }
 p.emp_designation {
   font-size: 18px;
@@ -20,4 +21,10 @@ p.emp_designation {
 button.close {
   position: absolute;
   right: 15px;
+  z-index: 1;
+  top: 10px;
+}
+
+.emp_content {
+    padding: 22px;
 }
