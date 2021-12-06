@@ -28,3 +28,6 @@ button.close {
 .emp_content {
     padding: 22px;
 }
+.team_image{
+  min-height: 250px;
+}

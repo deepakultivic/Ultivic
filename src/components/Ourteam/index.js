@@ -22,8 +22,8 @@ export default function CustomModal({ title, body, show, setShow }) {
                         <i className="fa fa-times" aria-hidden="true"></i>
 
                         </button>
-                        <div className="row">
-                            <div className="col-md-4"  style={{ backgroundImage: `url(${body.emp_image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+                        <div className="row w-100">
+                            <div className="col-md-4 team_image"  style={{ backgroundImage: `url(${body.emp_image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
                                 {/* <div className="img">
                                     <img src={body.emp_image} alt="" />
                                 </div> */}
