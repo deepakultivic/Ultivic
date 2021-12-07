@@ -51,7 +51,7 @@ function Testimonials() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow />, 
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
