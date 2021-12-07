@@ -217,7 +217,7 @@ function Home() {
           <div className="wow fadeInLeft space_bottom" data-wow-delay="0.3s">
         <Steps />
         </div>
-          <section className=" portfolio Blogs  wow fadeInRight" data-wow-delay="0.3s">
+          <section className=" portfolio wow fadeInRight" data-wow-delay="0.3s">
             <div className="container">
               <div className="headings_outer text-center ">
                 <h6 className="sub_heading">Our Work</h6>
