@@ -128,6 +128,47 @@ section.portfolio {
 .slick-next:before {
     content: "\f054";
 }
+
+.slider_inner {
+    position: relative;
+}
+.left_color::before, .right_color::before{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    content: "";
+    top: 0;
+    bottom: 0;
+
+}
+.left_color::before{
+    right: auto;
+    left: 0;
+    background-color: #e0e1e3;
+}
+.right_color::before{
+    right: 0;
+    left: auto;
+    background-color: #000;
+}
+.loudly .right_color::before{
+    background-color: #cb40b5;
+}
+.fitzu .right_color::before{
+    background-color: #f9a900;
+}
+.getthem .right_color::before{
+    background-color: #113060;
+}
+.fitzuapp .right_color::before{
+    background-color: #f9a900;
+}
+.car_buers .right_color::before{
+    background-color: #098fb3;
+}
+.portfolio_constent {
+    padding-left: 2.5rem;
+}
 @media screen and (max-width:991px){
     .slider_inner {
         min-height: 900px;
