@@ -44,8 +44,8 @@
 }
 
 .client_text {
-    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
-    box-shadow: 0 0 18px 0 rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);
 }
 .testimonials {
     position: relative;
@@ -63,8 +63,8 @@
     bottom: 0;
     margin: auto;
     overflow: hidden;
-    -webkit-box-shadow: 0 0 18px 0 rgb(0 0 0 / 17%);
-    box-shadow: 0 0 18px 0 rgb(0 0 0 / 17%);
+    -webkit-box-shadow: 0 0 8px  rgb(0 0 0 / 20%);
+    box-shadow: 0 0 8px rgb(0 0 0 / 20%);
     border:10px solid #fff;
 }
 

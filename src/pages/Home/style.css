@@ -50,8 +50,8 @@ a.banner_link {
   font-size: 10px;
 }
 .services_grid_img img {
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -60,8 +60,7 @@ a.banner_link {
 .services_grid_img {
   background: #f7f9fd;
   border-radius: 50%;
-  padding-top: 16px;
-  border: 1px solid;
+  border: 1px solid #ddd;
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -70,39 +69,31 @@ a.banner_link {
   align-items: center;
   margin: auto;
   margin-bottom: 20px;
+  position: absolute;
+  left: 40%;
+  top: -50px;
+  box-shadow: 0px 0px 6px rgb(0 0 0 / 20%);
 }
 
 .services_grid {
   text-align: center;
-  margin-bottom: 30px;
-  /* padding: 20px 15px 20px 15px;
-  background-color: #ffffff;
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border-radius: 20px 0px 20px 20px;
-
-  box-shadow: 0px 0px 7px rgb(0 0 0 / 21%); */
-}
-
-.services_grid:hover .services_grid_img img {
+  margin-bottom: 80px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgb(0 0 0 / 20%);
+  padding: 50px 30px;
+  padding-bottom: 30px;
   position: relative;
-  bottom: 10px;
-  transition: ease all .5s;
-    -webkit-transition: ease all .5s;
-
-}
-.services_grid{
-    transition: ease all .5s; -webkit-transition: ease all .5s;
 }
 
 section.services {
-  background: #f8f8f9;
+  background-color: #f8f8f9;
   /* background-image: url(../../assets/home/servicesbg-2.png); */
   background-size: cover;
   background-repeat: no-repeat;
 }
 section.Blogs {
-  background: #fff;
+  background-color: #f8f8f9;
   /* background-image: url(../../assets/home/blog_bg.png); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -178,7 +169,7 @@ section.contact_us.space {
   top: -50px;
 }
 
-.grid-outer:nth-child(1) .services_grid_img {
+/* .grid-outer:nth-child(1) .services_grid_img {
   background: #0593fc;
 }
 .grid-outer:nth-child(2) .services_grid_img {
@@ -195,6 +186,9 @@ section.contact_us.space {
 }
 .grid-outer:nth-child(6) .services_grid_img {
   background: #78b75b;
+} */
+.grid-outer:nth-child(4) .services_grid, .grid-outer:nth-child(6) .services_grid, .grid-outer:nth-child(5) .services_grid  {
+ margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1440px) {

@@ -108,7 +108,7 @@ function Home() {
             <div className="container">
               <div className="headings_outer text-center mb-5">
                 <h6 className="sub_heading">Services</h6>
-                <h2 className="common_heading">Services we Provide</h2>
+                <h2 className="common_heading mb-5 pb-5">Services we Provide</h2>
               </div>
               <div className="row wow fadeInLeft" data-wow-delay="0.3s">
                 <div className="col-lg-4 col-md-6 grid-outer">
@@ -155,7 +155,7 @@ function Home() {
                         alt="ultivic services"
                       />
                     </div>
-                    <div className="services_grid_text">
+                    <div className="services_grid_text ">
                       <h4>App Development</h4>
                       <p>
                         With the mobile web revolution at it’s peak We provide you a customized app with user centered approach.
@@ -228,7 +228,7 @@ function Home() {
   
             <Portfolio />
           </section>
-          <section className="testimonial space_top  wow slideInLeft" data-wow-delay="0.3s">
+          <section className="testimonial space  wow slideInLeft" data-wow-delay="0.3s">
             <div className="container">
             <div className="row">
               <div className="col-lg-8">
