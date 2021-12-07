@@ -214,9 +214,12 @@ function Home() {
   
             </div>
           </section>
-          <section className=" portfolio Blogs space wow fadeInRight" data-wow-delay="0.3s">
+          <div className="wow fadeInLeft space_bottom" data-wow-delay="0.3s">
+        <Steps />
+        </div>
+          <section className=" portfolio Blogs  wow fadeInRight" data-wow-delay="0.3s">
             <div className="container">
-              <div className="headings_outer text-center space">
+              <div className="headings_outer text-center ">
                 <h6 className="sub_heading">Our Work</h6>
                 <h2 className="common_heading">Some brands that we’ve helped
                 </h2>
@@ -225,10 +228,26 @@ function Home() {
   
             <Portfolio />
           </section>
-        <div className="wow fadeInDown" data-wow-delay="0.3s">
-        <Steps />
-        </div>
-          <section className="Blogs space wow fadeInUp" data-wow-delay="0.3s">
+          <section className="testimonial space_top  wow slideInLeft" data-wow-delay="0.3s">
+            <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+              <div className="headings_outer  mb-4">
+                <h6 className="sub_heading placement">Happy Clients</h6>
+                <h2 className="common_heading">More than 500+ happy Clients</h2>
+                <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
+Here’s what our clients have to say about us.
+
+testmonial
+We had a ve</p>
+              </div>
+              </div>
+            </div>
+            </div>
+  
+            <Testimonials />
+          </section>
+          <section className="Blogs space wow fadeInRight" data-wow-delay="0.3s">
             <div className="container">
               <div className="headings_outer text-center ">
                 <h6 className="sub_heading">Latest Blogs</h6>
@@ -257,25 +276,7 @@ function Home() {
       
   
           </section>
-          <section className="testimonial space wow slideInLeft" data-wow-delay="0.3s">
-            <div className="container">
-            <div className="row">
-              <div className="col-lg-8">
-              <div className="headings_outer  mb-4">
-                <h6 className="sub_heading placement">Happy Clients</h6>
-                <h2 className="common_heading">More than 500+ happy Clients</h2>
-                <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
-Here’s what our clients have to say about us.
-
-testmonial
-We had a ve</p>
-              </div>
-              </div>
-            </div>
-            </div>
-  
-            <Testimonials />
-          </section>
+         
         
           <section className="contact_us space">
             <Homecontact />

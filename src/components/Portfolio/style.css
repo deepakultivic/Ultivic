@@ -31,14 +31,19 @@ ul.imp_points {
     padding: 0px 20px;
 }
 .slider_inner.fitzu {
-    background-image: linear-gradient(to right bottom, #d85935, #df6a2e, #e47a27, #e68c20, #e79d19);
+    background: #23282d;
+    background: linear-gradient(to right, #23282d 50%, #fbb647 100%);
 
 }
 .slider_inner.car_buers {
-    background-image: linear-gradient(to right bottom, #4d90ff, #00acff, #00c4ff, #00daff, #0dedfd);
+    background: #23282d;
+    
+    background: linear-gradient(to right, #23282d 50%, #088fb3 100%);
 }
 .slider_inner.getthem {
-    background-image: linear-gradient(to right bottom, #17376c, #244d88, #3063a5, #3b7bc3, #4594e1);
+    background: #23282d;
+  
+    background: linear-gradient(to right, #23282d 50%, #1a3b72 100%);
 }
 .slick-dots {
     bottom: 45px;
@@ -58,10 +63,11 @@ ul.imp_points {
     padding: 15px 0px;
 }
 .slider_inner.loudly {
-    background-image: linear-gradient(to right bottom, #b131d2, #c833c7, #da39bc, #e843b3, #f350aa);
+    background: #23282d;
+    background: linear-gradient(to right, #23282d 50%, #cc40b4 100%);
 }
 .slider_inner.fitzuapp {
-background-color:#23282d;
+    background: linear-gradient(to right, #23282d 50%, #f9a900 100%);
 }
 .portfolio_constent h4, .portfolio_constent p {
     color: #fff;
@@ -79,6 +85,48 @@ section.portfolio {
 }
 .filter_inner {
     margin-bottom: 60px;
+}
+.portfolio_outer .slick-prev, .portfolio_outer .slick-next{
+    opacity: 0;
+    transition: ease all .5s;
+    -webkit-transform: ease all .5s;
+}
+.portfolio_outer:hover .slick-prev,.portfolio_outer:hover .slick-next{
+    opacity: 1;
+    transition: ease all .5s;
+    -webkit-transform: ease all .5s;
+}
+.portfolio_outer .slick-prev{
+    height: 100%;
+    width:50px;
+   
+    background: linear-gradient(to left, transparent, rgb(12 17 27 / 28%), rgb(12 17 27 / 72%));
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+ 
+}
+.portfolio_outer .slick-next{
+    height: 100%;
+    width:50px;
+  
+    background: linear-gradient(to right, transparent, rgb(12 17 27 / 28%), rgb(12 17 27 / 72%));
+    -webkit-transition: opacity 0.6s ease-out;
+    -o-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slick-prev:before,.slick-next:before {
+ 
+    display: inline-block;
+    padding-right: 3px;
+    font-family: "fontAwesome";
+    font-weight: 600;
+}
+.slick-prev:before{
+    content: "\f053";
+}
+.slick-next:before {
+    content: "\f054";
 }
 @media screen and (max-width:991px){
     .slider_inner {

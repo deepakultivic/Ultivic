@@ -3,7 +3,7 @@ import "./steps.css";
 
 function Steps() {
   return (
-    <div className="space steps">
+    <div className="space steps pb-0">
       <div className="container">
         <div className="headings_outer text-center mb-5">
           <h6 className="sub_heading">Our Steps</h6>

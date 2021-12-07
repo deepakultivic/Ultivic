@@ -86,6 +86,12 @@ h2.common_heading {
 .space{
   padding: 70px 0px;
 }
+.space_top{
+  padding-top: 70px;
+}
+.space_bottom{
+padding-bottom: 70px;
+}
 .global_btn a {
   color: #000;
   border: 2px solid #CE2128;
@@ -104,10 +110,10 @@ section.grid.gallery {
   padding-bottom: 70px;
 }
 .portfolio button.slick-next {
-  right: 40px;
+  right: 0px;
 }
 .portfolio button.slick-prev {
-  left: 40px;
+  left: 0px;
   z-index: 1;
 }
 section.about_counter {

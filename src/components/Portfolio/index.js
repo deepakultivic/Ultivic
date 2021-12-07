@@ -18,6 +18,48 @@ function Portfolio() {
   return (
     <div className="portfolio_outer">
       <Slider {...settings}>
+      <div className="slider_inner loudly ">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="portfolio_image">
+                  <img src="/assets/home/louble_img.png" alt="carbuyers" />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="portfolio_constent">
+                  <div className="protfolio_logo">
+                    <img src="/assets/home/louble_logo.png" alt="logo" />
+                  </div>
+                  <h4 className="project_tagline">
+                    Loudly - Louder Volume Amplifier & Speaker Booster
+                  </h4>
+
+                  <p>
+                    Tune into better volumes with the new volume booster free
+                    app. Volume boost “Loud Volume Booster for Speakers” works
+                    as a sound amplifier and headphone booster designed to boost
+                    volume by increasing loudness of video, audio or all
+                    notifications on Android
+                  </p>
+                  <div className="views_details">
+                    <div className="views">
+                      <h4>100 k</h4>
+                      <p>Downloads</p>
+                    </div>
+                    <div className="rating">
+                      <h4>4.2</h4>
+                      <p>Rating</p>
+                    </div>
+                  </div>
+                  <div className="portfolio_btn">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="slider_inner fitzu ">
           <div className="container">
             <div className="row align-items-center">
@@ -94,48 +136,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="slider_inner loudly ">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="portfolio_image">
-                  <img src="/assets/home/louble_img.png" alt="carbuyers" />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="portfolio_constent">
-                  <div className="protfolio_logo">
-                    <img src="/assets/home/louble_logo.png" alt="logo" />
-                  </div>
-                  <h4 className="project_tagline">
-                    Loudly - Louder Volume Amplifier & Speaker Booster
-                  </h4>
-
-                  <p>
-                    Tune into better volumes with the new volume booster free
-                    app. Volume boost “Loud Volume Booster for Speakers” works
-                    as a sound amplifier and headphone booster designed to boost
-                    volume by increasing loudness of video, audio or all
-                    notifications on Android
-                  </p>
-                  <div className="views_details">
-                    <div className="views">
-                      <h4>100 k</h4>
-                      <p>Downloads</p>
-                    </div>
-                    <div className="rating">
-                      <h4>4.2</h4>
-                      <p>Rating</p>
-                    </div>
-                  </div>
-                  <div className="portfolio_btn">
-                    <a target="_blank" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         <div className="slider_inner fitzuapp ">
           <div className="container">
             <div className="row align-items-center">
