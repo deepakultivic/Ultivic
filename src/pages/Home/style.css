@@ -190,6 +190,11 @@ section.contact_us.space {
   right: 20px;
   top: -50px;
 }
+.card {
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  border-radius: 7px;
+  overflow: hidden;
+}
 
 /* .grid-outer:nth-child(1) .services_grid_img {
   background: #0593fc;
@@ -209,10 +214,18 @@ section.contact_us.space {
 .grid-outer:nth-child(6) .services_grid_img {
   background: #78b75b;
 } */
+
 .grid-outer:nth-child(4) .services_grid, .grid-outer:nth-child(6) .services_grid, .grid-outer:nth-child(5) .services_grid  {
  margin-bottom: 40px;
 }
-
+.media {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border-radius: 0.25rem;
+}
+.media i{
+  font-size: 18px;
+  color: #ce2128;
+}
 @media screen and (max-width: 1440px) {
   .baner_design {
     padding: 12.5em 0;

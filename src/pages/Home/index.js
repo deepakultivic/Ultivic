@@ -45,7 +45,7 @@ function Home() {
             </div>
           </section>
           <section className="home_about space">
-            <div className="container">
+            {/* <div className="container">
               <div className="row">
                 <div className="col-lg-6">
                   <div className="home_about_img wow fadeInLeft" data-wow-delay="0.3s">
@@ -102,7 +102,98 @@ function Home() {
                   </div>
                 </div>
               </div>
+            </div> */}
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="./assets/home/about-01.png" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+                      
+
+                        <div class="col-12">
+                            <div class="mt-0 pt-2 text-right">
+                            <div class="global_btn"><a href="/about">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+              
+
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="./assets/home/about-02.png" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+                   
+
+                        <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                            <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                <img src="./assets/home/about-03.png" class="img-fluid" alt="Image" />
+                                <div class="img-overlay bg-dark"></div>
+                            </div>
+                        </div>
+             
+                    </div>
+          
+                </div>
+           
             </div>
+         
+        </div>
+      
+
+        <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+            <div class="section-title ml-lg-5">
+            <h6 className="sub_heading placement">About us</h6>
+                <h4 class="title mb-4">
+                We Provide IT solutions <br /> that performs.
+
+                </h4>
+                <p class="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+
+                <div class="row">
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center p-2">
+                            <i class="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Creative Ideas</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center p-2">
+                            <i class="fa fa-users h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Team Work</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center p-2">
+                            <i class="fa fa-building-o h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Work Strategy</a></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 pt-2">
+                        <div class="media align-items-center rounded shadow p-2">
+                            <i class="fa fa-cubes h4 mb-0 text-custom"></i>
+                            <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Client Handling</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+</div>
           </section>
           <section className="services space">
             <div className="container">
@@ -219,7 +310,7 @@ function Home() {
         </div>
           <section className=" portfolio wow fadeInRight" data-wow-delay="0.3s">
             <div className="container">
-              <div className="headings_outer text-center ">
+              <div className="headings_outer text-center mb-5">
                 <h6 className="sub_heading">Our Work</h6>
                 <h2 className="common_heading">Some brands that we’ve helped
                 </h2>
