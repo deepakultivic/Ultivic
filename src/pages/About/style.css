@@ -1,22 +1,4 @@
-.about_img_box .about_exp {
-  color: #fff;
-  background: #ce2128;
-  padding: 30px;
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 270px;
-}
-.about_img_box {
-  position: relative;
-}
-.about_img_box .about_exp h5 {
-  font-size: 35px;
-}
-.about_img_box .about_exp p {
-  font-weight: 500;
-}
+
 .inner_achivement_sec .about_cont_box p.about_info {
   margin-top: 10px;
   color: #fff;
@@ -247,12 +229,131 @@ section.inner_about.inner_achivement {
   background-position: center;
 }
 
-/*  */
+/*10 dec  */
+.about_img_box{
+  position: relative;
+}
+.about_blog, .about_portfolio  {
+  overflow: hidden;
+  border-radius: 80px 30px 80px 30px;
+}
+
+.blog_info a {
+  color: #fff;
+  font-weight: 600;
+}
+.about_testimonials_outer {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  right: 0;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 30px 30px 70px 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,20%);
+  padding: 15px;
+}
+.about_cont_box {
+    padding: 0 2rem;
+}
+
+.portfolio_text {
+  padding: 10px;
+  position: relative;
+}
+.portfoli_outer_about{
+  position: absolute;
+  top: 70px;
+  transform: translateX(-304px);
+  transition: ease all .5s;
+  -webkit-transition: ease all .5s;
+  width: 100%;
+}
+.about_portfolio {
+  position: relative;
+  
+}
+.portfolio_text p, .portfolio_text a {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+}
+.client_name{
+  font-size: 14px;
+  font-weight:600;
+}
+.testimonial_img img {
+  width: 50px;
+  height: 50px;
+}
+.star.rating {
+  position: absolute;
+  right: 20px;
+  bottom: 28px;
+}
+.about_cont_box {
+  padding: 0 2rem;
+}
+.rating i{
+  color: rgba(253, 204, 13);
+}
+.testimonial_img {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  width: 100%;
+  position: relative;
+}
+.blog_element {
+  position: relative;
+}
+.about_portfolio img {
+  width: 100%;
+}
+.blog_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  transform: translateX(-304px);
+  transition: ease all .5s;
+  -webkit-transition: ease all .5s;
+}
+.inner_about:hover .blog_info, .inner_about:hover .portfoli_outer_about{
+  transform: translateX(0px);
+  transition: ease all .5s;
+  -webkit-transition: ease all .5s;
+}
+
+.blog_info p, .blog_info h6{
+  color:#fff;
+  position: relative;
+  z-index: 2;
+}
+.blog_info h6 a{
+font-size: 18px;
+color:#fff;
+line-height:28px;
+}
+.blog_info_inner {
+  position: relative;
+  padding: 10px 18px;
+}
+
+.blog_info_inner::before, .portfolio_text::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  background-image: linear-gradient(transparent, black);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 @media screen and (max-width: 991px) {
-  .about_img_box {
-    margin-bottom: 30px;
-  }
+
   section.inner_about.inner_mision .about_exp {
     position: relative;
     top: 0px;
@@ -426,6 +527,15 @@ section.inner_about.inner_achivement {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width:1199px){
+  h2.common_heading {
+    font-size: 23px;
+}
+.about_testimonials_outer {
+  position: absolute;
+  bottom: -80px;
+}
+}
 @media only screen and (max-width: 992px) {
   .sm-no-flex {
     display: block;

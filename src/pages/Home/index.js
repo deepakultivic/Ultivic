@@ -323,9 +323,6 @@ function Home() {
                       <li><img src="assets/home/photoshop.svg" alt="" /></li>
                       <li><img src="assets/home/illustrator.svg" alt="" /></li>
                   </ul>
-                  <ul className="p-0 tech_icons" >
-                 
-                  </ul>
                 </div>
               </div>
               <div className="col-md-6">
