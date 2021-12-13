@@ -531,19 +531,21 @@ line-height:28px;
   h2.common_heading {
     font-size: 23px;
 }
+section.inner_about.space {
+  padding-bottom: 140px;
+}
+
+.about_testimonials_outer {
+  position: absolute;
+  bottom: -80px;
+}
+}
 @media(min-width:992px){
   section.inner_about.container {
     max-width: 1070px;
 }
 
-section.inner_about.space {
-  padding-bottom: 140px;
-}
-}
-.about_testimonials_outer {
-  position: absolute;
-  bottom: -80px;
-}
+
 }
 @media only screen and (max-width: 992px) {
   .sm-no-flex {

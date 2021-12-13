@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
@@ -11,59 +11,94 @@ import Gallery from '../../components/Services/Gallery';
 import { gridgallery } from "../../components/Services/pdata";
 import SimpleReactLightbox from 'simple-react-lightbox'
 function Web() {
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        // Loading function to load data or 
-        // fake it using setTimeout;
-        const loadData = async () => {
-    
-          // Wait for two second
-          await new Promise((r) => setTimeout(r, 1000));
-    
-          // Toggle loading state
-          setLoading((loading) => !loading);
-        };
-          
-        loadData();
-      }, [])
-        
-      // If page is in loading state, display 
-      // loading message. Modify it as per your 
-      // requirement.
-      if (loading) {
-          return   <div className="w-100 text-center my_loader">
-          <p></p><div className="loader1">
-          <div>
-            <img src="/assets/header/logo-white.png" alt="logo" />
-            </div>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    </div>
-    </div>
-      }
-      else{
-    return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Loading function to load data or 
+    // fake it using setTimeout;
+    const loadData = async () => {
+
+      // Wait for two second
+      await new Promise((r) => setTimeout(r, 1000));
+
+      // Toggle loading state
+      setLoading((loading) => !loading);
+    };
+
+    loadData();
+  }, [])
+
+  // If page is in loading state, display 
+  // loading message. Modify it as per your 
+  // requirement.
+  if (loading) {
+    return <div className="w-100 text-center my_loader">
+      <p></p><div className="loader1">
         <div>
-            <Header />
-            <Subheader title="Web Development" clases="web" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
-            <Aboutglobal
-                imgsrc={content[2].imgsrc}
-                about_exp={content[2].about_exp}
-                sub_heading={content[2].sub_heading}
-                common_heading={content[2].common_heading}
-                about_info={content[2].about_info}
-            />
-            <Technology />
-            <SimpleReactLightbox> 
-                    <Gallery gallery={gridgallery} />   
-                    </SimpleReactLightbox>
-            <Foot />
-            <Footer />
+          <img src="/assets/header/logo-white.png" alt="logo" />
         </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  }
+  else {
+    return (
+      <div>
+        <Header />
+        <Subheader title="Web Development" clases="web" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+        {/* <Aboutglobal
+          imgsrc={content[2].imgsrc}
+          about_exp={content[2].about_exp}
+          sub_heading={content[2].sub_heading}
+          common_heading={content[2].common_heading}
+          about_info={content[2].about_info}
+        /> */}
+        <section className="space service_about">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6">
+                <img src="assets/home/web_about.png" alt="" />
+              </div>
+              <div class="col-lg-6 col-md-6 col-12 ">
+                <div class="section-title ml-lg-5">
+                  <h6 className="sub_heading placement">Web Development
+                  </h6>
+                  <h4 class="title mb-2">
+                    What is Web Development ?
+
+                  </h4>
+                  <p class="text-muted mb-0">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are performing and the platforms on which they are working.</p>
+                  <h5 className="my-3">
+                    Our Technologies
+                  </h5>
+                  {/* <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p> */}
+                  <ul className="p-0 tech_icons" >
+                    <li><img src="assets/home/php.svg" alt="" /></li>
+                    <li><img src="assets/home/java.svg" alt="" /></li>
+                    <li><img src="assets/home/android.svg" alt="" /></li>
+                    <li><img src="assets/home/js.svg" alt="" /></li>
+                    <li><img src="assets/home/html-5.svg" alt="" /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<section className="why_choose">
+<div className="container">
+
+</div>
+</section>
+        <SimpleReactLightbox>
+          <Gallery gallery={gridgallery} />
+        </SimpleReactLightbox>
+        <Foot />
+        <Footer />
+      </div>
     )
+  }
 }
-}   
 export default Web;

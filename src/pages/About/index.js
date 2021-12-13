@@ -15,7 +15,6 @@ function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
   const [teamchunk, setchunk] = useState([]);
-  const [ourblog, setOurblog] = useState([])
   var settings = {
     dots: true,
     infinite: true,
@@ -44,17 +43,7 @@ function About(props) {
 
 
   useEffect(() => {
-    function myblogData() {
-      axios.get("https://ums.ultivic.com/api/development/blogs?page=1")
-        .then((response) => {
-          const myBogs = response.data.data.data;
-
-          console.log(myBogs)
-          setOurblog(myBogs);
-
-        })
-    }
-    myblogData();
+  
     let chunk;
     let allchunk = [];
     while (ourteam.length > 0) {
@@ -82,95 +71,101 @@ function About(props) {
       <Header />
       <Subheader title="About" clases="about" shortdesc="We are Creative And Professional Agency" />
       <div className="inner_wrap">
-        <section className="inner_about space ">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-7">
-                <div className="about_img_box">
+      <section className="home_about space">
+         
+         <div className="container">
+           <div className="row align-items-center">
+             <div className="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+               <div className="row align-items-center">
+                 <div className="col-lg-6 col-md-6 col-6">
+                   <div className="row">
+                     <div className="col-lg-12 col-md-12 mt-4 pt-2">
+                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                         <img src="./assets/home/about-01.png" className="img-fluid" alt="Image" />
+                         <div className="img-overlay bg-dark"></div>
+                       </div>
+                     </div>
 
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="about_blog">
-                        <ul className="">
-                          {ourblog.slice(0, 2).map((curelem, index) => {
-                            const { title, description, image, id } = curelem;
-                            return (
 
-                              <li className="blog_element" key={index}>
-                                <img src={image} alt="" />
-                                <div className="blog_info">
-                                  <div className="blog_info_inner">
-                                    <h6><Link to={`/blog/${id}`}>{title}</Link></h6>
-                                    <p><Link to={`/blog/${id}`}>Read More</Link></p>
-                                  </div>
-                                </div>
-                              </li>
-                            );
-                          })
-                          }
+                     <div className="col-12">
+                       <div className="mt-0 pt-2 text-right">
+                         <div className="global_btn"><a href="/about">Read More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                       </div>
+                     </div>
+                   </div>
 
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="about_portfolio ">
-                        <img src="assets/home/about-01.png" alt="" />
-                        <div className="portfoli_outer_about">
-                        <div className="portfolio_text">
-                            <p>Some of our Amazing Work</p>
-                            <a href="/portfolio">Explore</a>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="about_testimonials">
-                        <div className="about_testimonials_outer">
+                 </div>
 
-                          <div className="tetimonail_text">
 
-                            <p>  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,  Donec lacinia congue felis in faucibus.</p>
+                 <div className="col-lg-6 col-md-6 col-6">
+                   <div className="row">
+                     <div className="col-lg-12 col-md-12">
+                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                         <img src="./assets/home/about-02.png" className="img-fluid" alt="Image" />
+                         <div className="img-overlay bg-dark"></div>
+                       </div>
+                     </div>
 
-                          </div>
-                          <div className="testimonial_img">
-                            <img class="mr-3 rounded-circle" src="assets/home/cleint1.png" alt="Generic placeholder image" />
-                            <div>
-                              <p className="client_name">Mark Lukey</p>
-                              <p className="client_desgnation">Ceo Fitzu</p>
-                             
-                            </div>
-                          </div>
-                          <p className="star rating"><i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-5">
-                <div className="about_cont_box">
-                  <div className="headings_outer ">
-                    <h6 className="sub_heading placement">About us</h6>
-                    <h2 className="common_heading">
-                      We are Creative And Professional Agency
-                    </h2>
-                  </div>
-                  <p className="about_info">
-                    We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
-                  </p>
-                  <p className="about_info">
-                    Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development.
-                  </p>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </section>
+                     <div className="col-lg-12 col-md-12 mt-4 pt-2">
+                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                         <img src="./assets/home/about-03.png" className="img-fluid" alt="Image" />
+                         <div className="img-overlay bg-dark"></div>
+                       </div>
+                     </div>
+
+                   </div>
+
+                 </div>
+
+               </div>
+
+             </div>
+
+
+             <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+               <div className="section-title ml-lg-5">
+                 <h6 className="sub_heading placement">About us</h6>
+                 <h4 className="title mb-4">
+                   We Provide IT solutions <br /> that performs.
+
+                 </h4>
+                 <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+
+                 <div className="row">
+                   <div className="col-lg-6 mt-4 pt-2">
+                     <div className="media align-items-center p-2">
+                       <i className="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
+                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Creative Ideas</a></h6>
+                     </div>
+                   </div>
+                   <div className="col-lg-6 mt-4 pt-2">
+                     <div className="media align-items-center p-2">
+                       <i className="fa fa-users h4 mb-0 text-custom"></i>
+                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Team Work</a></h6>
+                     </div>
+                   </div>
+                   <div className="col-lg-6 mt-4 pt-2">
+                     <div className="media align-items-center p-2">
+                       <i className="fa fa-building-o h4 mb-0 text-custom"></i>
+                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Work Strategy</a></h6>
+                     </div>
+                   </div>
+                   <div className="col-lg-6 mt-4 pt-2">
+                     <div className="media align-items-center rounded shadow p-2">
+                       <i className="fa fa-cubes h4 mb-0 text-custom"></i>
+                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Client Handling</a></h6>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+
+         </div>
+       </section>
+      
 
         <section className="about_counter">
           <div className="container">

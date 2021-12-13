@@ -108,6 +108,7 @@ padding-bottom: 70px;
 
 section.grid.gallery {
   padding-bottom: 70px;
+  background-color: #f9f9f9;
 }
 .portfolio button.slick-next {
   right: 0px;

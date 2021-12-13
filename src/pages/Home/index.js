@@ -9,8 +9,26 @@ import Homecontact from "../../components/Homecontact";
 import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
+import axios from "axios";
 
 function Home() {
+  const [ourblog, setOurblog] = useState([])
+  useEffect(() => {
+    function myblogData() {
+      axios.get("https://ums.ultivic.com/api/development/blogs?page=1")
+        .then((response) => {
+          const myBogs = response.data.data.data;
+
+          console.log(myBogs)
+          setOurblog(myBogs);
+
+        })
+    }
+    myblogData();
+    
+
+
+  }, [])
 
 
 
@@ -44,155 +62,93 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="home_about space">
-          {/* <div className="container">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="home_about_img wow fadeInLeft" data-wow-delay="0.3s">
-                    <img
-                      src="./assets/home/about_image.png"
-                      alt="Ultivic about"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="home_about_content wow fadeInRight" data-wow-delay="0.3s">
-                    <div className="headings_outer">
-                      <h6 className="sub_heading placement">About us</h6>
-                      <h2 className="common_heading">
-                        We Provide IT solutions that performs.
-                      </h2>
+        <section className="inner_about space ">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-7">
+                <div className="about_img_box">
+
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="about_blog">
+                        <ul className="">
+                          {ourblog.slice(0, 2).map((curelem, index) => {
+                            const { title, description, image, id } = curelem;
+                            return (
+
+                              <li className="blog_element mb-2" key={index}>
+                                <img src={image} alt="" />
+                                <div className="blog_info">
+                                  <div className="blog_info_inner">
+                                    <h6><Link to={`/blog/${id}`}>{title}</Link></h6>
+                                    <p><Link to={`/blog/${id}`}>Read More</Link></p>
+                                  </div>
+                                </div>
+                              </li>
+                            );
+                          })
+                          }
+
+                        </ul>
+                      </div>
                     </div>
-                    <p className="about_description">
-                      You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.
-                    </p>
-                    <div className="progress_bars">
-                      <h4 className="bar_heading">Web Development</h4>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-bar-striped bg-danger"
-                          style={{ width: "95%" }}
-                        >
-                          95%
+                    <div className="col-md-6">
+                      <div className="about_portfolio ">
+                        <img src="assets/home/about-01.png" alt="" />
+                        <div className="portfoli_outer_about">
+                        <div className="portfolio_text">
+                            <p>Some of our Amazing Work</p>
+                            <a href="/portfolio">Explore</a>
+                        </div>
                         </div>
                       </div>
                     </div>
-                    <div className="progress_bars">
-                      <h4 className="bar_heading">App Development</h4>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-bar-striped "
-                          style={{ width: "92%" }}
-                        >
-                          92%
-                        </div>
-                      </div>
-                    </div>
-                    <div className="progress_bars">
-                      <h4 className="bar_heading">Graphics Design</h4>
-                      <div className="progress">
-                        <div
-                          className="progress-bar progress-bar-striped graphic_bg"
-                          style={{ width: "88%" }}
-                        >
-                          88%
+                    <div className="col-12">
+                      <div className="about_testimonials">
+                        <div className="about_testimonials_outer">
+
+                          <div className="tetimonail_text">
+
+                            <p>  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,  Donec lacinia congue felis in faucibus.</p>
+
+                          </div>
+                          <div className="testimonial_img">
+                            <img className="mr-3 rounded-circle" src="assets/home/cleint1.png" alt="Generic placeholder image" />
+                            <div>
+                              <p className="client_name">Mark Lukey</p>
+                              <p className="client_desgnation">Ceo Fitzu</p>
+                             
+                            </div>
+                          </div>
+                          <p className="star rating"><i className="fa fa-star" aria-hidden="true"></i>
+                              <i className="fa fa-star" aria-hidden="true"></i>
+                              <i className="fa fa-star" aria-hidden="true"></i>
+                              <i className="fa fa-star" aria-hidden="true"></i>
+                              <i className="fa fa-star" aria-hidden="true"></i></p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> */}
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
-                <div class="row align-items-center">
-                  <div class="col-lg-6 col-md-6 col-6">
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 mt-4 pt-2">
-                        <div class="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-01.png" class="img-fluid" alt="Image" />
-                          <div class="img-overlay bg-dark"></div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-12">
-                        <div class="mt-0 pt-2 text-right">
-                          <div class="global_btn"><a href="/about">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
-                        </div>
-                      </div>
-                    </div>
-
+              <div className="col-lg-5">
+                <div className="about_cont_box">
+                  <div className="headings_outer ">
+                    <h6 className="sub_heading placement">About us</h6>
+                    <h2 className="common_heading">
+                      We are Creative And Professional Agency
+                    </h2>
                   </div>
-
-
-                  <div class="col-lg-6 col-md-6 col-6">
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12">
-                        <div class="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-02.png" class="img-fluid" alt="Image" />
-                          <div class="img-overlay bg-dark"></div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-lg-12 col-md-12 mt-4 pt-2">
-                        <div class="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-03.png" class="img-fluid" alt="Image" />
-                          <div class="img-overlay bg-dark"></div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-                <div class="section-title ml-lg-5">
-                  <h6 className="sub_heading placement">About us</h6>
-                  <h4 class="title mb-4">
-                    We Provide IT solutions <br /> that performs.
-
-                  </h4>
-                  <p class="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
-
-                  <div class="row">
-                    <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center p-2">
-                        <i class="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
-                        <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Creative Ideas</a></h6>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center p-2">
-                        <i class="fa fa-users h4 mb-0 text-custom"></i>
-                        <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Team Work</a></h6>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center p-2">
-                        <i class="fa fa-building-o h4 mb-0 text-custom"></i>
-                        <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Work Strategy</a></h6>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center rounded shadow p-2">
-                        <i class="fa fa-cubes h4 mb-0 text-custom"></i>
-                        <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Client Handling</a></h6>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="about_info">
+                    We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
+                  </p>
+                  <p className="about_info">
+                    Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development.
+                  </p>
                 </div>
               </div>
 
             </div>
-
           </div>
         </section>
         <section className="services space">
