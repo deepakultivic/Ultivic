@@ -8,7 +8,7 @@ function Subheader(props) {
                 <div className="subhead_outer">
                 <h2 className="subhead">
                 
-                   {props.title}
+                   {props.title} <span>{props.sub}</span>
 
                     </h2>
                     <p>{props.shortdesc}</p>

@@ -87,9 +87,62 @@ function Web() {
             </div>
           </div>
         </section>
-<section className="why_choose">
+<section className="why_choose space">
 <div className="container">
-
+        <h6 class="sub_heading placement">Why Choose</h6>
+        <h4 class="title mb-5">Our experts made it easier</h4>
+        <div className='row'>
+            <div className='col-md-4'>
+                <div className='why_choose_card'>
+                  <div className='why_icon'>
+                      <img src="assets/about/web-design.svg" alt="" />
+                  </div>
+                  <div className='why_card_content'>
+                  <h4>Excelent Frontend</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  </div>
+                </div>
+            </div>
+            <div className='col-md-4'>
+                <div className='why_choose_card'>
+                  <div className='why_icon'>
+                      <img src="assets/about/coding.svg" alt="" />
+                  </div>
+                  <div className='why_card_content'>
+                  <h4>Solid back-End</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  </div>
+                </div>
+            </div>
+            <div className='col-md-4'>
+                <div className='why_choose_card'>
+                  <div className='why_icon'>
+                      <img src="assets/about/maintenance.svg" alt="" />
+                  </div>
+                  <div className='why_card_content'>
+                  <h4> Regulation and Maintenace </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  </div>
+                </div>
+            </div>
+            <div className='col-md-4'>
+                <div className='why_choose_card'>
+                  <div className='why_icon'>
+                      <img src="assets/about/test.svg" alt="" />
+                  </div>
+                  <div className='why_card_content'>
+                  <h4> Full cycle testing and delivery </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  </div>
+                </div>
+            </div>
+            <div className='col-md-8'>
+              <div className='why_contact why_choose_card align-items-center'>
+                  <h3>Get in Touch</h3>
+                  <p className='ml-auto'><a href="/contact">Know More</a></p>
+              </div>
+            </div>
+        </div>
 </div>
 </section>
         <SimpleReactLightbox>

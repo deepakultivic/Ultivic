@@ -46,16 +46,7 @@
 .about_counter .main_count .four p {
   color: #666666;
 }
-section.inner_about.inner_mision .about_exp {
-  left: 50%;
-  width: 600px;
-  bottom: -70px;
-  text-align: left;
-  padding: 40px;
-}
-section.inner_about.inner_mision {
-  padding-bottom: 125px;
-}
+
 .about_counter .main_count {
   background: #f7f7f7;
   padding: 40px;
@@ -92,16 +83,7 @@ span.counter span::before {
   top: -9px;
   color: #ce2128;
 }
-section.inner_about.inner_mision .about_exp {
-  left: 50%;
-  width: 600px;
-  bottom: -70px;
-  text-align: left;
-  padding: 40px;
-}
-section.inner_about.inner_mision {
-  padding-bottom: 125px;
-}
+
 .inner_achivement .inner_achivement_sec .achive_cont {
   background: #fff;
   padding: 20px;
@@ -354,13 +336,7 @@ line-height:28px;
 
 @media screen and (max-width: 991px) {
 
-  section.inner_about.inner_mision .about_exp {
-    position: relative;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    margin: 20px 0px;
-  }
+
   .about_cont_box {
     margin-bottom: 40px;
   }
@@ -531,9 +507,7 @@ line-height:28px;
   h2.common_heading {
     font-size: 23px;
 }
-section.inner_about.space {
-  padding-bottom: 140px;
-}
+
 
 .about_testimonials_outer {
   position: absolute;

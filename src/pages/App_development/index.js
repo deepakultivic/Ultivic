@@ -60,7 +60,48 @@ function App_dev() {
                 about_info={content[3].about_info}
             />
            </div>
-            <Planning
+           <section className="app_services space">
+              <div className="container"> 
+              <h6 className="sub_heading placement">Why Choose</h6>
+              <h4 className="title mb-5">Our experts made it easier</h4>
+                  <div className='row'>
+                      <div className='col-md-4'> 
+                          <div className="app_serv_card">
+                            <div className='app_serv_img'>
+                                <img src="assets/services/colors.png" alt="" />
+                            </div>
+                            <div className='app_ser_cintent'>
+                                <h4>Latest Color Combination</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            </div>
+                          </div>
+                      </div>
+                      <div className='col-md-4'> 
+                          <div className="app_serv_card">
+                            <div className='app_serv_img'>
+                                <img src="assets/services/toolskit.png" alt="" />
+                            </div>
+                            <div className='app_ser_cintent'>
+                                <h4>Tools kit</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            </div>
+                          </div>
+                      </div>
+                      <div className='col-md-4'> 
+                          <div className="app_serv_card">
+                            <div className='app_serv_img'>
+                                <img src="assets/services/gradient.png" alt="" />
+                            </div>
+                            <div className='app_ser_cintent'>
+                                <h4>Bes UI Gradients</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </section>
+            {/* <Planning
             imgsrc={pdata[1].imgsrc}
             sub_heading={pdata[1].sub_heading}
             common_heading={pdata[1].common_heading}
@@ -84,7 +125,7 @@ function App_dev() {
             planing_pts04={pdata[2].planing_pts04}
             planing_pts05={pdata[2].planing_pts05}
             planing_pts06={pdata[2].planing_pts06}
-            />
+            /> */}
              <SimpleReactLightbox>     <Gallery gallery={gridgallery}
                 />   </SimpleReactLightbox>
             <Foot/>
