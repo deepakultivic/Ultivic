@@ -132,6 +132,8 @@ section.about_counter {
   flex-direction: column;
   height: 450px;
   justify-content: center;
+  z-index: 1;
+    color: #fff;
 }
 .subhead_outer p{
   font-weight:500;

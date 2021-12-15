@@ -131,7 +131,7 @@ function Our_blogs() {
         return (
             <>
                 <Header />
-                <Subheader title="Our Blogs" clases="blogs_sec" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+                <Subheader title="Grow with"  sub="Ultivic" clases="blogs_sec" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
                 <section className="our_blogs_outer space">
                     <div className="container mx-auto px-4 ">
                         <div className="row">
