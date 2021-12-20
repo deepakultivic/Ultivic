@@ -5,7 +5,7 @@ import { tbdata } from "./pdata";
 function Technology() {
   return (
     <div>
-      <div className="technology ">
+      <div className="technology space">
         <div className="container">
           <div className="inner_tech ">
             <div className="row align-items-center">

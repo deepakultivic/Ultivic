@@ -5,14 +5,27 @@ import Subheader from "../../components/Subheader";
 import Aboutglobal from "../../components/Aboutglobal";
 import content from "../../components/Aboutglobal/content";
 import Planning from "../../components/Services/Planning";
-import Technology from "../../components/Services/Technology";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import pdata from "../../components/Services/pdata";
 import Foot from "../../components/Foot";
 import "./style.css";
 import Techbox from "../../components/Services/Techbox";
 import { tbdata } from "../../components/Services/pdata";
+
 function Graphic() {
   const [loading, setLoading] = useState(true);
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nav: true,
+
+  };
   useEffect(() => {
     // Loading function to load data or 
     // fake it using setTimeout;
@@ -71,7 +84,7 @@ function Graphic() {
                   </p>
                 </div>
               </div>
-            <div className="col-md-7">
+            <div className="col-xl-7 col-lg-6">
               <div className="row">
             
                   <Techbox
@@ -119,38 +132,153 @@ function Graphic() {
           planing_pts05={pdata[0].planing_pts05}
           planing_pts06={pdata[0].planing_pts06}
         />
-
-        {/* <section className="graphics_gallery">
-        <div className="container">
-          <div className="headings_outer  text-center">
-            <h6 className="sub_heading ">Technologies</h6>
-            <h2 className="common_heading">Lorem ipsum dolor sit</h2>
-          </div>
-          <div className="row">
-            <div className="col-md-6 ">
-              <div className="graphics_img mt-5">
-                <img src="/assets/services/graphics1.jpg" alt="" />
-                <h3>Ecommerce</h3>
-              </div>
-              <div className="graphics_img">
-                <img src="/assets/services/graphics3.jpg" alt="" />
-                <h3>Mobile Application</h3>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="graphics_img">
-                <img src="/assets/services/graphics2.jpg" alt="" />
-                <h3>Fashion</h3>
-              </div>
-              <div className="graphics_img">
-                <img src="/assets/services/graphics4.jpg" alt="" />
-                <h3>Blogging</h3>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </section> */}
+  
+                <section className="grapic_work space">
+                  <div className="container_fluid">
+                      <div className="graphic_inner">
+                      <Slider {...settings}>
+                        <div className="gapcis_card">
+                        <div className="row align-items-center">
+                              <div className="col-xl-5 col-lg-6">
+                                  <div className="project_content">
+                                      <h3>
+                                        Auto Grab
+                                      </h3>
+                                      <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div className="col-xl-7 col-lg-6">
+                                  <div className="project_image">
+                                      <img src="assets/portfolio/graphics-01.png" alt="" />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="gapcis_card">
+                        <div className="row align-items-center">
+                              <div className="col-xl-5 col-lg-6">
+                                  <div className="project_content">
+                                      <h3>
+                                        Fitzu
+                                      </h3>
+                                      <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div className="col-xl-7 col-lg-6">
+                                  <div className="project_image">
+                                      <img src="assets/portfolio/graphics-02.png" alt="" />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="gapcis_card">
+                        <div className="row align-items-center">
+                              <div className="col-xl-5 col-lg-6">
+                                  <div className="project_content">
+                                      <h3>
+                                        Krav maga
+                                      </h3>
+                                      <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div className="col-xl-7 col-lg-6">
+                                  <div className="project_image">
+                                      <img src="assets/portfolio/graphics-03.png" alt="" />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      
+                        <div className="gapcis_card">
+                        <div className="row align-items-center">
+                              <div className="col-xl-5 col-lg-6">
+                                  <div className="project_content">
+                                      <h3>
+                                    car Buyers
+                                      </h3>
+                                      <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div className="col-xl-7 col-lg-6">
+                                  <div className="project_image">
+                                      <img src="assets/portfolio/graphics-04.png" alt="" />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="gapcis_card">
+                        <div className="row align-items-center">
+                              <div className="col-xl-5 col-lg-6">
+                                  <div className="project_content">
+                                      <h3>
+                                        Kimekai
+                                      </h3>
+                                      <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div className="col-xl-7 col-lg-6">
+                                  <div className="project_image">
+                                      <img src="assets/portfolio/graphics-05.png" alt="" />
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                          </Slider>
+                      </div>
+                  </div>
+                </section>
+                <section className="app_services space">
+                    <div className="container">
+                        <h6 className="sub_heading placement">Why Choose</h6>
+                        <h4 className="title mb-5">We make it perfect at every step</h4>
+                        <div className='row'>
+                            <div className='col-md-4'>
+                                <div className="app_serv_card">
+                                    <div className='app_serv_img'>
+                                        <img src="assets/services/colors.png" alt="" />
+                                    </div>
+                                    <div className='app_ser_cintent'>
+                                        <h4>Latest Color Combination</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-md-4'>
+                                <div className="app_serv_card">
+                                    <div className='app_serv_img'>
+                                        <img src="assets/services/toolskit.png" alt="" />
+                                    </div>
+                                    <div className='app_ser_cintent'>
+                                        <h4>Tools kit</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-md-4'>
+                                <div className="app_serv_card">
+                                    <div className='app_serv_img'>
+                                        <img src="assets/services/gradient.png" alt="" />
+                                    </div>
+                                    <div className='app_ser_cintent'>
+                                        <h4>Bes UI Gradients</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+      
         <Foot />
 
         <Footer />

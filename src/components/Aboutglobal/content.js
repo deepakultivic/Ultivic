@@ -8,7 +8,7 @@ const content=[
 
     },
     {
-      imgsrc:"/assets/about/mision.jpg",
+      imgsrc:"/assets/about/about_main.png",
       about_exp :"“There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.” – Milton Glaser",
       sub_heading:"Graphic Design",
       common_heading:"What is Graphic Design ? ",

@@ -9,12 +9,19 @@ import "./style.css";
 import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
 import CustomModal from "../../components/Ourteam";
-import axios from "axios";
-import { Link } from "react-router-dom";
 function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
   const [teamchunk, setchunk] = useState([]);
+  const [teamdata, setTeamdata] = useState(ourteam);
+  const makechunks = () => {
+    setTeamdata(teamdata.map(n =>({...n})));
+    var chunks = [], i = 0, n = teamdata.length;
+  while (i < n) {
+    chunks.push(teamdata.slice(i, i += 4));
+  }
+  setchunk(chunks)
+  };
   var settings = {
     dots: true,
     infinite: true,
@@ -41,20 +48,8 @@ function About(props) {
     ],
   };
 
-
   useEffect(() => {
-  
-    let chunk;
-    let allchunk = [];
-    while (ourteam.length > 0) {
-
-      chunk = ourteam.splice(0, 4)
-      allchunk.push(chunk)
-
-    }
-    setchunk(allchunk);
-
-
+    makechunks()
   }, [])
 
 
@@ -136,25 +131,25 @@ function About(props) {
                    <div className="col-lg-6 mt-4 pt-2">
                      <div className="media align-items-center p-2">
                        <i className="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Creative Ideas</a></h6>
+                       <h6 className="ml-3 mb-0"><a className="text-dark">Creative Ideas</a></h6>
                      </div>
                    </div>
                    <div className="col-lg-6 mt-4 pt-2">
                      <div className="media align-items-center p-2">
                        <i className="fa fa-users h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Team Work</a></h6>
+                       <h6 className="ml-3 mb-0"><a className="text-dark">Team Work</a></h6>
                      </div>
                    </div>
                    <div className="col-lg-6 mt-4 pt-2">
                      <div className="media align-items-center p-2">
                        <i className="fa fa-building-o h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Work Strategy</a></h6>
+                       <h6 className="ml-3 mb-0"><a className="text-dark">Work Strategy</a></h6>
                      </div>
                    </div>
                    <div className="col-lg-6 mt-4 pt-2">
                      <div className="media align-items-center rounded shadow p-2">
                        <i className="fa fa-cubes h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a href="javascript:void(0)" className="text-dark">Client Handling</a></h6>
+                       <h6 className="ml-3 mb-0"><a className="text-dark">Client Handling</a></h6>
                      </div>
                    </div>
                  </div>
@@ -343,7 +338,7 @@ function About(props) {
                 <div className="team-overview">
                   <h6 className="sub_heading placement">Who we are</h6>
                   <h5>Meet the Entire Team</h5>
-                  <p><div>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</div></p>
+                  <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
                 </div>
               </div>
             </div>

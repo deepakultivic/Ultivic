@@ -1,138 +1,134 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import Aboutglobal from "../../components/Aboutglobal";
 import content from '../../components/Aboutglobal/content';
-import pdata from '../../components/Services/pdata';
-import Planning from '../../components/Services/Planning';
+import Technology from '../../components/Services/Technology';
 import Foot from "../../components/Foot";
 import Gallery from '../../components/Services/Gallery';
-import {gridgallery} from "../../components/Services/pdata";
+import { gridgallery } from "../../components/Services/pdata";
 import SimpleReactLightbox from 'simple-react-lightbox'
 import "./style.css";
 
 function App_dev() {
     const [loading, setLoading] = useState(true);
+  
     useEffect(() => {
         // Loading function to load data or 
         // fake it using setTimeout;
         const loadData = async () => {
-    
-          // Wait for two second
-          await new Promise((r) => setTimeout(r, 1000));
-    
-          // Toggle loading state
-          setLoading((loading) => !loading);
+
+            // Wait for two second
+            await new Promise((r) => setTimeout(r, 1000));
+
+            // Toggle loading state
+            setLoading((loading) => !loading);
         };
-          
+
         loadData();
-      }, [])
-        
-      // If page is in loading state, display 
-      // loading message. Modify it as per your 
-      // requirement.
-      if (loading) {
-          return   <div className="w-100 text-center my_loader">
-          <p></p><div className="loader1">
-          <div>
-            <img src="/assets/header/logo-white.png" alt="logo" />
+    }, [])
+
+    // If page is in loading state, display 
+    // loading message. Modify it as per your 
+    // requirement.
+    if (loading) {
+        return <div className="w-100 text-center my_loader">
+            <p></p><div className="loader1">
+                <div>
+                    <img src="/assets/header/logo-white.png" alt="logo" />
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    </div>
-    </div>
-      }
-      else{
-    return (
-        <div>
-            <Header />
-            <Subheader title="App Development" clases="app_dev" shortdesc="Application development is the process of creating a computer program"/>
-           <div className="app_dev_inner">
-           <Aboutglobal
-                imgsrc={content[3].imgsrc}
-                about_exp={content[3].about_exp}
-                sub_heading={content[3].sub_heading}
-                common_heading={content[3].common_heading}
-                about_info={content[3].about_info}
-            />
-           </div>
-           <section className="app_services space">
-              <div className="container"> 
-              <h6 className="sub_heading placement">Why Choose</h6>
-              <h4 className="title mb-5">Our experts made it easier</h4>
-                  <div className='row'>
-                      <div className='col-md-4'> 
-                          <div className="app_serv_card">
-                            <div className='app_serv_img'>
-                                <img src="assets/services/colors.png" alt="" />
-                            </div>
-                            <div className='app_ser_cintent'>
-                                <h4>Latest Color Combination</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                            </div>
-                          </div>
-                      </div>
-                      <div className='col-md-4'> 
-                          <div className="app_serv_card">
-                            <div className='app_serv_img'>
-                                <img src="assets/services/toolskit.png" alt="" />
-                            </div>
-                            <div className='app_ser_cintent'>
-                                <h4>Tools kit</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                            </div>
-                          </div>
-                      </div>
-                      <div className='col-md-4'> 
-                          <div className="app_serv_card">
-                            <div className='app_serv_img'>
-                                <img src="assets/services/gradient.png" alt="" />
-                            </div>
-                            <div className='app_ser_cintent'>
-                                <h4>Bes UI Gradients</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                            </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-           </section>
-            {/* <Planning
-            imgsrc={pdata[1].imgsrc}
-            sub_heading={pdata[1].sub_heading}
-            common_heading={pdata[1].common_heading}
-            planning_info={pdata[1].planning_info}
-            planing_pts01={pdata[1].planing_pts01}
-            planing_pts02={pdata[1].planing_pts02}
-            planing_pts03={pdata[1].planing_pts03}
-            planing_pts04={pdata[1].planing_pts04}
-            planing_pts05={pdata[1].planing_pts05}
-            planing_pts06={pdata[1].planing_pts06}
-            />
-            <Planning
-            clases={pdata[2].clases}
-            imgsrc={pdata[2].imgsrc}
-            sub_heading={pdata[2].sub_heading}
-            common_heading={pdata[2].common_heading}
-            planning_info={pdata[2].planning_info}
-            planing_pts01={pdata[2].planing_pts01}
-            planing_pts02={pdata[2].planing_pts02}
-            planing_pts03={pdata[2].planing_pts03}
-            planing_pts04={pdata[2].planing_pts04}
-            planing_pts05={pdata[2].planing_pts05}
-            planing_pts06={pdata[2].planing_pts06}
-            /> */}
-             <SimpleReactLightbox>     <Gallery gallery={gridgallery}
-                />   </SimpleReactLightbox>
-            <Foot/>
-            <Footer />
         </div>
-    );
-}
+    }
+    else {
+        return (
+            <div>
+                <Header />
+                <Subheader title="App Development" clases="app_dev" shortdesc="Application development is the process of creating a computer program" />
+                <div className="app_dev_inner">
+                    <Aboutglobal
+                        imgsrc={content[3].imgsrc}
+                        about_exp={content[3].about_exp}
+                        sub_heading={content[3].sub_heading}
+                        common_heading={content[3].common_heading}
+                        about_info={content[3].about_info}
+                    />
+                </div>
+                <Technology />
+                <section className='our_tech space '>
+                    <div className='container-fluid'>
+                        <div className='tech_inner'>
+                            <div className='row'>
+                                <div className='col-xl-6 col-md-6'>
+                                    <div className='tech_card android'>
+                                        <h4>Android App Development
+                                        </h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, provident. Aliquam voluptas atque non sequi qui deserunt odit nobis harum quisquam recusandae iste et animi odio laudantium, voluptates incidunt sunt.</p>
+                                        <div className='tec_technologies'>
+                                            <ul>
+                                                <li>
+                                                    <div className='tech_img'>
+                                                        <img src="assets/home/Kotlin_Icon.png" alt="" />
+
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div className='tech_img'>
+                                                        <img src="assets/home/java.svg" alt="" />
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-xl-6 col-md-6'>
+                                    <div className='tech_card ios'>
+                                        <h4>iOS App Development
+                                        </h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, provident. Aliquam voluptas atque non sequi qui deserunt odit nobis harum quisquam recusandae iste et animi odio laudantium, voluptates incidunt sunt.</p>
+                                        <div className='tec_technologies'>
+                                            <ul>
+                                                <li>
+                                                    <div className='tech_img'>
+                                                        <img src="assets/home/swift.svg" alt="" />
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className='tech_img'>
+                                                        <img src="assets/home/obejctivec.png" alt="" />
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className='tech_img'>
+                                                        <img src="assets/home/rx.png" alt="" />
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <Foot />
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default App_dev;

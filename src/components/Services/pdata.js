@@ -2,7 +2,7 @@ const pdata = [
     {
         imgsrc: "/assets/services/planning_web.jpg",
         sub_heading: "PLANNING & STRATEGY",
-        common_heading: "Lorem ipsum dolor",
+        common_heading: "We plan the structure and implement it",
         planning_info: "Graphic design still revolves around age-old principles. It is crucial to apply visual hierarchy and page layout techniques to meet users’ specific needs and focus on interactive design for better user experience.",
         planing_pts01: "Symmetry and Balance ",
         planing_pts02: "Flow",
@@ -42,22 +42,22 @@ const pdata = [
 const tbdata = [
     {
         textimgsrc: "/assets/services/cms-1.png",
-        tech_box_heading: "CMS & CRM",
+        tech_box_heading: "Native Mobile App Development",
         tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
     },
     {
         textimgsrc: "/assets/services/shopping-1.png",
-        tech_box_heading: "eCommerce",
+        tech_box_heading: "Hybrid Mobile App Development",
         tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
     },
     {
         textimgsrc: "/assets/services/applications-1.png",
-        tech_box_heading: "Applications",
+        tech_box_heading: "Progressive Web App Development",
         tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
     },
     {
         textimgsrc: "/assets/services/php.png",
-        tech_box_heading: "PHP & JS",
+        tech_box_heading: "Wearables and Embedded ",
         tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
     },
 

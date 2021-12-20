@@ -62,15 +62,15 @@ function Web() {
               <div className="col-md-6">
                 <img src="assets/home/web_about.png" alt="" />
               </div>
-              <div class="col-lg-6 col-md-6 col-12 ">
-                <div class="section-title ml-lg-5">
+              <div className="col-lg-6 col-md-6 col-12 ">
+                <div className="section-title ml-lg-5">
                   <h6 className="sub_heading placement">Web Development
                   </h6>
-                  <h4 class="title mb-2">
+                  <h4 className="title mb-2">
                     What is Web Development ?
 
                   </h4>
-                  <p class="text-muted mb-0">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are performing and the platforms on which they are working.</p>
+                  <p className="text-muted mb-0">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are performing and the platforms on which they are working.</p>
                   <h5 className="my-3">
                     Our Technologies
                   </h5>
@@ -89,8 +89,8 @@ function Web() {
         </section>
 <section className="why_choose space">
 <div className="container">
-        <h6 class="sub_heading placement">Why Choose</h6>
-        <h4 class="title mb-5">Our experts made it easier</h4>
+        <h6 className="sub_heading placement">Why Choose</h6>
+        <h4 className="title mb-5">Our experts made it easier</h4>
         <div className='row'>
             <div className='col-md-4'>
                 <div className='why_choose_card'>
