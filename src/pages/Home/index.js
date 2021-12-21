@@ -275,7 +275,16 @@ function Home() {
                   <ul className="p-0 tech_icons" >
                       <li><img src="assets/home/php.svg" alt="" /></li>
                       <li><img src="assets/home/java.svg" alt="" /></li>
+                      <li><img src="assets/home/java-script.svg" alt="" /></li>
+                      <li><img src="assets/home/node-js.svg" alt="" /></li>
+                      <li><img src="assets/home/laravel.png" alt="" /></li>
+                      <li><img src="assets/home/physics.svg" alt="" /></li>     
+                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>    
+                      <li><img src="assets/home/cakephp.png" alt="" /></li>                  
                       <li><img src="assets/home/android.svg" alt="" /></li>
+                      <li><img src="assets/home/apple.svg" alt="" /></li>
+                      <li><img src="assets/home/html-5.svg" alt="" /></li>
+                      <li><img src="assets/home/css-3.svg" alt="" /></li>
                       <li><img src="assets/home/photoshop.svg" alt="" /></li>
                       <li><img src="assets/home/illustrator.svg" alt="" /></li>
                   </ul>

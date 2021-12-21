@@ -173,7 +173,7 @@ function Graphic() {
                                       <img src="assets/portfolio/graphics-02.png" alt="" />
                                   </div>
                               </div>
-                          </div>
+                          </div>  
                         </div>
                         <div className="gapcis_card">
                         <div className="row align-items-center">

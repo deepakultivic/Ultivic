@@ -35,17 +35,17 @@ section.grapic_work {
     border-radius: 30px;
     overflow: hidden;
 }
-.slick-arrow.slick-prev {
+.grapic_work .slick-arrow.slick-prev {
     bottom: -40px;
     top: auto;
     left: 140px;
 }
-.slick-arrow.slick-next {
+.grapic_work .slick-arrow.slick-next {
     top: auto;
     bottom: -40px;
     left: 193px;
 }
-.slick-arrow {
+.grapic_work .slick-arrow {
     width: 40px;
     height: 40px;
     display: flex !important;
@@ -56,10 +56,10 @@ section.grapic_work {
     background: #ce2128;
     border-radius: 50%;
 }
-.slick-arrow:hover{
+.grapic_work .slick-arrow:hover{
 background: #23282d;
 }
-.slick-prev:before, .slick-next:before {
+ .slick-prev:before, .slick-next:before {
     font-size: 13px;
 }
 @media screen and (max-width:991px){

@@ -76,11 +76,18 @@ function Web() {
                   </h5>
                   {/* <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p> */}
                   <ul className="p-0 tech_icons" >
-                    <li><img src="assets/home/php.svg" alt="" /></li>
-                    <li><img src="assets/home/java.svg" alt="" /></li>
-                    <li><img src="assets/home/android.svg" alt="" /></li>
-                    <li><img src="assets/home/js.svg" alt="" /></li>
-                    <li><img src="assets/home/html-5.svg" alt="" /></li>
+                  <li><img src="assets/home/php.svg" alt="" /></li>
+                      <li><img src="assets/home/java.svg" alt="" /></li>
+                      <li><img src="assets/home/java-script.svg" alt="" /></li>
+                      <li><img src="assets/home/node-js.svg" alt="" /></li>
+                      <li><img src="assets/home/laravel.png" alt="" /></li>
+                      <li><img src="assets/home/physics.svg" alt="" /></li>     
+                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>    
+                      <li><img src="assets/home/cakephp.png" alt="" /></li>  
+                      <li><img src="assets/home/spring_mvc.png" alt="" /></li>  
+                      <li><img src="assets/home/springboot.png" alt="" /></li>  
+                      <li><img src="assets/home/strut_2.png" alt="" /></li>  
+
                   </ul>
                 </div>
               </div>

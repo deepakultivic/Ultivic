@@ -6,14 +6,32 @@ import Aboutglobal from "../../components/Aboutglobal";
 import content from '../../components/Aboutglobal/content';
 import Technology from '../../components/Services/Technology';
 import Foot from "../../components/Foot";
-import Gallery from '../../components/Services/Gallery';
-import { gridgallery } from "../../components/Services/pdata";
-import SimpleReactLightbox from 'simple-react-lightbox'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import "./style.css";
 
 function App_dev() {
     const [loading, setLoading] = useState(true);
-  
+    var settings = {
+        infinite: true,
+        autoplay: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              centerPadding: '30%',
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false
+            }
+          },
+        ]
+      };
     useEffect(() => {
         // Loading function to load data or 
         // fake it using setTimeout;
@@ -122,7 +140,79 @@ function App_dev() {
                         </div>
                     </div>
                 </section>
-
+                <section className='space app_work pt-0'>
+                    <div className="container-fluid">
+                        <div className="appwork_inner ">
+                        <Slider {...settings}>
+                     
+                            <div className='app_card'>
+                                <div className='row align-items-center'>
+                                    <div className="col-md-6">
+                                        <img src="assets/services/fitzu.png" alt="" />
+                                    </div>
+                                    <div className='col-md-6'>
+                                            <div className='app_text'>
+                                               <div className='app_logo'>
+                                               <img src="/assets/services/fitzulogo.png" alt="" />
+                                               </div>
+                                                <h3>Fitzu</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='app_card'>
+                                <div className='row align-items-center'>
+                                    <div className="col-md-6">
+                                        <img src="assets/services/loudly.png" alt="" />
+                                    </div>
+                                    <div className='col-md-6'>
+                                            <div className='app_text'>
+                                               <div className='app_logo'>
+                                               <img src="/assets/home/louble_logo.png" alt="" />
+                                               </div>
+                                                <h3>Loudly</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='app_card'>
+                                <div className='row align-items-center'>
+                                    <div className="col-md-6">
+                                        <img src="assets/services/downly.png" alt="" />
+                                    </div>
+                                    <div className='col-md-6'>
+                                            <div className='app_text'>
+                                               <div className='app_logo'>
+                                               <img src="assets/services/downlylogo.png" alt="" />
+                                               </div>
+                                                <h3>Downly</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='app_card'>
+                                <div className='row align-items-center'>
+                                    <div className="col-md-6">
+                                        <img src="assets/services/compressor.png" alt="" />
+                                    </div>
+                                    <div className='col-md-6'>
+                                            <div className='app_text'>
+                                               <div className='app_logo'>
+                                               <img src="assets/services/compressorlogo.png" alt="" />
+                                               </div>
+                                                <h3>Compressor</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </Slider>
+                        </div>
+                    </div>
+                </section>
 
                 <Foot />
                 <Footer />
