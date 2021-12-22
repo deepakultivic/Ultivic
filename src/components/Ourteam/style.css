@@ -30,4 +30,9 @@ button.close {
 }
 .team_image{
   min-height: 250px;
+  border-radius: 3px 0px 0px 3px;
+}
+p.experiennce, p.skills {
+  font-weight: 600;
+  font-size: 15px;
 }

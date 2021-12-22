@@ -78,9 +78,12 @@ ul.drop_menu li:last-child a {
   justify-content: unset;
 }
 .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
-  width: 100%;
+  width: 50%;
   /* position: relative; */
-  left: 0;
+  right: 0;
+  background-color: transparent;
+  box-shadow: 0 4px 20px 0 rgb(37 45 79 / 40%);
+  top: 53px;
 }
 
 .desktop_dropdown ul.drop_menu {
@@ -93,34 +96,64 @@ ul.drop_menu li:last-child a {
   display: none;
 }
 .menu_image p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
+}
+.services_text h3 {
+  text-decoration: underline;
   color: #fff;
-  width: 100%;
-  text-align: center;
+}
+ul.drop_menu .menu_bg li a {
+  padding: .2em;
 }
 
-.menu_image::before {
-  position: absolute;
-  content: "";
-  background: rgba(0, 0, 0, 40%);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.services_text h3 {
+  font-size: 18px;
 }
-
 .desktop_dropdown ul.drop_menu li a {
   border-bottom: none;
+}
+.serve_bg {
+  background-color: #c12128;
+  color: #fff;
+}
+.menu_bg {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.serve_bg,
+.menu_bg {
+  padding: 2em;
+}
+.services_text p {
+  color: #fff;
+  margin-top: 14px;
 }
 @media screen and (max-width: 1440px) {
   a.navbar-brand img {
     width: 200px;
   }
+  .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
+    width: 60%;
+  
+}
+
+}
+@media screen and (max-width: 1199px) {
+  .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
+    width: 70%;
+  
+}
+
+}
+@media screen and (max-width: 1024px) {
+  .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
+    width: 80%;
+  
+}
+
 }
 @media screen and (max-width: 991px) {
   /* .navbar .container {
@@ -146,10 +179,10 @@ ul.drop_menu li:last-child a {
   .navbar-nav .nav-item.nav-link:hover {
     color: #ce2128;
   }
-  .mobile_dropdown{
+  .mobile_dropdown {
     display: block;
   }
-  .desktop_dropdown{
+  .desktop_dropdown {
     display: none;
   }
   .navbar .navbar-nav .nav-item.nav-link {

@@ -43,7 +43,7 @@ function Portfolio() {
     return (
         <div>
             <Header/>
-            <Subheader title="Portfolio" clases="portfolios" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
+            <Subheader title="Brands we've" sub="helped" clases="portfolios bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
       
        <SimpleReactLightbox><Filter/></SimpleReactLightbox>
             

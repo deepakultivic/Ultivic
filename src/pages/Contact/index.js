@@ -141,7 +141,7 @@ function Contact() {
   return (
     <div>
       <Header />
-      <Subheader title="Contact" clases="contact" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+      <Subheader title="Get in Touch with" sub="Us" clases="contact bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
       <section className="contact_box space">
         <div className="container">
           <div className="row">

@@ -120,9 +120,7 @@ section.about_counter {
   padding-bottom: 70px;
 }
 .subhead {
-  display: flex;
-  align-items: center;
-  
+ 
   color: #fff;
   font-size: 50px;
   text-transform: capitalize;
@@ -133,12 +131,27 @@ section.about_counter {
   height: 450px;
   justify-content: center;
   z-index: 1;
+  position: relative;
     color: #fff;
 }
 .subhead_outer p{
   font-weight:500;
   font-size:16px;
   color:#fff;
+}
+.right_align_inner {
+  display: inline-block;
+}
+
+.right_align {
+  text-align: right;
+}
+
+.right_align_inner p {
+  text-align: left;
+}
+.right_align_inner h2 {
+  text-align: left;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -343,13 +356,16 @@ h2.subhead {
 }
 @media screen and (max-width:1199px){
  
-
+  .bg_overlay::before {
+    
+    background: linear-gradient(to bottom, black 0%, transparent 20%);
+}
   .subhead_outer {
     height: 300px;
 }
 h2.subhead {
   font-size: 32px;
-  margin-top: 85px;
+  margin-top: 20px;
 }
 }
 

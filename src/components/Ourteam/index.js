@@ -27,13 +27,16 @@ export default function CustomModal({ title, body, show, setShow }) {
                                 {/* <div className="img">
                                     <img src={body.emp_image} alt="" />
                                 </div> */}
+                                
 
                             </div>
                             <div className="col-md-8">
                                 <div className="emp_content">
                                     <h4 className="">{body.emp_name}</h4>
                                     <p className="emp_designation">{body.emp_designation}</p>
-                                    <p>{body.emp_about}</p>
+                                    <p className="experiennce">{body.emp_eperinece}</p>
+                                    <p className="skills">{body.emp_expertice}</p>
+                                    <p className="emp_about">{body.emp_about}</p>
                                 </div>
                             </div>
                         </div>

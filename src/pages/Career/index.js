@@ -43,7 +43,7 @@ function Career() {
   return (
     <div>
       <Header />
-      <Subheader title="Start your" sub="career" clases="career" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
+      <Subheader title="Start your" sub="career " clases="career bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
      
       
       <section className="jobs_sections space">

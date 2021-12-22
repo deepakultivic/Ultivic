@@ -98,50 +98,72 @@ const ourteam = [
     {
         emp_name:"Tarun",
         emp_designation:"Bakend Developer",
-        emp_image:"http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png",
+        emp_image:"assets/about/tarun.png",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Php, Laravel, Java, javascript ",
         emp_about:"A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
 
     },
     {
-        emp_name:"Netin",
+        emp_name:"Savita",
         emp_designation:"Bakend Developer",
-        emp_image:"http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png",
+        emp_image:"assets/about/savita.png",
+        emp_eperinece:"Experience : 3 years",
+        emp_expertice:" Skills : Php, Laravel, Java, javascript",
         emp_about:"A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
 
     },
+   
     {
-        emp_name:"Sahil",
-        emp_designation:"Bakend Developer",
-        emp_image:"http://gocheckers.com/images/roster/andrew_poturalski_headshot_1718.png",
+        emp_name:"vinay",
+        emp_designation:"iOS Developer",
+        emp_image:"assets/about/vinay.png",
+        emp_about:"lorem ipsum site dollar",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Swift, Objectice-c",
+
+    },
+    {
+        emp_name:"Nikhil",
+        emp_designation:"Android Developer",
+        emp_image:"assets/about/nikhil.jpg",
+        emp_about:"lorem ipsum site dollar",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Java, Kotlin",
+
+    },
+    {
+        emp_name:"Mankirat",
+        emp_designation:"Android Developer",
+        emp_image:"assets/about/mnkirat.png",
+        emp_about:"lorem ipsum site dollar",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Java, Kotlin",
+
+    },
+    {
+        emp_name:"Surbhi",
+        emp_designation:"Android Developer",
+        emp_image:"assets/about/surbhi.png",
+        emp_about:"lorem ipsum site dollar",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Java, kotlin, Flutter",
+
+    },
+    {
+        emp_name:"Deepak",
+        emp_designation:"Frontend Developer",
+        emp_image:"assets/about/deepak.png",
         emp_about:"lorem ipsum site dollar",
 
     },
     {
-        emp_name:"Manpreet",
-        emp_designation:"Bakend Developer",
-        emp_image:"https://axis.org/wp-content/uploads/2015/12/2015-Dougie-Headshot.png",
+        emp_name:"Aman Kumar",
+        emp_designation:"Ui/Ux Designer",
+        emp_image:"assets/about/aman.png",
         emp_about:"lorem ipsum site dollar",
-
-    },
-    {
-        emp_name:"John Doe",
-        emp_designation:"Bakend Developer",
-        emp_image:"https://axis.org/wp-content/uploads/2014/10/chris-headshot.png",
-        emp_about:"lorem ipsum site dollar",
-
-    },
-    {
-        emp_name:"John Doe j",
-        emp_designation:"Bakend Developer",
-        emp_image:"https://axis.org/wp-content/uploads/2014/12/jeremiah-e1418073411753.png",
-        emp_about:"lorem ipsum site dollar",
-
-    },
-    {
-        emp_name:"John Doe h",
-        emp_designation:"Bakend Developer",
-        emp_image:"http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png",
-        emp_about:"lorem ipsum site dollar",
+        emp_eperinece:"Experience : 2 years",
+        emp_expertice:" Skills : Photoshop, AI ,XD, Figma",
 
     },
 

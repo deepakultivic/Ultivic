@@ -53,17 +53,29 @@ const Header = () => {
             <li className="nav-item nav-link desktop_dropdown">
               Services <i className="	fa fa-angle-down"></i>
               <ul className="drop_menu">
-                <li><NavLink activeClassName="active" to="/web"><div className="menu_image">
-                  <img src="/assets/header/webdevelopment.jpg" alt="" />
-                  <p> Web Development</p>
-                </div></NavLink></li>
-                <li><NavLink activeClassName="active" to="/graphic"><div className="menu_image">
-                  <img src="/assets/header/graphics.jpg" alt="" />
-                  <p>Graphic Design</p></div></NavLink></li>
-                <li><NavLink activeClassName="active" to="/app"><div className="menu_image">
-                  <img src="/assets/header/appdevelopment.jpg" alt="" />
-                  <p>App Development</p>
-                </div></NavLink></li>
+                <div className="row w-100 ">
+                  <div className="col-md-4 serve_bg">
+                      <div className="services_text">
+                          <h3>Our Services</h3>
+                          <p>You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested 
+
+</p>
+                      </div>
+                  </div>
+                  <div className="col-md-8 menu_bg">
+                    <li><NavLink activeClassName="active" to="/web"><div className="menu_image">
+
+                      <p> Web Development</p>
+                    </div></NavLink></li>
+                    <li><NavLink activeClassName="active" to="/graphic"><div className="menu_image">
+
+                      <p>Graphic Design</p></div></NavLink></li>
+                    <li><NavLink activeClassName="active" to="/app"><div className="menu_image">
+
+                      <p>App Development</p>
+                    </div></NavLink></li>
+                  </div>
+                </div>
               </ul>
             </li>
             <NavLink activeClassName="active" to="/blogs" className="nav-item nav-link">  Blog</NavLink>

@@ -39,11 +39,11 @@ h2.blog_title_text {
     object-fit: cover;
     object-position: center;
 }
-section.blogs_sec {
+.bg_overlay {
     position: relative;
 }
 
-section.blogs_sec::before {
+.bg_overlay::before {
     position: absolute;
     content: "";
     top: 0;

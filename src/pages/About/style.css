@@ -373,7 +373,7 @@ line-height:28px;
 }
 
 .team-members li:last-child > div:first-child {
-  margin-left: 40%;
+  margin-left: 20%;
 }
 
 .member-details > div {
@@ -381,7 +381,7 @@ line-height:28px;
   margin: 5px;
 }
 .member-details img {
-  transform: rotate(45deg) translate(0, 15px) scale(1.2);
+  transform: rotate(45deg) translate(0, 15px) scale(1.6);
   display: block;
   width: 100%;
   height: 100%;
@@ -501,7 +501,47 @@ line-height:28px;
 .flex-center > div:first-child {
   order: 2;
 }
-
+/* octagone */
+.octagon{
+  display:inline-block;
+  width:12em;
+  height:12em;
+  position:relative;
+  overflow:hidden;
+  -webkit-transform:rotate(45deg);
+     -moz-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+       -o-transform:rotate(45deg);
+          transform:rotate(45deg);
+}
+.octagon-in{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  position:absolute;
+  overflow:hidden;
+  -webkit-transform:rotate(-45deg);
+     -moz-transform:rotate(-45deg);
+      -ms-transform:rotate(-45deg);
+       -o-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+}
+.octagon-bg{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  position:absolute;
+}
+section.our_team li {
+  display: inline-block;
+  margin: 5px;
+}
+.team_wrap{
+  width: 90%;
+  margin: auto;
+}
 /* RESPONSIVE */
 @media screen and (max-width:1199px){
   h2.common_heading {

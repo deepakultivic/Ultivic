@@ -15,12 +15,12 @@ function About(props) {
   const [teamchunk, setchunk] = useState([]);
   const [teamdata, setTeamdata] = useState(ourteam);
   const makechunks = () => {
-    setTeamdata(teamdata.map(n =>({...n})));
+    setTeamdata(teamdata.map(n => ({ ...n })));
     var chunks = [], i = 0, n = teamdata.length;
-  while (i < n) {
-    chunks.push(teamdata.slice(i, i += 4));
-  }
-  setchunk(chunks)
+    while (i < n) {
+      chunks.push(teamdata.slice(i, i += 4));
+    }
+    setchunk(chunks)
   };
   var settings = {
     dots: true,
@@ -64,103 +64,117 @@ function About(props) {
   return (
     <div>
       <Header />
-      <Subheader title="About" clases="about" shortdesc="We are Creative And Professional Agency" />
+     
+      <section className="about bg_overlay">
+          <div className="container">
+            <div className="subhead_outer">
+              <div className="right_align">
+               <div className="right_align_inner">
+               <h2 className="subhead">
+               About <span>Us</span>
+                </h2>
+                <p>We are Creative And Professional Agency</p>
+               </div>
+              </div>
+            </div>
+          </div>
+        </section>
       <div className="inner_wrap">
-      <section className="home_about space">
-         
-         <div className="container">
-           <div className="row align-items-center">
-             <div className="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
-               <div className="row align-items-center">
-                 <div className="col-lg-6 col-md-6 col-6">
-                   <div className="row">
-                     <div className="col-lg-12 col-md-12 mt-4 pt-2">
-                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                         <img src="./assets/home/about-01.png" className="img-fluid" alt="Image" />
-                         <div className="img-overlay bg-dark"></div>
-                       </div>
-                     </div>
+        <section className="home_about space">
+
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+                <div className="row align-items-center">
+                  <div className="col-lg-6 col-md-6 col-6">
+                    <div className="row">
+                      <div className="col-lg-12 col-md-12 mt-4 pt-2">
+                        <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                          <img src="./assets/home/about-01.png" className="img-fluid" alt="Image" />
+                          <div className="img-overlay bg-dark"></div>
+                        </div>
+                      </div>
 
 
-                     <div className="col-12">
-                       <div className="mt-0 pt-2 text-right">
-                         <div className="global_btn"><a href="/about">Read More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
-                       </div>
-                     </div>
-                   </div>
+                      <div className="col-12">
+                        <div className="mt-0 pt-2 text-right">
+                          <div className="global_btn"><a href="/about">Read More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
 
-                 </div>
-
-
-                 <div className="col-lg-6 col-md-6 col-6">
-                   <div className="row">
-                     <div className="col-lg-12 col-md-12">
-                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                         <img src="./assets/home/about-02.png" className="img-fluid" alt="Image" />
-                         <div className="img-overlay bg-dark"></div>
-                       </div>
-                     </div>
+                  </div>
 
 
-                     <div className="col-lg-12 col-md-12 mt-4 pt-2">
-                       <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                         <img src="./assets/home/about-03.png" className="img-fluid" alt="Image" />
-                         <div className="img-overlay bg-dark"></div>
-                       </div>
-                     </div>
-
-                   </div>
-
-                 </div>
-
-               </div>
-
-             </div>
+                  <div className="col-lg-6 col-md-6 col-6">
+                    <div className="row">
+                      <div className="col-lg-12 col-md-12">
+                        <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                          <img src="./assets/home/about-02.png" className="img-fluid" alt="Image" />
+                          <div className="img-overlay bg-dark"></div>
+                        </div>
+                      </div>
 
 
-             <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-               <div className="section-title ml-lg-5">
-                 <h6 className="sub_heading placement">About us</h6>
-                 <h4 className="title mb-4">
-                   We Provide IT solutions <br /> that performs.
+                      <div className="col-lg-12 col-md-12 mt-4 pt-2">
+                        <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                          <img src="./assets/home/about-03.png" className="img-fluid" alt="Image" />
+                          <div className="img-overlay bg-dark"></div>
+                        </div>
+                      </div>
 
-                 </h4>
-                 <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+                    </div>
 
-                 <div className="row">
-                   <div className="col-lg-6 mt-4 pt-2">
-                     <div className="media align-items-center p-2">
-                       <i className="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a className="text-dark">Creative Ideas</a></h6>
-                     </div>
-                   </div>
-                   <div className="col-lg-6 mt-4 pt-2">
-                     <div className="media align-items-center p-2">
-                       <i className="fa fa-users h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a className="text-dark">Team Work</a></h6>
-                     </div>
-                   </div>
-                   <div className="col-lg-6 mt-4 pt-2">
-                     <div className="media align-items-center p-2">
-                       <i className="fa fa-building-o h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a className="text-dark">Work Strategy</a></h6>
-                     </div>
-                   </div>
-                   <div className="col-lg-6 mt-4 pt-2">
-                     <div className="media align-items-center rounded shadow p-2">
-                       <i className="fa fa-cubes h4 mb-0 text-custom"></i>
-                       <h6 className="ml-3 mb-0"><a className="text-dark">Client Handling</a></h6>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
+                  </div>
 
-           </div>
+                </div>
 
-         </div>
-       </section>
-      
+              </div>
+
+
+              <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                <div className="section-title ml-lg-5">
+                  <h6 className="sub_heading placement">About us</h6>
+                  <h4 className="title mb-4">
+                    We Provide IT solutions <br /> that performs.
+
+                  </h4>
+                  <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+
+                  <div className="row">
+                    <div className="col-lg-6 mt-4 pt-2">
+                      <div className="media align-items-center p-2">
+                        <i className="fa fa-lightbulb-o h4 mb-0 text-custom"></i>
+                        <h6 className="ml-3 mb-0"><a className="text-dark">Creative Ideas</a></h6>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 mt-4 pt-2">
+                      <div className="media align-items-center p-2">
+                        <i className="fa fa-users h4 mb-0 text-custom"></i>
+                        <h6 className="ml-3 mb-0"><a className="text-dark">Team Work</a></h6>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 mt-4 pt-2">
+                      <div className="media align-items-center p-2">
+                        <i className="fa fa-building-o h4 mb-0 text-custom"></i>
+                        <h6 className="ml-3 mb-0"><a className="text-dark">Work Strategy</a></h6>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 mt-4 pt-2">
+                      <div className="media align-items-center rounded shadow p-2">
+                        <i className="fa fa-cubes h4 mb-0 text-custom"></i>
+                        <h6 className="ml-3 mb-0"><a className="text-dark">Client Handling</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
 
         <section className="about_counter">
           <div className="container">
@@ -344,6 +358,55 @@ function About(props) {
             </div>
           </div>
         </section>
+        {/* <section className="our_team space">
+          <div className="container-fluid">
+           <div className="team_wrap">
+           <div className="row align-items-center">
+              <div className="col-md-4">
+                <div className="team-overview">
+                  <h6 className="sub_heading placement">Who we are</h6>
+                  <h5>Meet the Entire Team</h5>
+                  <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
+                </div>
+              </div>
+              <div className="col-md-8">
+                <ul>
+                  {teamchunk &&
+                    teamchunk.map((emp, index) => {
+
+                      return <>
+                        <li key={"li" + index}>
+                          {emp.map((item, ind) => {
+                            return <div className="" key={ind} onClick={() => show_model(item)}>
+                             
+                              <div class="octagon">
+                                <div class="octagon-in">
+                                  <div class="octagon-bg">
+                                    <img src={item.emp_image} alt="UI Designer" />
+                                    <h3>{item.emp_name}</h3>
+                                    <p>{item.emp_designation}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          })}
+                        </li>
+
+                      </>
+                    })}
+                 
+                </ul>
+                {showModal ?
+                <CustomModal title={"Employee"}
+                  body={userdata}
+                  show={showModal}
+                  setShow={setShow} /> : <></>
+              }
+              </div>
+            </div>
+           </div>
+          </div>
+        </section> */}
       </div>
 
       <Footer />

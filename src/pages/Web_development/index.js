@@ -2,16 +2,24 @@ import React, { useState, useEffect } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
-import Aboutglobal from "../../components/Aboutglobal";
-import content from '../../components/Aboutglobal/content';
-import Technology from '../../components/Services/Technology';
+
 import Foot from "../../components/Foot";
 import "./style.css";
-import Gallery from '../../components/Services/Gallery';
-import { gridgallery } from "../../components/Services/pdata";
-import SimpleReactLightbox from 'simple-react-lightbox'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 function Web() {
   const [loading, setLoading] = useState(true);
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nav: true,
+
+  };
   useEffect(() => {
     // Loading function to load data or 
     // fake it using setTimeout;
@@ -48,7 +56,7 @@ function Web() {
     return (
       <div>
         <Header />
-        <Subheader title="Web Development" clases="web" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+        <Subheader title="Discover amazing" sub="sites" clases="web bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
         {/* <Aboutglobal
           imgsrc={content[2].imgsrc}
           about_exp={content[2].about_exp}
@@ -152,9 +160,110 @@ function Web() {
         </div>
 </div>
 </section>
-        <SimpleReactLightbox>
-          <Gallery gallery={gridgallery} />
-        </SimpleReactLightbox>
+<section className="grapic_work space">
+          <div className="container_fluid">
+            <div className="graphic_inner">
+              <Slider {...settings}>
+                <div className="gapcis_card">
+                  <div className="row align-items-center">
+                    <div className="col-xl-5 col-lg-6">
+                      <div className="project_content">
+                        <h3>
+                          Auto Grab
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-xl-7 col-lg-6">
+                      <div className="project_image">
+                        <img src="assets/portfolio/graphics-01.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="gapcis_card">
+                  <div className="row align-items-center">
+                    <div className="col-xl-5 col-lg-6">
+                      <div className="project_content">
+                        <h3>
+                          Fitzu
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-xl-7 col-lg-6">
+                      <div className="project_image">
+                        <img src="assets/portfolio/graphics-02.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="gapcis_card">
+                  <div className="row align-items-center">
+                    <div className="col-xl-5 col-lg-6">
+                      <div className="project_content">
+                        <h3>
+                          Krav maga
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-xl-7 col-lg-6">
+                      <div className="project_image">
+                        <img src="assets/portfolio/graphics-03.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="gapcis_card">
+                  <div className="row align-items-center">
+                    <div className="col-xl-5 col-lg-6">
+                      <div className="project_content">
+                        <h3>
+                          car Buyers
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-xl-7 col-lg-6">
+                      <div className="project_image">
+                        <img src="assets/portfolio/graphics-04.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="gapcis_card">
+                  <div className="row align-items-center">
+                    <div className="col-xl-5 col-lg-6">
+                      <div className="project_content">
+                        <h3>
+                          Kimekai
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-xl-7 col-lg-6">
+                      <div className="project_image">
+                        <img src="assets/portfolio/graphics-05.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </section>
         <Foot />
         <Footer />
       </div>
