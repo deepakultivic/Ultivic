@@ -20,50 +20,12 @@ function Web() {
     nav: true,
 
   };
-  useEffect(() => {
-    // Loading function to load data or 
-    // fake it using setTimeout;
-    const loadData = async () => {
-
-      // Wait for two second
-      await new Promise((r) => setTimeout(r, 1000));
-
-      // Toggle loading state
-      setLoading((loading) => !loading);
-    };
-
-    loadData();
-  }, [])
-
-  // If page is in loading state, display 
-  // loading message. Modify it as per your 
-  // requirement.
-  if (loading) {
-    return <div className="w-100 text-center my_loader">
-      <p></p><div className="loader1">
-        <div>
-          <img src="/assets/header/logo-white.png" alt="logo" />
-        </div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  }
-  else {
+ 
     return (
       <div>
         <Header />
         <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.png" clases="web bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
-        {/* <Aboutglobal
-          imgsrc={content[2].imgsrc}
-          about_exp={content[2].about_exp}
-          sub_heading={content[2].sub_heading}
-          common_heading={content[2].common_heading}
-          about_info={content[2].about_info}
-        /> */}
+   
         <section className="space service_about">
           <div className="container">
             <div className="row align-items-center">
@@ -269,5 +231,5 @@ function Web() {
       </div>
     )
   }
-}
+
 export default Web;
