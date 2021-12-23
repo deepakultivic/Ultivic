@@ -10,6 +10,8 @@ import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
 import axios from "axios";
+import { BackgroundImage } from "react-image-and-background-image-fade";
+
 
 function Home() {
   const [ourblog, setOurblog] = useState([])
@@ -51,9 +53,17 @@ function Home() {
   wow.init();
   return (
     <div>
-      <Header />
+      <Header /> 
       <div className="bodywrap">
-        <section className="baner_design">
+      <BackgroundImage
+      src="assets/home/home_bg.png"
+     
+      isResponsive
+      className="baner_design"
+      transitionTime=".5s"
+      lazyLoad
+    >
+        <section className="">
           <div className="container">
             <div className="bennr_inner">
               <h4 className="wow fadeInUp" data-wow-delay="0.5s">We incorporate</h4>
@@ -62,6 +72,7 @@ function Home() {
             </div>
           </div>
         </section>
+        </BackgroundImage>
         <section className="inner_about space ">
           <div className="container">
             <div className="row align-items-center">
@@ -153,111 +164,7 @@ function Home() {
         </section>
         <section className="services space">
           <div className="container">
-            {/* <div className="headings_outer text-center mb-5">
-                <h6 className="sub_heading">Services</h6>
-                <h2 className="common_heading mb-5 pb-5">Services we Provide</h2>
-              </div> */}
-            {/* <div className="row wow fadeInLeft" data-wow-delay="0.3s">
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/graphic-tablet.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text">
-                      <h4>Graphic Design</h4>
-                      <p>
-                        We focus on creating aesthetics that maximize usability & serve a purpose to your brand.
-  
-  
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/development.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text">
-                      <h4>Web Development</h4>
-                      <p>
-                        We make a website that looks great, work fast and perform well with a seamless user experience.
-  
-  
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/user-interface.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text ">
-                      <h4>App Development</h4>
-                      <p>
-                        With the mobile web revolution at it’s peak We provide you a customized app with user centered approach.
-  
-  
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/programming.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text">
-                      <h4>UI/UX</h4>
-                      <p>
-                        We centre on creating user interface that helps users easily interact with your digital product.  </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/game-development.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text">
-                      <h4 >Game Development</h4>
-                      <p>
-                        To help you turn your vision into reality we build amazing games & maximize reach.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 grid-outer">
-                  <div className="services_grid">
-                    <div className="services_grid_img">
-                      <img
-                        src="/assets/home/testing.png"
-                        alt="ultivic services"
-                      />
-                    </div>
-                    <div className="services_grid_text">
-                      <h4>Testing</h4>
-                      <p  >
-                        We evaluate your brand’s product so that it satisfies your specified requirements. </p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+          
             <div className="row align-items-center">
 
               <div className="col-lg-6 col-md-6 col-12 ">

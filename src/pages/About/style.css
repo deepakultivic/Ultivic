@@ -200,7 +200,7 @@ ul.team_links a i {
   position: relative;
 }
 .about {
-  background-image: url("../../assets/about/Ultivic_about.png");
+  /* background-image: url("../../assets/about/Ultivic_about.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -108,6 +108,8 @@
 
 import React, { useEffect, useState } from 'react'
 import { SRLWrapper } from "simple-react-lightbox";
+import { Image } from "react-image-and-background-image-fade";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import axios from 'axios'
 var array = [];
 var page_category = [];
@@ -150,7 +152,6 @@ const Filter = () => {
         console.log('total', last_page[last_length - 1]);
         axios.get('https://ums.ultivic.com/api/development/images?category=' + category + '&page=' + page)
             .then((res) => {
-                const myimagess = res.data.data.data;
                 var store = res.data.data.data;
                 var check_page = res.data.data.last_page;
                 var hide_check = res.data.data.next_page_url;
@@ -166,10 +167,15 @@ const Filter = () => {
                 console.log("inc page:", first_inc);
                 if (first_inc <= 1) {
                     for (let i = 0; i < store.length; i++) {
-                        images.push(store[i]);
+                        let index = images.findIndex(x => x.id == store[i].id);
+                        if (index == -1) {
+                            images.push(store[i]);
+                        }
                     }
 
                 }
+                setMyimage(images);
+                console.log(images)
                 if (hide_check == null) {
                     setHide('hide')
                 }
@@ -177,8 +183,8 @@ const Filter = () => {
                     setHide('show')
                 }
                 last_category.push(category);
-                setMyimage(images);
 
+                console.log(myimage)
             })
         setcategory(page_category[page_category.length - 1])
         setActive(!active);
@@ -190,14 +196,18 @@ const Filter = () => {
             const response = await axios.get('https://ums.ultivic.com/api/development/images?category=ALL&page=1');
             var store = response.data.data.data;
             var hide_check = response.data.data.next_page_url;
+            images = [];
             for (let i = 0; i < store.length; i++) {
-                images.push(store[i]);
+                let index = images.findIndex(x => x.id == store[i].id);
+                if (index == -1) {
+                    images.push(store[i]);
+                }
             }
             console.log("my aaray:", store)
-            setMyimage(images);
+            setMyimage(previmages => ([...previmages, ...images]));
             const check_page = response.data.data.last_page;
             var page = 1;
-            if (check_page >= page) {
+            if (check_page == page) {
                 page = check_page;
             } else {
                 page++;
@@ -222,32 +232,38 @@ const Filter = () => {
     return (
         <section className="space">
             <div className="container">
-            <div className="tabs text-center mb-3">
-                <button className={category == 'ALL' ? 'Active' : 'Inactive'} onClick={(() => myimg('ALL'))} >All</button>
-                <button className={category == 'WEB' ? 'Active' : 'Inactive'} onClick={(() => myimg('WEB'))} >Web</button>
-                <button className={category == 'IOS' ? 'Active' : 'Inactive'} onClick={(() => myimg('IOS'))} >iOS</button>
-                <button className={category == 'ANDROID' ? 'Active' : 'Inactive'} onClick={(() => myimg('ANDROID'))} >Android</button>
-            </div>
-            <SRLWrapper>
-                <div className="row ">
-                    {
-                        myimage.map((curelem, index) => {
-                            console.log(curelem)
-                            return (
-                                <div key={index} className="image-card col-md-6 col-lg-4">
-                                  <div className="card_inner">
-                                  <img src={curelem.image} alt="" />
-                                  </div>
-                                </div>
-                            )
-                        })
-                    }
+                <div className="tabs text-center mb-3">
+                    <button className={category == 'ALL' ? 'Active' : 'Inactive'} onClick={(() => myimg('ALL'))} >All</button>
+                    <button className={category == 'WEB' ? 'Active' : 'Inactive'} onClick={(() => myimg('WEB'))} >Web</button>
+                    <button className={category == 'IOS' ? 'Active' : 'Inactive'} onClick={(() => myimg('IOS'))} >iOS</button>
+                    <button className={category == 'ANDROID' ? 'Active' : 'Inactive'} onClick={(() => myimg('ANDROID'))} >Android</button>
                 </div>
-            </SRLWrapper>
-            <div className={`text-center ${hide}`}  >
-                <button className="cm_btn mt-3" onClick={(() => myimg())} >Show more</button>
+                <SRLWrapper>
+
+
+                    <div className="row ">
+                        {myimage.length > 0 && myimage.map((curelem, index) => {
+                            console.log(curelem)
+                            return <div key={index} className="image-card col-md-6 col-lg-4">
+                                <div className="card_inner">
+                                    {/* <img src={curelem.image} alt="" /> */}
+                                 
+                                    <Image
+                                        src={curelem.image}
+                                        transitionTime ="0.5s"
+                                    />
+                                </div>
+                            </div>
+
+                        })
+                        }
+                    </div>
+
+                </SRLWrapper>
+                <div className={`text-center ${hide}`}  >
+                    <button className="cm_btn mt-3" onClick={(() => myimg())} >Show more</button>
+                </div>
             </div>
-        </div>
         </section>
     )
 }

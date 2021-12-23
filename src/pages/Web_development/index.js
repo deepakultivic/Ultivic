@@ -56,7 +56,7 @@ function Web() {
     return (
       <div>
         <Header />
-        <Subheader title="Discover amazing" sub="sites" clases="web bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+        <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.png" clases="web bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
         {/* <Aboutglobal
           imgsrc={content[2].imgsrc}
           about_exp={content[2].about_exp}

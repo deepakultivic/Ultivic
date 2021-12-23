@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Subheader from "../../components/Subheader";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,6 +8,7 @@ import "./style.css";
 import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
 import CustomModal from "../../components/Ourteam";
+import { BackgroundImage } from "react-image-and-background-image-fade";
 function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
@@ -64,7 +64,14 @@ function About(props) {
   return (
     <div>
       <Header />
+      <BackgroundImage
+      src="assets/about/Ultivic_about.png"
      
+      isResponsive
+      className="image about bg_overlay"
+      transitionTime=".5s"
+      lazyLoad
+    >
       <section className="about bg_overlay">
           <div className="container">
             <div className="subhead_outer">
@@ -79,6 +86,7 @@ function About(props) {
             </div>
           </div>
         </section>
+        </BackgroundImage>
       <div className="inner_wrap">
         <section className="home_about space">
 

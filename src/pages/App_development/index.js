@@ -32,43 +32,11 @@ function App_dev() {
           },
         ]
       };
-    useEffect(() => {
-        // Loading function to load data or 
-        // fake it using setTimeout;
-        const loadData = async () => {
-
-            // Wait for two second
-            await new Promise((r) => setTimeout(r, 1000));
-
-            // Toggle loading state
-            setLoading((loading) => !loading);
-        };
-
-        loadData();
-    }, [])
-
-    // If page is in loading state, display 
-    // loading message. Modify it as per your 
-    // requirement.
-    if (loading) {
-        return <div className="w-100 text-center my_loader">
-            <p></p><div className="loader1">
-                <div>
-                    <img src="/assets/header/logo-white.png" alt="logo" />
-                </div>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    }
-    else {
+  
         return (
             <div>
                 <Header />
-                <Subheader title="App Development" clases="app_dev bg_overlay" shortdesc="Application development is the process of creating a computer program" />
+                <Subheader title="App Development" img="assets/services/app-development.png" clases="app_dev bg_overlay" shortdesc="Application development is the process of creating a computer program" />
                 <div className="app_dev_inner">
                     <Aboutglobal
                         imgsrc={content[3].imgsrc}
@@ -219,6 +187,6 @@ function App_dev() {
             </div>
         );
     }
-}
+
 
 export default App_dev;
