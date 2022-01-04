@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "slick-carousel/slick/slick.css";
@@ -9,12 +9,22 @@ import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
 import CustomModal from "../../components/Ourteam";
 import { BackgroundImage } from "react-image-and-background-image-fade";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+                                                                                                                                                                                                                                                                                                     
 function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
   const [teamchunk, setchunk] = useState([]);
   const [teamdata, setTeamdata] = useState(ourteam);
+  // gsap animation
+const headerRef = useRef(null);
+
+
+
+//gsap animations ends here
   const makechunks = () => {
+
     setTeamdata(teamdata.map(n => ({ ...n })));
     var chunks = [], i = 0, n = teamdata.length;
     while (i < n) {
@@ -49,6 +59,11 @@ function About(props) {
   };
 
   useEffect(() => {
+    gsap.from(headerRef.current, {
+      autoAlpha: 0,
+      ease: 'none',
+      delay: 1
+  });
     makechunks()
   }, [])
 
@@ -141,7 +156,7 @@ function About(props) {
 
 
               <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-                <div className="section-title ml-lg-5">
+                <div className="section-title ml-lg-5"  ref={headerRef} >
                   <h6 className="sub_heading placement">About us</h6>
                   <h4 className="title mb-4">
                     We Provide IT solutions <br /> that performs.

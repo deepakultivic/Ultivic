@@ -1,10 +1,25 @@
 import axios from "axios";
 import React,{useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import './style.css';
-
+import './style.css'; 
+import { WOW } from 'wowjs';
 
 const Blogs = () => {
+  var wow = new WOW(
+    {
+      boxClass: 'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset: 100,          // distance to the element when triggering the animation (default is 0)
+      mobile: true,       // trigger animations on mobile devices (default is true)
+      live: true,       // act on asynchronously loaded content (default is true)
+      callback: function (box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+    }
+  );
+  wow.init();
   const [ourblog, setOurblog] = useState([])
 
 
@@ -23,7 +38,7 @@ console.log(myBogs)
 
   }, [])
   return (
-    <div className="row">
+    <div className="row  wow slideInLeft" data-wow-delay="0.3s">
   
   {ourblog.slice(0, 3).map((curelem, index) => {
           const {title,description,image,id} = curelem;

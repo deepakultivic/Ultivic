@@ -66,9 +66,16 @@ function Home() {
         <section className="">
           <div className="container">
             <div className="bennr_inner">
-              <h4 className="wow fadeInUp" data-wow-delay="0.5s">We incorporate</h4>
-              <h1 className="wow fadeInUp" data-wow-delay="0.5s"> <span className="banner_brand">Innovation</span> With your vision </h1>
+            <div className="right_align">
+               <div className="right_align_inner">
+               <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
+              <p className="wow fadeInUp" data-wow-delay="0.3s"> This handy tool helps you create dummy text <br />
+              for all your layout needs . We are gradually adding <br />
+              new functionality and we welcome your suggestions <br />and feedbacks </p>
               <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
+               </div>
+              </div>
+             
             </div>
           </div>
         </section>
@@ -143,7 +150,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-lg-5">
-                <div className="about_cont_box">
+                <div className="about_cont_box wow fadeInUp" data-wow-delay="0.3s">
                   <div className="headings_outer ">
                     <h6 className="sub_heading placement">About us</h6>
                     <h2 className="common_heading">
@@ -169,6 +176,7 @@ function Home() {
 
               <div className="col-lg-6 col-md-6 col-12 ">
                 <div className="section-title ml-lg-5">
+                  <div className="wow slideInLeft" data-wow-delay="0.2s">
                   <h6 className="sub_heading placement">Our Expertise</h6>
                   <h4 className="title mb-4">
                     We Provide IT solutions <br /> that performs.
@@ -178,7 +186,9 @@ function Home() {
                 <h5 className="my-3">
                   Our Technologies
                 </h5>
-                <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p>
+                  </div>
+               <div className="wow fadeInUp" data-wow-delay="0.3s">
+               <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p>
                   <ul className="p-0 tech_icons" >
                       <li><img src="assets/home/php.svg" alt="" /></li>
                       <li><img src="assets/home/java.svg" alt="" /></li>
@@ -195,6 +205,7 @@ function Home() {
                       <li><img src="assets/home/photoshop.svg" alt="" /></li>
                       <li><img src="assets/home/illustrator.svg" alt="" /></li>
                   </ul>
+               </div>
                 </div>
               </div>
               <div className="col-md-6">
@@ -203,10 +214,10 @@ function Home() {
             </div>
           </div>
         </section>
-        <div className="wow fadeInLeft space_bottom" data-wow-delay="0.3s">
+        <div className=" space_bottom">
           <Steps />
         </div>
-        <section className=" portfolio wow fadeInRight" data-wow-delay="0.3s">
+        <section className=" portfolio">
           <div className="container">
             <div className="headings_outer text-center mb-5">
               <h6 className="sub_heading">Our Work</h6>
@@ -217,10 +228,10 @@ function Home() {
 
           <Portfolio />
         </section>
-        <section className="testimonial space  wow slideInLeft" data-wow-delay="0.3s">
+        <section className="testimonial space  ">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8">
+              <div className="col-lg-8 wow slideInLeft" data-wow-delay="0.2s">
                 <div className="headings_outer  mb-4">
                   <h6 className="sub_heading placement">Happy Clients</h6>
                   <h2 className="common_heading">More than 500+ happy Clients</h2>
@@ -236,7 +247,7 @@ function Home() {
 
           <Testimonials />
         </section>
-        <section className="Blogs space wow fadeInRight" data-wow-delay="0.3s">
+        <section className="Blogs space">
           <div className="container">
             <div className="headings_outer text-center ">
               <h6 className="sub_heading">Latest Blogs</h6>
