@@ -1,86 +1,94 @@
 .extra_space {
     padding: 10px;
 }
+
 .techn4ology_cont {
-  padding: 50px;
+    padding: 50px;
 }
+
 .technology_box_sec {
-  box-shadow: 0 15px 50px #ececf0;
-  padding: 35px 30px;
-  margin-bottom: 30px;
-  cursor: pointer;
-  transition: .3s;
- border-radius: 7px;
+    box-shadow: 0 15px 50px #000000;
+    padding: 35px 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #1a1a1a;
+    border-radius: 7px;
 }
+
 .technology_box_sec h5 {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  position: relative;
-
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
 }
+
 .technology_box_sec h5::after {
-position:absolute;
-content:"";
-top:auto;
-left:0;
-bottom:-7px;
-right:0;
-width: 80px;
-height: 2px;
-}
-.extra_space:nth-child(1) .technology_box_sec h5::after{
-  background: #da6a95;
+    position: absolute;
+    content: "";
+    top: auto;
+    left: 0;
+    bottom: -7px;
+    right: 0;
+    width: 80px;
+    height: 2px;
 }
 
-.extra_space:nth-child(2) .technology_box_sec h5::after{
-  background: #ff491f;
+.extra_space:nth-child(1) .technology_box_sec h5::after {
+    background: #da6a95;
 }
 
-.extra_space:nth-child(3) .technology_box_sec h5::after{
-  background: #fab400;
+.extra_space:nth-child(2) .technology_box_sec h5::after {
+    background: #ff491f;
 }
 
-.extra_space:nth-child(4) .technology_box_sec h5::after{
-  background: #a0a1ff;
+.extra_space:nth-child(3) .technology_box_sec h5::after {
+    background: #fab400;
 }
-.technology_box_sec p{
-   color: #8f8faf;
+
+.extra_space:nth-child(4) .technology_box_sec h5::after {
+    background: #a0a1ff;
 }
+
+.technology_box_sec p {
+    color: #9b9b9b;
+}
+
 .technology_box_sec .tech_box_img img {
-  width: 32px;
-
+    width: 32px;
 }
+
 .tech_box_img {
-  background: #f7f7fc;
-  display: inline-block;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius:50%;
-  box-shadow: 0px 0px 4px rgb(0 0 0 / 55%);
+    background: #f7f7fc;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 55%);
 }
-
 
 .extra_space:nth-child(1) .tech_box_img {
-  background: #da6a95;
+    background: #da6a95;
 }
 
 .extra_space:nth-child(2) .tech_box_img {
-  background: #ff491f;
+    background: #ff491f;
 }
 
 .extra_space:nth-child(3) .tech_box_img {
-  background: #fab400;
+    background: #fab400;
 }
 
 .extra_space:nth-child(4) .tech_box_img {
-  background: #a0a1ff;
+    background: #a0a1ff;
 }
-@media screen and (max-width:991px){
-  .technology{
-      background: #f6f5fb;
-  }
-  .techn4ology_cont {
-      padding: 0px 0px 30px 0px ;
-  }
+
+@media screen and (max-width:991px) {
+    .technology {
+        background: #f6f5fb;
+    }
+    .techn4ology_cont {
+        padding: 0px 0px 30px 0px;
+    }
 }

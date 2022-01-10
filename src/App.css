@@ -117,12 +117,12 @@ h2.common_heading {
 }
 
 .global_btn a {
-    color: #000;
+    color: #CE2128;
     border: 2px solid #CE2128;
     padding: 5px 20px;
     display: inline-block;
     border-radius: 35px;
-    background: #fff;
+    background: transparent;
 }
 
 .comn_half_bg {
@@ -152,6 +152,10 @@ section.about_counter {
     color: #fff;
     font-size: 50px;
     text-transform: capitalize;
+}
+
+p.blog_published {
+    font-weight: 500;
 }
 
 .subhead_outer {
@@ -322,7 +326,7 @@ section.grid.gallery img {
 /* out tech */
 
 .tech_card {
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 13%);
     border-radius: 7px;
     background-color: #23282d;

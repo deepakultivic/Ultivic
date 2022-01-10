@@ -63,15 +63,16 @@ function Graphic() {
           about_info={content[1].about_info}
         />
         {/* <Technology /> */}
-        <div className="container">
+      <section className="body-blk space">
+      <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="techn4ology_cont">
                 <div className="headings_outer ">
                   <h6 className="sub_heading placement">Technologies</h6>
-                  <h2 className="common_heading">Why you should choose ultivic</h2>
+                  <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                 </div>
-                <p className="tech_info">
+                <p className="tech_info clr-wht">
                   Ultivic have a highly skilled team of web developers who have vast knowledge of the technologies that are used in web development whether it’s content management system, custom web software development or any other latest technology. We believe that access to a stellar web development team can be the difference maker that you require for your digital success.
                 </p>
               </div>
@@ -112,6 +113,7 @@ function Graphic() {
             </div>
           </div>
         </div>
+      </section>
         <Planning
           imgsrc={pdata[0].imgsrc}
           sub_heading={pdata[0].sub_heading}

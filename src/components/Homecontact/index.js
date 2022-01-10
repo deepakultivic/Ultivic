@@ -113,9 +113,9 @@ return isValid;
                     </Link>
                   </li>
                   <li>
-                    <Link to="mailto:harmanpreet.kaur@ultivic.com">
+                    <Link to="mailto:hr@ultivic.com">
                       <i className="fa fa-envelope-o"></i>
-                      <span>harmanpreet.kaur@ultivic.com</span>
+                      <span>hr@ultivic.com</span>
                     </Link>
                   </li>
                 </ul>

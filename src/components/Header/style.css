@@ -120,7 +120,6 @@ ul.drop_menu li:last-child a {
 }
 
 .services_text h3 {
-    text-decoration: underline;
     color: #fff;
 }
 
@@ -129,7 +128,7 @@ ul.drop_menu .menu_bg li a {
 }
 
 .services_text h3 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .desktop_dropdown ul.drop_menu li a {

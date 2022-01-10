@@ -5,7 +5,7 @@ import { tbdata } from "./pdata";
 function Technology() {
   return (
     <div>
-      <div className="technology space">
+      <div className="technology space body-blk">
         <div className="container">
           <div className="inner_tech ">
             <div className="row align-items-center">
@@ -13,9 +13,9 @@ function Technology() {
                 <div className="techn4ology_cont">
                   <div className="headings_outer ">
                     <h6 className="sub_heading placement">Technologies</h6>
-                    <h2 className="common_heading">Why you should choose ultivic</h2>
+                    <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                   </div>
-                  <p className="tech_info">
+                  <p className="tech_info clr-wht">
                     Ultivic have a highly skilled team of web developers who have vast knowledge of the technologies that are used in web development whether it’s content management system, custom web software development or any other latest technology. We believe that access to a stellar web development team can be the difference maker that you require for your digital success.
                   </p>
                 </div>
