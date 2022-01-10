@@ -1,77 +1,83 @@
 .blog_content {
-  padding: 20px;
-  background: #ffffff;
+    padding: 20px;
+    background: #ffffff;
 }
 
 .blog_content h5 a {
-  color: #000000;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 .blog_btn a {
-  color: #ce2128;
-  padding-top: 10px;
-  display: block;
-  font-weight: 500;
+    color: #ce2128;
+    padding-top: 10px;
+    display: block;
+    font-weight: 500;
 }
+
 .blog_img img {
-  max-width: 100%;
-  width: 100%;
+    max-width: 100%;
+    width: 100%;
 }
+
 .blog_inner .media img {
-  width: 290px;
-  height: 240px;
-  object-fit: cover;
-  padding: 0px 10px;
-} 
+    width: 290px;
+    height: 240px;
+    object-fit: cover;
+    padding: 0px 10px;
+}
+
 .blog_btn {
-  margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 .blog_inner {
-  min-height: 480px;
-  background: #fff;
-  box-shadow: 0px 0px 7px rgb(0 0 0 / 21%);
+    min-height: 480px;
+    background: #fff;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 21%);
 }
 
 .global_btn {
-  margin-top: 50px;
-  text-align: center;
+    margin-top: 50px;
+    text-align: center;
 }
+
 .Blogs .headings_outer {
-  margin-bottom: 35px;
+    margin-bottom: 35px;
 }
+
 .blog_img img {
-  height: 250px;
-  object-fit: cover;
+    height: 250px;
+    object-fit: cover;
 }
 
 .blog_img {
-  background: #fff;
+    background: #fff;
 }
+
 
 /*  */
 
-
-
 @media screen and (max-width: 1199px) {
-  .blog_content h5 a {
-    font-size: 16px;
-  }
+    .blog_content h5 a {
+        font-size: 16px;
+    }
 }
+
 @media screen and (max-width: 991px) {
-  .blog_inner {
-    margin-bottom: 30px;
-  }
-  .blog_inner {
-    min-height: 485px;
-    background: #fff;
+    .blog_inner {
+        margin-bottom: 30px;
+    }
+    .blog_inner {
+        min-height: 485px;
+        background: #fff;
+    }
 }
-}
+
 @media screen and (max-width: 767px) {
-  .blog_inner {
-    min-height: unset;
-}
+    .blog_inner {
+        min-height: unset;
+    }
 }

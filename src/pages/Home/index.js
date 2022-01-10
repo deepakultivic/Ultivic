@@ -80,7 +80,52 @@ function Home() {
           </div>
         </section>
         </BackgroundImage>
-        <section className="inner_about space ">
+        <section className="services space">
+          <div className="container">
+          
+            <div className="row align-items-center">
+
+              <div className="col-lg-6 col-md-6 col-12 ">
+                <div className="section-title ml-lg-5">
+                  <div className="wow slideInLeft" data-wow-delay="0.2s">
+                  <h6 className="sub_heading placement">Our Expertise</h6>
+                  <h4 className="title mb-4">
+                    We Provide IT solutions <br /> that performs.
+
+                  </h4>
+                  <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+                <h5 className="my-3">
+                  Our Technologies
+                </h5>
+                  </div>
+               <div className="wow fadeInUp" data-wow-delay="0.3s">
+               <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p>
+                  <ul className="p-0 tech_icons" >
+                      <li><img src="assets/home/php.svg" alt="" /></li>
+                      <li><img src="assets/home/java.svg" alt="" /></li>
+                      <li><img src="assets/home/java-script.svg" alt="" /></li>
+                      <li><img src="assets/home/node-js.svg" alt="" /></li>
+                      <li><img src="assets/home/laravel.png" alt="" /></li>
+                      <li><img src="assets/home/physics.svg" alt="" /></li>     
+                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>    
+                      <li><img src="assets/home/cakephp.png" alt="" /></li>                  
+                      <li><img src="assets/home/android.svg" alt="" /></li>
+                      <li><img src="assets/home/apple.svg" alt="" /></li>
+                      <li><img src="assets/home/html-5.svg" alt="" /></li>
+                      <li><img src="assets/home/css-3.svg" alt="" /></li>
+                      <li><img src="assets/home/photoshop.svg" alt="" /></li>
+                      <li><img src="assets/home/illustrator.svg" alt="" /></li>
+                  </ul>
+               </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <img src="assets/home/services.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="inner_about space body-blk">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-7">
@@ -153,14 +198,14 @@ function Home() {
                 <div className="about_cont_box wow fadeInUp" data-wow-delay="0.3s">
                   <div className="headings_outer ">
                     <h6 className="sub_heading placement">About us</h6>
-                    <h2 className="common_heading">
+                    <h2 className="common_heading clr-wht">
                       We are Creative And Professional Agency
                     </h2>
                   </div>
-                  <p className="about_info">
+                  <p className="about_info clr-wht">
                     We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
                   </p>
-                  <p className="about_info">
+                  <p className="about_info clr-wht">
                     Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development.
                   </p>
                 </div>
@@ -169,51 +214,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="services space">
-          <div className="container">
-          
-            <div className="row align-items-center">
-
-              <div className="col-lg-6 col-md-6 col-12 ">
-                <div className="section-title ml-lg-5">
-                  <div className="wow slideInLeft" data-wow-delay="0.2s">
-                  <h6 className="sub_heading placement">Our Expertise</h6>
-                  <h4 className="title mb-4">
-                    We Provide IT solutions <br /> that performs.
-
-                  </h4>
-                  <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
-                <h5 className="my-3">
-                  Our Technologies
-                </h5>
-                  </div>
-               <div className="wow fadeInUp" data-wow-delay="0.3s">
-               <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p>
-                  <ul className="p-0 tech_icons" >
-                      <li><img src="assets/home/php.svg" alt="" /></li>
-                      <li><img src="assets/home/java.svg" alt="" /></li>
-                      <li><img src="assets/home/java-script.svg" alt="" /></li>
-                      <li><img src="assets/home/node-js.svg" alt="" /></li>
-                      <li><img src="assets/home/laravel.png" alt="" /></li>
-                      <li><img src="assets/home/physics.svg" alt="" /></li>     
-                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>    
-                      <li><img src="assets/home/cakephp.png" alt="" /></li>                  
-                      <li><img src="assets/home/android.svg" alt="" /></li>
-                      <li><img src="assets/home/apple.svg" alt="" /></li>
-                      <li><img src="assets/home/html-5.svg" alt="" /></li>
-                      <li><img src="assets/home/css-3.svg" alt="" /></li>
-                      <li><img src="assets/home/photoshop.svg" alt="" /></li>
-                      <li><img src="assets/home/illustrator.svg" alt="" /></li>
-                  </ul>
-               </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <img src="assets/home/services.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
+        
         <div className=" space_bottom">
           <Steps />
         </div>
@@ -247,11 +248,11 @@ function Home() {
 
           <Testimonials />
         </section>
-        <section className="Blogs space">
+        <section className="Blogs space body-blk">
           <div className="container">
             <div className="headings_outer text-center ">
               <h6 className="sub_heading">Latest Blogs</h6>
-              <h2 className="common_heading">Grow your knowledge with us  </h2>
+              <h2 className="common_heading clr-wht">Grow your knowledge with us  </h2>
             </div>
           </div>
           <div className="container-fluid">
