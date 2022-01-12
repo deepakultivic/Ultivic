@@ -5,6 +5,10 @@
     background-position: left center;
 }
 
+.bodywrap {
+    position: relative;
+}
+
 .bennr_inner h1 {
     font-size: 50px;
     color: #fff;
@@ -232,15 +236,62 @@ section.contact_us.space {
     font-size: 18px;
 }
 
+@media screen and (max-width:1842px) {
+    .baner_design {
+        padding: 18em 0;
+    }
+}
+
+@media screen and (max-width:1640px) {
+    .baner_design {
+        padding: 15em 0;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .baner_design {
         padding: 12.5em 0;
     }
+    h2.common_heading {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .baner_design {
+        padding: 10em 0;
+    }
+    .bennr_inner h1 {
+        font-size: 40px;
+        color: #fff;
+    }
 }
 
 @media screen and (max-width:1199px) {
-    .baner_design {
-        padding: 6.5em 0;
+    .baner_design::before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 20%);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .bennr_inner {
+        position: relative;
+        z-index: 1;
+    }
+    .bennr_inner .right_align_inner {
+        display: block;
+        text-align: center;
+    }
+    .bennr_inner .right_align_inner p {
+        text-align: center;
+    }
+    .bennr_inner br {
+        display: none;
     }
 }
 
@@ -264,6 +315,28 @@ section.contact_us.space {
     }
     .services_grid_text p {
         min-height: unset;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .tech_icons {
+        margin-bottom: 30px;
+    }
+    .car_buers .left_color::before {
+        background-color: #098fb3;
+    }
+    .loudly .left_color::before {
+        background-color: #cb40b5;
+    }
+    .fitzu .left_color::before,
+    .fitzuapp .left_color::before {
+        background-color: #f9a900;
+    }
+    .getthem .left_color::before {
+        background-color: #113060;
+    }
+    .portfolio_image {
+        margin-bottom: 40px;
     }
 }
 

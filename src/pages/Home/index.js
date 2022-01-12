@@ -56,8 +56,7 @@ function Home() {
       <Header /> 
       <div className="bodywrap">
       <BackgroundImage
-      src="assets/home/home_bg.png"
-     
+      src="assets/home/home_bg.png"     
       isResponsive
       className="baner_design"
       transitionTime=".5s"

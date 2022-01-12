@@ -634,7 +634,20 @@ section.our_team li {
     }
 }
 
-@media(min-width:992px) {
+@media screen and (max-width:991px) {
+    .about_testimonials_outer {
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+        bottom: 0;
+    }
+    .about_cont_box {
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+}
+
+@media(min-width:991px) {
     section.inner_about.container {
         max-width: 1070px;
     }
@@ -649,6 +662,59 @@ section.our_team li {
     }
     .sm-text-center {
         text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .blog_element img,
+    .about_portfolio img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .portfoli_outer_about,
+    .blog_info {
+        transform: translateX(0px);
+        border-radius: 7px;
+    }
+    .about_blog,
+    .about_portfolio {
+        overflow: hidden;
+        border-radius: 7px;
+    }
+    .about_cont_box {
+        padding: 0 1rem;
+    }
+    .portfoli_outer_about {
+        bottom: 0;
+        top: auto;
+    }
+    .client_text {
+        margin-left: 0;
+    }
+    .client-image {
+        display: none;
+    }
+    .prev_arrow {
+        position: relative;
+        right: 0;
+        top: auto;
+    }
+    .next_arrow {
+        position: absolute;
+        left: 36px;
+        top: auto;
+        bottom: 0;
+    }
+    .global_btn {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .addres_block {
+        margin: 13px;
+    }
+    .home_contact {
+        padding: 0px 0px;
     }
 }
 

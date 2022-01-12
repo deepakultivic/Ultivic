@@ -36,6 +36,12 @@
     padding: 10px 20px;
 }
 
+.why_contact a:hover {
+    color: #222223;
+    background-color: #fff;
+    transition: .3s ease all;
+}
+
 .why_icon {
     margin-right: 10px;
 }

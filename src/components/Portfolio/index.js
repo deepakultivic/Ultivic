@@ -14,21 +14,7 @@ function Portfolio() {
     slidesToScroll: 1,
     arrow: true
   };
-  var wow = new WOW(
-    {
-      boxClass: 'wow',      // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset: 100,          // distance to the element when triggering the animation (default is 0)
-      mobile: true,       // trigger animations on mobile devices (default is true)
-      live: true,       // act on asynchronously loaded content (default is true)
-      callback: function (box) {
-        // the callback is fired every time an animation is started
-        // the argument that is passed in is the DOM node being animated
-      },
-      scrollContainer: null // optional scroll container selector, otherwise use window
-    }
-  );
-  wow.init();
+
   return (
     <div className="portfolio_outer">
          <Slider {...settings}>
@@ -38,12 +24,12 @@ function Portfolio() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <div className="portfolio_image wow slideInLeft" data-wow-delay="0.2s">
+                <div className="portfolio_image " data-wow-delay="0.2s">
                   <img src="/assets/home/louble_img.png" alt="carbuyers" />
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="portfolio_constent wow slideInRight" data-wow-delay="0.2s">
+                <div className="portfolio_constent" data-wow-delay="0.2s">
                   <div className="protfolio_logo">
                     <img src="/assets/home/louble_logo.png" alt="logo" />
                   </div>
@@ -69,7 +55,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a target="_blank" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
+                    <a className="loudly-btn" target="_blank" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -106,7 +92,7 @@ function Portfolio() {
                   </p>
 
                   <div className="portfolio_btn">
-                    <a target="_blank" href="https://fitzu.com.au/">Visit Site</a>
+                    <a className="fitzu-btn" target="_blank" href="https://fitzu.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -149,7 +135,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.fvd&hl=en_IN&gl=US">Visit Site</a>
+                    <a className="gta-btn" target="_blank" href="https://play.google.com/store/apps/details?id=com.fvd&hl=en_IN&gl=US">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -231,7 +217,7 @@ function Portfolio() {
                     We are the purchasing subsidiary of Australian Automotive Sales, a brand known for our quality vehicles, service excellence and great prices.
                   </p>
                   <div className="portfolio_btn">
-                    <a target="_blank" href="https://www.carbuyers.com.au/">Visit Site</a>
+                    <a className="cb-btn" target="_blank" href="https://www.carbuyers.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>

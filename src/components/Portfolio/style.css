@@ -18,6 +18,7 @@ ul.imp_points li {
 ul.imp_points {
     margin: 10px 0px;
 }
+
 .views_details {
     display: flex;
 }
@@ -30,24 +31,26 @@ ul.imp_points {
 .rating {
     padding: 0px 20px;
 }
+
 .slider_inner.fitzu {
     background: #23282d;
     background: linear-gradient(to right, #23282d 50%, #fbb647 100%);
-
 }
+
 .slider_inner.car_buers {
     background: #23282d;
-    
     background: linear-gradient(to right, #23282d 50%, #088fb3 100%);
 }
+
 .slider_inner.getthem {
     background: #23282d;
-  
     background: linear-gradient(to right, #23282d 50%, #1a3b72 100%);
 }
+
 .slick-dots {
     bottom: 45px;
 }
+
 .portfolio_btn a {
     color: #fff;
     border: 1px solid #fff;
@@ -56,75 +59,108 @@ ul.imp_points {
     display: inline-block;
 }
 
+.portfolio_btn a:hover {
+    background-color: #fff;
+    color: #cb40b5;
+    transition: .3s ease all;
+}
+
+a.fitzu-btn:hover {
+    color: #f9a900;
+}
+
+a.gta-btn:hover {
+    color: #113060;
+}
+
+a.cb-btn:hover {
+    color: #098fb3;
+}
+
 .portfolio_btn {
     margin-top: 15px;
 }
+
 .views_details {
     padding: 15px 0px;
 }
+
 .slider_inner.loudly {
     background: #23282d;
     background: linear-gradient(to right, #23282d 50%, #cc40b4 100%);
 }
+
 .slider_inner.fitzuapp {
     background: linear-gradient(to right, #23282d 50%, #f9a900 100%);
 }
-.portfolio_constent h4, .portfolio_constent p {
+
+.portfolio_constent h4,
+.portfolio_constent p {
     color: #fff;
 }
+
 .slider_inner {
     display: flex !important;
     align-items: center;
     min-height: 537px;
 }
+
 ul.imp_points li {
     color: #fff;
 }
+
 section.portfolio {
     overflow: hidden;
 }
+
 .filter_inner {
     margin-bottom: 60px;
 }
-.portfolio_outer .slick-prev, .portfolio_outer .slick-next{
+
+.portfolio_outer .slick-prev,
+.portfolio_outer .slick-next {
     opacity: 0;
     transition: ease all .5s;
     -webkit-transform: ease all .5s;
 }
-.portfolio_outer:hover .slick-prev,.portfolio_outer:hover .slick-next{
+
+.portfolio_outer:hover .slick-prev,
+.portfolio_outer:hover .slick-next {
     opacity: 1;
     transition: ease all .5s;
     -webkit-transform: ease all .5s;
 }
-.portfolio_outer .slick-prev{
+
+.portfolio_outer .slick-prev {
     height: 100%;
-    width:50px;
-   
+    width: 50px;
     background: linear-gradient(to left, transparent, rgb(12 17 27 / 28%), rgb(12 17 27 / 72%));
     -webkit-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
- 
 }
-.portfolio_outer .slick-next{
+
+.portfolio_outer .slick-next {
     height: 100%;
-    width:50px;
-  
+    width: 50px;
     background: linear-gradient(to right, transparent, rgb(12 17 27 / 28%), rgb(12 17 27 / 72%));
     -webkit-transition: opacity 0.6s ease-out;
     -o-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
-.slick-prev:before,.slick-next:before {
- 
+
+.slick-prev:before,
+.slick-next:before {
     display: inline-block;
     padding-right: 3px;
     font-family: "fontAwesome";
     font-weight: 600;
 }
-.slick-prev:before{
+
+.slick-prev:before {
     content: "\f053";
 }
+
 .slick-next:before {
     content: "\f054";
 }
@@ -132,44 +168,54 @@ section.portfolio {
 .slider_inner {
     position: relative;
 }
-.left_color::before, .right_color::before{
+
+.left_color::before,
+.right_color::before {
     position: absolute;
     width: 50%;
     height: 100%;
     content: "";
     top: 0;
     bottom: 0;
-
 }
-.left_color::before{
+
+.left_color::before {
     right: auto;
     left: 0;
     background-color: #e0e1e3;
 }
-.right_color::before{
+
+.right_color::before {
     right: 0;
     left: auto;
     background-color: #000;
 }
-.loudly .right_color::before{
+
+.loudly .right_color::before {
     background-color: #cb40b5;
 }
-.fitzu .right_color::before{
+
+.fitzu .right_color::before {
     background-color: #f9a900;
 }
-.getthem .right_color::before{
+
+.getthem .right_color::before {
     background-color: #113060;
 }
-.fitzuapp .right_color::before{
+
+.fitzuapp .right_color::before {
     background-color: #f9a900;
 }
-.car_buers .right_color::before{
+
+.car_buers .right_color::before {
     background-color: #098fb3;
 }
+
 .portfolio_constent {
     padding-left: 2.5rem;
 }
-@media screen and (max-width:991px){
+
+@media screen and (max-width:991px) {
     .slider_inner {
         min-height: 900px;
     }
@@ -180,18 +226,23 @@ section.portfolio {
         margin-bottom: 20px;
     }
 }
-@media screen and (max-width:767px){
+
+@media screen and (max-width:767px) {
     .slider_inner {
         min-height: 940px;
     }
     button.slick-arrow {
         display: none !important;
     }
+    .portfolio_constent {
+        padding-left: 1rem;
+    }
 }
-@media screen  and (max-width:475px){
+
+@media screen and (max-width:475px) {
     .slider_inner {
         min-height: 1030px;
-    }   
+    }
     h4.project_tagline {
         font-size: 20px;
         line-height: 30px;

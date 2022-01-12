@@ -80,11 +80,21 @@ img {
 }
 
 .body-blk {
-    background-color: #090909 !important;
+    background-color: #181818 !important;
 }
 
 .clr-wht {
     color: #fff;
+}
+
+.tetimonail_text {
+    font-weight: 500;
+}
+
+.global_btn a:hover {
+    color: #fff !important;
+    background: #CE2128;
+    transition: .3s ease all;
 }
 
 .sub_heading::after {
@@ -441,7 +451,7 @@ p.tech_anem {
 
 @media screen and (max-width:767px) {
     h2.common_heading {
-        font-size: 25px;
+        font-size: 22px;
     }
     .space {
         padding: 40px 0px;
