@@ -654,9 +654,9 @@ section.our_team li {
 }
 
 @media only screen and (max-width: 992px) {
-    .sm-no-flex {
+    /* .sm-no-flex {
         display: block;
-    }
+    } */
     .sm-no-float {
         float: none !important;
     }
@@ -716,6 +716,19 @@ section.our_team li {
     .home_contact {
         padding: 0px 0px;
     }
+    .team-members {
+        transform: unset;
+    }
+    .team-members li:last-child>div:first-child {
+        margin-left: 0;
+    }
+    .member-details img {
+        transform: unset;
+    }
+    li.clearfix {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -737,10 +750,13 @@ section.our_team li {
     .team-overview {
         padding: 15px;
     }
-}
-
-@media only screen and (max-width: 399px) {
+    li.clearfix {
+        display: block;
+        justify-content: center;
+    }
     .team-members li>div {
-        width: 48%;
+        width: 50%;
     }
 }
+
+@media only screen and (max-width: 399px) {}

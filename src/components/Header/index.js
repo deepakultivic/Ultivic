@@ -57,9 +57,7 @@ const Header = () => {
                   <div className="col-md-4 serve_bg">
                       <div className="services_text">
                           <h3>Our Services</h3>
-                          <p>You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested 
-
-</p>
+                          <p>You share your Ideas and we make it Real. We value customer's money, time and trust.</p>
                       </div>
                   </div>
                   <div className="col-md-8 menu_bg">

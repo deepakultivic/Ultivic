@@ -72,7 +72,7 @@ setFooterBlog(myBogs);
       </div>
       <div className="copyright">
         <div className="container">
-        <p>Copyright © 2021 Ultivic Technologies, All Right Reserved.</p>      
+        <p>Copyright © 2022 Ultivic Pvt Ltd, All Right Reserved.</p>      
         </div>  
       </div>
     </div>

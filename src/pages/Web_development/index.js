@@ -40,7 +40,7 @@ function Web() {
                     What is Web Development ?
 
                   </h4>
-                  <p className="text-muted mb-0">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are performing and the platforms on which they are working.</p>
+                  <p className="text-muted mb-0">Web development means building, creating and mantaining websites. It includes aspects such as web design, web publishing and database management. Web developers use numerous code languages. The language depends on the platforms.</p>
                   <h5 className="my-3">
                     Our Technologies
                   </h5>

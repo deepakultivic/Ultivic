@@ -25,7 +25,7 @@ function SampleNextArrow(props) {
   return (
     <div className="prev_arrow arrow_bg">
       <i
-        className="fa fa-angle-double-right"
+        className="fa fa-angle-double-left"
 
         onClick={onClick}
       ></i>
@@ -38,7 +38,7 @@ function SamplePrevArrow(props) {
   return (
     <div className="next_arrow arrow_bg">
       <i
-        className="fa fa-angle-double-left"
+        className="fa fa-angle-double-right"
 
         onClick={onClick}
       ></i>

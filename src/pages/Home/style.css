@@ -191,12 +191,12 @@ section.contact_us.space {
 .next_arrow {
     position: absolute;
     top: -50px;
-    right: 60px;
+    right: 20px;
 }
 
 .prev_arrow {
     position: absolute;
-    right: 20px;
+    right: 60px;
     top: -50px;
 }
 
@@ -348,5 +348,11 @@ section.contact_us.space {
     }
     .bennr_inner h4 {
         font-size: 25px;
+    }
+    .baner_design::before {
+        background: rgba(0, 0, 0, 70%);
+    }
+    a.navbar-brand img {
+        width: 133px;
     }
 }

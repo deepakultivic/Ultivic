@@ -162,7 +162,7 @@ const headerRef = useRef(null);
                     We Provide IT solutions <br /> that performs.
 
                   </h4>
-                  <p className="text-muted mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+                  <p className="text-muted mb-0">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p>
 
                   <div className="row">
                     <div className="col-lg-6 mt-4 pt-2">
@@ -337,7 +337,7 @@ const headerRef = useRef(null);
           <div className="container space">
             <div className="row flex-center sm-no-flex">
 
-              <div className="pull-right sm-no-float col-md-8">
+              <div className="pull-right sm-no-float col-md-8 col-12">
                 <ul className="team-members">
 
                   {teamchunk &&
