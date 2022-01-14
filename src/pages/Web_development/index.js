@@ -69,7 +69,7 @@ function Web() {
         <h6 className="sub_heading placement">Why Choose</h6>
         <h4 className="title mb-5">Our experts made it easier</h4>
         <div className='row'>
-            <div className='col-md-4'>
+            <div className='col-md-4 col-sm-6 col-12'>
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/web-design.svg" alt="" />
@@ -80,7 +80,7 @@ function Web() {
                   </div>
                 </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-4 col-sm-6 col-12'>
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/coding.svg" alt="" />
@@ -91,7 +91,7 @@ function Web() {
                   </div>
                 </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-4 col-sm-6 col-12'>
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/maintenance.svg" alt="" />
@@ -102,7 +102,7 @@ function Web() {
                   </div>
                 </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-4 col-sm-6 col-12'>
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/test.svg" alt="" />
@@ -113,7 +113,7 @@ function Web() {
                   </div>
                 </div>
             </div>
-            <div className='col-md-8'>
+            <div className='col-md-8 col-sm-12 col-12'>
               <div className='why_contact why_choose_card align-items-center'>
                   <h3>Get in Touch</h3>
                   <p className='ml-auto'><a href="/contact">Know More</a></p>

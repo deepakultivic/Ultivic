@@ -92,7 +92,7 @@ function Home() {
                     We Provide IT solutions <br /> that performs.
 
                   </h4>
-                  <p className="mb-0">You share your Ideas and We Make It Real. We ensure the true worth of your valuable time and money you invested on us by delivering the perfect solutions that meet client’s needs, expectations and budget.</p>
+                  <p className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></p>
                 <h5 className="my-3">
                   Our Technologies
                 </h5>
