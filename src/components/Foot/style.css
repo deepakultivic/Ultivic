@@ -51,7 +51,11 @@
 
 @media screen and (max-width:991px) {}
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .foot_inner {
+        padding: 50px 25px;
+    }
+}
 
 @media screen and (max-width:575px) {
     .foot_inner {

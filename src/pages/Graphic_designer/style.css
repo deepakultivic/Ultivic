@@ -134,3 +134,15 @@ section.grapic_work {
         left: 66px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    section.grapic_work {
+        padding: 60px 0;
+    }
+    .grapic_work .slick-arrow.slick-prev {
+        bottom: -66px;
+    }
+    .grapic_work .slick-arrow.slick-next {
+        bottom: -66px;
+    }
+}

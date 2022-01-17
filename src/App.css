@@ -341,6 +341,7 @@ section.grid.gallery img {
     border-radius: 7px;
     background-color: #23282d;
     color: #fff;
+    margin-bottom: 1em;
     position: relative;
 }
 

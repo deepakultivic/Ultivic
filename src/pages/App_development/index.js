@@ -16,21 +16,7 @@ function App_dev() {
     var settings = {
         infinite: true,
         autoplay: false,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              centerPadding: '30%',
-            }
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              centerMode: false
-            }
-          },
-        ]
+    
       };
   
         return (
