@@ -106,7 +106,7 @@ function Our_blogs() {
                             {items.map((item, index) =>
                                 index + 1 === items.length ? (
                                     <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
-                                        <Item reference={lastItemRef} >
+                                        <div  className="blogs_outer" reference={lastItemRef} >
                                             <div className="blog_inner_data">
                                                 <div className="blog_img">
                                                     <img src={item.image} alt={`Image ${index}`} className="img-fluid" width="150" height="150" />
@@ -122,11 +122,11 @@ function Our_blogs() {
                                                 </div>
                                             </div>
 
-                                        </Item>
+                                        </div>
                                     </div>
                                 ) : (
                                     <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
-                                        <Item >
+                                        <div className="blogs_outer">
                                             <div className="blog_inner_data">
                                                 <div className="blog_img">
                                                     <img src={item.image} className="img-fluid" width="150" height="150" />
@@ -144,7 +144,7 @@ function Our_blogs() {
                                                 </div>
                                             </div>
 
-                                        </Item>
+                                        </div>
                                     </div>
                                 )
                             )}

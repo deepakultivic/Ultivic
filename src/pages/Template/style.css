@@ -182,4 +182,13 @@ p.author {
   .blogsingle h3 {
     font-size: 20px;
   }
+  .blogsingle {
+    margin-bottom: 40px;
+}
+.job_contact h2 {
+    font-size: 20px;
+}
+.job_contact {
+    padding: 15px;
+}
 }

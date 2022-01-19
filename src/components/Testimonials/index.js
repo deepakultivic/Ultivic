@@ -91,7 +91,7 @@ function Testimonials() {
     ]
   };
   return (
-    <div className="container wow fadeInUp" data-wow-delay="0.2s">
+    <div className="container">
       <div className="row">
         <div className="col-12">
           <Slider {...settings}>

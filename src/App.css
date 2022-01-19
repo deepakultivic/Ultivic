@@ -448,6 +448,9 @@ p.tech_anem {
         font-size: 32px;
         margin-top: 20px;
     }
+    h2.common_heading {
+    font-size: 24px;
+}
 }
 
 @media screen and (max-width:767px) {
@@ -463,10 +466,13 @@ p.tech_anem {
     section.grid.gallery img {
         height: unset;
     }
+    .title {
+    font-size: 20px;
+}
 }
 
 @media screen and (max-width:575px) {
     .subhead {
-        font-size: 28px !important;
+        font-size: 22px !important;
     }
 }
