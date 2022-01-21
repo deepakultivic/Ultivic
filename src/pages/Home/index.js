@@ -45,9 +45,9 @@ function Home() {
                 <div className="right_align">
                   <div className="right_align_inner">
                     <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
-                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as team and we seek to <br /> continously improve
+                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as team. We seek to  continously <br /> improve
 
-                      we have to set certain standards <br /> in our organization. Changing and adapting is part of <br /> our job. We look forward for new opportunities and <br /> create innovative solutions
+                      we have to set certain standards  in our <br /> organization. Changing and adapting is part of our job. <br />  We look forward for new opportunities and <br /> create innovative solutions
                     </p>
                     <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
                   </div>
@@ -177,7 +177,7 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketig. our mission is providing sence of content to our clients
+                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. our mission is providing sence of contentment to our clients
                   </p>
                   <p className="about_info clr-wht">
                     Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
