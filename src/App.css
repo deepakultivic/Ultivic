@@ -446,7 +446,7 @@ p.tech_anem {
     }
     h2.subhead {
         font-size: 32px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     h2.common_heading {
     font-size: 24px;
@@ -468,6 +468,20 @@ p.tech_anem {
     }
     .title {
     font-size: 20px;
+}
+.sub_heading::before {
+    right: -32px;
+    width: 37px;
+}
+.sub_heading::after {
+    left: -34px;
+    width: 37px;
+}
+.sub_heading.placement {
+    margin-left: 40px;
+}
+.mobile_space{
+    padding: 0px 15px;
 }
 }
 

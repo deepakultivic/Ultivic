@@ -307,6 +307,22 @@ section.contact_us.space {
     .baner_design {
         padding: 10.5em 0;
     }
+    .car_buers .left_color::before {
+        background-color: #098fb3;
+    }
+    .loudly .left_color::before {
+        background-color: #cb40b5;
+    }
+    .fitzu .left_color::before,
+    .fitzuapp .left_color::before {
+        background-color: #f9a900;
+    }
+    .getthem .left_color::before {
+        background-color: #113060;
+    }
+    div.left_color::before, div.right_color::before {    
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -322,19 +338,7 @@ section.contact_us.space {
     .tech_icons {
         margin-bottom: 30px;
     }
-    .car_buers .left_color::before {
-        background-color: #098fb3;
-    }
-    .loudly .left_color::before {
-        background-color: #cb40b5;
-    }
-    .fitzu .left_color::before,
-    .fitzuapp .left_color::before {
-        background-color: #f9a900;
-    }
-    .getthem .left_color::before {
-        background-color: #113060;
-    }
+
     .portfolio_image {
         margin-bottom: 40px;
     }

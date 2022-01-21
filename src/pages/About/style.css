@@ -1,3 +1,6 @@
+.out_team_section{
+    overflow: hidden;
+}
 .inner_achivement_sec .about_cont_box p.about_info {
     margin-top: 10px;
     color: #fff;
@@ -728,6 +731,30 @@ section.our_team li {
     li.clearfix {
         display: flex;
         justify-content: center;
+    }
+    .about_counter .main_count .four span.counter span {
+        font-size: 30px;
+    }
+    .about_testimonials_outer {
+        border-radius: 7px;
+    }
+    .blog_element {
+        border-radius: 7px;
+        overflow: hidden;
+    }
+    .member-details>div:after {
+        content: "";
+        background-image: linear-gradient( 
+    1deg
+    , rgba(228, 82, 69, 0.8) 100%, transparent 50%);
+        top: 0;
+    }
+    .member-info {
+        transform: unset;
+        top: 40%;
+    }
+    .team-overview{
+    margin-bottom: 30px;
     }
 }
 

@@ -28,12 +28,11 @@ button.brn-sm {
   padding: 10px 30px;
   color: #000;
 }
-
 h4.desctitle {
   margin-top: 50px;
 }
 section.jobtemplate {
-  background-image: url(../../assets/Career/ultivic12.jpg);
+  background-image: url("../../assets/Career/ultivic12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,6 +56,7 @@ section.jobtemplate::after {
 }
 .blog_inner {
   border-radius: 7px;
+  padding: 2px;
 }
 .blog_img {
   border-top-left-radius: 7px;

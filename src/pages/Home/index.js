@@ -27,7 +27,7 @@ function Home() {
         })
     }
     myblogData();
-    
+
 
 
   }, [])
@@ -53,69 +53,70 @@ function Home() {
   wow.init();
   return (
     <div>
-      <Header /> 
+      <Header />
       <div className="bodywrap">
-      <BackgroundImage
-      src="assets/home/home_bg.png"     
-      isResponsive
-      className="baner_design"
-      transitionTime=".5s"
-      lazyLoad
-    >
-        <section className="">
-          <div className="container">
-            <div className="bennr_inner">
-            <div className="right_align">
-               <div className="right_align_inner">
-               <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
-              <p className="wow fadeInUp" data-wow-delay="0.3s"> This handy tool helps you create dummy text <br />
-              for all your layout needs . We are gradually adding <br />
-              new functionality and we welcome your suggestions <br />and feedbacks </p>
-              <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
-               </div>
+        <BackgroundImage
+          src="assets/home/home_bg.png"
+          isResponsive
+          className="baner_design"
+          transitionTime=".5s"
+          lazyLoad
+        >
+          <section className="">
+            <div className="container">
+              <div className="bennr_inner">
+                <div className="right_align">
+                  <div className="right_align_inner">
+                    <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
+                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as team and we seek to <br /> continously improve
+
+                      we have to set certain standards <br /> in our organization. Changing and adapting is part of <br /> our job. We look forward for new opportunities and <br /> create innovative solutions
+                    </p>
+                    <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
+                  </div>
+                </div>
+
               </div>
-             
             </div>
-          </div>
-        </section>
+          </section>
         </BackgroundImage>
         <section className="services space">
           <div className="container">
-          
+
             <div className="row align-items-center">
 
               <div className="col-lg-6 col-md-6 col-12 ">
                 <div className="section-title ml-lg-5">
                   <div className="wow slideInLeft" data-wow-delay="0.2s">
-                  <h6 className="sub_heading placement">Our Expertise</h6>
-                  <h4 className="title mb-4">
-                    We Provide IT solutions <br /> that performs.
+                    <h6 className="sub_heading placement">Our Expertise</h6>
+                    <h4 className="title mb-4">
+                      We Provide IT solutions <br /> that performs.
 
-                  </h4>
-                  <p className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></p>
-                <h5 className="my-3">
-                  Our Technologies
-                </h5>
+                    </h4>
+                    <p className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></p>
+                    <h5 className="my-3">
+                      Our Technologies
+                    </h5>
                   </div>
-               <div className="wow fadeInUp" data-wow-delay="0.3s">
-               <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p>
-                  <ul className="p-0 tech_icons" >
+                  <div className="wow fadeInUp" data-wow-delay="0.3s">
+                    <p className="mb-2">Our leading Technolgies for software development</p>
+                    <ul className="p-0 tech_icons" >
                       <li><img src="assets/home/php.svg" alt="" /></li>
                       <li><img src="assets/home/java.svg" alt="" /></li>
                       <li><img src="assets/home/java-script.svg" alt="" /></li>
                       <li><img src="assets/home/node-js.svg" alt="" /></li>
                       <li><img src="assets/home/laravel.png" alt="" /></li>
-                      <li><img src="assets/home/physics.svg" alt="" /></li>     
-                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>    
-                      <li><img src="assets/home/cakephp.png" alt="" /></li>                  
+                      <li><img src="assets/home/physics.svg" alt="" /></li>
+                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>
+                      <li><img src="assets/home/cakephp.png" alt="" /></li>
                       <li><img src="assets/home/android.svg" alt="" /></li>
                       <li><img src="assets/home/apple.svg" alt="" /></li>
                       <li><img src="assets/home/html-5.svg" alt="" /></li>
                       <li><img src="assets/home/css-3.svg" alt="" /></li>
                       <li><img src="assets/home/photoshop.svg" alt="" /></li>
                       <li><img src="assets/home/illustrator.svg" alt="" /></li>
-                  </ul>
-               </div>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6">
@@ -133,7 +134,7 @@ function Home() {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="about_blog">
-                        <ul className="">
+                        <ul className="mobile_space">
                           {ourblog.slice(0, 2).map((curelem, index) => {
                             const { title, description, image, id } = curelem;
                             return (
@@ -155,18 +156,18 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div className="about_portfolio ">
+                      <div className="about_portfolio mobile_space">
                         <img src="assets/home/about-01.png" alt="" />
                         <div className="portfoli_outer_about">
-                        <div className="portfolio_text">
+                          <div className="portfolio_text">
                             <p>Some of our Amazing Work</p>
                             <a href="/portfolio">Explore</a>
-                        </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="col-12">
-                      <div className="about_testimonials">
+                      <div className="about_testimonials mobile_space">
                         <div className="about_testimonials_outer">
 
                           <div className="tetimonail_text">
@@ -179,14 +180,14 @@ function Home() {
                             <div>
                               <p className="client_name">Mark Lukey</p>
                               <p className="client_desgnation">Ceo Fitzu</p>
-                             
+
                             </div>
                           </div>
                           <p className="star rating"><i className="fa fa-star" aria-hidden="true"></i>
-                              <i className="fa fa-star" aria-hidden="true"></i>
-                              <i className="fa fa-star" aria-hidden="true"></i>
-                              <i className="fa fa-star" aria-hidden="true"></i>
-                              <i className="fa fa-star" aria-hidden="true"></i></p>
+                            <i className="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i></p>
                         </div>
                       </div>
                     </div>
@@ -202,10 +203,10 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are software development company that uses latest technologies to develop software. We provide services in website development, mobile application development in android and ios, game development and digital marketing. Our mission is to help our clients to grow their business with poweful products.
+                  We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketig. our mission is providing sence of content to our clients 
                   </p>
                   <p className="about_info clr-wht">
-                    Founded in 2017 we have come a long way from its begning. Our passion for fullfilment client requirement makes us best company in the field of software development.
+                    Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
                   </p>
                 </div>
               </div>
@@ -213,7 +214,7 @@ function Home() {
             </div>
           </div>
         </section>
-        
+
         <div className=" space_bottom">
           <Steps />
         </div>
@@ -232,7 +233,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 wow slideInLeft" data-wow-delay="0.2s">
-                <div className="headings_outer  mb-4">
+                <div className="headings_outer mobile_space  mb-4">
                   <h6 className="sub_heading placement">Happy Clients</h6>
                   <h2 className="common_heading">More than 500+ happy Clients</h2>
                   <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.

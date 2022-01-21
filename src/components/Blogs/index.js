@@ -44,7 +44,8 @@ console.log(myBogs)
           const {title,description,image,id} = curelem;
           return (
             <div className=" col-lg-4 col-sm-6" key={index}>
-              <div className="blog_inner">
+            <div className="blog_card">
+            <div className="blog_inner">
                 <div className="blog_img">
                   <Link to={`/blog/${id}`}><img src={image} alt="ultivic blog" /></Link>
                 </div>
@@ -62,6 +63,7 @@ console.log(myBogs)
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           );
         })

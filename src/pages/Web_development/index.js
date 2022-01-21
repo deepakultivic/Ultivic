@@ -70,7 +70,8 @@ function Web() {
         <h4 className="title mb-5">Our experts made it easier</h4>
         <div className='row'>
             <div className='col-md-4 col-sm-6 col-12'>
-                <div className='why_choose_card'>
+               <div className="cardouter">
+               <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/web-design.svg" alt="" />
                   </div>
@@ -79,8 +80,10 @@ function Web() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                   </div>
                 </div>
+               </div>
             </div>
             <div className='col-md-4 col-sm-6 col-12'>
+            <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/coding.svg" alt="" />
@@ -90,8 +93,10 @@ function Web() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                   </div>
                 </div>
+                </div>
             </div>
             <div className='col-md-4 col-sm-6 col-12'>
+            <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/maintenance.svg" alt="" />
@@ -101,8 +106,10 @@ function Web() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                   </div>
                 </div>
+                </div>
             </div>
             <div className='col-md-4 col-sm-6 col-12'>
+            <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
                       <img src="assets/about/test.svg" alt="" />
@@ -111,12 +118,15 @@ function Web() {
                   <h4> Full cycle testing and delivery </h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                   </div>
+                  </div>
                 </div>
             </div>
             <div className='col-md-8 col-sm-12 col-12'>
+            <div className="cardouter">
               <div className='why_contact why_choose_card align-items-center'>
                   <h3>Get in Touch</h3>
                   <p className='ml-auto'><a href="/contact">Know More</a></p>
+              </div>
               </div>
             </div>
         </div>
