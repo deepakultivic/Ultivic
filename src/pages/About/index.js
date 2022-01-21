@@ -333,7 +333,7 @@ const headerRef = useRef(null);
             </div>
           </div>
         </section>
-        <section className="space">
+        <section className="space out_team_section">
           <div className="container space">
             <div className="row flex-center sm-no-flex">
 
@@ -372,7 +372,7 @@ const headerRef = useRef(null);
               }
 
               <div className="pull-left col-md-4 sm-text-center">
-                <div className="team-overview">
+                <div className="team-overview mobile_space">
                   <h6 className="sub_heading placement">Who we are</h6>
                   <h5>Meet the Entire Team</h5>
                   <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
@@ -381,55 +381,7 @@ const headerRef = useRef(null);
             </div>
           </div>
         </section>
-        {/* <section className="our_team space">
-          <div className="container-fluid">
-           <div className="team_wrap">
-           <div className="row align-items-center">
-              <div className="col-md-4">
-                <div className="team-overview">
-                  <h6 className="sub_heading placement">Who we are</h6>
-                  <h5>Meet the Entire Team</h5>
-                  <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
-                </div>
-              </div>
-              <div className="col-md-8">
-                <ul>
-                  {teamchunk &&
-                    teamchunk.map((emp, index) => {
-
-                      return <>
-                        <li key={"li" + index}>
-                          {emp.map((item, ind) => {
-                            return <div className="" key={ind} onClick={() => show_model(item)}>
-                             
-                              <div class="octagon">
-                                <div class="octagon-in">
-                                  <div class="octagon-bg">
-                                    <img src={item.emp_image} alt="UI Designer" />
-                                    <h3>{item.emp_name}</h3>
-                                    <p>{item.emp_designation}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          })}
-                        </li>
-
-                      </>
-                    })}
-                 
-                </ul>
-                {showModal ?
-                <CustomModal title={"Employee"}
-                  body={userdata}
-                  show={showModal}
-                  setShow={setShow} /> : <></>
-              }
-              </div>
-            </div>
-           </div>
-          </div>
-        </section> */}
+       
       </div>
 
       <Footer />
