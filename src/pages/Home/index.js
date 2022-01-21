@@ -45,7 +45,7 @@ function Home() {
                 <div className="right_align">
                   <div className="right_align_inner">
                     <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
-                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as team. We seek to  continously <br /> improve
+                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as a team. We seek to  continously <br /> improve
 
                       we have to set certain standards  in our <br /> organization. Changing and adapting is part of our job. <br />  We look forward for new opportunities and <br /> create innovative solutions
                     </p>
