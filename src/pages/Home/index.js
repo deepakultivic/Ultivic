@@ -11,31 +11,8 @@ import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
 import axios from "axios";
 import { BackgroundImage } from "react-image-and-background-image-fade";
-
-
 function Home() {
-  const [ourblog, setOurblog] = useState([])
-  useEffect(() => {
-    function myblogData() {
-      axios.get("https://ums.ultivic.com/api/development/blogs?page=1")
-        .then((response) => {
-          const myBogs = response.data.data.data;
-
-          console.log(myBogs)
-          setOurblog(myBogs);
-
-        })
-    }
-    myblogData();
-
-
-
-  }, [])
-
-
-
   // If page is not in loading state, display page.
-
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)
@@ -133,25 +110,26 @@ function Home() {
 
                   <div className="row">
                     <div className="col-md-6">
-                      <div className="about_blog">
+                      <div className="about_blog left_blog">
                         <ul className="mobile_space">
-                          {ourblog.slice(0, 2).map((curelem, index) => {
-                            const { title, description, image, id } = curelem;
-                            return (
-
-                              <li className="blog_element mb-2" key={index}>
-                                <img src={image} alt="" />
-                                <div className="blog_info">
-                                  <div className="blog_info_inner">
-                                    <h6><Link to={`/blog/${id}`}>{title}</Link></h6>
-                                    <p><Link to={`/blog/${id}`}>Read More</Link></p>
-                                  </div>
-                                </div>
-                              </li>
-                            );
-                          })
-                          }
-
+                          <li className="blog_element mb-3" >
+                            <img src="/assets/home/about-03.jpg" alt="" />
+                            <div className="blog_info">
+                              <div className="blog_info_inner">
+                                <h6><Link to="/blog/3" >How to become a better programmer</Link></h6>
+                                <p><Link to="/blog/3" >Read More</Link></p>
+                              </div>
+                            </div>
+                          </li>
+                          <li className="blog_element mb-2" >
+                            <img src="assets/services/graphics1.jpg" alt="" />
+                            <div className="blog_info">
+                              <div className="blog_info_inner">
+                                <h6>Start Your Career with Us</h6>
+                                <p><Link to="/career">know More</Link></p>
+                              </div>
+                            </div>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -161,7 +139,7 @@ function Home() {
                         <div className="portfoli_outer_about">
                           <div className="portfolio_text">
                             <p>Some of our Amazing Work</p>
-                            <a href="/portfolio">Explore</a>
+                            <a href="/graphic">Explore</a>
                           </div>
                         </div>
                       </div>
@@ -169,18 +147,14 @@ function Home() {
                     <div className="col-12">
                       <div className="about_testimonials mobile_space">
                         <div className="about_testimonials_outer">
-
                           <div className="tetimonail_text">
-
                             <p>  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,  Donec lacinia congue felis in faucibus.</p>
-
                           </div>
                           <div className="testimonial_img">
                             <img className="mr-3 rounded-circle" src="assets/home/cleint1.png" alt="Generic placeholder image" />
                             <div>
                               <p className="client_name">Mark Lukey</p>
                               <p className="client_desgnation">Ceo Fitzu</p>
-
                             </div>
                           </div>
                           <p className="star rating"><i className="fa fa-star" aria-hidden="true"></i>
@@ -203,18 +177,16 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                  We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketig. our mission is providing sence of content to our clients 
+                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketig. our mission is providing sence of content to our clients
                   </p>
                   <p className="about_info clr-wht">
                     Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
-
         <div className=" space_bottom">
           <Steps />
         </div>
@@ -226,7 +198,6 @@ function Home() {
               </h2>
             </div>
           </div>
-
           <Portfolio />
         </section>
         <section className="testimonial space  ">
@@ -245,7 +216,6 @@ function Home() {
               </div>
             </div>
           </div>
-
           <Testimonials />
         </section>
         <section className="Blogs space body-blk">
@@ -256,34 +226,22 @@ function Home() {
             </div>
           </div>
           <div className="container-fluid">
-
-
-
             <div className="row">
               <div className="col-xl-9 m-auto col-lg-12">
                 <Blogs />
               </div>
             </div>
-
-
-
-
             <div className="global_btn">
               <Link to="/blogs">
                 View All <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
               </Link>
             </div>
           </div>
-
-
         </section>
-
-
         <section className="contact_us space">
           <Homecontact />
         </section>
       </div>
-
       <Footer />
     </div>
   );

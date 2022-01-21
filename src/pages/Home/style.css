@@ -235,7 +235,19 @@ section.contact_us.space {
     color: #fff;
     font-size: 18px;
 }
-
+.about_blog.left_blog li {
+    overflow: hidden;
+}
+.about_blog.left_blog{
+    overflow: unset;
+}
+.about_blog.left_blog ul.mobile_space li:last-child {
+    border-bottom-left-radius: 15px;
+    left: 10px;
+}
+.about_blog.left_blog ul.mobile_space li:first-child {
+    border-top-left-radius: 47px;
+}
 @media screen and (max-width:1842px) {
     .baner_design {
         padding: 18em 0;
