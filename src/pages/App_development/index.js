@@ -38,10 +38,11 @@ function App_dev() {
                         <div className='tech_inner'>
                             <div className='row'>
                                 <div className='col-xl-6 col-md-6'>
-                                    <div className='tech_card android'>
+                                   <div className='cardouter'>
+                                   <div className='tech_card android'>
                                         <h4>Android App Development
                                         </h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, provident. Aliquam voluptas atque non sequi qui deserunt odit nobis harum quisquam recusandae iste et animi odio laudantium, voluptates incidunt sunt.</p>
+                                        <p>Android, the open-source platform for smartphones and tablets, is engendering zest across the mobile space. The operating system is open-source, based on Linux and is compatible with a JAVA Library. It was developed by Google and the Open Handset Alliance. Moreover, Android provides an efficient open market place and an excellent opportunity for third party android app developers. </p>
                                         <div className='tec_technologies'>
                                             <ul>
                                                 <li>
@@ -60,12 +61,14 @@ function App_dev() {
                                             </ul>
                                         </div>
                                     </div>
+                                   </div>
                                 </div>
                                 <div className='col-xl-6 col-md-6'>
-                                    <div className='tech_card ios'>
+                                   <div className='cardouter'>
+                                   <div className='tech_card ios'>
                                         <h4>iOS App Development
                                         </h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, provident. Aliquam voluptas atque non sequi qui deserunt odit nobis harum quisquam recusandae iste et animi odio laudantium, voluptates incidunt sunt.</p>
+                                        <p>iOS application development is the process of making mobile applications for Apple hardware, including iPhone, iPad and iPod Touch. The software is written in the Swift programming language or Objective-C and then deployed to the App Store for users to download.</p>
                                         <div className='tec_technologies'>
                                             <ul>
                                                 <li>
@@ -89,6 +92,7 @@ function App_dev() {
                                             </ul>
                                         </div>
                                     </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>

@@ -41,44 +41,44 @@ const pdata = [{
 const tbdata = [{
         textimgsrc: "/assets/services/cms-1.png",
         tech_box_heading: "Native Mobile App Development",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Native mobile app development involves building apps for particular mobile operating systems, and users access them from dedicated app stores.",
     },
     {
         textimgsrc: "/assets/services/shopping-1.png",
         tech_box_heading: "Hybrid Mobile App Development",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Hybrid apps are a blend of both native and web solutions. Where the core of the application is written using web technologies. ",
     },
     {
         textimgsrc: "/assets/services/applications-1.png",
         tech_box_heading: "Progressive Web App Development",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Progressive web app developers optimize web applications since they provide app-like navigation and excellent visual content.",
     },
     {
         textimgsrc: "/assets/services/php.png",
         tech_box_heading: "Wearables and Embedded ",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "An embedded system is a microprocessor- or microcontroller-based system of hardware and software designed to perform dedicated functions ",
     },
 
 
     {
         textimgsrc: "/assets/services/illustrator.png",
         tech_box_heading: "Illustrator",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Adobe Illustrator is a popular vector graphics editor program for designing that primarily manipulates vector graphic",
     },
     {
         textimgsrc: "/assets/services/photoshop.png",
         tech_box_heading: "Photoshop",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Adobe Photoshop is considered one of the best raster image editing software, and it is very user-friendly software. ",
     },
     {
         textimgsrc: "/assets/services/experience.png",
         tech_box_heading: "Adobe XD",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Adobe XD is ideal for vector-based UI design, wireframing, interactive design, prototyping, and hi-fidelity web/app design, for solo designers or whole teams.",
     },
     {
         textimgsrc: "/assets/services/figma.png",
         tech_box_heading: "Figma",
-        tech_box_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+        tech_box_info: "Figma works on any operating system that runs a web browser. Macs, Windows PCs, Linux machines, and even Chromebooks can be used with Figma. ",
     },
 ];
 

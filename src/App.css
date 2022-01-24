@@ -343,6 +343,7 @@ section.grid.gallery img {
     color: #fff;
     margin-bottom: 1em;
     position: relative;
+    height: 100%;
 }
 
 .tech_card h4 {

@@ -14,6 +14,8 @@
     transition: .3s;
     background-color: #1a1a1a;
     border-radius: 7px;
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .technology_box_sec h5 {

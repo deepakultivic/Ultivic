@@ -72,7 +72,8 @@ function Graphic() {
                   <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                 </div>
                 <p className="tech_info clr-wht">
-                  Ultivic have a highly skilled team of web developers who have vast knowledge of the technologies that are used in web development whether it’s content management system, custom web software development or any other latest technology. We believe that access to a stellar web development team can be the difference maker that you require for your digital success.
+                Ultivic believes in team work, perfection and  better results.We have a team with experience,skills and creativity.We use latest technologies of graphic designing and ensure quality products to our clients.Designs are customized as per customer’s demand and availability in given deadline.
+
                 </p>
               </div>
             </div>

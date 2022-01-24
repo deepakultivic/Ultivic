@@ -77,7 +77,7 @@ function Web() {
                   </div>
                   <div className='why_card_content'>
                   <h4>Excelent Frontend</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <p>As front-end developers, our job is, essentially, to turn designs into reality via code. </p>
                   </div>
                 </div>
                </div>
@@ -90,7 +90,7 @@ function Web() {
                   </div>
                   <div className='why_card_content'>
                   <h4>Solid back-End</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <p> Backend Development is everything that the users don’t see and contains behind-the-scenes activities that occur when performing any action on a website. </p>
                   </div>
                 </div>
                 </div>
@@ -103,7 +103,7 @@ function Web() {
                   </div>
                   <div className='why_card_content'>
                   <h4> Regulation and Maintenace </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <p>Maintenance essentials include regular secure backups, security tools, traffic monitoring, privacy policies, incident response, updates. </p>
                   </div>
                 </div>
                 </div>
@@ -116,7 +116,7 @@ function Web() {
                   </div>
                   <div className='why_card_content'>
                   <h4> Full cycle testing and delivery </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <p>The Software Testing Life Cycle provides a standardized, sophisticated and robust testing process . </p>
                   </div>
                   </div>
                 </div>

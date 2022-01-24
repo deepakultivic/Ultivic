@@ -123,7 +123,7 @@ function Home() {
                             </div>
                           </li>
                           <li className="blog_element mb-2" >
-                            <img src="assets/services/graphics1.jpg" alt="" />
+                            <img src="assets/services/we_want_you.jpg" alt="" />
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6>Start Your Career with Us</h6>
@@ -136,7 +136,7 @@ function Home() {
                     </div>
                     <div className="col-md-6">
                       <div className="about_portfolio mobile_space">
-                        <img src="assets/home/about-01.png" alt="" />
+                        <img src="assets/services/graphics_img.jpg" alt="" />
                         <div className="portfoli_outer_about">
                           <div className="portfolio_text">
                             <p>Some of our Amazing Work</p>
@@ -178,7 +178,7 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. our mission is providing sence of contentment to our clients
+                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. our mission is providing sense of contentment to our clients
                   </p>
                   <p className="about_info clr-wht">
                     Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
