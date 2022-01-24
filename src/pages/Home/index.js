@@ -40,14 +40,15 @@ function Home() {
           lazyLoad
         >
           <section className="">
-            <div className="container">
+            <div className="hero_wrappr">
               <div className="bennr_inner">
                 <div className="right_align">
                   <div className="right_align_inner">
                     <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
-                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as a team. We seek to  continously <br /> improve
+                    <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as a team. We seek to continuous  <br /> performance improvement as we have set certain <br /> standards
 
-                      we have to set certain standards  in our <br /> organization. Changing and adapting is part of our job. <br />  We look forward for new opportunities and <br /> create innovative solutions
+
+                      in our organization. Changing  and adapting  <br /> is part of our job.  We look forward for  new opportunities and <br /> create innovative solutions
                     </p>
                     <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
                   </div>

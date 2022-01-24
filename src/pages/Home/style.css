@@ -4,7 +4,10 @@
     padding: 23em 0;
     background-position: left center;
 }
-
+.hero_wrappr {
+    width: 78%;
+    margin: auto;
+}
 .bodywrap {
     position: relative;
 }
@@ -258,6 +261,10 @@ section.contact_us.space {
     .baner_design {
         padding: 15em 0;
     }
+    .hero_wrappr {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 1440px) {
@@ -278,7 +285,12 @@ section.contact_us.space {
         color: #fff;
     }
 }
-
+@media screen and (max-width:1299px) {
+    .hero_wrappr {
+        width: 96%;
+        margin: auto;
+    }
+}
 @media screen and (max-width:1199px) {
     .baner_design::before {
         position: absolute;
