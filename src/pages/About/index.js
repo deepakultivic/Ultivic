@@ -277,10 +277,8 @@ const headerRef = useRef(null);
                       </h2>
                     </div>
                     <p className="about_info">
-                      We strive for excellence. Our motivation for every project rests on our desire to deliver the best experience possible through a consistent product line and innovative technologies. Here are some of our many achievements.
-
-
-                    </p>
+                      We strive for excellence. Our motivation for every project rests on our desire to deliver the best experience possible through a consistent product line and innovative technologies. Here are some of our  achievements.
+                   </p>
                   </div>
                 </div>
                 <div className="col-lg-8 col-12">
