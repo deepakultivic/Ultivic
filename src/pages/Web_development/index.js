@@ -184,7 +184,7 @@ function Web() {
                         Krav maga
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                      Krav Maga is an effective and practical street based self defence system that is based on real life scenarios, designed to prepare you for unexpected situations that may occur in everyday life
                       </p>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ function Web() {
 
                       </p>
                     </div>
-                  </div>
+                  </div> 
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
                       <img src="assets/portfolio/graphics-04.png" alt="" />
