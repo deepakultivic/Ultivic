@@ -121,7 +121,7 @@ function Graphic() {
       <section className="grapic_work space">
         <div className="container_fluid">
           <div className="graphic_inner">
-            <Slider {...settings}>
+          <Slider {...settings}>
               <div className="gapcis_card">
                 <div className="row align-items-center">
                   <div className="col-xl-5 col-lg-6">
@@ -130,7 +130,8 @@ function Graphic() {
                         Auto Grab
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        Every vehicle online, priced in real time.
+                        An unprecedented look into the entire automotive market.
                       </p>
                     </div>
                   </div>
@@ -149,7 +150,7 @@ function Graphic() {
                         Fitzu
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        Fitzu unlocks the best sporting specialists and trainers in your area at the click of a button. Find a specialist across personal training, pilates, yoga, crossfit, weight loss & diet, martial arts, dancing, football, rugby, surfing, swimming, tennis and more!
                       </p>
                     </div>
                   </div>
@@ -168,7 +169,7 @@ function Graphic() {
                         Krav maga
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                      Krav Maga is an effective and practical street based self defence system that is based on real life scenarios, designed to prepare you for unexpected situations that may occur in everyday life
                       </p>
                     </div>
                   </div>
@@ -188,10 +189,11 @@ function Graphic() {
                         car Buyers
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        Carbuyers.com.au has pioneered the industry and we are proud of our success and dedication to customer satisfaction since our inception. We have evolved to offer same day money transfers, the most competitive prices, on site vehicle inspections, free valuations and extremely efficient mobile pick-ups and transfers.
+
                       </p>
                     </div>
-                  </div>
+                  </div> 
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
                       <img src="assets/portfolio/graphics-04.png" alt="" />
@@ -207,7 +209,7 @@ function Graphic() {
                         Kimekai
                       </h3>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in dolorum non repudiandae consequatur quos esse nisi aperiam commodi quis nesciunt id, aut tempore, labore facilis soluta, neque fuga consequuntur.
+                        Kimekai is directly affiliated with the Australian Karate Federation (AKF). The AKF conducts routine inspections on all of Kimekai's dojos as well as its instructors to ensure that the tuition and organisation standard meets its strict membership criteria.
                       </p>
                     </div>
                   </div>
