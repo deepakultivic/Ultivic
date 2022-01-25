@@ -237,7 +237,8 @@ function Graphic() {
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Latest Color Combination</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    <p>Aesthetically, color can play lots of different roles in logo design.
+ </p>
                   </div>
                 </div>
               </div>
@@ -250,7 +251,7 @@ function Graphic() {
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Tools kit</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    <p>Choosing the right set of tools to make the work productive and amazing   </p>
                   </div>
                 </div>
               </div>
@@ -263,12 +264,15 @@ function Graphic() {
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Bes UI Gradients</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    <p>Gradients are a surprisingly versatile tool </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div>
+
         </div>
       </section>
       <Foot />
