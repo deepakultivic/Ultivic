@@ -114,7 +114,7 @@ function App_dev() {
                                                <img src="/assets/services/fitzulogo.png" alt="" />
                                                </div>
                                                 <h3>Fitzu</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                                <p>Fitzu unlocks the best sporting specialists and trainers in your area at the click of a button. Find a specialist across personal training, pilates, yoga, crossfit, weight loss & diet, martial arts, dancing, football, rugby, surfing, swimming, tennis and more! </p>
                                             </div>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@ function App_dev() {
                                                <img src="/assets/home/louble_logo.png" alt="" />
                                                </div>
                                                 <h3>Loudly</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                                <p>Tune into better volumes with the new volume booster free app. Volume booster “Loud Volume Booster for Speakers” works as a sound amplifier and headphone volume booster designed to boost volume by increasing loudness of video, audio or all notifications on Android.</p>
                                             </div>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@ function App_dev() {
                                                <img src="assets/services/downlylogo.png" alt="" />
                                                </div>
                                                 <h3>Downly</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                                <p>After your video created and published on TikTok, you only need to copy your TikTok video link and open SnapTik, the download task will start automatically, and easily save your Tiktok video to your Android phone</p>
                                             </div>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@ function App_dev() {
                                                <img src="assets/services/compressorlogo.png" alt="" />
                                                </div>
                                                 <h3>Compressor</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi, ipsum libero reiciendis dolorem magnam officia. Eos, dolores non neque earum eveniet in voluptatibus ab odio, unde, itaque debitis aperiam?</p>
+                                                <p>You can reduce image size by optimizing photo quality, photo resize, convert image file format. Also, we are providing a powerful video compression feature where you can do video compression by controlling video bitrate, video quality, and video resolution.</p>
                                             </div>
                                     </div>
                                 </div>
