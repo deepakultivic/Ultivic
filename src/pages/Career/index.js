@@ -10,7 +10,7 @@ function Career() {
   return (
     <div>
       <Header />
-      <Subheader title="Start your" img="assets/services/career_bg.jpg" sub="career " clases="career bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing "/>
+      <Subheader title="Start your" img="assets/services/career_bg.jpg" sub="career " clases="career bg_overlay" shortdesc="Steer your career in right direction "/>
      
       
       <section className="jobs_sections space">

@@ -98,7 +98,7 @@ function Our_blogs() {
         return (
             <>
                 <Header />
-                <Subheader title="Grow with" img="assets/services/blog-banner.png"  sub="Ultivic" clases="blogs_sec bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+                <Subheader title="Grow with" img="assets/services/blog-banner.png"  sub="Ultivic" clases="blogs_sec bg_overlay" shortdesc="The designer of your success " />
                 <section className="our_blogs_outer space">
                     <div className="container mx-auto px-4 ">
                         <div className="row">

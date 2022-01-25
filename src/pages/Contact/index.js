@@ -108,7 +108,7 @@ function Contact() {
   return (
     <div>
       <Header />
-      <Subheader title="Get in Touch with" img="assets/services/contact-us.png" sub="Us" clases="contact bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+      <Subheader title="Get in Touch with" img="assets/services/contact-us.png" sub="Us" clases="contact bg_overlay" shortdesc="Every great business is built on friendship." />
       <section className="contact_box space">
         <div className="container">
           <div className="row">

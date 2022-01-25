@@ -24,7 +24,8 @@ function Web() {
     return (
       <div>
         <Header />
-        <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.png" clases="web bg_overlay" shortdesc="Lorem ipsum dolor sit amet, consectetur adipiscing " />
+        <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.png" clases="web bg_overlay" shortdesc="Making websites that works for you!
+ " />
    
         <section className="space service_about">
           <div className="container">

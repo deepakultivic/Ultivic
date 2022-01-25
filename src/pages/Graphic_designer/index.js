@@ -48,7 +48,8 @@ function Graphic() {
                   <h2 className="subhead">
                     Graphic <span>Designing</span>
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p>Buliding efficient,beautiful graphic design
+                  </p>
                 </div>
               </div>
             </div>
@@ -72,7 +73,7 @@ function Graphic() {
                   <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                 </div>
                 <p className="tech_info clr-wht">
-                Ultivic believes in team work, perfection and  better results.We have a team with experience,skills and creativity.We use latest technologies of graphic designing and ensure quality products to our clients.Designs are customized as per customer’s demand and availability in given deadline.
+                  Ultivic believes in team work, perfection and  better results.We have a team with experience,skills and creativity.We use latest technologies of graphic designing and ensure quality products to our clients.Designs are customized as per customer’s demand and availability in given deadline.
 
                 </p>
               </div>
@@ -227,44 +228,44 @@ function Graphic() {
           <h4 className="title mb-5">We make it perfect at every step</h4>
           <div className='row'>
             <div className='col-md-4'>
-            <div className="app_ser_outer">
-              <div className="app_serv_card">
-                <div className='app_serv_img'>
-                  <img src="assets/services/colors.png" alt="" />
+              <div className="app_ser_outer">
+                <div className="app_serv_card">
+                  <div className='app_serv_img'>
+                    <img src="assets/services/colors.png" alt="" />
+                  </div>
+                  <div className='app_ser_cintent'>
+                    <h4>Latest Color Combination</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  </div>
                 </div>
-                <div className='app_ser_cintent'>
-                  <h4>Latest Color Combination</h4>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                </div>
-              </div>
               </div>
             </div>
             <div className='col-md-4'>
-             <div className="app_ser_outer">
-             <div className="app_serv_card">
-                <div className='app_serv_img'>
-                  <img src="assets/services/toolskit.png" alt="" />
-                </div>
-                <div className='app_ser_cintent'>
-                  <h4>Tools kit</h4>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+              <div className="app_ser_outer">
+                <div className="app_serv_card">
+                  <div className='app_serv_img'>
+                    <img src="assets/services/toolskit.png" alt="" />
+                  </div>
+                  <div className='app_ser_cintent'>
+                    <h4>Tools kit</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  </div>
                 </div>
               </div>
-             </div>
             </div>
             <div className='col-md-4'>
-            <div className="app_ser_outer">
-              <div className="app_serv_card">
-                <div className='app_serv_img'>
-                  <img src="assets/services/gradient.png" alt="" />
-                </div>
-                <div className='app_ser_cintent'>
-                  <h4>Bes UI Gradients</h4>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+              <div className="app_ser_outer">
+                <div className="app_serv_card">
+                  <div className='app_serv_img'>
+                    <img src="assets/services/gradient.png" alt="" />
+                  </div>
+                  <div className='app_ser_cintent'>
+                    <h4>Bes UI Gradients</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>

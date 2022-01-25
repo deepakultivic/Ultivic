@@ -22,7 +22,7 @@ function App_dev() {
         return (
             <div>
                 <Header />
-                <Subheader title="App Development" img="assets/services/app-development.png" clases="app_dev bg_overlay" shortdesc="Application development is the process of creating a computer program" />
+                <Subheader title="App Development" img="assets/services/app-development.png" clases="app_dev bg_overlay" shortdesc="We belive in creativity" />
                 <div className="app_dev_inner">
                     <Aboutglobal
                         imgsrc={content[3].imgsrc}
