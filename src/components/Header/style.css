@@ -170,6 +170,10 @@ ul.drop_menu .menu_bg li a {
     .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
         width: 70%;
     }
+    ul.drop_menu .active {
+        color: #ce2128;
+        border-color: #ce2128;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -198,8 +202,7 @@ ul.drop_menu .menu_bg li a {
         outline: none;
         border: none;
     }
-    .navbar-nav .nav-item.nav-link.active,
-    .navbar-nav .nav-item.nav-link:hover {
+    .navbar-nav .nav-item.nav-link.active {
         color: #ce2128;
     }
     .mobile_dropdown {

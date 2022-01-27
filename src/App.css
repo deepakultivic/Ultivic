@@ -436,6 +436,9 @@ p.tech_anem {
     h2.subhead {
         font-size: 30px;
     }
+    .home_about h4.title {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width:1199px) {
@@ -479,10 +482,13 @@ p.tech_anem {
     width: 37px;
 }
 .sub_heading.placement {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .mobile_space{
     padding: 0px 15px;
+}
+.out_team_section .sub_heading.placement {
+    margin-left: 0;
 }
 }
 

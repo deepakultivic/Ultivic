@@ -19,13 +19,29 @@ import Contact from "./pages/Contact";
 import Blogtemplate from "./pages/Template/Blogtemplate";
 import Jobs from "./pages/Template/Jobs";
 import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './components/Googleanalytics';
+
 
 function App(props) {
   const history = createBrowserHistory();
+  const TRACKING_ID = "G-1RYT8ZCNC1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID, {
+  debug: true,
+  titleCase: false,
+  gaOptions: {
+    userId: 3213624477
+  }
+});
+  ReactGA.exception({
+      description: 'An error ocurred',
+      fatal: true
+    });
   return (
     <div className="App">
       <BrowserRouter>
       <ScrollToTop/>
+      <RouteChangeTracker/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />

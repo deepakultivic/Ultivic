@@ -61,14 +61,14 @@ const Header = () => {
                       </div>
                   </div>
                   <div className="col-md-8 menu_bg">
-                    <li><NavLink activeClassName="active" to="/web"><div className="menu_image">
+                    <li><NavLink activeClassName="active" className="nav-item nav-link" to="/web"><div className="menu_image">
 
                       <p> Web Development</p>
                     </div></NavLink></li>
-                    <li><NavLink activeClassName="active" to="/graphic"><div className="menu_image">
+                    <li><NavLink activeClassName="active" className="nav-item nav-link" to="/graphic"><div className="menu_image">
 
                       <p>Graphic Design</p></div></NavLink></li>
-                    <li><NavLink activeClassName="active" to="/app"><div className="menu_image">
+                    <li><NavLink activeClassName="active"  className="nav-item nav-link"to="/app"><div className="menu_image">
 
                       <p>App Development</p>
                     </div></NavLink></li>

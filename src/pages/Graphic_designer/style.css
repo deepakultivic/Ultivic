@@ -145,4 +145,10 @@ section.grapic_work {
     .grapic_work .slick-arrow.slick-next {
         bottom: -66px;
     }
+    .project_content {
+        padding: 1rem;
+    }
+    .project_content h3 {
+        font-size: 20px;
+    }
 }

@@ -130,8 +130,7 @@ function Graphic() {
                         Auto Grab
                       </h3>
                       <p>
-                        Every vehicle online, priced in real time.
-                        An unprecedented look into the entire automotive market.
+                        Every vehicle online, priced in real time. An unprecedented look into the entire automotive market.
                       </p>
                     </div>
                   </div>
@@ -150,7 +149,7 @@ function Graphic() {
                         Fitzu
                       </h3>
                       <p>
-                        Fitzu unlocks the best sporting specialists and trainers in your area at the click of a button. Find a specialist across personal training, pilates, yoga, crossfit, weight loss & diet, martial arts, dancing, football, rugby, surfing, swimming, tennis and more!
+                        Fitzu unlocks the best sporting specialists and trainers in your area at the click of a button. 
                       </p>
                     </div>
                   </div>
@@ -169,7 +168,7 @@ function Graphic() {
                         Krav maga
                       </h3>
                       <p>
-                      Krav Maga is an effective and practical street based self defence system that is based on real life scenarios, designed to prepare you for unexpected situations that may occur in everyday life
+                      Krav Maga is an effective and practical street based self defence system that is based on real life scenarios.
                       </p>
                     </div>
                   </div>
@@ -189,7 +188,7 @@ function Graphic() {
                         car Buyers
                       </h3>
                       <p>
-                        Carbuyers.com.au has pioneered the industry and we are proud of our success and dedication to customer satisfaction since our inception. We have evolved to offer same day money transfers, the most competitive prices, on site vehicle inspections, free valuations and extremely efficient mobile pick-ups and transfers.
+                        Carbuyers.com.au has pioneered the industry and we are proud of our success and dedication to customer satisfaction since our inception.
 
                       </p>
                     </div>
@@ -209,7 +208,7 @@ function Graphic() {
                         Kimekai
                       </h3>
                       <p>
-                        Kimekai is directly affiliated with the Australian Karate Federation (AKF). The AKF conducts routine inspections on all of Kimekai's dojos as well as its instructors to ensure that the tuition and organisation standard meets its strict membership criteria.
+                        Kimekai is directly affiliated with the Australian Karate Federation (AKF). The AKF conducts routine inspections on all of Kimekai's dojos
                       </p>
                     </div>
                   </div>
