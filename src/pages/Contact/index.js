@@ -114,7 +114,7 @@ function Contact() {
           <div className="row">
             <div className="col-lg-6">
               <div className="contact_detail">
-                <div className="headings_outer mb-4">
+                <div className="headings_outer mobile_center mb-4">
                   <h6 className="sub_heading placement">Our Location</h6>
                   <h2 className="common_heading">Get In touch with Us ​</h2>
                 </div>
@@ -157,7 +157,9 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact_form">
                 <div className="headings_outer mb-4">
-                  <h6 className="sub_heading placement">Contact Us</h6>
+                 <div className="mobile_center">
+                 <h6 className="sub_heading placement">Contact Us</h6>
+                 </div>
                   <h2 className="common_heading mb-4">
                     Book an appointment
                   </h2>
@@ -208,9 +210,11 @@ function Contact() {
                       <div className="inline-errormsgs">{errors.description}</div>
                     )}
                   </div>
+                  <div className="mobile_center">
                   <button type="submit" className="btn">
                     Submit
                   </button>
+                  </div>
                 </form>
               </div>
             </div>

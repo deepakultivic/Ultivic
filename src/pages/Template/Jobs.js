@@ -72,7 +72,9 @@ useEffect(() => {
         <div className="container">
         <h2>
           <div className="container">
-            <h2 className="subhead">{myjobs.title}</h2>
+         <div className="mobile_center">
+         <h2 className="subhead">{myjobs.title}</h2>
+         </div>
           </div>
         </h2>
         </div>

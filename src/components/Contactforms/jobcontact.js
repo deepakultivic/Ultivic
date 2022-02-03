@@ -184,7 +184,9 @@ return isValid;
           />
         </div>
         <p className="filetype">Allowed Type(s): .pdf, .doc, .docx</p>
-        <button type="submit" className="btn btn-primary brn-sm">Submit</button>
+      <div className="mobile_center">
+      <button type="submit" className="btn btn-primary brn-sm">Submit</button>
+      </div>
       </form>
     </div>
   );

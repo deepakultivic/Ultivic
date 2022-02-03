@@ -191,4 +191,8 @@ p.author {
 .job_contact {
     padding: 15px;
 }
+section.jobinfo h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 }
