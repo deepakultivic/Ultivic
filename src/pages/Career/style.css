@@ -38,8 +38,25 @@ h3.job_heading a {
 }
 
 .jobs:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1) translate3d( 0, 0, 0) perspective(1px);
+    -moz-transform: scale(1.1) translate3d( 0, 0, 0) perspective(1px);
+      -o-transform: scale(1.1) translate3d( 0, 0, 0) perspective(1px);
+     -ms-transform: scale(1.1) translate3d( 0, 0, 0) perspective(1px);
+         transform: scale(1.1) translate3d( 0, 0, 0) perspective(1px);
     transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+
+
+}
+.jobs{
+    
+    font: 800 40px;
+    min-height: 60px;   
+    margin:0 auto;
+    transition: transform 0.4s linear;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    will-change: transform; 
 }
 
 p.job_info {

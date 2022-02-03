@@ -162,7 +162,7 @@ const headerRef = useRef(null);
                     We Provide IT solutions <br /> that performs.
 
                   </h4>
-                  <p className="text-muted mb-0">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p>
+                  <p className="mb-0">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p>
 
                   <div className="row">
                     <div className="col-lg-6 mt-4 pt-2">

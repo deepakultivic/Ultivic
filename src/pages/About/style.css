@@ -764,6 +764,21 @@ section.our_team li {
     overflow: hidden;
     height: unset;
 }
+.inner_achivement_sec .about_cont_box p.about_info {
+  margin-bottom: 30px;
+}
+.team_image {
+  min-height: 360px;
+}
+.service_about img {
+  margin-bottom: 30px;
+}
+.service_about li img {
+  margin-bottom: 0px;
+}
+.gapcis_card {
+  padding: 0px 8px;
+}
 }
 
 @media only screen and (max-width: 550px) {
