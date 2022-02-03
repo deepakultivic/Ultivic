@@ -317,6 +317,12 @@ section.contact_us.space {
     .bennr_inner br {
         display: none;
     }
+    .baner_design::before {
+        background: rgba(0, 0, 0, 70%);
+    }
+    .inner_about.space.body-blk {
+        padding-bottom: 140px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -347,6 +353,9 @@ section.contact_us.space {
     div.left_color::before, div.right_color::before {    
         width: 100%;
     }
+    section.inner_about.space.body-blk {
+        padding-bottom: 70px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -366,6 +375,11 @@ section.contact_us.space {
     .portfolio_image {
         margin-bottom: 40px;
     }
+    .about_blog.left_blog ul.mobile_space li:last-child {
+        left: 0;
+    }
+    
+    
 }
 
 @media screen and (max-width: 575px) {
@@ -377,9 +391,7 @@ section.contact_us.space {
     .bennr_inner h4 {
         font-size: 25px;
     }
-    .baner_design::before {
-        background: rgba(0, 0, 0, 70%);
-    }
+   
     a.navbar-brand img {
         width: 133px;
     }

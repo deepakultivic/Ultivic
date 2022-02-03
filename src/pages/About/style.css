@@ -400,9 +400,7 @@ section.inner_about.inner_achivement {
 }
 
 @media screen and (max-width: 991px) {
-  .about_cont_box {
-    margin-bottom: 40px;
-  }
+ 
   .team_box {
     margin-bottom: 30px;
   }
@@ -640,15 +638,23 @@ section.our_team li {
     bottom: 0;
   }
   .about_cont_box {
-    margin-bottom: 40px;
     margin-top: 60px;
   }
+  .about_blog.left_blog li,
+  .about_blog.left_blog li img {
+    overflow: hidden;
+    height: 240px;
+}
 }
 
 @media (min-width: 991px) {
   section.inner_about.container {
     max-width: 1070px;
   }
+  .portfoli_outer_about, .blog_info {
+    transform: translateX(0px);
+    border-radius: 7px;
+}
 }
 
 @media only screen and (max-width: 992px) {
@@ -753,6 +759,11 @@ section.our_team li {
   .team-overview {
     margin-bottom: 30px;
   }
+  .about_blog.left_blog li,
+  .about_blog.left_blog li img {
+    overflow: hidden;
+    height: unset;
+}
 }
 
 @media only screen and (max-width: 550px) {

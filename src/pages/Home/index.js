@@ -44,7 +44,7 @@ function Home() {
               <div className="bennr_inner">
                 <div className="right_align">
                   <div className="right_align_inner">
-                    <h1 className="wow fadeInUp" data-wow-delay="0.3s">We are <span className="banner_brand">Innovative</span></h1>
+                    <h1 className="wow fadeInUp" data-wow-delay="0.2s">We are <span className="banner_brand">Innovative</span></h1>
                     <p className="wow fadeInUp" data-wow-delay="0.3s"> We seek to understand, how well we are performing, <br /> both as individual and as a team. We seek to continuous  <br /> performance improvement as we have set certain <br /> standards
 
 

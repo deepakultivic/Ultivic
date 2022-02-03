@@ -497,3 +497,7 @@ p.tech_anem {
         font-size: 22px !important;
     }
 }
+
+.wow {
+    visibility: hidden;
+  }
