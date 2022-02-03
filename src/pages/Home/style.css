@@ -379,13 +379,22 @@ section.contact_us.space {
         left: 0;
     }
     
-    
+    .star.rating {
+        position: unset;
+    }
+    .bennr_inner p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .sub_heading.placement {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .bennr_inner h1,
     .bennr_inner h1 span {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 48px;
     }
     .bennr_inner h4 {

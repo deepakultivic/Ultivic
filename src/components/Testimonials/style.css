@@ -101,3 +101,9 @@
     margin-bottom: 8px;
     color: #ce2128;
 }
+@media screen and (max-width:767px) {
+    .client-name {
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+}

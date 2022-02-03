@@ -174,7 +174,9 @@ function Home() {
               <div className="col-lg-5">
                 <div className="about_cont_box wow fadeInUp" data-wow-delay="0.3s">
                   <div className="headings_outer ">
+                    <div className="mobile_center">
                     <h6 className="sub_heading placement">About us</h6>
+                    </div>
                     <h2 className="common_heading clr-wht">
                       We are Creative And Professional Agency
                     </h2>
@@ -208,8 +210,10 @@ function Home() {
             <div className="row">
               <div className="col-lg-8 wow slideInLeft" data-wow-delay="0.2s">
                 <div className="headings_outer mobile_space  mb-4">
+                  <div className="mobile_center">
                   <h6 className="sub_heading placement">Happy Clients</h6>
                   <h2 className="common_heading">More than 500+ happy Clients</h2>
+                  </div>
                   <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
                     Here’s what our clients have to say about us.
 

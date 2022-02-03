@@ -36,3 +36,19 @@ p.experiennce, p.skills {
   font-weight: 600;
   font-size: 15px;
 }
+@media screen and (max-width:767px) {
+  .modal-body{
+    padding: 0;
+  }
+  .modal-body .row{
+margin: 0;
+  }
+  .modal-content.group_main_form {
+    margin-top: 15px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.emp_content {
+  padding: 22px 0px;
+}
+}
