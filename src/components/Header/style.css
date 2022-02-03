@@ -95,10 +95,8 @@ ul.drop_menu li:last-child a {
 
 .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
     width: 50%;
-    /* position: relative; */
     right: 0;
     background-color: transparent;
-    box-shadow: 0 4px 20px 0 rgb(37 45 79 / 40%);
     top: 53px;
 }
 

@@ -15,10 +15,12 @@ function Planning(props) {
             <div className="col-lg-6">
               <div className="planning_box">
                 <div className="headings_outer ">
+                <div className="mobile_center">
                   <h6 className="sub_heading placement">{props.sub_heading}</h6>
                   <h2 className="common_heading">
                   {props.common_heading}
                   </h2>
+                  </div>
                   <p className="planning_info">{props.planning_info}</p>
                   <ul className="planning_pts">
                       <li><i className="fa fa-check"></i>{props.planing_pts01}</li>

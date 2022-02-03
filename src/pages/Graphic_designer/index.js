@@ -68,7 +68,7 @@ function Graphic() {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="techn4ology_cont">
-                <div className="headings_outer ">
+                <div className="headings_outer mobile_center">
                   <h6 className="sub_heading placement">Technologies</h6>
                   <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                 </div>
@@ -225,8 +225,10 @@ function Graphic() {
       </section>
       <section className="app_services space">
         <div className="container">
-          <h6 className="sub_heading placement">Why Choose</h6>
+         <div className="mobile_center">
+         <h6 className="sub_heading placement">Why Choose</h6>
           <h4 className="title mb-5">We make it perfect at every step</h4>
+         </div>
           <div className='row'>
             <div className='col-md-4'>
               <div className="app_ser_outer">

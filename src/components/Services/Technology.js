@@ -11,7 +11,7 @@ function Technology() {
             <div className="row align-items-center">
               <div className="col-lg-5">
                 <div className="techn4ology_cont">
-                  <div className="headings_outer ">
+                  <div className="headings_outer mobile_center">
                     <h6 className="sub_heading placement">Technologies</h6>
                     <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
                   </div>

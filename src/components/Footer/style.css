@@ -27,9 +27,7 @@ ul {
     text-decoration: none;
 }
 
-ul.rent_news li a {
-    /* text-transform: capitalize; */
-}
+
 
 .copyright p {
     color: #fff;
@@ -108,4 +106,11 @@ ul.rent_news.cont_info li::before {
     .footer .footer_sec {
         padding-bottom: 30px;
     }
+    .footer .footer_sec ul li {
+      
+        display: block;
+    }
+}
+@media screen and (max-width:767px){
+  
 }

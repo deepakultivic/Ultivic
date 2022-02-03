@@ -459,7 +459,7 @@ p.tech_anem {
 
 @media screen and (max-width:767px) {
     h2.common_heading {
-        font-size: 22px;
+        font-size: 20px;
     }
     .space {
         padding: 40px 0px;
@@ -498,6 +498,9 @@ p.tech_anem {
 }
 .right_align {
     text-align: center;
+}
+.mobile_center{
+    text-align: center !important;
 }
 }
 

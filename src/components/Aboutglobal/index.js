@@ -11,7 +11,7 @@ function Aboutglobal(props) {
           </div>
           <div className="col-lg-6">
             <div className="about_cont_box">
-              <div className="headings_outer ">
+              <div className="headings_outer mobile_center">
                 <h6 className="sub_heading placement">{props.sub_heading}</h6>
                 <h2 className="common_heading">{props.common_heading}</h2>
               </div>
