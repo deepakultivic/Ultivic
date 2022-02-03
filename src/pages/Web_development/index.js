@@ -18,6 +18,13 @@ function Web() {
     slidesToShow: 1,
     slidesToScroll: 1,
     nav: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        dots: true,
+        arrows: false,
+      }
+    }]
 
   };
 

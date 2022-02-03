@@ -511,6 +511,9 @@ p.tech_anem {
   .bg_overlay .subhead_outer {
     text-align: center;
 }
+.slick-dots li button:before{
+    font-size: 14px;
+}
 }
 
 @media screen and (max-width: 575px) {

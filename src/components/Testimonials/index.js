@@ -67,7 +67,10 @@ function Testimonials() {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true,
+          nextArrow: false, 
+          prevArrow: false,
         }
       }
       // You can unslick at a given breakpoint now by adding:

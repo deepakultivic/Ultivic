@@ -156,4 +156,8 @@ section.grapic_work {
   .project_content h3 {
     font-size: 20px;
   }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #cd2128;
+}
 }

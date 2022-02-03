@@ -106,4 +106,13 @@
         font-size: 1.2em;
         line-height: 2em;
     }
+    .testimonial .slick-dots {
+        bottom: -25px;
+    }
+    .client_text p {
+        font-size: 14px;
+    }
+    .client_text {
+        padding: 50px 22px;
+    }    
 }

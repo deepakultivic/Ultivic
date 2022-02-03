@@ -198,6 +198,17 @@ section.app_services {
     .app_serv_card::before {
         height: 65%;
     }
+    .graphic_inner {
+        padding: 0px 0;
+    }
+    .grapic_work  .slick-dots {
+        bottom: -30px;
+    }
+    .planning_sec {
+ 
+        margin-bottom: 0;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
