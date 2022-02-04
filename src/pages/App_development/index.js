@@ -16,6 +16,13 @@ function App_dev() {
     var settings = {
         infinite: true,
         autoplay: false,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+              dots: true,
+              arrows: false,
+            }
+          }]
     
       };
   

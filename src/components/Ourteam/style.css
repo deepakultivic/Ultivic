@@ -51,4 +51,7 @@ margin: 0;
 .emp_content {
   padding: 22px 0px;
 }
+.team_image {
+  min-height: 360px;
+}
 }

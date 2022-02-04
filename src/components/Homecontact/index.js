@@ -124,7 +124,9 @@ return isValid;
             <div className="col-xl-8 col-lg-7">
               <div className="home_form wow slideInRight" ata-wow-delay="0.3s">
                 <div className="headings_outer ">
-                  <h6 className="sub_heading placement">Get in Touch</h6>
+                 <div className="mobile_center">
+                 <h6 className="sub_heading placement">Get in Touch</h6>
+                 </div>
                   <h2 className="common_heading">
                   Let’s create digital revolution together    </h2>
                 </div>
@@ -172,7 +174,7 @@ return isValid;
             <div className="inline-errormsgs">{errors.desc}</div>
           ) }
                   </div>
-                  <div className="global_btn">
+                  <div className="global_btn mobile_center">
                   <button type="submit" className="btn  brn-sm">Submit</button>
                   </div>  
                 </form>

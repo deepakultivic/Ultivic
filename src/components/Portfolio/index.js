@@ -12,7 +12,14 @@ function Portfolio() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrow: true
+    arrow: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        dots: true,
+        arrows: false,
+      }
+    }]
   };
 
   return (

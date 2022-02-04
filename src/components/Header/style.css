@@ -64,7 +64,9 @@ a.navbar-brand img {
     position: absolute;
     top: 58px;
 }
-
+.menu_bg p:hover {
+    color: #c12128;
+}
 ul.drop_menu li a {
     color: #fff;
     font-weight: 500;

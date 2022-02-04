@@ -33,7 +33,7 @@ myJobs();
         
          </div>
          <p className="job_info">
-         {description.slice(0, 150)}
+         {description.slice(0, 148)}
          </p>
         <div className="global_btn mt-0 ">
         <Link className="" to={`/carrer/${id}`}> View More<i className="fa fa-long-arrow-right"></i></Link>  

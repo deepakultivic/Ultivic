@@ -195,4 +195,7 @@ section.jobinfo h4 {
   font-size: 20px;
   margin-bottom: 20px;
 }
+section.jobinfo h4 {
+  font-size: 18px;
+}
 }

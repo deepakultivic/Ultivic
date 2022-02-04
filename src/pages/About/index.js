@@ -272,7 +272,9 @@ const headerRef = useRef(null);
                 <div className="col-lg-4 col-12">
                   <div className="about_cont_box">
                     <div className="headings_outer ">
-                      <h6 className="sub_heading placement">Our Achievements</h6>
+                    <div className="mobile_center">
+                    <h6 className="sub_heading placement">Our Achievements</h6>
+                    </div>
                       <h2 className="common_heading">What we’ve achieved
                       </h2>
                     </div>
