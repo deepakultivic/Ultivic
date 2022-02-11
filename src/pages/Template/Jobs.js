@@ -50,8 +50,10 @@ myJobtem();
         <div className="container">
           <h4 className="desctitle">Job Description:</h4>
           <div className="job_content">
-           
-         <p>{myjobs.description.replace(/<\/?[^>]+(>|$)/g, "")}</p>
+          <p dangerouslySetInnerHTML={{
+                    __html: myjobs.description
+                  }}></p>
+         
            <div className="space pt-4">
            <div className="job_contact ">
               <h2>
