@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from 'react-router-dom'
 
 import './style.css';
 
 const Header = () => {
-  const [scrolled, setScrolled] = React.useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [show, setShow]=useState('false')
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
@@ -21,7 +22,9 @@ const Header = () => {
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
-
+const handleToggle = () => {
+    setShow(!show)
+}
   return (
 
     <header className={navbarClasses.join(" ")}>
@@ -42,9 +45,9 @@ const Header = () => {
           <div className="navbar-nav ml-auto">
             <NavLink activeClassName="active" to="/about" className="nav-item nav-link ">About</NavLink>
             {/* <NavLink activeClassName="active" to="/portfolio" className="nav-item nav-link ">Portfolio</NavLink> */}
-            <li className="nav-item nav-link mobile_dropdown">
+            <li  onClick={handleToggle} className="nav-item nav-link mobile_dropdown">
               Services <i className="	fa fa-angle-down"></i>
-              <ul className="drop_menu ">
+              <ul className={show ? "drop_menu" : "drop_menu show"}>
                 <li><NavLink activeClassName="active" to="/web">Web Development</NavLink></li>
                 <li><NavLink activeClassName="active" to="/graphic">Graphic Design</NavLink></li>
                 <li><NavLink activeClassName="active" to="/app">App Development</NavLink></li>
@@ -52,7 +55,7 @@ const Header = () => {
             </li>
             <li className="nav-item nav-link desktop_dropdown">
               Services <i className="	fa fa-angle-down"></i>
-              <ul className="drop_menu">
+              <ul className= "drop_menu show">
                 <div className="row w-100 ">
                   <div className="col-md-4 serve_bg">
                       <div className="services_text">

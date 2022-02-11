@@ -36,7 +36,7 @@ function Home() {
           src="assets/home/home_bg.png"
           isResponsive
           className="baner_design"
-          transitionTime=".5s"
+          transitionTime=".2s"
           lazyLoad
         >
           <section className="">
