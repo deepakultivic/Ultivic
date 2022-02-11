@@ -8,27 +8,28 @@ function SampleNextArrow(props) {
 
   const { className, style, onClick } = props;
   return (
-    <div className="prev_arrow arrow_bg">
+    <div className="next_arrow arrow_bg">
       <i
-        className="fa fa-angle-double-left"
+        className="fa fa-angle-double-right"  
 
         onClick={onClick}
       ></i>
-      
+
     </div>
   );
 }
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className="next_arrow arrow_bg">
+    <div className="prev_arrow arrow_bg">
       <i
-        className="fa fa-angle-double-right"
+        className="fa fa-angle-double-left"
+
 
         onClick={onClick}
       ></i>
     </div>
-  );  
+  );
 }
 function Testimonials() {
   const [testimonial, setTestimonial] = useState([])
@@ -52,7 +53,7 @@ function Testimonials() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />, 
+    nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
@@ -69,7 +70,7 @@ function Testimonials() {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          nextArrow: false, 
+          nextArrow: false,
           prevArrow: false,
         }
       }
@@ -85,27 +86,27 @@ function Testimonials() {
           <Slider {...settings}>
             {
               testimonial.map((curelem, index) => {
-                const { image, name, review,designation } = curelem;
+                const { image, name, review, designation } = curelem;
                 return (
                   <div key={index}>
                     <div className="testimonails_outer">
                       <div className="testimonials">
-                   
-                       <div className="client-image">
+
+                        <div className="client-image">
                           <img
                             src={image}
                             className="tfree-client-image wp-post-image"
                             alt=""
                           />
-                       
+
                         </div>
-                      
+
                         <div className="client_text">
-                        <p>
-                          {review}
-                        </p>
-                        <h4 className="client-name mt-2">{name}</h4>
-                        <p className="designation">{designation}</p>
+                          <p>
+                            {review}
+                          </p>
+                          <h4 className="client-name mt-2">{name}</h4>
+                          <p className="designation">{designation}</p>
                         </div>
                       </div>
                     </div>
