@@ -63,6 +63,8 @@ a.navbar-brand img {
     transition: 0.5s;
     position: absolute;
     top: 58px;
+    width: 150vh;
+    right: 0;
 }
 .menu_bg p:hover {
     color: #c12128;

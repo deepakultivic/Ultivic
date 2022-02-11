@@ -84,7 +84,7 @@ const headerRef = useRef(null);
      
       isResponsive
       className="image about bg_overlay"
-      transitionTime=".5s"
+      transitionTime=".2s"
       lazyLoad
     >
       <section className="about bg_overlay">
