@@ -54,7 +54,7 @@ a.navbar-brand img {
 }
 
 .navbar-nav .nav-item.nav-link ul.drop_menu {
-    background: #23282d;
+   
     padding: 0 10px;
     border-radius: 4px;
     opacity: 0;
@@ -63,7 +63,7 @@ a.navbar-brand img {
     transition: 0.5s;
     position: absolute;
     top: 58px;
-    width: 150vh;
+    width: 40%;
     right: 0;
 }
 .menu_bg p:hover {
