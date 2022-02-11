@@ -121,7 +121,9 @@ ul.social_share_btns li:nth-child(3) {
   display: flex;
   align-items: center;
 }
-
+.job_content {
+  margin-top: 15px;
+}
 .avtar_letters {
   background: #ce2128;
   padding: 10px;
