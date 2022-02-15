@@ -135,29 +135,32 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                     <div className="mobile_space">
-                     <div className="about_portfolio ">
-                        <img src="assets/services/graphics_img.jpg" alt="" />
-                        <div className="portfoli_outer_about">
-                          <div className="portfolio_text">
-                            <p>Some of our Amazing Work</p>
-                            <a href="/graphic">Explore</a>
+                      <div className="mobile_space">
+                        <div className="about_portfolio ">
+                          <img src="assets/services/graphics_img.jpg" alt="" />
+                          <div className="portfoli_outer_about">
+                            <div className="portfolio_text">
+                              <p>Some of our Amazing Work</p>
+                              <a href="/graphic">Explore</a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                     </div>
                     </div>
                     <div className="col-12">
                       <div className="about_testimonials mobile_space">
                         <div className="about_testimonials_outer">
                           <div className="tetimonail_text">
-                            <p>  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,  Donec lacinia congue felis in faucibus.</p>
+                            <p> Harmanpreet and her team are really committed and deliver a good job. We will keep working with them on a long-term basis. She is smart and effective. She is flexible and provides quality solutions.
+                            </p>
                           </div>
                           <div className="testimonial_img">
-                            <img className="mr-3 rounded-circle" src="assets/home/cleint1.png" alt="Generic placeholder image" />
+                            <img className="mr-3 rounded-circle" src="assets/home/jeorge.png" alt="Generic placeholder image" />
                             <div>
-                              <p className="client_name">Mark Lukey</p>
-                              <p className="client_desgnation">Ceo Fitzu</p>
+                              <p className="client_name">GEORGE DEPREZ
+
+                              </p>
+                              <p className="client_desgnation">Solution Architecture</p>
                             </div>
                           </div>
                           <p className="star rating"><i className="fa fa-star" aria-hidden="true"></i>
@@ -175,7 +178,7 @@ function Home() {
                 <div className="about_cont_box wow fadeInUp" data-wow-delay="0.3s">
                   <div className="headings_outer ">
                     <div className="mobile_center">
-                    <h6 className="sub_heading placement">About us</h6>
+                      <h6 className="sub_heading placement">About us</h6>
                     </div>
                     <h2 className="common_heading clr-wht">
                       We are Creative And Professional Agency
@@ -211,8 +214,8 @@ function Home() {
               <div className="col-lg-8 wow slideInLeft" data-wow-delay="0.2s">
                 <div className="headings_outer mobile_space  mb-4">
                   <div className="mobile_center">
-                  <h6 className="sub_heading placement">Happy Clients</h6>
-                  <h2 className="common_heading">More than 500+ happy Clients</h2>
+                    <h6 className="sub_heading placement">Happy Clients</h6>
+                    <h2 className="common_heading">More than 500+ happy Clients</h2>
                   </div>
                   <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
                     Here’s what our clients have to say about us.</p>
