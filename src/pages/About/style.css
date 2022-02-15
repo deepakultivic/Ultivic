@@ -805,7 +805,11 @@ section.our_team li {
   .team-members li > div {
     width: 50%;
   }
+  .star.rating {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
 }
 
-@media only screen and (max-width: 399px) {
-}
