@@ -1,20 +1,16 @@
 header.navbar {
     padding: 0 4em;
 }
-
 .navbar {
     width: 100%;
     padding: 0;
 }
-
 .navbar-expand-md .navbar-collapse {
     justify-content: flex-end;
 }
-
 .navbar .navbar-brand {
     padding: 0;
 }
-
 header.navbar {
     background: transparent;
     position: fixed;
@@ -24,37 +20,29 @@ header.navbar {
     width: 100%;
     z-index: 9;
 }
-
 header.navbar.scrolled {
     background: #23282d;
 }
-
 .navbar .navbar-nav .nav-item.nav-link {
     color: #fff;
     padding: 0px 20px;
     font-weight: 600;
     font-family: "Montserrat";
 }
-
 .navbar-nav .nav-item.nav-link.active,
 .navbar-nav .nav-item.nav-link:hover {
     color: #fff;
 }
-
 a.navbar-brand img {
     width: 200px;
 }
-
 .navbar-nav {
     align-items: center;
 }
-
 .navbar-nav .nav-item.nav-link:last-child {
     padding-right: 0;
 }
-
-.navbar-nav .nav-item.nav-link ul.drop_menu {
-   
+.navbar-nav .nav-item.nav-link ul.drop_menu {   
     padding: 0 10px;
     border-radius: 4px;
     opacity: 0;
@@ -77,26 +65,21 @@ ul.drop_menu li a {
     padding: 10px 10px;
     display: block;
 }
-
 ul.drop_menu li:last-child a {
     border-bottom: unset;
 }
-
 .navbar-nav .nav-item.nav-link:hover ul.drop_menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(8px);
     transition: 0.5s;
 }
-
 .navbar-nav a.nav-item.nav-link i.fa.fa-angle-down {
     margin-left: 7px;
 }
-
 .navbar-expand-lg {
     justify-content: unset;
 }
-
 div.navbar-nav .nav-item.nav-link.mobile_dropdown ul.drop_menu.show {
 display: block;
 width: 100%;
@@ -108,62 +91,49 @@ width: 100%;
     top: 53px;
     display: none;
 }
-
 .desktop_dropdown ul.drop_menu {
     display: flex;
 }
-
 .menu_image {
     position: relative;
 }
-
 .mobile_dropdown {
     display: none;
 }
-
 .menu_image p {
     font-size: 16px;
     font-weight: 500;
 }
-
 .services_text h3 {
     color: #fff;
 }
-
 ul.drop_menu .menu_bg li a {
     padding: .2em;
 }
-
 .services_text h3 {
     font-size: 22px;
 }
-
 .desktop_dropdown ul.drop_menu li a {
     border-bottom: none;
 }
-
 .serve_bg {
     background-color: #c12128;
     color: #fff;
 }
-
 .menu_bg {
     background-color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
 .serve_bg,
 .menu_bg {
     padding: 2em;
 }
-
 .services_text p {
     color: #fff;
     margin-top: 14px;
 }
-
 @media screen and (max-width: 1440px) {
     a.navbar-brand img {
         width: 200px;
@@ -172,7 +142,6 @@ ul.drop_menu .menu_bg li a {
         width: 60%;
     }
 }
-
 @media screen and (max-width: 1199px) {
     .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
         width: 70%;
@@ -182,17 +151,12 @@ ul.drop_menu .menu_bg li a {
         border-color: #ce2128;
     }
 }
-
 @media screen and (max-width: 1024px) {
     .navbar-nav .nav-item.nav-link.desktop_dropdown ul.drop_menu {
         width: 80%;
     }
 }
-
 @media screen and (max-width: 991px) {
-    /* .navbar .container {
-    max-width: 100%;
-  } */
     .navbar-toggler span.fa.fa-bars {
         color: #fff;
     }
@@ -219,7 +183,6 @@ ul.drop_menu .menu_bg li a {
         display: none;
     }
     .navbar .navbar-nav .nav-item.nav-link {
-        /* color: #333; */
         padding: 1rem 2rem;
     }
     .navbar-nav {

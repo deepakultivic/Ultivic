@@ -215,10 +215,7 @@ function Home() {
                   <h2 className="common_heading">More than 500+ happy Clients</h2>
                   </div>
                   <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
-                    Here’s what our clients have to say about us.
-
-                    testmonial
-                    We had a ve</p>
+                    Here’s what our clients have to say about us.</p>
                 </div>
               </div>
             </div>

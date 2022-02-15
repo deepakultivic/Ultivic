@@ -1,92 +1,90 @@
-import React, {useState,  useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import axios from "axios";
 import "./style.css";
 function Homecontact() {
   const [input, setInput] = useState({
-    name:"",
-  email:"",
-  desc:"",
-  }); 
+    name: "",
+    email: "",
+    desc: "",
+  });
 
-const {name,email,desc} = input;
-const [submitted, setSubmitted] = useState(false);
-const [errors, setError] = useState(input);
-useEffect(() => {
-  handleValidate(input)
-},[input])
+  const { name, email, desc } = input;
+  const [submitted, setSubmitted] = useState(false);
+  const [errors, setError] = useState(input);
+  useEffect(() => {
+    handleValidate(input)
+  }, [input])
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  
- 
-  setSubmitted(true);
-  if(handleValidate(input)){
-      setInput({name:"", email:"", desc:""})
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+
+    setSubmitted(true);
+    if (handleValidate(input)) {
+      setInput({ name: "", email: "", desc: "" })
       setSubmitted(false);
-      
+
       let headers = {
         'Content-Type': 'application/json'
       }
-      let contactData ={
-        name :name,
+      let contactData = {
+        name: name,
         email: email,
         desc: desc
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
-        .then((response)=>{
-            const homeCtc = response.data.data;
-            console.log('CONTACT DATA',homeCtc)
+        .then((response) => {
+          const homeCtc = response.data.data;
+          console.log('CONTACT DATA', homeCtc)
         })
-  }
-};
+    }
+  };
 
 
-function onChange (event){
-  setInput({...input, [event.target.name]:event.target.value})
-};
+  function onChange(event) {
+    setInput({ ...input, [event.target.name]: event.target.value })
+  };
 
-const handleValidate =(input) => {
-  console.log(input)
-let errors ={};
-let isValid = true;
-if (typeof input["email"] !== "undefined") {
-  let pattern = new RegExp(
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  );
-  if (!pattern.test(input["email"])) {
-    isValid = false;
-    errors["email"] = "Please enter valid email address.";
-  }
-}
-if (!input["email"]) {
-  isValid = false;
-  errors["email"] = "Please enter email address.";
-}
+  const handleValidate = (input) => {
+    console.log(input)
+    let errors = {};
+    let isValid = true;
+    if (typeof input["email"] !== "undefined") {
+      let pattern = new RegExp(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+      if (!pattern.test(input["email"])) {
+        isValid = false;
+        errors["email"] = "Please enter valid email address.";
+      }
+    }
+    if (!input["email"]) {
+      isValid = false;
+      errors["email"] = "Please enter email address.";
+    }
 
 
-if (typeof input["name"] !== "undefined") {
-  let pattern = new RegExp("^[a-zA-Z ]+$");
-  if (!pattern.test(input["name"])) {
-    isValid = false;
-    errors["name"] = "This field accept only alphabets";
-  } else if (input["name"].length <= 2) {
-    isValid = false;
-    errors["name"] = "max 3 words";
-  }
-} 
-if (!input["name"]) {
-  isValid = false;
-  errors["name"] = "Please enter name";
-}
-if (!input["desc"]) {
-  isValid = false;
-  errors["desc"] = "Please enter cover message .";
-}
-setError(errors);
-console.log(errors)
-return isValid;
-}; 
+    if (typeof input["name"] !== "undefined") {
+      let pattern = new RegExp("^[a-zA-Z ]+$");
+      if (!pattern.test(input["name"])) {
+        isValid = false;
+        errors["name"] = "This field accept only alphabets";
+      } else if (input["name"].trim().length <= 2) {
+        isValid = false;
+        errors["name"] = "max 3 words";
+      }
+    }
+    if (!input["name"]) {
+      isValid = false;
+      errors["name"] = "Please enter name";
+    }
+    if (!input["desc"]) {
+      isValid = false;
+      errors["desc"] = "Please enter cover message .";
+    }
+    setError(errors);
+    console.log(errors)
+    return isValid;
+  };
   return (
     <div>
       <div className="container">
@@ -124,13 +122,13 @@ return isValid;
             <div className="col-xl-8 col-lg-7">
               <div className="home_form wow slideInRight" ata-wow-delay="0.3s">
                 <div className="headings_outer ">
-                 <div className="mobile_center">
-                 <h6 className="sub_heading placement">Get in Touch</h6>
-                 </div>
+                  <div className="mobile_center">
+                    <h6 className="sub_heading placement">Get in Touch</h6>
+                  </div>
                   <h2 className="common_heading">
-                  Let’s create digital revolution together    </h2>
+                    Let’s create digital revolution together    </h2>
                 </div>
-                <form  onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <input
                       type="text"
@@ -141,24 +139,24 @@ return isValid;
                       onChange={onChange}
                     />
                     {submitted && !!errors.name && (
-            <div className="inline-errormsgs">{errors.name}</div>
-          ) }
+                      <div className="inline-errormsgs">{errors.name}</div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
                       className={
-                        "form-control" + 
-                (submitted && !!errors.email ? " is-inValid" : "")
-                }
+                        "form-control" +
+                        (submitted && !!errors.email ? " is-inValid" : "")
+                      }
                       name="email"
                       placeholder="Your Email"
                       value={email}
                       onChange={onChange}
                     />
                     {submitted && !!errors.email && (
-            <div className="inline-errormsgs">{errors.email}</div>
-          ) }
+                      <div className="inline-errormsgs">{errors.email}</div>
+                    )}
                   </div>
                   <div className="form-group">
                     <textarea
@@ -171,12 +169,12 @@ return isValid;
                       onChange={onChange}
                     ></textarea>
                     {submitted && !!errors.desc && (
-            <div className="inline-errormsgs">{errors.desc}</div>
-          ) }
+                      <div className="inline-errormsgs">{errors.desc}</div>
+                    )}
                   </div>
                   <div className="global_btn mobile_center">
-                  <button type="submit" className="btn  brn-sm">Submit</button>
-                  </div>  
+                    <button type="submit" className="btn  brn-sm">Submit</button>
+                  </div>
                 </form>
               </div>
             </div>

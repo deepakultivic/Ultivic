@@ -94,7 +94,7 @@ const gridgallery = [
 ]
 const ourteam = [{
         emp_name: "Tarun",
-        emp_designation: "Bakend Developer",
+        emp_designation: "Backend Developer",
         emp_image: "assets/about/tarun.png",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript ",
@@ -103,7 +103,7 @@ const ourteam = [{
     },
     {
         emp_name: "Savita",
-        emp_designation: "Bakend Developer",
+        emp_designation: "Backend Developer",
         emp_image: "assets/about/savita.png",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript",

@@ -119,7 +119,7 @@ function Contact() {
                   <h2 className="common_heading">Get In touch with Us ​</h2>
                 </div>
                 <p>
-                  Ultivic Technologies is one of the best website development
+                  Ultivic Pvt Ltd is one of the best website development
                   company in India with experience in building websites and web
                   applications
                 </p>
