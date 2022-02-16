@@ -100,7 +100,7 @@ if (typeof input["mobile"] !== "undefined") {
       //   window.alert("not supported");
       // }
       if (typeof input["resume"] !== "undefined") {
-        var pattern = new RegExp(/(\.doc|\.docs|\.docx)$/i);
+        var pattern = new RegExp(/(\.doc|\.pdf|\.docx)$/i);
         if (!pattern.test(input["resume"])) {
           isValid = false;
           errors["resume"] = "File not Supported";
