@@ -95,10 +95,7 @@ if (typeof input["mobile"] !== "undefined") {
         errors["mobile"] = "Please enter mobile number.";
       }
 
-      
-      // if(resume.split('.').pop() != 'docx'){
-      //   window.alert("not supported");
-      // }
+   
       if (typeof input["resume"] !== "undefined") {
         var pattern = new RegExp(/(\.doc|\.pdf|\.docx)$/i);
         if (!pattern.test(input["resume"])) {
@@ -106,14 +103,7 @@ if (typeof input["mobile"] !== "undefined") {
           errors["resume"] = "File not Supported";
         }
       }
-    //   let file = resume.split('.').pop(); 
-    //   if ( /(\.jpg|\.jpeg|\.png|\.gif)$/i) {
-
-    //     isValid = false;
-    //     errors["resume"]="file does not support";
-    //     // window.alert("not supported");
-    //     // return false;
-    //  }
+  
 
 if (!input["name"]) {
     isValid = false;
