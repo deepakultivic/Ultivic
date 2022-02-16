@@ -43,7 +43,7 @@ const handleToggle = () => {
 
         <div className="collapse navbar-collapse " id="navbarCollapse">
           <div className="navbar-nav ml-auto">
-            <NavLink activeClassName="active" to="/ " className="nav-item nav-link ">Home</NavLink>
+            <NavLink activeClassName="active" to="/" className="nav-item nav-link ">Home</NavLink>
             <NavLink activeClassName="active" to="/about" className="nav-item nav-link ">About</NavLink>
             {/* <NavLink activeClassName="active" to="/portfolio" className="nav-item nav-link ">Portfolio</NavLink> */}
             <li  onClick={handleToggle} className="nav-item nav-link mobile_dropdown">

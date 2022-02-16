@@ -1,5 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function Jobcontact() {
   const [input, setInputs] = useState({
     name: "",
@@ -36,6 +39,8 @@ function Jobcontact() {
         .then((response)=>{
             const myjobs = response.data.data;
             console.log(myjobs);
+            if (response.status === 200)
+            toast.success("Success! We will contact you soon");
         })
 
     }

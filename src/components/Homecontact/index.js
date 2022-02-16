@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import "./style.css";
+toast.configure();
 function Homecontact() {
   const [input, setInput] = useState({
     name: "",
@@ -17,6 +21,8 @@ function Homecontact() {
   }, [input])
 
   const handleSubmit = (e) => {
+  
+
     e.preventDefault()
 
 
@@ -35,9 +41,15 @@ function Homecontact() {
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
         .then((response) => {
+         
           const homeCtc = response.data.data;
+           if (response.status === 200)
+          toast.success("Success! We will contact you soon");
           console.log('CONTACT DATA', homeCtc)
-        })
+        }) 
+     
+
+        
     }
   };
 
@@ -61,8 +73,6 @@ function Homecontact() {
       isValid = false;
       errors["email"] = "Please enter email address.";
     }
-
-
     if (typeof input["name"] !== "undefined") {
       let pattern = new RegExp("^[a-zA-Z ]+$");
       if (!pattern.test(input["name"])) {
@@ -87,6 +97,7 @@ function Homecontact() {
   };
   return (
     <div>
+       <ToastContainer />
       <div className="container">
         <div className="home_contact">
           <div className="row">

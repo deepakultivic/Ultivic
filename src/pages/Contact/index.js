@@ -5,6 +5,8 @@ import Subheader from "../../components/Subheader";
 import "./style.css";
 import { Link } from 'react-router-dom'
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Contact() {
@@ -42,6 +44,8 @@ function Contact() {
         .then((response)=>{
             const homeCtc = response.data.data;
             console.log('CONTACT DATA',homeCtc)
+            if (response.status === 200)
+            toast.success("Success! We will contact you soon");
         })
     }
   };

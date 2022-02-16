@@ -21,6 +21,7 @@ import Jobs from "./pages/Template/Jobs";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import RouteChangeTracker from './components/Googleanalytics';
+import { ToastContainer } from "react-toastify";
 
 
 function App(props) {
@@ -41,6 +42,7 @@ ReactGA.initialize(TRACKING_ID, {
     <div className="App">
       <BrowserRouter>
       <ScrollToTop/>
+      <ToastContainer />
       <RouteChangeTracker/>
       <Switch>
         <Route path="/" exact component={Home} />
