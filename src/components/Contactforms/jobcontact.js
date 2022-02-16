@@ -7,11 +7,11 @@ function Jobcontact() {
   const [input, setInputs] = useState({
     name: "",
     email: "",
-    tel: "",
-    desc: "",
-    file: "",
+    mobile: "",
+    cover_letter: "",
+    resume: "",
   });
-  const { name, email, tel, desc, file } = input;
+  const { name, email, mobile, cover_letter, resume } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
   useEffect(() => {
@@ -24,16 +24,16 @@ function Jobcontact() {
     setSubmitted(true);
     if(handleValidate(input)){
       setSubmitted(false);
-        setInputs({name:"", email:"", tel:"", desc:"", file:""})
+        setInputs({name:"", email:"", mobile:"", cover_letter:"", resume:""})
         const headers ={
-          'Content-Type': 'application/json'
+          'Content-Type': 'multipart/form-data'
         }
         let myblogForm = {
           name:name,
           email:email,
-          tel:tel,
-          desc:desc,
-          file:file
+          mobile:mobile,
+          cover_letter:cover_letter,
+          resume:resume
         }
         axios.post('https://ums.ultivic.com/api/development/job-form',myblogForm,headers)
         .then((response)=>{
@@ -80,28 +80,48 @@ if (typeof input["email"] !== "undefined") {
         errors["name"]="max 3 words";
     }
 }   
-if (typeof input["tel"] !== "undefined") {
+if (typeof input["mobile"] !== "undefined") {
         var pattern = new RegExp(/^[0-9\b]+$/);
-        if (!pattern.test(input["tel"])) {
+        if (!pattern.test(input["mobile"])) {
           isValid = false;
-          errors["tel"] = "Please enter valid tel number.";
-        } else if (input["tel"].length !== 10) {
+          errors["mobile"] = "Please enter valid mobile number.";
+        } else if (input["mobile"].length !== 10) {
           isValid = false;
-          errors["tel"] = "Please enter valid tel number.";
+          errors["mobile"] = "Please enter valid mobile number.";
         }
       }
-      if (!input["tel"]) {
+      if (!input["mobile"]) {
         isValid = false;
-        errors["tel"] = "Please enter mobile number.";
+        errors["mobile"] = "Please enter mobile number.";
       }
+
+      
+      // if(resume.split('.').pop() != 'docx'){
+      //   window.alert("not supported");
+      // }
+      if (typeof input["resume"] !== "undefined") {
+        var pattern = new RegExp(/(\.doc|\.docs|\.docx)$/i);
+        if (!pattern.test(input["resume"])) {
+          isValid = false;
+          errors["resume"] = "File not Supported";
+        }
+      }
+    //   let file = resume.split('.').pop(); 
+    //   if ( /(\.jpg|\.jpeg|\.png|\.gif)$/i) {
+
+    //     isValid = false;
+    //     errors["resume"]="file does not support";
+    //     // window.alert("not supported");
+    //     // return false;
+    //  }
 
 if (!input["name"]) {
     isValid = false;
     errors["name"] = "Please enter the name ";
   }
-  if (!input["desc"]) {
+  if (!input["cover_letter"]) {
     isValid = false;
-    errors["desc"] = "Please enter cover ";
+    errors["cover_letter"] = "Please enter cover ";
   }
 setError(errors);
 console.log(errors)
@@ -144,51 +164,54 @@ return isValid;
           ) }
         </div>
         <div className="form-group">
-          <label htmlFor="tel"> Mobile</label>
+          <label htmlFor="mobile"> Mobile</label>
           <input
-            type="tel"
+            type="mobile"
             className={
                 "form-control" + 
-        (submitted && !!errors.tel ? " is-inValid" : "")
+        (submitted && !!errors.mobile ? " is-inValid" : "")
         }
-            name="tel"
+            name="mobile"
             placeholder="Phone"
-            value={tel}
+            value={mobile}
             onChange={onChange}
           />
-          {submitted && !!errors.tel && (
-            <div className="inline-errormsgs">{errors.tel}</div>
+          {submitted && !!errors.mobile && (
+            <div className="inline-errormsgs">{errors.mobile}</div>
           ) }
         </div>
         <div className="form-group">
-          <label htmlFor="file">Cover Letter</label>
+          <label htmlFor="resume">Cover Letter</label>
           <textarea
-            name="desc"
+            name="cover_letter"
             className={
                 "form-control" + 
-        (submitted && !!errors.desc ? " is-inValid" : "")
+        (submitted && !!errors.cover_letter ? " is-inValid" : "")
             }
             id=""
             cols="30"
             rows="10"
-            value={desc}
+            value={cover_letter}
             onChange={onChange}
           ></textarea>
-          {submitted && !!errors.desc && (
-            <div className="inline-errormsgs">{errors.desc}</div>
+          {submitted && !!errors.cover_letter && (
+            <div className="inline-errormsgs">{errors.cover_letter}</div>
           ) }
         </div>
         <div className="form-group">
-          <label htmlFor="file"> Upload CV/ Resume</label>
+          <label htmlFor="resume"> Upload CV/ Resume</label>
           <input
             type="file"
-            name="file"
+            name="resume"
             className="form-control"
-            value={file}
+            value={resume}
             onChange={onChange}
           />
+            {submitted && !!errors.resume && (
+            <div className="inline-errormsgs">{errors.resume}</div>
+          ) }
         </div>
-        <p className="filetype">Allowed Type(s): .pdf, .doc, .docx</p>
+        <p className="resumetype">Allowed Type(s): .pdf, .doc, .docx</p>
       <div className="mobile_center">
       <button type="submit" className="btn btn-primary brn-sm">Submit</button>
       </div>

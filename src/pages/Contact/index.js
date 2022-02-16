@@ -13,11 +13,11 @@ function Contact() {
   const [input, setInputs] = useState({
     fullname: "",
     email: "",
-    tel: "",
+    mobile: "",
     subject: "",
-    description: "",
+    message: "",
   });
-  const { fullname, email, tel, subject, description } = input;
+  const { fullname, email, mobile, subject, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
   useEffect(() => {
@@ -29,16 +29,16 @@ function Contact() {
     setSubmitted(true);
     if (handleValidate(input)) {
       setSubmitted(false);
-      setInputs({ fullname: "", email: "", tel: "", subject: "", description: "" })
+      setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
             let headers = {
         'Content-Type': 'application/json'
       }
       let contactData ={
         name :fullname,
         email: email,
-        tel: tel,
+        mobile: mobile,
         subject : subject,
-        description :description,
+        message :message,
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
         .then((response)=>{
@@ -84,25 +84,25 @@ function Contact() {
       isValid = false;
       errors["fullname"] = "Please enter name";
     }
-    if (typeof input["tel"] !== "undefined") {
+    if (typeof input["mobile"] !== "undefined") {
       var pattern = new RegExp(/^[0-9\b]+$/);
-      if (!pattern.test(input["tel"])) {
+      if (!pattern.test(input["mobile"])) {
         isValid = false;
-        errors["tel"] = "Please enter valid tel number";
-      } else if (input["tel"].length != 10) {
+        errors["mobile"] = "Please enter valid mobile number";
+      } else if (input["mobile"].length != 10) {
         isValid = false;
-        errors["tel"] = "Please enter valid tel number";
+        errors["mobile"] = "Please enter valid mobile number";
       }
     }
-    if (!input["tel"]) {
+    if (!input["mobile"]) {
       isValid = false;
-      errors["tel"] = "Please enter mobile number";
+      errors["mobile"] = "Please enter mobile number";
     }
 
 
-    if (!input["description"]) {
+    if (!input["message"]) {
       isValid = false;
-      errors["description"] = "Please enter cover message ";
+      errors["message"] = "Please enter cover message ";
     }
     setError(errors);
     // console.log(errors);
@@ -144,7 +144,7 @@ function Contact() {
                     </span>
                   </li>
                   <li>
-                    <Link to="tel:+91 8360249058​">
+                    <Link to="mobile:+91 8360249058​">
                       <i className="fa fa-phone"></i>
                       <span>+91 8360249058​</span>
                     </Link>
@@ -190,9 +190,9 @@ function Contact() {
                   </div>
                   <div className="form-group">
                     <label >Your phone</label>
-                    <input type="tel" className="form-control" id="phone" name="tel" value={tel} onChange={onChange} />
-                    {submitted && !!errors.tel && (
-                      <div className="inline-errormsgs">{errors.tel}</div>
+                    <input type="mobile" className="form-control" id="phone" name="mobile" value={mobile} onChange={onChange} />
+                    {submitted && !!errors.mobile && (
+                      <div className="inline-errormsgs">{errors.mobile}</div>
                     )}
                   </div>
                   <div className="form-group">
@@ -201,17 +201,17 @@ function Contact() {
                   </div>
                   <div className="form-group">
                     <label >
-                      Your message (optional)
+                      Your message 
                     </label>
                     <textarea
                       className="form-control"
                       id="message"
                       rows="3"
-                      name="description" value={description}
+                      name="message" value={message}
                       onChange={onChange}
                     ></textarea>
-                    {submitted && !!errors.description && (
-                      <div className="inline-errormsgs">{errors.description}</div>
+                    {submitted && !!errors.message && (
+                      <div className="inline-errormsgs">{errors.message}</div>
                     )}
                   </div>
                   <div className="mobile_center">

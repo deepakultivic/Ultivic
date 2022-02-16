@@ -10,10 +10,10 @@ function Homecontact() {
   const [input, setInput] = useState({
     name: "",
     email: "",
-    desc: "",
+    message: "",
   });
 
-  const { name, email, desc } = input;
+  const { name, email, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
   useEffect(() => {
@@ -28,7 +28,7 @@ function Homecontact() {
 
     setSubmitted(true);
     if (handleValidate(input)) {
-      setInput({ name: "", email: "", desc: "" })
+      setInput({ name: "", email: "", message: "" })
       setSubmitted(false);
 
       let headers = {
@@ -37,7 +37,7 @@ function Homecontact() {
       let contactData = {
         name: name,
         email: email,
-        desc: desc
+        message: message
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
         .then((response) => {
@@ -87,9 +87,9 @@ function Homecontact() {
       isValid = false;
       errors["name"] = "Please enter name";
     }
-    if (!input["desc"]) {
+    if (!input["message"]) {
       isValid = false;
-      errors["desc"] = "Please enter cover message .";
+      errors["message"] = "Please enter cover message .";
     }
     setError(errors);
     console.log(errors)
@@ -171,16 +171,16 @@ function Homecontact() {
                   </div>
                   <div className="form-group">
                     <textarea
-                      name="desc"
+                      name="message"
                       className="form-control"
                       cols="6"
                       rows="6"
                       placeholder="Your Message"
-                      value={desc}
+                      value={message}
                       onChange={onChange}
                     ></textarea>
-                    {submitted && !!errors.desc && (
-                      <div className="inline-errormsgs">{errors.desc}</div>
+                    {submitted && !!errors.message && (
+                      <div className="inline-errormsgs">{errors.message}</div>
                     )}
                   </div>
                   <div className="global_btn mobile_center">
