@@ -75,7 +75,7 @@ if (typeof input["email"] !== "undefined") {
         isValid=false;
         errors["name"]="This field accept only alphabets";
     }
-    else if(input["name"].length <=2 ) {
+    else if(input["name"].trim().length <=2 ) {
         isValid=false;
         errors["name"]="max 3 words";
     }

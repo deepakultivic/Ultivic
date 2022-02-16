@@ -75,7 +75,7 @@ function Contact() {
       if (!pattern.test(input["fullname"])) {
         isValid = false;
         errors["fullname"] = "This field accept only alphabets";
-      } else if (input["fullname"].length <= 2) {
+      } else if (input["fullname"].trim().length <= 2) {
         isValid = false;
         errors["fullname"] = "max 3 words";
       }
