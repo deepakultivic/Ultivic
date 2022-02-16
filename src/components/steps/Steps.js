@@ -25,7 +25,7 @@ function Steps() {
             </div>
             <div className="col-lg-4">
               <div className="steps_cont_img">
-                <img src="/assets/home/areas-2.png" alt="" />
+                <img src="assets/home/sdlc_life_cycyle.svg" alt="" />
               </div>
             </div>
           </div>
