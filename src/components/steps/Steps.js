@@ -16,7 +16,7 @@ function Steps() {
               <div className="steps_cont_text mobile_space">
 
                 <h3>
-                  EVERY CUSTOMER IS IMPORTANY TO US!
+                  EVERY CUSTOMER IS IMPORTANT TO US!
                 </h3>
                 <p>
                   Our experts, search for new information to understand alternative source of good practice and implement creative working methods. Being flexible is our approach for the best outcome.
