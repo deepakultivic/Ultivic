@@ -1,6 +1,8 @@
 .modal-body {
   display: flex;
   padding: 0px 15px;
+  position: relative;
+  z-index: 9;
 }
 p.emp_designation {
   font-size: 18px;
