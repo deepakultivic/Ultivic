@@ -11,8 +11,7 @@ if(show == true){
     document.body.style.overflow = 'hidden';
     console.log("show")
 }
- console.log("hide")
-}
+
     return (
         <div className={show === false ? "modal fade" : "modal fade show customModal"} role="dialog"
             style={show === false ? { display: 'none' } : { display: 'block' }} id="confirmationModal" tabIndex="-1"
