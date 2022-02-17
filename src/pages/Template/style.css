@@ -4,11 +4,15 @@
   margin-left: 19px;
 }
 .job_contact {
+ 
+  position: relative;
+}
+.jobs_form{
   padding: 30px;
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
   border-radius: 7px;
 }
-.job_contact h2 {
+.jobs_form h2 {
   margin-bottom: 20px;
   font-size: 25px;
 }
@@ -187,11 +191,12 @@ p.author {
   .blogsingle {
     margin-bottom: 40px;
 }
-.job_contact h2 {
+.jobs_form h2 {
     font-size: 20px;
 }
 .job_contact {
     padding: 15px;
+    position: relative;
 }
 section.jobinfo h4 {
   font-size: 20px;

@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Oval } from  'react-loader-spinner'
 function Jobcontact() {
   const [input, setInputs] = useState({
     name: "",
@@ -14,6 +15,7 @@ function Jobcontact() {
   const { name, email, mobile, cover_letter, resume } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     handleValidate(input)
 },[input])
@@ -23,6 +25,7 @@ function Jobcontact() {
    
     setSubmitted(true);
     if(handleValidate(input)){
+      setLoading(true)
       setSubmitted(false);
         setInputs({name:"", email:"", mobile:"", cover_letter:"", resume:""})
         const headers ={
@@ -40,6 +43,7 @@ function Jobcontact() {
             const myjobs = response.data.data;
             console.log(myjobs);
             if (response.status === 200)
+            setLoading(false)
             toast.success("Success! We will contact you soon");
         })
 
@@ -123,7 +127,7 @@ return isValid;
   //   const [errors, setError] = useState(input);
   //   const [submitted, setSubmitted] = useState(false);
   return (
-    <div>
+    <div className="job_contact ">
       <form  onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name"> Full Name</label>
@@ -209,6 +213,16 @@ return isValid;
       <button type="submit" className="btn btn-primary brn-sm">Submit</button>
       </div>
       </form>
+      {loading &&
+                   <div className="my_loaders">
+                    <Oval
+                      height="100"
+                      width="100"
+                      color='grey'
+                      ariaLabel='loading'
+                    />
+                  </div>
+              }
     </div>
   );
 }

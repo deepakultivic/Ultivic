@@ -3,9 +3,10 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import "./style.css";
-import { Link } from 'react-router-dom'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Oval } from  'react-loader-spinner'
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
+import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -20,6 +21,7 @@ function Contact() {
   const { fullname, email, mobile, subject, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     handleValidate(input);
   }, [input]);
@@ -27,25 +29,30 @@ function Contact() {
     e.preventDefault();
     // alert('testing');
     setSubmitted(true);
+  
     if (handleValidate(input)) {
       setSubmitted(false);
-      setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
-            let headers = {
+  
+      setLoading(true)
+      // setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
+      let headers = {
         'Content-Type': 'application/json'
       }
-      let contactData ={
-        name :fullname,
+      let contactData = {
+        name: fullname,
         email: email,
         mobile: mobile,
-        subject : subject,
-        message :message,
+        subject: subject,
+        message: message,
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
-        .then((response)=>{
-            const homeCtc = response.data.data;
-            console.log('CONTACT DATA',homeCtc)
-            if (response.status === 200)
-            toast.success("Success! We will contact you soon");
+        .then((response) => {
+          const homeCtc = response.data.data;
+          console.log('CONTACT DATA', homeCtc)
+          if (response.status === 200)
+            setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
+          setLoading(false);
+          toast.success("Success! We will contact you soon");
         })
     }
   };
@@ -105,10 +112,10 @@ function Contact() {
       errors["message"] = "Please enter cover message ";
     }
     setError(errors);
-    // console.log(errors);
+    console.log(errors);
     return isValid;
   };
- 
+
   return (
     <div>
       <Header />
@@ -144,16 +151,16 @@ function Contact() {
                     </span>
                   </li>
                   <li>
-                    <Link to="mobile:+91 8360249058​">
+                    <a href="tel:+91 8360249058​">
                       <i className="fa fa-phone"></i>
                       <span>+91 8360249058​</span>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="mailto:harmanpreet.kaur@ultivic.com">
+                    <a href="mailto:hr@ultivic.com">
                       <i className="fa fa-envelope-o"></i>
                       <span>hr@ultivic.com</span>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -161,9 +168,9 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact_form">
                 <div className="headings_outer mb-4">
-                 <div className="mobile_center">
-                 <h6 className="sub_heading placement">Contact Us</h6>
-                 </div>
+                  <div className="mobile_center">
+                    <h6 className="sub_heading placement">Contact Us</h6>
+                  </div>
                   <h2 className="common_heading mb-4">
                     Book an appointment
                   </h2>
@@ -201,7 +208,7 @@ function Contact() {
                   </div>
                   <div className="form-group">
                     <label >
-                      Your message 
+                      Your message
                     </label>
                     <textarea
                       className="form-control"
@@ -214,12 +221,23 @@ function Contact() {
                       <div className="inline-errormsgs">{errors.message}</div>
                     )}
                   </div>
+             
                   <div className="mobile_center">
-                  <button type="submit" className="btn">
-                    Submit
-                  </button>
+                    <button type="submit" className="btn">
+                      Submit
+                    </button>
                   </div>
                 </form>
+                {loading &&
+                   <div className="my_loaders">
+                    <Oval
+                      height="100"
+                      width="100"
+                      color='grey'
+                      ariaLabel='loading'
+                    />
+                  </div>
+              }
               </div>
             </div>
           </div>

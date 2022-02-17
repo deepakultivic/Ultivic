@@ -4,6 +4,8 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./style.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Oval } from  'react-loader-spinner'
 toast.configure();
 function Homecontact() {
   const [input, setInput] = useState({
@@ -14,6 +16,7 @@ function Homecontact() {
   const { name, email, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
+  const [loading , setLoading] = useState(false);
   useEffect(() => {
     handleValidate(input)
   }, [input])
@@ -23,7 +26,7 @@ function Homecontact() {
     if (handleValidate(input)) {
       setInput({ name: "", email: "", message: "" })
       setSubmitted(false);
-
+      setLoading(true)
       let headers = {
         'Content-Type': 'application/json'
       }
@@ -36,6 +39,7 @@ function Homecontact() {
         .then((response) => {         
           const homeCtc = response.data.data;
            if (response.status === 200)
+           setLoading(false)
           toast.success("Success! We will contact you soon");
           console.log('CONTACT DATA', homeCtc)
         })         
@@ -176,9 +180,20 @@ function Homecontact() {
                     <button type="submit" className="btn  brn-sm">Submit</button>
                   </div>
                 </form>
+                {loading &&
+                   <div className="my_loaders">
+                    <Oval
+                      height="100"
+                      width="100"
+                      color='grey'
+                      ariaLabel='loading'
+                    />
+                  </div>
+              }
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

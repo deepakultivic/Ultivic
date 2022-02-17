@@ -54,13 +54,15 @@ myJobtem();
                     __html: myjobs.description
                   }}></p>
          
-           <div className="space pt-4">
-           <div className="job_contact ">
-              <h2>
+           <div className="space pt-4 ">
+         
+            <div className="jobs_form">
+                <h2>
               Apply for this position
               </h2>
                 <Jobcontact/>
             </div>
+           
              </div>
           </div>
         </div>
