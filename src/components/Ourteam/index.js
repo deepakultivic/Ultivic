@@ -1,12 +1,18 @@
 import React from "react";
 import "./style.css"
 export default function CustomModal({ title, body, show, setShow }) {
-
+ 
     function dismissModal(e) {
+        document.body.style.overflow = 'auto';
         e.preventDefault();
         setShow(false);
     }
-
+if(show == true){
+    document.body.style.overflow = 'hidden';
+    console.log("show")
+}
+ console.log("hide")
+}
     return (
         <div className={show === false ? "modal fade" : "modal fade show customModal"} role="dialog"
             style={show === false ? { display: 'none' } : { display: 'block' }} id="confirmationModal" tabIndex="-1"
