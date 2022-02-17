@@ -30,7 +30,7 @@ export default function CustomModal({ title, body, show, setShow }) {
                                 
 
                             </div>
-                            <div className="col-md-8">
+                            <div className="col-md-8 p-0">
                                 <div className="emp_content">
                                     <h4 className="">{body.emp_name}</h4>
                                     <p className="emp_designation">{body.emp_designation}</p>
