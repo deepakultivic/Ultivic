@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import "./style.css";
 toast.configure();
 function Homecontact() {
@@ -12,20 +11,14 @@ function Homecontact() {
     email: "",
     message: "",
   });
-
   const { name, email, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
   useEffect(() => {
     handleValidate(input)
   }, [input])
-
   const handleSubmit = (e) => {
-  
-
     e.preventDefault()
-
-
     setSubmitted(true);
     if (handleValidate(input)) {
       setInput({ name: "", email: "", message: "" })
@@ -40,16 +33,12 @@ function Homecontact() {
         message: message
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
-        .then((response) => {
-         
+        .then((response) => {         
           const homeCtc = response.data.data;
            if (response.status === 200)
           toast.success("Success! We will contact you soon");
           console.log('CONTACT DATA', homeCtc)
-        }) 
-     
-
-        
+        })         
     }
   };
 
