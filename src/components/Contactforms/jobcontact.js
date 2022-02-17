@@ -103,7 +103,10 @@ if (typeof input["mobile"] !== "undefined") {
           errors["resume"] = "File not Supported";
         }
       }
-  
+      if (!input["resume"]) {
+        isValid = false;
+        errors["resume"] = "Please Upload CV/ Resume";
+      }
 
 if (!input["name"]) {
     isValid = false;
