@@ -265,7 +265,7 @@ const headerRef = useRef(null);
             about_info={content[0].about_info}
           /> */}
 
-        <section className="inner_about inner_achivement space">
+        {/* <section className="inner_about inner_achivement space">
           <div className="container">
             <div className="inner_achivement_sec">
               <div className="row align-items-center">
@@ -332,7 +332,7 @@ const headerRef = useRef(null);
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="space out_team_section">
           <div className="container space">
             <div className="row flex-center sm-no-flex">
