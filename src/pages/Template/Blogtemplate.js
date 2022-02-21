@@ -121,13 +121,13 @@ console.log(myBogs)
                 <h5 className="m-0">Social Share</h5>
               <ul className="social_share_btns p-0" >
                 <li>
-                  <a href="#"><i className="fa fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/UltiVic"><i className="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i className="fa fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/company/ultivic-technologies/mycompany"><i className="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i className="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/ultivic_tech/?hl=en"><i className="fa fa-instagram"></i></a>
                 </li>
               </ul>
               <div className="recent_post">
