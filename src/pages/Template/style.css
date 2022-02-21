@@ -97,6 +97,9 @@ p.filetype {
   margin: 15px 0px;
 }
 ul.social_share_btns li {
+margin-right: 10px;
+}
+ul.social_share_btns li a{
   margin: 5px;
   width: 50px;
   height: 50px;

@@ -118,7 +118,7 @@ console.log(myBogs)
               </div>
             </div>
             <div className="col-md-3">
-                <h5 className="m-0">Social Share</h5>
+                <h5 className="m-0 mb-3">Social Share</h5>
               <ul className="social_share_btns p-0" >
                 <li>
                   <a href="https://www.facebook.com/UltiVic"><i className="fa fa-facebook"></i></a> 
