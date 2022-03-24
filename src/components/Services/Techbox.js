@@ -4,7 +4,6 @@ import './techbox.css';
 function Techbox(props) {
     return (
         <>
-
             <div className="col-md-6 extra_space">  
                 <div className="technology_box_sec">
                     <div className="tech_box_img">

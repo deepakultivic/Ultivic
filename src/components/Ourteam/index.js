@@ -7,7 +7,7 @@ export default function CustomModal({ title, body, show, setShow }) {
         e.preventDefault();
         setShow(false);
     }
-if(show == true){
+if(show === true){
     document.body.style.overflow = 'hidden';
     console.log("show")
 }
@@ -17,11 +17,7 @@ if(show == true){
             style={show === false ? { display: 'none' } : { display: 'block' }} id="confirmationModal" tabIndex="-1"
             aria-labelledby="confirmationModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div className="modal-dialog" role="document">
-                <div className="modal-content group_main_form">
-                    {/* <div className="modal-header">
-                        <h6 className="modal-title" id="customerModalLabel">{body.emp_name}</h6>
-                      
-                    </div> */}
+                <div className="modal-content group_main_form">               
                     <div className="modal-body">
                     <button type="button" className="close" onClick={dismissModal}>
                         <i className="fa fa-times" aria-hidden="true"></i>
@@ -29,11 +25,6 @@ if(show == true){
                         </button>
                         <div className="row w-100">
                             <div className="col-md-4 team_image"  style={{ backgroundImage: `url(${body.emp_image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
-                                {/* <div className="img">
-                                    <img src={body.emp_image} alt="" />
-                                </div> */}
-                                
-
                             </div>
                             <div className="col-md-8 p-0">
                                 <div className="emp_content">
@@ -45,10 +36,7 @@ if(show == true){
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* <div className="modal-footer">
-                        <button className="btn btn-default default-btn" onClick={dismissModal}>No</button>
-                    </div> */}
+                    </div>                  
                 </div>
             </div>
         </div>

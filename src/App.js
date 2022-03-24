@@ -2,8 +2,7 @@
 import {
   BrowserRouter,
   Switch,
-  Route,
-  NavLink
+  Route
 } from "react-router-dom";
 import ScrollToTop from './components/Scrolltotop'
 import Home from './pages/Home';
@@ -26,7 +25,7 @@ import { ToastContainer } from "react-toastify";
 
 function App(props) {
   const history = createBrowserHistory();
-  const TRACKING_ID = "G-1RYT8ZCNC1"; // YOUR_OWN_TRACKING_ID
+  const TRACKING_ID = "G-1RYT8ZCNC1"; 
 ReactGA.initialize(TRACKING_ID, {
   debug: true,
   titleCase: false,

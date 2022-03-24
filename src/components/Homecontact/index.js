@@ -192,8 +192,7 @@ function Homecontact() {
               }
               </div>
             </div>
-          </div>
-          
+          </div>          
         </div>
       </div>
     </div>

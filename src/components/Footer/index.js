@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom'
-import blogdata from '../Blogs/blogdata';
 import axios from 'axios';
 import "./style.css";
 
@@ -35,9 +34,9 @@ setFooterBlog(myBogs);
             </Link>
             <p className="comp_info">Share your IDEA and We Will Make It Real”. We ensure true worth of your valuable time and money you invested on us by delivering the perfect product</p>
             <ul className="footer_icons">
-              <li><a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com" target="_blank"><i className="fa fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com" target="_blank"><i className="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/UltiVic" rel="noreferrer" target="_blank"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/ultivic_tech/?hl=en" rel="noreferrer" target="_blank"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/ultivic-technologies/mycompany" rel="noreferrer" target="_blank"><i className="fa fa-linkedin"></i></a></li>
             </ul>
             </div>
           </div>

@@ -4,12 +4,10 @@ import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
 import "./style.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Oval } from  'react-loader-spinner'
+import { Oval } from 'react-loader-spinner'
 import axios from "axios";
-import {toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 function Contact() {
   const [input, setInputs] = useState({
     fullname: "",
@@ -27,14 +25,10 @@ function Contact() {
   }, [input]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    // alert('testing');
     setSubmitted(true);
-  
     if (handleValidate(input)) {
       setSubmitted(false);
-  
       setLoading(true)
-      // setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
       let headers = {
         'Content-Type': 'application/json'
       }
@@ -48,7 +42,6 @@ function Contact() {
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
         .then((response) => {
           const homeCtc = response.data.data;
-          console.log('CONTACT DATA', homeCtc)
           if (response.status === 200)
             setInputs({ fullname: "", email: "", mobile: "", subject: "", message: "" })
           setLoading(false);
@@ -58,10 +51,8 @@ function Contact() {
   };
   function onChange(event) {
     setInputs({ ...input, [event.target.name]: event.target.value });
-    // console.log(event.target.value);
   }
   const handleValidate = (input) => {
-    // console.log(input);
     let errors = {};
     let isValid = true;
     if (typeof input["email"] !== "undefined") {
@@ -119,7 +110,7 @@ function Contact() {
   return (
     <div>
       <Header />
-      <Subheader title="Get in Touch with" img="assets/services/contact-us.png" sub="Us" clases="contact bg_overlay" shortdesc="Every great business is built on friendship." />
+      <Subheader title="Get in Touch with" img="assets/services/contact-us.jpg" sub="Us" clases="contact bg_overlay" shortdesc="Every great business is built on friendship." />
       <section className="contact_box space">
         <div className="container">
           <div className="row">
@@ -221,7 +212,7 @@ function Contact() {
                       <div className="inline-errormsgs">{errors.message}</div>
                     )}
                   </div>
-             
+
                   <div className="mobile_center">
                     <button type="submit" className="btn">
                       Submit
@@ -229,7 +220,7 @@ function Contact() {
                   </div>
                 </form>
                 {loading &&
-                   <div className="my_loaders">
+                  <div className="my_loaders">
                     <Oval
                       height="100"
                       width="100"
@@ -237,7 +228,7 @@ function Contact() {
                       ariaLabel='loading'
                     />
                   </div>
-              }
+                }
               </div>
             </div>
           </div>

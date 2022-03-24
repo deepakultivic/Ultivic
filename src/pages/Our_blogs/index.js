@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import axios from 'axios'
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -98,7 +98,7 @@ function Our_blogs() {
         return (
             <>
                 <Header />
-                <Subheader title="Grow with" img="assets/services/blog-banner.png"  sub="Ultivic" clases="blogs_sec bg_overlay" shortdesc="The designer of your success " />
+                <Subheader title="Grow with" img="assets/services/blog-banner.jpg"  sub="Ultivic" clases="blogs_sec bg_overlay" shortdesc="The designer of your success " />
                 <section className="our_blogs_outer space">
                     <div className="container mx-auto px-4 ">
                         <div className="row">

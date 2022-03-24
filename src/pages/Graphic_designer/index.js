@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-
 import { BackgroundImage } from "react-image-and-background-image-fade";
 import Aboutglobal from "../../components/Aboutglobal";
 import content from "../../components/Aboutglobal/content";
@@ -10,7 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import pdata from "../../components/Services/pdata";
-import Foot from "../../components/Foot";
 import "./style.css";
 import Techbox from "../../components/Services/Techbox";
 import { tbdata } from "../../components/Services/pdata";
@@ -39,7 +37,7 @@ function Graphic() {
     <div>
       <Header />
       <BackgroundImage
-        src="assets/services/ui-ux-banner-2.png"
+        src="assets/services/ui-ux-banner-2.jpg"
 
         isResponsive
         className="image graphic bg_overlay"

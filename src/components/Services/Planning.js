@@ -1,6 +1,5 @@
 import React from "react";
 import './planning.css';
-
 function Planning(props) {
   return (
     <div>

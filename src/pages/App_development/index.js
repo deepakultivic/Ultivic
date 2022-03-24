@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
@@ -29,7 +29,7 @@ function App_dev() {
         return (
             <div>
                 <Header />
-                <Subheader title="App Development" img="assets/services/app-development.png" clases="app_dev bg_overlay" shortdesc="We belive in creativity" />
+                <Subheader title="App Development" img="assets/services/app-development.jpg" clases="app_dev bg_overlay" shortdesc="We belive in creativity" />
                 <div className="app_dev_inner">
                     <Aboutglobal
                         imgsrc={content[3].imgsrc}

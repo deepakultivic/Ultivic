@@ -12,19 +12,17 @@ import { Link } from 'react-router-dom'
 import axios from "axios";
 import { BackgroundImage } from "react-image-and-background-image-fade";
 function Home() {
-  // If page is not in loading state, display page.
-  var wow = new WOW(
+   var wow = new WOW(
     {
-      boxClass: 'wow',      // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset: 100,          // distance to the element when triggering the animation (default is 0)
-      mobile: true,       // trigger animations on mobile devices (default is true)
-      live: true,       // act on asynchronously loaded content (default is true)
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100, 
+      mobile: true,
+      live: true,      
       callback: function (box) {
-        // the callback is fired every time an animation is started
-        // the argument that is passed in is the DOM node being animated
+
       },
-      scrollContainer: null // optional scroll container selector, otherwise use window
+      scrollContainer: null
     }
   );
   wow.init();
@@ -32,14 +30,14 @@ function Home() {
     <div>
       <Header />
       <div className="bodywrap">
+          <section className="baner_design">
         <BackgroundImage
-          src="assets/home/home_bg.png"
+        src='assets/home/Home-page.jpg'
           isResponsive
-          className="baner_design"
+          className=""
           transitionTime=".2s"
           lazyLoad
-        >
-          <section className="">
+       />
             <div className="hero_wrappr">
               <div className="bennr_inner">
                 <div className="right_align">
@@ -57,7 +55,7 @@ function Home() {
               </div>
             </div>
           </section>
-        </BackgroundImage>
+        
         <section className="services space">
           <div className="container">
 
@@ -71,10 +69,13 @@ function Home() {
                       We Provide IT solutions <br /> that performs.
 
                     </h4>
-                    <p className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></p>
+                    <div className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></div>
                     <h5 className="my-3">
                       Our Technologies
                     </h5>
+                    <div className="meter red">
+	<span style={{width:" 80%"}}></span>
+</div>
                   </div>
                   <div className="wow fadeInUp" data-wow-delay="0.3s">
                     <p className="mb-2">Our leading Technolgies for software development</p>
@@ -118,7 +119,7 @@ function Home() {
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6><Link to="/blog/3" >How to become a better programmer</Link></h6>
-                                <p><Link to="/blog/3" >Read More</Link></p>
+                              <Link to="/blog/3" >Read More</Link>
                               </div>
                             </div>
                           </li>
@@ -127,7 +128,7 @@ function Home() {
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6>Start Your Career with Us</h6>
-                                <p><Link to="/career">know More</Link></p>
+                               <Link to="/career">know More</Link>
                               </div>
                             </div>
                           </li>
@@ -155,7 +156,7 @@ function Home() {
                             </p>
                           </div>
                           <div className="testimonial_img">
-                            <img className="mr-3 rounded-circle" src="assets/home/jeorge.png" alt="Generic placeholder image" />
+                            <img className="mr-3 rounded-circle" src="assets/home/jeorge.jpg" alt="Generic placeholder image" />
                             <div>
                               <p className="client_name">GEORGE DEPREZ
 

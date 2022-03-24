@@ -135,7 +135,7 @@ function Blogtemplate(props) {
                   {ourblog.slice(0, 3).map((curelem, index) => {
                     const { title, image, id } = curelem;
                     return <div key={index}>
-                      {curelem['id'] != myblog.id &&
+                      {curelem['id'] !== myblog.id &&
                         <div className="recent_post_inner" >
                           <div className="recent_image">
                             <img src={image} alt="post_image" />

@@ -10,11 +10,8 @@ function Gallery({ gallery }) {
             <h6 className="sub_heading ">Our Work</h6>
             <h2 className="common_heading">Lorem ipsum dolor sit</h2>
           </div>
-
           <SRLWrapper>
-
             <div className="row">
-
               {gallery.map((item, index) => {
                 return (
                   <div className="col-sm-12 col-lg-4 col-md-6 p-0 " key={index}>
@@ -27,12 +24,8 @@ function Gallery({ gallery }) {
                 );
               })
               }
-            </div>
-
-          
+            </div>          
           </SRLWrapper>
-
-
         </div>
       </section>
     </div>

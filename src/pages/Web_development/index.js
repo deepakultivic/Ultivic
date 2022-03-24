@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
-
-import Foot from "../../components/Foot";
 import "./style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,7 +29,7 @@ function Web() {
   return (
     <div>
       <Header />
-      <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.png" clases="web bg_overlay" shortdesc="Making websites that works for you!
+      <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.jpg" clases="web bg_overlay" shortdesc="Making websites that works for you!
  " />
 
       <section className="space service_about">

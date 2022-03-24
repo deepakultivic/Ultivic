@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import './style.css';
 
@@ -28,10 +28,8 @@ const handleToggle = () => {
   return (
 
     <header className={navbarClasses.join(" ")}>
-
       <nav className="navbar navbar-expand-lg navbar-light ">
         <NavLink to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></NavLink>
-
         <button
           type="button"
           className="navbar-toggler ml-auto"
@@ -83,13 +81,9 @@ const handleToggle = () => {
             <NavLink activeClassName="active" to="/blogs" className="nav-item nav-link">  Blog</NavLink>
             <NavLink activeClassName="active" to="/career" className="nav-item nav-link">Career</NavLink>
             <NavLink activeClassName="active" to="/contact" className="nav-item nav-link">Contact</NavLink>
-
           </div>
-
-
         </div>
       </nav>
-
     </header>
 
   );

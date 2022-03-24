@@ -1,28 +1,23 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "./style.css";
 import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
 import CustomModal from "../../components/Ourteam";
 import { BackgroundImage } from "react-image-and-background-image-fade";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { gsap } from "gsap";
-                                                                                                                                                                                                                                                                                                     
+
+
 function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
   const [teamchunk, setchunk] = useState([]);
   const [teamdata, setTeamdata] = useState(ourteam);
-  // gsap animation
-const headerRef = useRef(null);
 
+  const headerRef = useRef(null);
 
-
-//gsap animations ends here
   const makechunks = () => {
 
     setTeamdata(teamdata.map(n => ({ ...n })));
@@ -32,38 +27,10 @@ const headerRef = useRef(null);
     }
     setchunk(chunks)
   };
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
 
   useEffect(() => {
-    gsap.from(headerRef.current, {
-      autoAlpha: 0,
-      ease: 'none',
-      delay: 1
-  });
+
     makechunks()
   }, [])
 
@@ -80,28 +47,28 @@ const headerRef = useRef(null);
     <div>
       <Header />
       <BackgroundImage
-      src="assets/about/Ultivic_about.png"
-     
-      isResponsive
-      className="image about bg_overlay"
-      transitionTime=".2s"
-      lazyLoad
-    >
-      <section className="about bg_overlay">
+        src="assets/about/Ultivic_about.jpg"
+
+        isResponsive
+        className="image about bg_overlay"
+        transitionTime=".2s"
+        lazyLoad
+      >
+        <section className="about bg_overlay">
           <div className="container">
             <div className="subhead_outer">
               <div className="right_align">
-               <div className="right_align_inner">
-               <h2 className="subhead">
-               About <span>Us</span>
-                </h2>
-                <p>We are Creative And Professional Agency</p>
-               </div>
+                <div className="right_align_inner">
+                  <h2 className="subhead">
+                    About <span>Us</span>
+                  </h2>
+                  <p>We are Creative And Professional Agency</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        </BackgroundImage>
+      </BackgroundImage>
       <div className="inner_wrap">
         <section className="home_about space">
 
@@ -156,7 +123,7 @@ const headerRef = useRef(null);
 
 
               <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-                <div className="section-title ml-lg-5"  ref={headerRef} >
+                <div className="section-title ml-lg-5" ref={headerRef} >
                   <h6 className="sub_heading placement">About us</h6>
                   <h4 className="title mb-4">
                     We Provide IT solutions <br /> that performs.
@@ -257,82 +224,6 @@ const headerRef = useRef(null);
             </div>
           </div>
         </section>
-        {/* <Aboutglobal
-            imgsrc={content[0].imgsrc}
-            about_exp={content[0].about_exp}
-            sub_heading={content[0].sub_heading}
-            common_heading={content[0].common_heading}
-            about_info={content[0].about_info}
-          /> */}
-
-        {/* <section className="inner_about inner_achivement space">
-          <div className="container">
-            <div className="inner_achivement_sec">
-              <div className="row align-items-center">
-                <div className="col-lg-4 col-12">
-                  <div className="about_cont_box">
-                    <div className="headings_outer ">
-                    <div className="mobile_center">
-                    <h6 className="sub_heading placement">Our Achievements</h6>
-                    </div>
-                      <h2 className="common_heading">What we’ve achieved
-                      </h2>
-                    </div>
-                    <p className="about_info">
-                      We strive for excellence. Our motivation for every project rests on our desire to deliver the best experience possible through a consistent product line and innovative technologies. Here are some of our  achievements.
-                   </p>
-                  </div>
-                </div>
-                <div className="col-lg-8 col-12">
-                  <div className="about_achive_box">
-                    <Slider {...settings}>
-                      <div>
-                        <div className="achive_cont">
-                          <img src="/assets/about/favourite.png" alt="" />
-                          <h3>Up work</h3>
-                          <p className="text-center about_info">
-                            5 Start rating Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut elit tellus, luctus
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="achive_cont">
-                          <img src="/assets/about/favourite.png" alt="" />
-                          <h3>Up work</h3>
-                          <p className="text-center about_info">
-                            5 Start rating Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut elit tellus, luctus
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="achive_cont">
-                          <img src="/assets/about/favourite.png" alt="" />
-                          <h3>Up work</h3>
-                          <p className="text-center about_info">
-                            5 Start rating Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut elit tellus, luctus
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="achive_cont">
-                          <img src="/assets/about/favourite.png" alt="" />
-                          <h3>Up work</h3>
-                          <p className="text-center about_info">
-                            5 Start rating Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut elit tellus, luctus
-                          </p>
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section className="space out_team_section">
           <div className="container space">
             <div className="row flex-center sm-no-flex">
@@ -343,10 +234,11 @@ const headerRef = useRef(null);
                   {teamchunk &&
                     teamchunk.map((emp, index) => {
 
-                      return <>
+                      return <div key={index}>
+
                         <li className="clearfix" key={"li" + index}>
-                          {emp.map((item, ind) => {
-                            return <div className="member-details" key={ind} onClick={() => show_model(item)}>
+                          {emp.map((item, index) => {
+                            return <div className="member-details" key={index} onClick={() => show_model(item)}>
                               <div>
                                 <img src={item.emp_image} alt="UI Designer" />
                                 <div className="member-info">
@@ -358,7 +250,7 @@ const headerRef = useRef(null);
                           })}
                         </li>
 
-                      </>
+                      </div>
                     })}
 
 
@@ -381,9 +273,7 @@ const headerRef = useRef(null);
             </div>
           </div>
         </section>
-       
       </div>
-
       <Footer />
     </div>
   );
