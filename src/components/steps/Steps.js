@@ -11,24 +11,24 @@ function Steps() {
         </div>
       
         <div className="steps_cont">
-          <div className="row align-items-center">
-            <div className="col-lg-8">
+       
+          
               <div className="steps_cont_text mobile_space">
 
                 <h3>
                   EVERY CUSTOMER IS IMPORTANT TO US!
                 </h3>
                 <p>
-                  Our experts, search for new information to understand alternative source of good practice and implement creative working methods. Being flexible is our approach for the best outcome.
+                  Our experts, search for new information to understand alternative source of good practice and implement creative working methods.
                 </p>
               </div>
-            </div>
-            <div className="col-lg-4">
+            
+         
               <div className="steps_cont_img">
-                <img src="assets/home/sdlc_life_cycyle.svg" alt="" />
+                <img src="assets/home/our_steps.png" alt="" />
               </div>
-            </div>
-          </div>
+           
+        
         </div>
       </div>
     </div>

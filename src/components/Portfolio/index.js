@@ -61,7 +61,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a className="loudly-btn" target="_blank" without rel="noreferrer" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
+                    <a className="loudly-btn" target="_blank"  rel="noreferrer" href="https://play.google.com/store/apps/details?id=feniksenia.app.speakerlouder90">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ function Portfolio() {
                   </p>
 
                   <div className="portfolio_btn">
-                    <a className="fitzu-btn" target="_blank" without rel="noreferrer" href="https://fitzu.com.au/">Visit Site</a>
+                    <a className="fitzu-btn" target="_blank"  rel="noreferrer" href="https://fitzu.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -141,7 +141,7 @@ function Portfolio() {
                     </div>
                   </div>
                   <div className="portfolio_btn">
-                    <a className="gta-btn" target="_blank" without rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.fvd&hl=en_IN&gl=US">Visit Site</a>
+                    <a className="gta-btn" target="_blank"  rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.fvd&hl=en_IN&gl=US">Visit Site</a>
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ function Portfolio() {
                     We are the purchasing subsidiary of Australian Automotive Sales, a brand known for our quality vehicles, service excellence and great prices.
                   </p>
                   <div className="portfolio_btn">
-                    <a className="cb-btn" target="_blank" without rel="noreferrer" href="https://www.carbuyers.com.au/">Visit Site</a>
+                    <a className="cb-btn" target="_blank"  rel="noreferrer" href="https://www.carbuyers.com.au/">Visit Site</a>
                   </div>
                 </div>
               </div>

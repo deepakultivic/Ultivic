@@ -55,27 +55,9 @@ const handleToggle = () => {
             <li className="nav-item nav-link desktop_dropdown">
               Services <i className="	fa fa-angle-down"></i>
               <ul className= "drop_menu show">
-                <div className="row w-100 ">
-                  <div className="col-md-4 serve_bg">
-                      <div className="services_text">
-                          <h3>Our Services</h3>
-                          <p>You share your Ideas and we make it Real. We value customer's money, time and trust.</p>
-                      </div>
-                  </div>
-                  <div className="col-md-8 menu_bg">
-                    <li><NavLink activeClassName="active" className="nav-item nav-link" to="/web"><div className="menu_image">
-
-                      <p> Web Development</p>
-                    </div></NavLink></li>
-                    <li><NavLink activeClassName="active" className="nav-item nav-link" to="/graphic"><div className="menu_image">
-
-                      <p>Graphic Design</p></div></NavLink></li>
-                    <li><NavLink activeClassName="active"  className="nav-item nav-link"to="/app"><div className="menu_image">
-
-                      <p>App Development</p>
-                    </div></NavLink></li>
-                  </div>
-                </div>
+              <li><NavLink activeClassName="active" to="/web">Web Development</NavLink></li>
+                <li><NavLink activeClassName="active" to="/graphic">Graphic Design</NavLink></li>
+                <li><NavLink activeClassName="active" to="/app">App Development</NavLink></li>
               </ul>
             </li>
             <NavLink activeClassName="active" to="/blogs" className="nav-item nav-link">  Blog</NavLink>

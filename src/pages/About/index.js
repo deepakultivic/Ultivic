@@ -84,18 +84,13 @@ function About(props) {
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
-
-
                       <div className="col-12">
                         <div className="mt-0 pt-2 text-right">
                           <div className="global_btn"><a href="/about">Read More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
                         </div>
                       </div>
                     </div>
-
                   </div>
-
-
                   <div className="col-lg-6 col-md-6 col-6">
                     <div className="row">
                       <div className="col-lg-12 col-md-12">
@@ -104,24 +99,16 @@ function About(props) {
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
-
-
                       <div className="col-lg-12 col-md-12 mt-4 pt-2">
                         <div className="card work-desk rounded  shadow-lg overflow-hidden">
                           <img src="./assets/home/about-03.png" className="img-fluid" alt="Image" />
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
-
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
-
-
               <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
                 <div className="section-title ml-lg-5" ref={headerRef} >
                   <h6 className="sub_heading placement">About us</h6>
@@ -159,9 +146,7 @@ function About(props) {
                   </div>
                 </div>
               </div>
-
             </div>
-
           </div>
         </section>
 
@@ -227,7 +212,6 @@ function About(props) {
         <section className="space out_team_section">
           <div className="container space">
             <div className="row flex-center sm-no-flex">
-
               <div className="pull-right sm-no-float col-md-8 col-12">
                 <ul className="team-members">
 
@@ -249,11 +233,8 @@ function About(props) {
                             </div>
                           })}
                         </li>
-
                       </div>
                     })}
-
-
                 </ul>
               </div>
               {showModal ?

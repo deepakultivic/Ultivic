@@ -3,6 +3,7 @@
     background-size: cover;
     padding: 21.6em 0;
     background-position: left center;
+    position: relative;
 }
 .hero_wrappr {
     width: 78%;
@@ -241,13 +242,18 @@ section.contact_us.space {
 }
 .about_blog.left_blog li {
     overflow: hidden;
+    height: 50%;
+}
+.about_blog.left_blog ul, .left_blog img{
+height: 100%;
 }
 .about_blog.left_blog{
     overflow: unset;
+    height: 100%;
 }
 .about_blog.left_blog ul.mobile_space li:last-child {
     border-bottom-left-radius: 15px;
-    left: 10px;
+
 }
 .about_blog.left_blog ul.mobile_space li:first-child {
     border-top-left-radius: 47px;

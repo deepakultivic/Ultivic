@@ -1,5 +1,17 @@
 
+.steps_cont {
+    position: relative;
+}
 
+.steps_cont_text {
+    width: 44%;
+    position: absolute;
+    top: 20px;
+}
+
+.steps_cont_text  h3 {
+    font-size: 18px;
+}
 .step_item.center_step .steps_icon {
     background: #ce2128;
 }

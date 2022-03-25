@@ -1,6 +1,4 @@
-.out_team_section {
-  overflow: hidden;
-}
+
 .inner_achivement_sec .about_cont_box p.about_info {
   margin-top: 10px;
   color: #fff;
@@ -268,32 +266,23 @@ section.inner_about.inner_achivement {
 .blog_info a {
   color: #fff;
   font-weight: 600;
+  position: relative;
 }
 
-.about_testimonials_outer {
-  position: absolute;
-  bottom: 0;
-  width: 400px;
-  right: 0;
-  background: #fff;
-  overflow: hidden;
-  border-radius: 30px 30px 30px 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 20%);
-  padding: 23px;
-}
+
 
 .about_cont_box {
   padding: 0 2rem;
 }
 
 .portfolio_text {
-  padding: 10px;
+  padding: 20px;
   position: relative;
 }
 
 .portfoli_outer_about {
   position: absolute;
-  top: 70px;
+  bottom: 0px;
   transform: translateX(-304px);
   transition: ease all 0.5s;
   -webkit-transition: ease all 0.5s;
@@ -624,19 +613,11 @@ section.our_team li {
   h2.common_heading {
     font-size: 23px;
   }
-  .about_testimonials_outer {
-    position: absolute;
-    bottom: -80px;
-  }
+ 
 }
 
 @media screen and (max-width: 991px) {
-  .about_testimonials_outer {
-    width: 100%;
-    margin-top: 30px;
-    position: relative;
-    bottom: 0;
-  }
+ 
   .about_cont_box {
     margin-top: 60px;
   }
@@ -736,9 +717,7 @@ section.our_team li {
   .about_counter .main_count .four span.counter span {
     font-size: 30px;
   }
-  .about_testimonials_outer {
-    border-radius: 7px;
-  }
+ 
   .blog_element {
     border-radius: 7px;
     overflow: hidden;

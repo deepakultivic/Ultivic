@@ -9,7 +9,7 @@ import Homecontact from "../../components/Homecontact";
 import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
-import axios from "axios";
+
 import { BackgroundImage } from "react-image-and-background-image-fade";
 function Home() {
    var wow = new WOW(
@@ -148,30 +148,7 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12">
-                      <div className="about_testimonials mobile_space">
-                        <div className="about_testimonials_outer">
-                          <div className="tetimonail_text">
-                            <p> Harmanpreet and her team are really committed and deliver a good job. We will keep working with them on a long-term basis. She is smart and effective. She is flexible and provides quality solutions.
-                            </p>
-                          </div>
-                          <div className="testimonial_img">
-                            <img className="mr-3 rounded-circle" src="assets/home/jeorge.jpg" alt="Generic placeholder image" />
-                            <div>
-                              <p className="client_name">GEORGE DEPREZ
-
-                              </p>
-                              <p className="client_desgnation">Solution Architecture</p>
-                            </div>
-                          </div>
-                          <p className="star rating"><i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i></p>
-                        </div>
-                      </div>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
