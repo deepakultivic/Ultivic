@@ -1,9 +1,20 @@
-.modal-body {
-  display: flex;
-  padding: 0px 15px;
+/* .modal-body {
   position: relative;
   z-index: 9;
+  padding: 0;
 }
+.employee_info{padding: 50px;}
+.text_highlight {
+  background: #ce2128;
+  color: #fff;
+  padding: 20px;
+}
+.text_highlight p {
+  color: #fff;
+}
+.about_emp {background: #c4c4c424;width: 100%;padding: 40px;}
+
+.emp_profile {border-radius: 50%;overflow: hidden;}
 p.emp_designation {
   font-size: 18px;
   font-weight: 600;
@@ -38,6 +49,20 @@ p.experiennce, p.skills {
   font-weight: 600;
   font-size: 15px;
 }
+.employe_information h2 {font-size: 26px;font-weight: 500;margin: 10px 0px;}
+
+.employe_information h2 span {color: #ce2128;font-weight: 700;}
+.modal-dialog {
+  max-width: 800px;
+}
+.employe_information ul {display: flex;flex-wrap: wrap;}
+
+.employe_information ul li {flex: 0 0 50%;position: relative;padding: 8px;padding-left: 20px;font-weight: 700;}
+
+.employe_information ul li::before {position: absolute;width: 10px;height: 10px;top: 14px;bottom: 0;right: 0;left: 0;content: "";background: #ce2128;border-radius: 50%;}
+
+.emp_profile:hover img {transform: scale(1.2);transition: all .7s;}
+.emp_profile img {transition: all .5s;}
 @media screen and (max-width:767px) {
   .modal-body{
     padding: 0;
@@ -49,13 +74,28 @@ margin: 0;
   .modal-content.group_main_form {
     margin-top: 15px;
     border-radius: 7px;
-    overflow: hidden;
+    overflow-y: auto;
+    height: 700px;
 }
 .emp_content {
   padding: 22px;
 }
 .team_image {
   min-height: 360px;
+}
+.emp_profile {
+  margin-bottom: 40px;
+  overflow: unset;
+  text-align: center;
+}
+.text_highlight {
+  margin-bottom: 30px;
+}
+.employee_info {
+  padding: 20px;
+}
+.about_emp{
+padding: 30px;
 }
 }
 @media screen and (max-width:575px){
@@ -64,4 +104,4 @@ margin: 0;
     overflow-y: auto;
     max-height: 263px;
 }
-}
+} */

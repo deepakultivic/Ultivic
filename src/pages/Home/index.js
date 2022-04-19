@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
@@ -35,9 +35,9 @@ function Home() {
         src='assets/home/Home-page.jpg'
           isResponsive
           className=""
-          transitionTime=".2s"
           lazyLoad
        />
+     
             <div className="hero_wrappr">
               <div className="bennr_inner">
                 <div className="right_align">
@@ -80,26 +80,26 @@ function Home() {
                   <div className="wow fadeInUp" data-wow-delay="0.3s">
                     <p className="mb-2">Our leading Technolgies for software development</p>
                     <ul className="p-0 tech_icons" >
-                      <li><img src="assets/home/php.svg" alt="" /></li>
-                      <li><img src="assets/home/java.svg" alt="" /></li>
-                      <li><img src="assets/home/java-script.svg" alt="" /></li>
-                      <li><img src="assets/home/node-js.svg" alt="" /></li>
-                      <li><img src="assets/home/laravel.png" alt="" /></li>
-                      <li><img src="assets/home/physics.svg" alt="" /></li>
-                      <li><img src="assets/home/codeigniter.svg" alt="" /></li>
-                      <li><img src="assets/home/cakephp.png" alt="" /></li>
-                      <li><img src="assets/home/android.svg" alt="" /></li>
-                      <li><img src="assets/home/apple.svg" alt="" /></li>
-                      <li><img src="assets/home/html-5.svg" alt="" /></li>
-                      <li><img src="assets/home/css-3.svg" alt="" /></li>
-                      <li><img src="assets/home/photoshop.svg" alt="" /></li>
-                      <li><img src="assets/home/illustrator.svg" alt="" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/php.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/java.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/java-script.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/node-js.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/laravel.png" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/physics.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/codeigniter.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/cakephp.png" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/android.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/apple.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/html-5.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/css-3.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/photoshop.svg" alt="ultivic image" /></li>
+                      <li><img width={"100"} height={"100"} src="assets/home/illustrator.svg" alt="ultivic image" /></li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="col-md-6">
-                <img src="assets/home/services.svg" alt="" />
+                <img width={"100"} height={"100"} src="assets/home/services.svg" alt="ultivic image" />
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ function Home() {
                       <div className="about_blog left_blog">
                         <ul className="mobile_space">
                           <li className="blog_element mb-3" >
-                            <img src="/assets/home/about-03.jpg" alt="" />
+                            <img width={"100"} height={"100"} src="/assets/home/about-03.jpg" alt="ultivic image" />
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6><Link to="/blog/3" >How to become a better programmer</Link></h6>
@@ -124,7 +124,7 @@ function Home() {
                             </div>
                           </li>
                           <li className="blog_element mb-2" >
-                            <img src="assets/services/we_want_you.jpg" alt="" />
+                            <img width={"100"} height={"100"} src="assets/services/we_want_you.jpg" alt="ultivic image" />
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6>Start Your Career with Us</h6>
@@ -138,7 +138,7 @@ function Home() {
                     <div className="col-md-6">
                       <div className="mobile_space">
                         <div className="about_portfolio ">
-                          <img src="assets/services/graphics_img.jpg" alt="" />
+                          <img width={"100"} height={"100"} src="assets/services/graphics_img.jpg" alt="ultivic image" />
                           <div className="portfoli_outer_about">
                             <div className="portfolio_text">
                               <p>Some of our Amazing Work</p>
@@ -173,9 +173,9 @@ function Home() {
             </div>
           </div>
         </section>
-        <div className=" space_bottom">
+
           <Steps />
-        </div>
+      
         <section className=" portfolio">
           <div className="container">
             <div className="headings_outer text-center mb-5">

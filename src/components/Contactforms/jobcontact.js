@@ -81,7 +81,7 @@ if (typeof input["email"] !== "undefined") {
     }
     else if(input["name"].trim().length <=2 ) {
         isValid=false;
-        errors["name"]="max 3 words";
+        errors["name"]="min 3 words";
     }
 }   
 if (typeof input["mobile"] !== "undefined") {

@@ -93,7 +93,8 @@ function Testimonials() {
                           <img
                             src={image}
                             className="tfree-client-image wp-post-image"
-                            alt=""
+                            alt="ultivic image"
+                            width={"100"} height={"100"}
                           />
 
                         </div>

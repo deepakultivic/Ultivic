@@ -71,7 +71,7 @@ function Blogtemplate(props) {
     return <div className="w-100 text-center my_loader">
       <p></p><div className="loader1">
         <div>
-          <img src="/assets/header/logo-white.png" alt="logo" />
+          <img width={"100"} height={"100"} src="/assets/header/logo-white.png" alt="logo" />
         </div>
         <span></span>
         <span></span>
@@ -138,7 +138,7 @@ function Blogtemplate(props) {
                       {curelem['id'] !== myblog.id &&
                         <div className="recent_post_inner" >
                           <div className="recent_image">
-                            <img src={image} alt="post_image" />
+                            <img width={"100"} height={"100"} src={image} alt="post_image" />
                           </div>
                           <div className="recent_content">
                             <h5>{title.slice(0, 30)}</h5>

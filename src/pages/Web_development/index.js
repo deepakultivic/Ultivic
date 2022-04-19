@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Subheader from "../../components/Subheader";
@@ -6,8 +6,28 @@ import "./style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Loader from '../../components/Loader';
 function Web() {
-  const [loading, setLoading] = useState(true);
+ const [preloader, setPreloader] = useState(true)
+ const [timer, setTimer] =useState(3);
+ 
+ const id = React.useRef(null);
+ const clear = () =>{
+   window.clearInterval(id.current);
+   setPreloader(false);
+ }
+ useEffect(() => {
+   id.current = window.setInterval(()=>{
+    setTimer((timer)=>timer-1)
+   },1000)
+ }, [])
+ useEffect(() => {
+if(timer === 0){
+  clear();
+}
+ }, [timer])
+ 
+ 
   var settings = {
     dots: false,
     infinite: true,
@@ -27,8 +47,11 @@ function Web() {
   };
 
   return (
+  
     <div>
-      <Header />
+      {preloader ? (<Loader/>) : (
+     <div>
+        <Header />
       <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.jpg" clases="web bg_overlay" shortdesc="Making websites that works for you!
  " />
 
@@ -36,7 +59,7 @@ function Web() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <img src="assets/home/web_about.png" alt="" />
+              <img width={"100"} height={"100"} src="assets/home/web_about.png" alt="ultivic logo" />
             </div>
             <div className="col-lg-6 col-md-6 col-12 ">
               <div className="section-title ml-lg-5">
@@ -52,17 +75,17 @@ function Web() {
                 </h5>
                 {/* <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae voluptate incidunt</p> */}
                 <ul className="p-0 tech_icons" >
-                  <li><img src="assets/home/php.svg" alt="" /></li>
-                  <li><img src="assets/home/java.svg" alt="" /></li>
-                  <li><img src="assets/home/java-script.svg" alt="" /></li>
-                  <li><img src="assets/home/node-js.svg" alt="" /></li>
-                  <li><img src="assets/home/laravel.png" alt="" /></li>
-                  <li><img src="assets/home/physics.svg" alt="" /></li>
-                  <li><img src="assets/home/codeigniter.svg" alt="" /></li>
-                  <li><img src="assets/home/cakephp.png" alt="" /></li>
-                  <li><img src="assets/home/spring_mvc.png" alt="" /></li>
-                  <li><img src="assets/home/springboot.png" alt="" /></li>
-                  <li><img src="assets/home/strut_2.png" alt="" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/php.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/java.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/java-script.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/node-js.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/laravel.png" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/physics.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/codeigniter.svg" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/cakephp.png" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/spring_mvc.png" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/springboot.png" alt="ultivic logo" /></li>
+                  <li><img width={"100"} height={"100"} src="assets/home/strut_2.png" alt="ultivic logo" /></li>
 
                 </ul>
               </div>
@@ -79,7 +102,7 @@ function Web() {
               <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
-                    <img src="assets/about/web-design.svg" alt="" />
+                    <img width={"100"} height={"100"} src="assets/about/web-design.svg" alt="ultivic logo" />
                   </div>
                   <div className='why_card_content'>
                     <h4>Excellent Frontend</h4>
@@ -92,7 +115,7 @@ function Web() {
               <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
-                    <img src="assets/about/coding.svg" alt="" />
+                    <img width={"100"} height={"100"} src="assets/about/coding.svg" alt="ultivic logo" />
                   </div>
                   <div className='why_card_content'>
                     <h4>Solid back-End</h4>
@@ -105,7 +128,7 @@ function Web() {
               <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
-                    <img src="assets/about/maintenance.svg" alt="" />
+                    <img width={"100"} height={"100"} src="assets/about/maintenance.svg" alt="ultivic logo" />
                   </div>
                   <div className='why_card_content'>
                     <h4> Regulation and Maintenace </h4>
@@ -118,7 +141,7 @@ function Web() {
               <div className="cardouter">
                 <div className='why_choose_card'>
                   <div className='why_icon'>
-                    <img src="assets/about/test.svg" alt="" />
+                    <img width={"100"} height={"100"} src="assets/about/test.svg" alt="ultivic logo" />
                   </div>
                   <div className='why_card_content'>
                     <h4> Full cycle testing and delivery </h4>
@@ -156,7 +179,7 @@ function Web() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-01.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-01.png" alt="ultivic logo" />
                     </div>
                   </div>
                 </div>
@@ -175,7 +198,7 @@ function Web() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-02.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-02.png" alt="ultivic logo" />
                     </div>
                   </div>
                 </div>
@@ -194,7 +217,7 @@ function Web() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-03.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-03.png" alt="ultivic logo" />
                     </div>
                   </div>
                 </div>
@@ -215,7 +238,7 @@ function Web() {
                   </div> 
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-04.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-04.png" alt="ultivic logo" />
                     </div>
                   </div>
                 </div>
@@ -234,7 +257,7 @@ function Web() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-05.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-05.png" alt="ultivic logo" />
                     </div>
                   </div>
                 </div>
@@ -255,6 +278,8 @@ function Web() {
         </div>
       </section>
       <Footer />
+     </div>
+      )}
     </div>
   )
 }

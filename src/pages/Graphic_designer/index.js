@@ -14,7 +14,7 @@ import Techbox from "../../components/Services/Techbox";
 import { tbdata } from "../../components/Services/pdata";
 
 function Graphic() {
-  const [loading, setLoading] = useState(true);
+
   var settings = {
     dots: false,
     infinite: true,
@@ -41,8 +41,7 @@ function Graphic() {
 
         isResponsive
         className="image graphic bg_overlay"
-        transitionTime=".5s"
-        lazyLoad
+          lazyLoad
       >
         <section className="graphic bg_overlay">
           <div className="container">
@@ -140,7 +139,7 @@ function Graphic() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-01.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-01.png" alt="ultivic image" />
                     </div>
                   </div>
                 </div>
@@ -159,7 +158,7 @@ function Graphic() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-02.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-02.png" alt="ultivic image" />
                     </div>
                   </div>
                 </div>
@@ -178,7 +177,7 @@ function Graphic() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-03.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-03.png" alt="ultivic image" />
                     </div>
                   </div>
                 </div>
@@ -199,7 +198,7 @@ function Graphic() {
                   </div> 
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-04.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-04.png" alt="ultivic image" />
                     </div>
                   </div>
                 </div>
@@ -218,7 +217,7 @@ function Graphic() {
                   </div>
                   <div className="col-xl-7 col-lg-6">
                     <div className="project_image">
-                      <img src="assets/portfolio/graphics-05.png" alt="" />
+                      <img width={"100"} height={"100"} src="assets/portfolio/graphics-05.png" alt="ultivic image" />
                     </div>
                   </div>
                 </div>
@@ -238,7 +237,7 @@ function Graphic() {
               <div className="app_ser_outer">
                 <div className="app_serv_card">
                   <div className='app_serv_img'>
-                    <img src="assets/services/colors.png" alt="" />
+                    <img width={"100"} height={"100"} src="assets/services/colors.png" alt="ultivic image" />
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Latest Color Combination</h4>
@@ -252,7 +251,7 @@ function Graphic() {
               <div className="app_ser_outer">
                 <div className="app_serv_card">
                   <div className='app_serv_img'>
-                    <img src="assets/services/toolskit.png" alt="" />
+                    <img width={"100"} height={"100"} src="assets/services/toolskit.png" alt="ultivic image" />
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Tools kit</h4>
@@ -265,7 +264,7 @@ function Graphic() {
               <div className="app_ser_outer">
                 <div className="app_serv_card">
                   <div className='app_serv_img'>
-                    <img src="assets/services/gradient.png" alt="" />
+                    <img width={"100"} height={"100"} src="assets/services/gradient.png" alt="ultivic image" />
                   </div>
                   <div className='app_ser_cintent'>
                     <h4>Best UI Gradients</h4>

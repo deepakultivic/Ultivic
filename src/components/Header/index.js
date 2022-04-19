@@ -29,7 +29,7 @@ const handleToggle = () => {
 
     <header className={navbarClasses.join(" ")}>
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <NavLink to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" /></NavLink>
+        <NavLink to="/" className="navbar-brand">   <img src="/assets/header/logo-white.png" width={"100"} height="100" alt="ultivic logo" /></NavLink>
         <button
           type="button"
           className="navbar-toggler ml-auto"

@@ -82,90 +82,137 @@ const tbdata = [{
     },
 ];
 
-const gridgallery = [
-
-    { img: "/assets/portfolio/ultivic-01.png" },
-    { img: "/assets/portfolio/ultivic-02.png" },
-    { img: "/assets/portfolio/ultivic-03.png" },
-    { img: "/assets/portfolio/ultivic-04.png" },
-    { img: '/assets/portfolio/ultivic-05.png' },
-    { img: "/assets/portfolio/ultivic-06.png" },
-
-]
 const ourteam = [{
+        emp_id:1,
         emp_name: "Tarun",
         emp_designation: "Backend Developer",
         emp_image: "assets/about/tarun.png",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript ",
         emp_about: "A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
-
+        skills : [
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+        ]
     },
     {
+        emp_id:2,
         emp_name: "Savita",
         emp_designation: "Backend Developer",
         emp_image: "assets/about/savita.png",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript",
         emp_about: "A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
-
+        skills : [
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+        ]
     },
 
+
     {
+        emp_id:3,
         emp_name: "vinay",
         emp_designation: "iOS Developer",
-        emp_image: "assets/about/vinay.png",
+        emp_image: "assets/about/vinay.jpg",
         emp_about: "lorem ipsum site dollar",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Swift, Objectice-c",
+        skills : [
+            "Swift","Firebase","Objective-c","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble"
+        ]
 
     },
     {
+        emp_id:4,
+        emp_name: "Ashish",
+        emp_designation: "Mobile Team lead",
+        emp_image: "assets/about/tarun.jpg",
+        emp_about: "lorem ipsum site dollar",
+        emp_eperinece: "Experience : 3 years",
+        emp_expertice: " Skills : Java, kotlin, Flutter",
+        skills : [
+            "Swift","Firebase","Objective-c","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+        ]
+    },
+    {
+        emp_id:5,
         emp_name: "Nikhil",
         emp_designation: "Android Developer",
         emp_image: "assets/about/nikhil.jpg",
         emp_about: "lorem ipsum site dollar",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Java, Kotlin",
+        skills : [
+            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+        ]
 
-    },
+    }, 
     {
-        emp_name: "Mankirat",
-        emp_designation: "Android Developer",
-        emp_image: "assets/about/mnkirat.png",
-        emp_about: "lorem ipsum site dollar",
-        emp_eperinece: "Experience : 2 years",
-        emp_expertice: " Skills : Java, Kotlin",
-
-    },
-    {
-        emp_name: "Surbhi",
-        emp_designation: "Android Developer",
-        emp_image: "assets/about/surbhi.png",
-        emp_about: "lorem ipsum site dollar",
-        emp_eperinece: "Experience : 2 years",
-        emp_expertice: " Skills : Java, kotlin, Flutter",
-
-    },
-    {
+        emp_id:6,
         emp_name: "Deepak",
         emp_designation: "Frontend Developer",
         emp_image: "assets/about/deepak.png",
         emp_about: "lorem ipsum site dollar",
-
+        skills : [
+            "Html/css","Photoshop","ReactJs","Wordpress","Figma","Shopify"
+        ]
     },
     {
+        emp_id:7,
         emp_name: "Aman Kumar",
         emp_designation: "Ui/Ux Designer",
         emp_image: "assets/about/aman.png",
+        emp_about: "I am Aman,working as graphic designer.My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.",
+        emp_description :"Hi,I am Aman,working as graphic designer.My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.As a Graphic Designer,I look for  imaginative content that effectively resonates with the audience. I use numerous marketing tools to create beautiful work according to the customers’ needs.",
+        emp_eperinece: "Experience : 2 years",
+        emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+        skills : [
+            "Html/css","Photoshop","Wordpress","Figma","Adobe Illustrator","Adobe XD","Sketch","After Effect", "Premiere Pro","Sinema 4D"
+        ]
+
+    },
+    {
+        emp_name: "Himanshu ",
+        emp_id:8,
+        emp_designation: "Java Developer",
+        emp_image: "assets/about/himanshu_vansal.jpg",
         emp_about: "lorem ipsum site dollar",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+        skills : [
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+        ]
 
     },
+    {
+        emp_name: "Himanshu ",
+        emp_id:9,
+        emp_designation: "Java Developer",
+        emp_image: "assets/about/himanshu_negi.jpg",
+        emp_about: "lorem ipsum site dollar",
+        emp_eperinece: "Experience : 2 years",
+        emp_expertice: "Java, react Js, Javascript",
+        skills : [
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+        ]
+
+    },
+    {
+        emp_name: "Ankit ",
+        emp_id:10,
+        emp_designation: "Java Developer",
+        emp_image: "assets/about/ankit.jpg",
+        emp_about: "lorem ipsum site dollar",
+        emp_eperinece: "Experience : 2 years",
+        emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+        skills : [
+            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+        ]
+
+    },
+   
 
 
 ]
 
 export default pdata;
-export { tbdata, gridgallery, ourteam };
+export { tbdata, ourteam };

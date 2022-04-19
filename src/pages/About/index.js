@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "slick-carousel/slick/slick.css";
@@ -48,10 +49,8 @@ function About(props) {
       <Header />
       <BackgroundImage
         src="assets/about/Ultivic_about.jpg"
-
         isResponsive
         className="image about bg_overlay"
-        transitionTime=".2s"
         lazyLoad
       >
         <section className="about bg_overlay">
@@ -80,7 +79,7 @@ function About(props) {
                     <div className="row">
                       <div className="col-lg-12 col-md-12 mt-4 pt-2">
                         <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-01.png" className="img-fluid" alt="Image" />
+                          <img width={"100%"} height={"auto"} src="./assets/home/about-01.jpg" className="img-fluid" alt="Image" />
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
@@ -95,13 +94,13 @@ function About(props) {
                     <div className="row">
                       <div className="col-lg-12 col-md-12">
                         <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-02.png" className="img-fluid" alt="Image" />
+                          <img width={"100%"} height={"auto"} src="./assets/home/about-02.jpg" className="img-fluid" alt="Image" />
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
                       <div className="col-lg-12 col-md-12 mt-4 pt-2">
                         <div className="card work-desk rounded  shadow-lg overflow-hidden">
-                          <img src="./assets/home/about-03.png" className="img-fluid" alt="Image" />
+                          <img width={"100%"} height={"auto"} src="./assets/home/about-03.jpg" className="img-fluid" alt="Image" />
                           <div className="img-overlay bg-dark"></div>
                         </div>
                       </div>
@@ -217,18 +216,18 @@ function About(props) {
 
                   {teamchunk &&
                     teamchunk.map((emp, index) => {
-
+                      console.log(teamchunk)
                       return <div key={index}>
 
                         <li className="clearfix" key={"li" + index}>
                           {emp.map((item, index) => {
-                            return <div className="member-details" key={index} onClick={() => show_model(item)}>
+                            return <div className="member-details" key={index} >
                               <div>
-                                <img src={item.emp_image} alt="UI Designer" />
+                               <Link to={`/employee_template/${item.emp_id}`}> <img width={"100%"} height={"auto"} src={item.emp_image} alt="UI Designer" />
                                 <div className="member-info">
                                   <h3>{item.emp_name}</h3>
                                   <p>{item.emp_designation}</p>
-                                </div>
+                                </div></Link>
                               </div>
                             </div>
                           })}
@@ -237,19 +236,105 @@ function About(props) {
                     })}
                 </ul>
               </div>
-              {showModal ?
+              {/* {showModal ?
                 <CustomModal title={"Employee"}
                   body={userdata}
                   show={showModal}
                   setShow={setShow} /> : <></>
-              }
-
+              } */}
+              <ul>
+                
+              </ul>
               <div className="pull-left col-md-4 sm-text-center">
                 <div className="team-overview mobile_space">
                   <h6 className="sub_heading placement">Who we are</h6>
                   <h5>Meet the Entire Team</h5>
                   <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg_black gallery space">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3">
+                <div className="gallery_text">
+                  <h2>Memories that last</h2>
+                  <p className="text-white">One of the best ways to make yourself happy in the present is to recall happy times from the past. Photos are a great memory-prompt, and because we tend to take photos of happy occasions, they weight our memories to the good.</p>
+                </div>
+              </div>
+              <div className="col-md-9">
+                <div class="grid-container">
+                  <div className="column">
+                    <img src="/assets/about/gallery1.jpg" />
+
+                    <img src="/assets/about/gallery2.jpg" />
+
+                    <img src="/assets/about/gallery4.jpg" />
+                  </div>
+                  <div className="column">
+                    <img src="/assets/about/gallery5.jpg" />
+
+                    <img src="/assets/about/gallery6.jpg" />
+
+                    <img src="/assets/about/gallery7.jpg" />
+                  </div>
+                  <div className="column">
+                    <img src="/assets/about/gallery8.jpg" />
+
+                    <img src="/assets/about/gallery9.jpg" />
+
+                  </div>
+                </div>
+                {/*<div className="row">
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery2.jpg" alt="" />
+                      </div>
+                    </div>
+                   <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery3.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery4.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery5.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery6.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery7.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery8.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6">
+                      <div className="gallery_image">
+                        <img src="/assets/about/gallery9.jpg" alt="" />
+                      </div>
+                    </div>
+                   
+                  </div> */}
               </div>
             </div>
           </div>

@@ -111,7 +111,9 @@ ul.imp_points li {
 
 section.portfolio {
     overflow: hidden;
+    background: #f9f9f9;
 }
+
 
 .filter_inner {
     margin-bottom: 60px;

@@ -8,7 +8,7 @@ function Planning(props) {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="img_cont">
-                <img src={props.imgsrc} alt=""/>
+                <img width={"100"} height={"100"} src={props.imgsrc} alt="ultivic"/>
               </div>
             </div>
             <div className="col-lg-6">

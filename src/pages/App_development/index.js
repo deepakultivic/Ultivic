@@ -54,14 +54,14 @@ function App_dev() {
                                             <ul>
                                                 <li>
                                                     <div className='tech_img'>
-                                                        <img src="assets/home/Kotlin_Icon.png" alt="" />
+                                                        <img width={"100"} height={"100"} src="assets/home/Kotlin_Icon.png" alt="ultivic image" />
 
                                                     </div>
 
                                                 </li>
                                                 <li>
                                                     <div className='tech_img'>
-                                                        <img src="assets/home/java.svg" alt="" />
+                                                        <img width={"100"} height={"100"} src="assets/home/java.svg" alt="ultivic image" />
 
                                                     </div>
                                                 </li>
@@ -80,19 +80,19 @@ function App_dev() {
                                             <ul>
                                                 <li>
                                                     <div className='tech_img'>
-                                                        <img src="assets/home/swift.svg" alt="" />
+                                                        <img width={"100"} height={"100"} src="assets/home/swift.svg" alt="ultivic image" />
 
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div className='tech_img'>
-                                                        <img src="assets/home/obejctivec.png" alt="" />
+                                                        <img width={"100"} height={"100"} src="assets/home/obejctivec.png" alt="ultivic image" />
 
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div className='tech_img'>
-                                                        <img src="assets/home/rx.png" alt="" />
+                                                        <img width={"100"} height={"100"} src="assets/home/rx.png" alt="ultivic image" />
 
                                                     </div>
                                                 </li>
@@ -113,12 +113,12 @@ function App_dev() {
                             <div className='app_card'>
                                 <div className='row align-items-center'>
                                     <div className="col-md-6">
-                                        <img src="assets/services/fitzu.png" alt="" />
+                                        <img width={"100"} height={"100"} src="assets/services/fitzu.png" alt="ultivic image" />
                                     </div>
                                     <div className='col-md-6'>
                                             <div className='app_text'>
                                                <div className='app_logo'>
-                                               <img src="/assets/services/fitzulogo.png" alt="" />
+                                               <img width={"100"} height={"100"} src="/assets/services/fitzulogo.png" alt="ultivic image" />
                                                </div>
                                                 <h3>Fitzu</h3>
                                                 <p>Fitzu unlocks the best sporting specialists and trainers in your area at the click of a button. Find a specialist across personal training, pilates, yoga, crossfit, weight loss & diet, martial arts, dancing, football, rugby, surfing, swimming, tennis and more! </p>
@@ -129,12 +129,12 @@ function App_dev() {
                             <div className='app_card'>
                                 <div className='row align-items-center'>
                                     <div className="col-md-6">
-                                        <img src="assets/services/loudly.png" alt="" />
+                                        <img width={"100"} height={"100"} src="assets/services/loudly.png" alt="ultivic image" />
                                     </div>
                                     <div className='col-md-6'>
                                             <div className='app_text'>
                                                <div className='app_logo'>
-                                               <img src="/assets/home/louble_logo.png" alt="" />
+                                               <img width={"100"} height={"100"} src="/assets/home/louble_logo.png" alt="ultivic image" />
                                                </div>
                                                 <h3>Loudly</h3>
                                                 <p>Tune into better volumes with the new volume booster free app. Volume booster “Loud Volume Booster for Speakers” works as a sound amplifier and headphone volume booster designed to boost volume by increasing loudness of video, audio or all notifications on Android.</p>
@@ -145,12 +145,12 @@ function App_dev() {
                             <div className='app_card'>
                                 <div className='row align-items-center'>
                                     <div className="col-md-6">
-                                        <img src="assets/services/downly.png" alt="" />
+                                        <img width={"100"} height={"100"} src="assets/services/downly.png" alt="ultivic image" />
                                     </div>
                                     <div className='col-md-6'>
                                             <div className='app_text'>
                                                <div className='app_logo'>
-                                               <img src="assets/services/downlylogo.png" alt="" />
+                                               <img width={"100"} height={"100"} src="assets/services/downlylogo.png" alt="ultivic image" />
                                                </div>
                                                 <h3>Downly</h3>
                                                 <p>After your video created and published on TikTok, you only need to copy your TikTok video link and open SnapTik, the download task will start automatically, and easily save your Tiktok video to your Android phone</p>
@@ -161,12 +161,12 @@ function App_dev() {
                             <div className='app_card'>
                                 <div className='row align-items-center'>
                                     <div className="col-md-6">
-                                        <img src="assets/services/compressor.png" alt="" />
+                                        <img width={"100"} height={"100"} src="assets/services/compressor.png" alt="ultivic image" />
                                     </div>
                                     <div className='col-md-6'>
                                             <div className='app_text'>
                                                <div className='app_logo'>
-                                               <img src="assets/services/compressorlogo.png" alt="" />
+                                               <img width={"100"} height={"100"} src="assets/services/compressorlogo.png" alt="ultivic image" />
                                                </div>
                                                 <h3>Compressor</h3>
                                                 <p>You can reduce image size by optimizing photo quality, photo resize, convert image file format. Also, we are providing a powerful video compression feature where you can do video compression by controlling video bitrate, video quality, and video resolution.</p>

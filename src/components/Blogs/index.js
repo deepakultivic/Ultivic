@@ -47,7 +47,7 @@ console.log(myBogs)
             <div className="blog_card">
             <div className="blog_inner">
                 <div className="blog_img">
-                  <Link to={`/blog/${id}`}><img src={image} alt="ultivic blog" /></Link>
+                  <Link to={`/blog/${id}`}><img src={image} alt="ultivic blog" width={"100"} height={"100"} /></Link>
                 </div>
                 <div className="blog_content">
                   <h5>

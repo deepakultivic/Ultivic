@@ -31,13 +31,13 @@ function Portfolio() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="portfolio_image " data-wow-delay="0.2s">
-                  <img src="/assets/home/louble_img.png" alt="carbuyers" />
+                  <img width={"100"} height={"100"} src="/assets/home/louble_img.png" alt="carbuyers" />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="portfolio_constent" data-wow-delay="0.2s">
                   <div className="protfolio_logo">
-                    <img src="/assets/home/louble_logo.png" alt="logo" />
+                    <img width={"100"} height={"100"} src="/assets/home/louble_logo.png" alt="logo" />
                   </div>
                   <h4 className="project_tagline">
                     Loudly - Louder Volume Amplifier & Speaker Booster
@@ -75,13 +75,13 @@ function Portfolio() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="portfolio_image">
-                  <img src="/assets/home/fitzuScreen.png" alt="carbuyers" />
+                  <img width={"100"} height={"100"} src="/assets/home/fitzuScreen.png" alt="carbuyers" />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
-                    <img src="/assets/home/Fitzu_logo.png" alt="logo" />
+                    <img width={"100"} height={"100"} src="/assets/home/Fitzu_logo.png" alt="logo" />
                   </div>
                   <h4 className="project_tagline">
                     "Train Anytime, Anywhere."
@@ -112,13 +112,13 @@ function Portfolio() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="portfolio_image">
-                  <img src="/assets/home/getthem_slider.png" alt="carbuyers" />
+                  <img width={"100"} height={"100"} src="/assets/home/getthem_slider.png" alt="carbuyers" />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
-                    <img src="/assets/home/getthemlogo.png" alt="logo" />
+                    <img width={"100"} height={"100"} src="/assets/home/getthemlogo.png" alt="logo" />
                   </div>
                   <h4 className="project_tagline">
                     GetThemAll Any File Downloader Browser
@@ -156,13 +156,13 @@ function Portfolio() {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="portfolio_image">
-                  <img src="/assets/home/fitzuclien3.png" alt="carbuyers" />
+                  <img width={"100"} height={"100"} src="/assets/home/fitzuclien3.png" alt="carbuyers" />
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
-                    <img src="/assets/home/Fitzu_logo.png" alt="logo" />
+                    <img width={"100"} height={"100"} src="/assets/home/Fitzu_logo.png" alt="logo" />
                   </div>
                   <h4 className="project_tagline">
                     "Train Anytime, Anywhere."
@@ -177,16 +177,7 @@ function Portfolio() {
                     most localised and experienced trainers in the category you
                     choose, ensuring you get the most out of your training.
                   </p>
-                  <div className="views_details">
-                    <div className="views">
-                      <h4>5 Millions</h4>
-                      <p>Downloads</p>
-                    </div>
-                    <div className="rating">
-                      <h4>4.6</h4>
-                      <p>Rating</p>
-                    </div>
-                  </div>
+              
                   <div className="portfolio_btn">
                   </div>
                 </div>
@@ -210,7 +201,7 @@ function Portfolio() {
               <div className="col-lg-6">
                 <div className="portfolio_constent">
                   <div className="protfolio_logo">
-                    <img src="/assets/home/carbuyes-logo.png" alt="logo" />
+                    <img width={"100"} height={"100"} src="/assets/home/carbuyes-logo.png" alt="logo" />
                   </div>
                   <h4 className="project_tagline">"Sell your car today"</h4>
                   <p className="tech_used">

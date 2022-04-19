@@ -21,8 +21,8 @@ import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import RouteChangeTracker from './components/Googleanalytics';
 import { ToastContainer } from "react-toastify";
-
-
+import Portfolio_template from "./pages/Portfolio_template";
+import Employee_template from "./pages/Employee_template";
 function App(props) {
   const history = createBrowserHistory();
   const TRACKING_ID = "G-1RYT8ZCNC1"; 
@@ -53,6 +53,8 @@ ReactGA.initialize(TRACKING_ID, {
         <Route path="/blogs" exact component={Our_blogs} />
         <Route path="/career" exact component={Career} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/portfolio_template/:slug" exact component={Portfolio_template} />
+        <Route path="/employee_template/:emp_id" exact component={Employee_template} />
         <Route exact path="/blog/:id"  component={Blogtemplate} />
         <Route path="/carrer/:id" exact component={Jobs} />
       </Switch> 

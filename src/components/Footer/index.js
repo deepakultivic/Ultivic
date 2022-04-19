@@ -30,7 +30,7 @@ setFooterBlog(myBogs);
           <div className="col-lg-4">
             <div className="footer_box">
             <Link to="/" className="footer_logo">
-              <img src="/assets/header/logo-white.png" height="100" alt="CoolBrand" />
+              <img src="/assets/header/logo-white.png" width="100" height="100" alt="CoolBrand" />
             </Link>
             <p className="comp_info">Share your IDEA and We Will Make It Real”. We ensure true worth of your valuable time and money you invested on us by delivering the perfect product</p>
             <ul className="footer_icons">

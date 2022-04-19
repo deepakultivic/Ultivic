@@ -6,7 +6,7 @@ function Aboutglobal(props) {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about_img_box">
-              <img src={props.imgsrc} alt="" />
+              <img  src={props.imgsrc} alt="ultivic image" width={"100"} height={"100"} />
             </div>
           </div>
           <div className="col-lg-6">

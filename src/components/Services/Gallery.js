@@ -17,7 +17,7 @@ function Gallery({ gallery }) {
                   <div className="col-sm-12 col-lg-4 col-md-6 p-0 " key={index}>
                     <div className="grdi_space ">
                       <div className="top_img">
-                        <img src={item.img} alt="img" />
+                        <img src={item.img} alt="ultivic" width={"100"} height={"100"} />
                       </div>
                     </div>
                   </div>

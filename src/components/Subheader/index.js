@@ -9,10 +9,10 @@ function Subheader(props) {
      
       isResponsive
       className={props.clases}
-      transitionTime=".5s"
+     
       lazyLoad
     >
-            <section className={props.clases} >
+            <section className={props.clases} style={{backgroundImage :`url(${props.img})`}} >
                 <div className="container">
                 <div className="subhead_outer">
                 <h2 className="subhead">
