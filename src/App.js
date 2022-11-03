@@ -23,6 +23,15 @@ import RouteChangeTracker from './components/Googleanalytics';
 import { ToastContainer } from "react-toastify";
 import Portfolio_template from "./pages/Portfolio_template";
 import Employee_template from "./pages/Employee_template";
+import NoMatchPage from "./components/NoMatch/NoMatchPage";
+import {Helmet} from 'react-helmet';
+import { HelmetProvider } from 'react-helmet-async';
+// const NoMatchPage = () => {
+//   return (
+//     <h3>404 - Not found</h3>
+//   );
+// };
+
 function App(props) {
   const history = createBrowserHistory();
   const TRACKING_ID = "G-1RYT8ZCNC1"; 
@@ -39,6 +48,13 @@ ReactGA.initialize(TRACKING_ID, {
     });
   return (
     <div className="App">
+       {/* <Helmet>
+          <title>App Title</title>
+          <meta name="description" content="App Description" />
+          <meta name="theme-color" content="#008f68" />
+        </Helmet> */}
+      <HelmetProvider>
+
       <BrowserRouter>
       <ScrollToTop/>
       <ToastContainer />
@@ -55,10 +71,12 @@ ReactGA.initialize(TRACKING_ID, {
         <Route path="/contact" exact component={Contact} />
         <Route path="/portfolio_template/:slug" exact component={Portfolio_template} />
         <Route path="/employee_template/:emp_id" exact component={Employee_template} />
-        <Route exact path="/blog/:id"  component={Blogtemplate} />
+        <Route exact path="/blog/:title"  component={Blogtemplate} />
         <Route path="/carrer/:id" exact component={Jobs} />
+        <Route component={NoMatchPage} />
       </Switch> 
     </BrowserRouter>
+    </HelmetProvider>
     </div>
   );
 }

@@ -89,7 +89,7 @@ const ourteam = [{
         emp_image: "assets/about/tarun.png",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript ",
-        emp_about: "A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
+        emp_about: "Hi! I am tarun, working as backend developer from last two years. I am learning new technology with challenges by- writing high quality codes.My hobbies are dancing and singing .",
         skills : [
             "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
         ]
@@ -101,7 +101,7 @@ const ourteam = [{
         emp_image: "assets/about/savita.png",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript",
-        emp_about: "A back-end web developer is responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.",
+        emp_about: "I Savita..being a java developer,I design, develop, and manage Java-based applications and software but apart from this, Other java developer responsibilities include Software maintenance and optimization, project management, leading and liaising, and vendor management. I am working as team lead with the support of my team.",
         skills : [
             "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
         ]
@@ -113,7 +113,7 @@ const ourteam = [{
         emp_name: "vinay",
         emp_designation: "iOS Developer",
         emp_image: "assets/about/vinay.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: " I  Vinay,working with Ultivic private limited as IOS team lead. My duties are understanding of apple’s design and principles and interface guidelines.I am good in skills such as objective –c 0r swift and cocoa touch.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Swift, Objectice-c",
         skills : [
@@ -126,11 +126,11 @@ const ourteam = [{
         emp_name: "Ashish",
         emp_designation: "Mobile Team lead",
         emp_image: "assets/about/tarun.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "I Ashish David,working as android team lead.My responsibilities at workstation is to design and build android mobile applications according to client’s requirement. As a team we together build and publish applications in app stores. We implement new technologies to maximize application performance. I handle working in coordination with the design and testing to develop products with few bugs.",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Java, kotlin, Flutter",
         skills : [
-            "Swift","Firebase","Objective-c","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+            "Swift","Firebase","Objective-c","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","Kotlin", "java","Flutter"
         ]
     },
     {
@@ -138,11 +138,11 @@ const ourteam = [{
         emp_name: "Nikhil",
         emp_designation: "Android Developer",
         emp_image: "assets/about/nikhil.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "Hye! This is Nikhil Soni.I am working as Android Developer from last 2.5 years. My strengths are working with different API’s and data sources and fix bugs with efficiency. My hobbies are bike riding and travelling new places.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Java, Kotlin",
         skills : [
-            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","Kotlin", "java","Flutter"
         ]
 
     }, 
@@ -151,7 +151,7 @@ const ourteam = [{
         emp_name: "Deepak",
         emp_designation: "Frontend Developer",
         emp_image: "assets/about/deepak.png",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "I am Deepak Chauhan.I am working as front end developer.My team leads helped to improve my skills such as HTML, CSS, and JavaScript and frameworks. As a frontend developer,one should have good communication skills, creative and problem-solving and understanding of learning in a team.I am kind of creative and health conscious person. My new hobbies are gyming and travelling to hilly areas.",
         skills : [
             "Html/css","Photoshop","ReactJs","Wordpress","Figma","Shopify"
         ]
@@ -175,37 +175,63 @@ const ourteam = [{
         emp_id:8,
         emp_designation: "Java Developer",
         emp_image: "assets/about/himanshu_vansal.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "Hi! I am Himanshu Vansal..I am working as java developer.I handle  development life cycle of a product and must be able to identify and analyse any issues or problems and be able to come up with an efficient solution.Everyday I face challenges and learn things with new spark.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [
-            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css", "Spring Boot", "Hibernate/JPA", "React"
         ]
 
     },
     {
-        emp_name: "Himanshu ",
+        emp_name: "Himanshu Negi",
         emp_id:9,
         emp_designation: "Java Developer",
         emp_image: "assets/about/himanshu_negi.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "I Himanshu Negi as Java Developer take the charge of designing, developing, and maintaining Java-based programs. Because Java is so widely used, day-to-day responsibilities vary, but can include owning a specific program. My team is quite supportive and lends a helping hand in improving my skills.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: "Java, react Js, Javascript",
         skills : [
-            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+            "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css","React","Angular"
         ]
 
     },
     {
         emp_name: "Ankit ",
         emp_id:10,
-        emp_designation: "Java Developer",
+        emp_designation: "Android Developer",
         emp_image: "assets/about/ankit.jpg",
-        emp_about: "lorem ipsum site dollar",
+        emp_about: "I am Ankit.My hobby is gathering latest information related to my profession. My role is translating designs and wire frames into high quality code. I also ensure the best possible performance, quality and responsiveness of the application.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [
-            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","cotlin", "java","Flutter"
+            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","Ble","Kotlin", "java","Flutter"
+        ]
+
+    },
+    {
+        emp_name: "Ajay Kumar",
+        emp_id:11,
+        emp_designation: "Tester",
+        emp_image: "assets/about/ajay.jpg",
+        emp_about: "This is Ajay Singh.I am working as Manual Tester. QA should have a keen eye for detail and excellent communication skills. One should be competent in executing test cases and are passionate about quality.",
+        emp_eperinece: "Experience : 1 years",
+        emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+        skills : [
+            "Android/iOS Tester","Api Tester","Automation","Web App Tester"
+        ]
+
+    },
+    {
+        emp_name: "Jaskaran ",
+        emp_id:12,
+        emp_designation: "Android Developer",
+        emp_image: "assets/about/jaskaran.jpg",
+        emp_about: " I am Jaskaran Singh .I am working as a fresher.My  roles are identifying and resolving bottlenecks, rectifying bugs and enhancing application performance.Performing unit and instrumentation tests on code.Collaborating with cross-functional teams to define and design new features.Staying up to date with new mobile technology trends, applications, and protocols",
+        emp_eperinece: "Experience : 1 years",
+        emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+        skills : [
+            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","Ble","Kotlin", "java","Flutter"
         ]
 
     },

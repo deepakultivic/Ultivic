@@ -92,6 +92,7 @@ p.filetype {
 }
 .blogsingle img {
   width: 100%;
+  image-rendering: pixelated;
 }
 .blogsingle p {
   margin: 15px 0px;
@@ -189,6 +190,18 @@ p.author {
 }
 .published_info li {
   list-style: disc;
+}
+.blogsingle p,
+.blogsingle li,
+.blogsingle p span,
+.blogsingle a
+{
+    font-size: 16px !important;
+}
+
+.blogsingle strong,
+.blogsingle b{
+    font-size: 18px !important;
 }
 @media (max-width: 767px) {
   .blogsingle h3 {

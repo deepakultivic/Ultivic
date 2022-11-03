@@ -1,0 +1,30 @@
+.no_match
+{
+    background-image: url("../../assets/home/not_found.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.no_match h6 {
+    color: #f70000;
+}
+
+.no_match h1 {
+    color: #ffbc00;
+    font-size: 6rem;
+    margin: 15px 0px;
+}
+
+.no_match h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.no_match h5 {
+    color: #ddd;
+}

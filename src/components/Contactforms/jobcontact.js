@@ -38,7 +38,15 @@ function Jobcontact() {
           cover_letter:cover_letter,
           resume:resume
         }
-        axios.post('https://ums.ultivic.com/api/development/job-form',myblogForm,headers)
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("mobile", mobile);
+        formData.append("cover_letter", cover_letter);
+        formData.append("resume", resume)
+
+
+        axios.post('https://ums.ultivic.com/api/development/job-form',formData,headers)
         .then((response)=>{
             const myjobs = response.data.data;
             console.log(myjobs);
@@ -51,7 +59,14 @@ function Jobcontact() {
   };
 
   function onChange(event) {
-        setInputs({...input,[event.target.name]:event.target.value})
+        setInputs({...input,[event.target.name]:event.target.value })
+        // console.log(event.target.value)
+  }
+  function onfileChange(event) {
+        if(event.target.files.length>0)
+        {
+          setInputs({...input,[event.target.name]:event.target.files[0] })
+        }
         // console.log(event.target.value)
   }
 const handleValidate =(input) => {
@@ -81,7 +96,7 @@ if (typeof input["email"] !== "undefined") {
     }
     else if(input["name"].trim().length <=2 ) {
         isValid=false;
-        errors["name"]="min 3 words";
+        errors["name"]="max 3 words";
     }
 }   
 if (typeof input["mobile"] !== "undefined") {
@@ -99,10 +114,11 @@ if (typeof input["mobile"] !== "undefined") {
         errors["mobile"] = "Please enter mobile number.";
       }
 
-   
-      if (typeof input["resume"] !== "undefined") {
-        var pattern = new RegExp(/(\.doc|\.pdf|\.docx)$/i);
-        if (!pattern.test(input["resume"])) {
+      console.log(resume.type);
+      if (resume.type !== "undefined") {
+        if(resume.type == "application/msword" || resume.type == "application/pdf"){
+
+        }else{
           isValid = false;
           errors["resume"] = "File not Supported";
         }
@@ -201,8 +217,7 @@ return isValid;
             type="file"
             name="resume"
             className="form-control"
-            value={resume}
-            onChange={onChange}
+            onChange={onfileChange}
           />
             {submitted && !!errors.resume && (
             <div className="inline-errormsgs">{errors.resume}</div>

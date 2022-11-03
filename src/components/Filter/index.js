@@ -107,7 +107,6 @@
 
 
 import React, { useEffect, useState } from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
 import { Image } from "react-image-and-background-image-fade";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import axios from 'axios'
@@ -238,7 +237,7 @@ const Filter = () => {
                     <button className={category == 'IOS' ? 'Active' : 'Inactive'} onClick={(() => myimg('IOS'))} >iOS</button>
                     <button className={category == 'ANDROID' ? 'Active' : 'Inactive'} onClick={(() => myimg('ANDROID'))} >Android</button>
                 </div>
-                <SRLWrapper>
+       
 
 
                     <div className="row ">
@@ -259,7 +258,7 @@ const Filter = () => {
                         }
                     </div>
 
-                </SRLWrapper>
+    
                 <div className={`text-center ${hide}`}  >
                     <button className="cm_btn mt-3" onClick={(() => myimg())} >Show more</button>
                 </div>

@@ -5,21 +5,29 @@ import './style.css';
 import { WOW } from 'wowjs';
 
 const Blogs = () => {
-  var wow = new WOW(
-    {
-      boxClass: 'wow',      // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset: 100,          // distance to the element when triggering the animation (default is 0)
-      mobile: true,       // trigger animations on mobile devices (default is true)
-      live: false,       // act on asynchronously loaded content (default is true)
-      callback: function (box) {
-       
-      },
-      scrollContainer: null
-    }
-  );
+
+  useEffect(() => {
+   
+
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 100,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: false,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+         
+        },
+        scrollContainer: null
+      }
+    );
+    
+    wow.init();
+
+  }, [])
   
-  wow.init();
+
   const [ourblog, setOurblog] = useState([])
 
 
@@ -47,11 +55,11 @@ console.log(myBogs)
             <div className="blog_card">
             <div className="blog_inner">
                 <div className="blog_img">
-                  <Link to={`/blog/${id}`}><img src={image} alt="ultivic blog" width={"100"} height={"100"} /></Link>
+                  <Link to={`/blog/${title}`}><img src={image} alt="ultivic blog" width={"100"} height={"100"} /></Link>
                 </div>
                 <div className="blog_content">
                   <h5>
-                    <Link to={`/blog/${id}`}>{title}</Link>
+                    <Link to={`/blog/${title}`}>{title}</Link>
                   </h5>
                   <p dangerouslySetInnerHTML={{
                     __html: description.replace(/<\/?[^>]+(>|$)/g, "").slice(0,70)
@@ -59,7 +67,7 @@ console.log(myBogs)
                       
                   </p>
                   <div className="blog_btn">
-                    <Link to={`/blog/${id}`}>Show More<i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                    <Link to={`/blog/${title}`}>Show More<i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,6 @@ import Footer from "../../components/Footer";
 import Subheader from '../../components/Subheader'
 import { Link } from 'react-router-dom';
 import './style.css';
-
 const Item = ({ children, reference }) => {
     return (
         <div ref={reference}>
@@ -68,6 +67,7 @@ function Our_blogs() {
     );
 
     const getItems = async (page) => {
+        
         console.log("page:", page)
         setIsLoading(true);
         await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -89,7 +89,7 @@ function Our_blogs() {
 
     function dateformat(myBlogsDatas) {
         var date = new Date(myBlogsDatas)
-        const options = { month: 'long', day: 'numeric' };
+        const options = { month: 'long', day: 'numeric' ,year:'numeric'};
         var created_at = date.toLocaleDateString("en-US", options);
         return created_at;
 
@@ -97,6 +97,7 @@ function Our_blogs() {
  
         return (
             <>
+         
                 <Header />
                 <Subheader title="Grow with" img="assets/services/blog-banner.jpg"  sub="Ultivic" clases="blogs_sec bg_overlay" shortdesc="The designer of your success " />
                 <section className="our_blogs_outer space">
@@ -104,21 +105,23 @@ function Our_blogs() {
                         <div className="row">
 
                             {items.map((item, index) =>
+                     
                                 index + 1 === items.length ? (
+                                    
                                     <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
                                         <div  className="blogs_outer" reference={lastItemRef} >
                                             <div className="blog_inner_data">
                                                 <div className="blog_img">
-                                                    <img src={item.image} alt={`Image ${index}`} className="img-fluid" width="150" height="150" />
+                                                <Link to={`blog/${item.title}`}>   <img src={item.image} alt={`Image ${index}`} className="img-fluid" width="150" height="150" /></Link>
                                                 </div>
                                                 <div className="blog_content">
-                                                    <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
+                                                    <Link to={`blog/${item.title}`}><h2 className="blog_title_text">{item.title}</h2></Link>
                                                     <p className="blog_published"><i className="fa fa-clock-o mr-2" aria-hidden="true"></i>
                                                         {dateformat(item.created_at)}</p>
                                                         <p className="blogdesc" dangerouslySetInnerHTML={{
                                                         __html: item.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 120)
                                                     }} ></p>
-                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                    <Link className="show_more" to={`blog/${item.title}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                                                 </div>
                                             </div>
 
@@ -129,10 +132,10 @@ function Our_blogs() {
                                         <div className="blogs_outer">
                                             <div className="blog_inner_data">
                                                 <div className="blog_img">
-                                                    <img src={item.image} className="img-fluid" width="150" height="150" />
+                                                <Link to={`blog/${item.title}`}>     <img src={item.image} className="img-fluid" width="150" height="150" /></Link>
                                                 </div>
                                                 <div className="blog_content">
-                                                    <Link to={`blog/${item.id}`}><h2 className="blog_title_text">{item.title}</h2></Link>
+                                                    <Link to={`blog/${item.title}`}><h2 className="blog_title_text">{item.title}</h2></Link>
                                                     <p className="blog_published"><i className="fa fa-clock-o mr-2" aria-hidden="true"></i>
                                                         {dateformat(item.created_at)}</p>
                                                     <p className="blogdesc" dangerouslySetInnerHTML={{
@@ -140,7 +143,7 @@ function Our_blogs() {
                                                     }} >
                                                         
                                                     </p>
-                                                    <Link className="show_more" to={`blog/${item.id}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
+                                                    <Link className="show_more" to={`blog/${item.title}`}>Show more <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i></Link>
                                                 </div>
                                             </div>
 

@@ -7,10 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 import CountUp from 'react-countup';
 import { ourteam } from "../../components/Services/pdata";
-import CustomModal from "../../components/Ourteam";
 import { BackgroundImage } from "react-image-and-background-image-fade";
-
-
+import Slider from "react-slick";
 function About(props) {
   const [showModal, setShow] = useState(false);
   const [userdata, setUserdata] = useState({});
@@ -44,6 +42,46 @@ function About(props) {
 
 
   let loopindex = 0;
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrow: true,
+    responsive: [
+      {
+      breakpoint: 767,
+  
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 1199,
+      
+      settings: {
+        slidesToShow: 4,
+      slidesToScroll: 4,
+        dots: true,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 991,
+      
+      settings: {
+        slidesToShow: 3,
+      slidesToScroll: 3,
+        dots: true,
+        arrows: false,
+      }
+    },
+  ]
+  };
   return (
     <div>
       <Header />
@@ -79,13 +117,17 @@ function About(props) {
                     <div className="row">
                       <div className="col-lg-12 col-md-12 mt-4 pt-2">
                         <div className="card work-desk rounded  shadow-lg overflow-hidden">
+                    
                           <img width={"100%"} height={"auto"} src="./assets/home/about-01.jpg" className="img-fluid" alt="Image" />
-                          <div className="img-overlay bg-dark"></div>
+                      
+                          <div className="img-overlay bg-dark">
+
+                          </div>
                         </div>
                       </div>
                       <div className="col-12">
                         <div className="mt-0 pt-2 text-right">
-                          <div className="global_btn"><a href="/about">Read More <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                          <div className="global_btn"><a href="/contact">Contact Us <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
                         </div>
                       </div>
                     </div>
@@ -150,7 +192,7 @@ function About(props) {
         </section>
 
 
-        <section className="about_counter">
+        <section className="about_counter space mb-5">
           <div className="container">
             <div className="main_count">
               <div className="row">
@@ -200,7 +242,7 @@ function About(props) {
                       )}
                     </CountUp></span>
                     <p className="animate__animated animate__bounce">
-                      Awards wining
+                      Awards winning
                     </p>
                   </div>
                 </div>
@@ -223,11 +265,11 @@ function About(props) {
                           {emp.map((item, index) => {
                             return <div className="member-details" key={index} >
                               <div>
-                               <Link to={`/employee_template/${item.emp_id}`}> <img width={"100%"} height={"auto"} src={item.emp_image} alt="UI Designer" />
-                                <div className="member-info">
-                                  <h3>{item.emp_name}</h3>
-                                  <p>{item.emp_designation}</p>
-                                </div></Link>
+                                <Link to={`/employee_template/${item.emp_id}`}> <img width={"100%"} height={"auto"} src={item.emp_image} alt="UI Designer" />
+                                  <div className="member-info">
+                                    <h3>{item.emp_name}</h3>
+                                    <p>{item.emp_designation}</p>
+                                  </div></Link>
                               </div>
                             </div>
                           })}
@@ -243,12 +285,12 @@ function About(props) {
                   setShow={setShow} /> : <></>
               } */}
               <ul>
-                
+
               </ul>
               <div className="pull-left col-md-4 sm-text-center">
                 <div className="team-overview mobile_space">
                   <h6 className="sub_heading placement">Who we are</h6>
-                  <h5>Meet the Entire Team</h5>
+                  <h5>Meet our Team</h5>
                   <p><span>At Ultivic we are driven by shared standard of excellence, guided by the same integrity, and motivated by a common ambition to achieve our goals.</span></p>
                 </div>
               </div>
@@ -257,84 +299,86 @@ function About(props) {
         </section>
         <section className="bg_black gallery space">
           <div className="container">
+          <div className="gradient_circle"></div>
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-12">
                 <div className="gallery_text">
-                  <h2>Memories that last</h2>
-                  <p className="text-white">One of the best ways to make yourself happy in the present is to recall happy times from the past. Photos are a great memory-prompt, and because we tend to take photos of happy occasions, they weight our memories to the good.</p>
+                  <h2 className=" mb-3">Memories that last</h2>
+                  <p className="text-white mb-4">One of the best ways to make yourself happy in the present is to recall happy times from the past. Photos are a great memory-prompt, and because we tend to take photos of happy occasions, they weight our memories to the good.</p>
                 </div>
               </div>
-              <div className="col-md-9">
-                <div class="grid-container">
-                  <div className="column">
-                    <img src="/assets/about/gallery1.jpg" />
+              <div className="col-md-12">
+           
+                <div className="grid-container">
+                    <div className="column">
+                      <Slider {...settings}>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_1.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_2.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_3.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_4.jpeg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_5.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_6.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_7.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_8.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_9.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_10.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_11.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_12.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_13.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_14.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_15.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_16.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_17.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_18.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_19.jpg" />
+                        </div>
+                        <div className="about_gallery">
+                          <img src="/assets/about/ultivic_20.jpg" />
+                        </div>
 
-                    <img src="/assets/about/gallery2.jpg" />
 
-                    <img src="/assets/about/gallery4.jpg" />
-                  </div>
-                  <div className="column">
-                    <img src="/assets/about/gallery5.jpg" />
-
-                    <img src="/assets/about/gallery6.jpg" />
-
-                    <img src="/assets/about/gallery7.jpg" />
-                  </div>
-                  <div className="column">
-                    <img src="/assets/about/gallery8.jpg" />
-
-                    <img src="/assets/about/gallery9.jpg" />
-
-                  </div>
+                      </Slider>
+                    </div>
                 </div>
-                {/*<div className="row">
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery2.jpg" alt="" />
-                      </div>
-                    </div>
-                   <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery3.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery4.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery5.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery6.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery7.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery8.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6">
-                      <div className="gallery_image">
-                        <img src="/assets/about/gallery9.jpg" alt="" />
-                      </div>
-                    </div>
-                   
-                  </div> */}
+              
+
               </div>
             </div>
           </div>

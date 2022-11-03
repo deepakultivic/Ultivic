@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
@@ -9,14 +9,17 @@ import Homecontact from "../../components/Homecontact";
 import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
-
+import { Helmet } from "react-helmet";
 import { BackgroundImage } from "react-image-and-background-image-fade";
+import { HelmetProvider } from "react-helmet-async";
 function Home() {
-   var wow = new WOW(
+ 
+useEffect(() => {
+  var wow = new WOW(
     {
       boxClass: 'wow',
       animateClass: 'animated',
-      offset: 100, 
+      offset: 0, 
       mobile: true,
       live: true,      
       callback: function (box) {
@@ -24,10 +27,29 @@ function Home() {
       },
       scrollContainer: null
     }
+    
   );
   wow.init();
+}, [])
+
+ 
   return (
     <div>
+      <HelmetProvider>
+         <Helmet>
+              <title>Ultivic</title>
+                <meta data-react-helmet="true" http-equiv="cleartype" content="on"/>
+                <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"/>
+                <meta data-react-helmet="true" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
+      
+                <meta data-react-helmet="true" property="og:description" content='blogs are ment by testing purpose' />
+                  
+                <meta data-react-helmet="true" property="og:image" content="https://ultivic.com/assets/home/about-03.jpg" />
+                <meta property="og:url" content='/'/>
+                <meta data-react-helmet="true" property="og:image:type" content="image/jpg" />
+          
+            </Helmet>
+            </HelmetProvider>
       <Header />
       <div className="bodywrap">
           <section className="baner_design">
@@ -41,12 +63,13 @@ function Home() {
             <div className="hero_wrappr">
               <div className="bennr_inner">
                 <div className="right_align">
-                  <div className="right_align_inner">
-                    <h1 className="wow fadeInUp" data-wow-delay="0.5s">We are <span className="banner_brand">Innovative</span></h1>
-                    <p className="wow fadeInUp" data-wow-delay="0.5s"> We seek to understand, how well we are performing, <br /> both as individual and as a team. We seek to continuous  <br /> performance improvement as we have set certain <br /> standards
-
-
-                      in our organization. Changing  and adapting  <br /> is part of our job.  We look forward for  new opportunities and <br /> create innovative solutions
+                  <div className="right_align_inner wow fadeInUp" data-wow-iteration="1"  data-wow-delay="0.5s" style={{visibility:"hidden"}}>
+                    <h1 >We are <span className="banner_brand">Innovative</span></h1>
+                    <p > We seek to understand, how well we are performing,
+                     <br /> both as individual and as a team. We seek to continuously
+                      <br /> Performance improvement as we have set certain 
+                      <br /> Standards in our organization. Changing and adapting 
+                      <br />is part of our job. We look forward for new opportunities andd <br /> Create innovative solutions
                     </p>
                     <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
                   </div>
@@ -69,7 +92,8 @@ function Home() {
                       We Provide IT solutions <br /> that performs.
 
                     </h4>
-                    <div className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customers's time, resources and having pleasing attitude.</p></div>
+                    <div className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices 
+                    like valuing customers's time, resources and having pleasing attitude.</p></div>
                     <h5 className="my-3">
                       Our Technologies
                     </h5>
@@ -104,8 +128,9 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="inner_about space body-blk">
+        <section className="inner_about space body-blk position-relative">
           <div className="container">
+          <div className="gradient_circle"></div>
             <div className="row align-items-center">
               <div className="col-lg-7">
                 <div className="about_img_box">
@@ -163,7 +188,7 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are Software Development Company, we deal in latest technologies to develope softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. our mission is providing sense of contentment to our clients
+                  We are Software Development Company, we deal with latest technologies to develop softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. Our mission is providing a sense of contentment to our clients
                   </p>
                   <p className="about_info clr-wht">
                     Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
@@ -193,7 +218,7 @@ function Home() {
                 <div className="headings_outer mobile_space  mb-4">
                   <div className="mobile_center">
                     <h6 className="sub_heading placement">Happy Clients</h6>
-                    <h2 className="common_heading">More than 500+ happy Clients</h2>
+                    <h2 className="common_heading">More than 100 happy Clients</h2>
                   </div>
                   <p>We aim to be the extended IT partner for our clients and empower them to realise their potential.
                     Here’s what our clients have to say about us.</p>
@@ -203,7 +228,7 @@ function Home() {
           </div>
           <Testimonials />
         </section>
-        <section className="Blogs space body-blk">
+        <section className="Blogs space body-blk position-relative">
           <div className="container">
             <div className="headings_outer text-center ">
               <h6 className="sub_heading">Latest Blogs</h6>
@@ -211,6 +236,7 @@ function Home() {
             </div>
           </div>
           <div className="container-fluid">
+          <div className="gradient_circle"></div>
             <div className="row">
               <div className="col-xl-9 m-auto col-lg-12">
                 <Blogs />

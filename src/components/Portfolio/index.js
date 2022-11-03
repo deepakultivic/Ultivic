@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "./style.css";
 
 function Portfolio() {
-  var settings = {
+  var settings = {  
     dots: false,
     infinite: true,
     speed: 500,
@@ -52,7 +52,7 @@ function Portfolio() {
                   </p>
                   <div className="views_details">
                     <div className="views">
-                      <h4>100 k</h4>
+                      <h4>100k</h4>
                       <p>Downloads</p>
                     </div>
                     <div className="rating">

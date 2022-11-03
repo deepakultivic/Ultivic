@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import axios from "axios";
+import { Helmet } from "react-helmet";
+import { HelmetProvider } from "react-helmet-async";
 import "./style.css";
 function Blogtemplate(props) {
 
-  const { id } = useParams();
+  const { title } = useParams();
   // const [currentId, setCurrentId] = useState();
   const [myblog, setMyblog] = useState({});
   const [ourblog, setOurblog] = useState([])
@@ -16,7 +18,7 @@ function Blogtemplate(props) {
     function showBlogs() {
       axios.get('https://ums.ultivic.com/api/development/blog', {
         params: {
-          id: id
+          title: title
         }
       })
         .then((response) => {
@@ -43,7 +45,7 @@ function Blogtemplate(props) {
 
   function dateformat(myBlogsDatas) {
     var date = new Date(myBlogsDatas)
-    const options = { month: 'long', day: 'numeric' };
+    const options = { month: 'long', day: 'numeric', year:'numeric'};
     var created_at = date.toLocaleDateString("en-US", options);
     return created_at;
 
@@ -83,7 +85,23 @@ function Blogtemplate(props) {
   }
   else {
     return (
+      
       <div>
+        <HelmetProvider>
+           <Helmet>
+              <title>{myblog.title}</title>
+                <meta data-react-helmet="true" http-equiv="cleartype" content="on"/>
+                <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"/>
+                <meta data-react-helmet="true" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
+                <meta data-react-helmet="true" property="og:title" content={myblog.title} />
+                <meta data-react-helmet="true" property="og:description" content='blogs are ment by testing purpose' />
+                  
+                <meta data-react-helmet="true" property="og:image" content="https://ultivic.com/assets/home/about-03.jpg" />
+                <meta data-react-helmet="true" property="og:image:type" content="image/jpg" />
+                <meta data-react-helmet="true" property="og:image:width" content="1024" />
+                <meta data-react-helmet="true" property="og:image:height" content="1024" />
+            </Helmet>
+            </HelmetProvider>
         <Header />
         <section className="jobtemplate job_outer" style={{ backgroundImage: `url(${myblog.image})` }}>
 

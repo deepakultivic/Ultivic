@@ -75,7 +75,7 @@ function Contact() {
         errors["fullname"] = "This field accept only alphabets";
       } else if (input["fullname"].trim().length <= 2) {
         isValid = false;
-        errors["fullname"] = "max 3 words";
+        errors["fullname"] = "min 3 words";
       }
     }
     if (!input["fullname"]) {

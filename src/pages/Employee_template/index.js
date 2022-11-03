@@ -7,43 +7,34 @@ import './style.css'
 const Employee_template = () => {
 
     const emp_id=useParams();
-
-    console.log("emp_id");
-    console.log(emp_id);
-
     const [emp_data,setEmp_data]=useState([]);
-
     useEffect(()=>{
         if(emp_id.emp_id!==null){
-            console.log("emp_id emp_id");
+           
             setEmp_data(ourteam.filter(curEmp=>curEmp.emp_id===parseInt(emp_id.emp_id)));
             console.log(emp_data);
         }
     },[])
-
-
-    console.log("wernklw",emp_data);
-
-  return (
-      <>
-        {
-            emp_data.map((cur)=>{
-                return(
-                   <>
-                   <Header/>
-                      <div className="about_emp space">
-                           <div className="container">
-                           <div className="row w-100 align-items-center">
-                                <div className="col-md-4">
-                                    <div className="emp_profile">
+    return (
+          <>
+            {
+                emp_data.map((cur)=>{
+                    return(
+                    <>
+                        <Header/>
+                            <div className="about_emp space">
+                                <div className="container">
+                                    <div className="row w-100 align-items-center">
+                                        <div className="col-md-4">
+                                            <div className="emp_profile">
                                         <img src={`/${cur.emp_image}`} alt="" />
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
+                                            </div>
+                                        </div>
+                                <div className="col-md-8">
                                     <div className="employe_information">
                                         <h6 className='text-white'>Hello</h6>
                                         <h2>I'm <span>{cur.emp_name} <br /> a</span> {cur.emp_designation}</h2>
-                                        <p className='text-white'>{cur.emp_about}</p>
+                                        {/* <p className='text-white'>{cur.emp_about}</p> */}
                                         {/* <ul className='mt-3'>
                                            {  cur.skills.slice(0,4).map((cuSkill)=>{
                                                console.log('sadasdsa',cuSkill)
@@ -65,25 +56,24 @@ const Employee_template = () => {
                           <div className="container">
                           <div className="row w-100 align-items-center">
                                <div className="col-md-6">
-                                      <div className="text_highlight">
-                                          <h3>Expertise in</h3>
-                                          <p>{cur.emp_description}</p>
-                                          </div>          
+                                <div className="text_highlight">
+                                    <h3 className='mb-2'>About Me </h3>
+                                    <p>{cur.emp_about}</p>
+                                </div>          
                                </div>
                                <div className="col-md-6">
                                <div className="employe_information">
-                                            <h4>Skills and Stength</h4>
-                                            <ul className='mt-3'>
-                                           {cur.skills.map((cuSkill)=>{
-                                               console.log('sadasdsa',cuSkill)
-                                               return(
-                                                   <>
-                                                   <li>{cuSkill}</li>
-                                                   </>
-                                               )
-                                           })}
-                                        </ul>
-                                    </div>
+                                    <h4>Skills and Stength</h4>
+                                    <ul className='mt-3'>
+                                        {cur.skills.map((cuSkill,index)=>{
+                                            return(
+                                                <>
+                                                <li key={index}>{cuSkill}</li>
+                                                </>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
                                </div>
                                </div> 
                               </div>                    

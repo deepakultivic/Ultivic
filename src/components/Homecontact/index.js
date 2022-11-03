@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./style.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Oval } from  'react-loader-spinner'
+import { Oval } from 'react-loader-spinner'
 toast.configure();
 function Homecontact() {
   const [input, setInput] = useState({
@@ -16,7 +16,7 @@ function Homecontact() {
   const { name, email, message } = input;
   const [submitted, setSubmitted] = useState(false);
   const [errors, setError] = useState(input);
-  const [loading , setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     handleValidate(input)
   }, [input])
@@ -36,13 +36,15 @@ function Homecontact() {
         message: message
       }
       axios.post('https://ums.ultivic.com/api/development/contact-form', contactData, headers)
-        .then((response) => {         
+        .then((response) => {
           const homeCtc = response.data.data;
-           if (response.status === 200)
-           setLoading(false)
-          toast.success("Success! We will contact you soon");
-          console.log('CONTACT DATA', homeCtc)
-        })         
+          if (response.status === 200) {
+            setLoading(false)
+            toast.success("Success! We will contact you soon",{  closeOnClick: true,});
+            console.log('CONTACT DATA', homeCtc)
+          }
+          else{}
+        })
     }
   };
 
@@ -90,37 +92,39 @@ function Homecontact() {
   };
   return (
     <div>
-       <ToastContainer />
+  
       <div className="container">
         <div className="home_contact">
           <div className="row">
             <div
-              className="col-xl-4 col-lg-5 addres_block wow slideInLeft"
+              className="col-xl-4 col-lg-5  wow slideInLeft"
               ata-wow-delay="0.3s"
             >
-              <div className="addres_blocks">
-                <h2 className="common_heading ">Contact us</h2>
-                <ul className="rent_news cont_info">
-                  <li>
-                    <i className="fa fa-location-arrow"></i>
-                    <span>
-                      Office-09, Floor-10, TDI Business Center, Sector 118,
-                      Sahibzada Ajit Singh Nagar, Punjab 140308
-                    </span>
-                  </li>
-                  <li>
-                    <Link to="tel:+91 8360249058">
-                      <i className="fa fa-phone"></i>
-                      <span>+91 8360249058</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="mailto:hr@ultivic.com">
-                      <i className="fa fa-envelope-o"></i>
-                      <span>hr@ultivic.com</span>
-                    </Link>
-                  </li>
-                </ul>
+              <div className="addres_block">
+                <div className="addres_blocks">
+                  <h2 className="common_heading ">Contact us</h2>
+                  <ul className="rent_news cont_info">
+                    <li>
+                      <i className="fa fa-location-arrow"></i>
+                      <span>
+                        Office-09, Floor-10, TDI Business Center, Sector 118,
+                        Sahibzada Ajit Singh Nagar, Punjab 140308
+                      </span>
+                    </li>
+                    <li>
+                      <Link to="tel:+91 8360249058">
+                        <i className="fa fa-phone"></i>
+                        <span>+91 8360249058</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="mailto:hr@ultivic.com">
+                        <i className="fa fa-envelope-o"></i>
+                        <span>hr@ultivic.com</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
@@ -181,7 +185,7 @@ function Homecontact() {
                   </div>
                 </form>
                 {loading &&
-                   <div className="my_loaders">
+                  <div className="my_loaders">
                     <Oval
                       height="100"
                       width="100"
@@ -189,10 +193,10 @@ function Homecontact() {
                       ariaLabel='loading'
                     />
                   </div>
-              }
+                }
               </div>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </div>

@@ -48,8 +48,7 @@ if(timer === 0){
 
   return (
   
-    <div>
-      {preloader ? (<Loader/>) : (
+
      <div>
         <Header />
       <Subheader title="Discover amazing" sub="sites" img="/assets/services/web-development.jpg" clases="web bg_overlay" shortdesc="Making websites that works for you!
@@ -279,8 +278,8 @@ if(timer === 0){
       </section>
       <Footer />
      </div>
-      )}
-    </div>
+   
+  
   )
 }
 
