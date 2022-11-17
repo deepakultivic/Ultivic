@@ -57,7 +57,6 @@ return (
                   <div className="col-md-6">
                      <div className='paragraph'>
                         <h6>About</h6>
-                       
                         <h5>{curResult?.about_paragraph}
                         </h5>
                         <p>{curResult?.paragraph}
