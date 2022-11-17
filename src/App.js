@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import './App.css';
 import Portfolio from './pages/Portfolio';
+import Projects from './pages/projects';
 import Web from './pages/Web_development';
 import App_dev from './pages/App_development';
 import Graphic from './pages/Graphic_designer';
@@ -26,6 +27,8 @@ import Employee_template from "./pages/Employee_template";
 import NoMatchPage from "./components/NoMatch/NoMatchPage";
 import {Helmet} from 'react-helmet';
 import { HelmetProvider } from 'react-helmet-async';
+import Filter from "./pages/Portfolio/filter";
+
 // const NoMatchPage = () => {
 //   return (
 //     <h3>404 - Not found</h3>
@@ -63,6 +66,7 @@ ReactGA.initialize(TRACKING_ID, {
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/projects/:title" exact component={Projects} />
         <Route path="/web" exact component={Web} />
         <Route path="/app" exact component={App_dev} />
         <Route path="/graphic" exact component={Graphic} />
@@ -74,6 +78,7 @@ ReactGA.initialize(TRACKING_ID, {
         <Route exact path="/blog/:title"  component={Blogtemplate} />
         <Route path="/carrer/:id" exact component={Jobs} />
         <Route component={NoMatchPage} />
+        <Route path='/filter' exact component={Filter} />
       </Switch> 
     </BrowserRouter>
     </HelmetProvider>
@@ -82,3 +87,5 @@ ReactGA.initialize(TRACKING_ID, {
 }
 
 export default App;
+
+

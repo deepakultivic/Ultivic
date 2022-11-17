@@ -4,6 +4,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.portfolio_header p{
+    font-weight: 400;
+    font-size: 16px;
+    /* margin-top: 10px; */
+}
 .image-card{
     padding: 15px;
 }
@@ -47,6 +52,59 @@ button.cm_btn {
     background: transparent;
     padding: 10px 20px;
     outline: unset;
+    text-align: center;
+} 
+
+.portfolio__labels a.active::before {
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: red;
+    bottom: 2px;
+    z-index: -1;
+    left: 0;
+}
+
+.portfolio__labels a {padding: 0px 3px;
+    font-size: 19px;
+    position: relative;
+    cursor: pointer;
+}
+ul.portfolio__labels li {
+    padding: 0px 15px;
+}
+.portfolio__labels a.active{
+    color: #000000;
+    position: relative;
+    font-weight: 700;
+    z-index: 2;
+    
+}
+.portfolio__labels a{
+    font-weight: 600;
+font-size: 14px;
+
+}
+.portfolio__labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio__labels {
+   
+    margin-bottom: 30px;
+    color: #848484;
+
+
+}
+.design_images {
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+    border-radius: 13px;
+}
+.portfolio__labels a:not([href]):not([tabindex]).active:hover{
+    color: #000;
 }
 button.Active {
     background: #ce2128;
@@ -78,12 +136,32 @@ button.Active {
     .design_images img {
         height: 355px;
         object-fit: cover;
+        border-radius: 13px;
+        width: 500px;
+        width: 100%;
+        
     }
+    .tabs_images {
+        object-fit: cover;
+        max-width: 100%;
+        width: 50%;
+    }
+    button.btn.btn-outline-danger {
+        position: absolute;
+        left: 620px;
+        font-weight: 600;
+        font-size: 14px;line-height: 17px;
+        border-radius: 35px;
+        border: 2px solid #ce2128;
+        padding: 10px 30px;
+        color: #000;
+    }
+
     .our_expertise.product_design {
         background: #ce2128;
     }    
     section.balck_bg {
-        background: #111111;
+        background: white;
     }
     .our_expertise_outer{
         position: relative;
@@ -112,7 +190,8 @@ button.Active {
         text-align: center;
     }
     .portfolio_header, .portfolio_header p {
-        color: #000;
+        color:black;
+        text-align: center;
     }
     .our_info h3 {
         color: #ce2128;
@@ -124,7 +203,8 @@ button.Active {
         color: #000;
         font-size: 30px;
         font-weight: 700;
-        margin-top: 30px;
+        margin-top: 1px;
+            
     }
     
     .our_designs a {
@@ -132,9 +212,15 @@ button.Active {
         font-weight: 500;
         font-size: 16px;
     }
+    
+
+    
+.our_designs p {
+    margin-top: 8px;
+}
+
  
     .design_images img {
-        height: 355px;
         object-fit: cover;
     }
     .our_info p {
@@ -146,12 +232,22 @@ button.Active {
         background: #1e1e1e;
         margin-bottom: 20px;
     }
+    .desgin a {
+    
+        color: #CE2128;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .desgin {
+        padding: 9px;
+    }
     
     .our_experience h5 {
         color: #ce2128;
     }
     .about_gallery img {
-        width: 100%;
+        width: 100%;  
         height: 250px;
         object-fit: cover;
         padding: 1px;
@@ -163,12 +259,35 @@ button.Active {
     }  
     button.filt_button {
         padding: 5px 3px;
-        
 }
 .image {
     height: unset;
 }
+
+
+}
+@media screen and (max-width:767px){
+    .portfolio_button {
+        margin-bottom: 40px;
+        
 }
 
+}
+@media(max-width:767px){
+    .design_images img{
+        height: 100%;
+    }
+}
+@media(max-width:767px){
+    .portfolio_header, .portfolio_header h2{
+font-size: 22px;
+line-height: 30px;
+ }
+}
+@media(max-width:767px){
+    .portfolio_labels{
+padding: 0;
+ }
+}
 
 
