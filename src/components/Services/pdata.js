@@ -136,13 +136,13 @@ const ourteam = [{
     {
         emp_id:5,
         emp_name: "Nikhil",
-        emp_designation: "Android Developer",
-        emp_image: "assets/about/nikhil.jpg",
-        emp_about: "Hye! This is Nikhil Soni.I am working as Android Developer from last 2.5 years. My strengths are working with different API’s and data sources and fix bugs with efficiency. My hobbies are bike riding and travelling new places.",
+        emp_designation: "Sr. Android Developer",
+        emp_image: "assets/about/nikhil.jpg", 
+        emp_about: "Hye! This is Nikhil Soni. I am working as Sr. Android Developer from last 4 years. My strengths are working with different API’s and data sources and fix bugs with efficiency. My hobbies are bike riding and travelling new places.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Java, Kotlin",
         skills : [
-            "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","Kotlin", "java","Flutter"
+            "Java", "Kotlin", "Android Jetpack", "Firebase" , "API's", "Room Database", "Android SDK and NDK"
         ]
 
     }, 

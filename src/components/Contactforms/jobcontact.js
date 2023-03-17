@@ -31,21 +31,12 @@ function Jobcontact() {
         const headers ={
           'Content-Type': 'multipart/form-data'
         }
-        let myblogForm = {
-          name:name,
-          email:email,
-          mobile:mobile,
-          cover_letter:cover_letter,
-          resume:resume
-        }
         const formData = new FormData();
         formData.append("name", name);
         formData.append("email", email);
         formData.append("mobile", mobile);
         formData.append("cover_letter", cover_letter);
         formData.append("resume", resume)
-
-
         axios.post('https://ums.ultivic.com/api/development/job-form',formData,headers)
         .then((response)=>{
             const myjobs = response.data.data;
@@ -60,14 +51,13 @@ function Jobcontact() {
 
   function onChange(event) {
         setInputs({...input,[event.target.name]:event.target.value })
-        // console.log(event.target.value)
+     
   }
   function onfileChange(event) {
         if(event.target.files.length>0)
         {
           setInputs({...input,[event.target.name]:event.target.files[0] })
-        }
-        // console.log(event.target.value)
+        }     
   }
 const handleValidate =(input) => {
     console.log(input)
@@ -140,8 +130,7 @@ setError(errors);
 console.log(errors)
 return isValid;
 }; 
-  //   const [errors, setError] = useState(input);
-  //   const [submitted, setSubmitted] = useState(false);
+
   return (
     <div className="job_contact ">
       <form  onSubmit={handleSubmit}>

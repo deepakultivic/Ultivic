@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
@@ -9,76 +9,61 @@ import Homecontact from "../../components/Homecontact";
 import Steps from "../../components/steps/Steps";
 import { WOW } from 'wowjs'
 import { Link } from 'react-router-dom'
-import { Helmet } from "react-helmet";
 import { BackgroundImage } from "react-image-and-background-image-fade";
-import { HelmetProvider } from "react-helmet-async";
+
 function Home() {
- 
-useEffect(() => {
-  var wow = new WOW(
-    {
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0, 
-      mobile: true,
-      live: true,      
-      callback: function (box) {
 
-      },
-      scrollContainer: null
-    }
-    
-  );
-  wow.init();
-}, [])
+  useEffect(() => {
+    var wow = new WOW(
+      {
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true,
+        callback: function (box) {
 
- 
+        },
+        scrollContainer: null
+      }
+
+    );
+    wow.init();
+  }, [])
+
+
   return (
     <div>
-      <HelmetProvider>
-         <Helmet>
-              <title>Ultivic</title>
-                <meta data-react-helmet="true" http-equiv="cleartype" content="on"/>
-                <meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"/>
-                <meta data-react-helmet="true" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
-      
-                <meta data-react-helmet="true" property="og:description" content='blogs are ment by testing purpose' />
-                  
-                <meta data-react-helmet="true" property="og:image" content="https://ultivic.com/assets/home/about-03.jpg" />
-                <meta property="og:url" content='/'/>
-                <meta data-react-helmet="true" property="og:image:type" content="image/jpg" />
-          
-            </Helmet>
-            </HelmetProvider>
+
       <Header />
       <div className="bodywrap">
-          <section className="baner_design">
-        <BackgroundImage
-        src='assets/home/Home-page.jpg'
-          isResponsive
-          className=""
-          lazyLoad
-       />
-     
-            <div className="hero_wrappr">
-              <div className="bennr_inner">
-                <div className="right_align">
-                  <div className="right_align_inner wow fadeInUp" data-wow-iteration="1"  data-wow-delay="0.5s" style={{visibility:"hidden"}}>
-                    <h1 >We are <span className="banner_brand">Innovative</span></h1>
-                    <p > We seek to understand, how well we are performing,
-                     <br /> both as individual and as a team. We seek to continuously
-                      <br /> Performance improvement as we have set certain 
-                      <br /> Standards in our organization. Changing and adapting 
-                      <br />is part of our job. We look forward for new opportunities andd <br /> Create innovative solutions
-                    </p>
-                    <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
-                  </div>
-                </div>
+        <section className="baner_design">
+          <BackgroundImage
+            src='assets/home/Home-page.jpg'
+            isResponsive
+            className=""
+            lazyLoad
+          />
 
+          <div className="hero_wrappr">
+            <div className="bennr_inner">
+              <div className="right_align">
+                <div className="right_align_inner wow fadeInUp" data-wow-iteration="1" data-wow-delay="0.5s" style={{ visibility: "hidden" }}>
+                  <h1 >We are <span className="banner_brand">Innovative</span></h1>
+                  <p > We seek to understand, how well we are performing,
+                    <br /> both as individuals and as a team. We seek to continuously
+                    <br /> Performance improvement as we have set certain
+                    <br /> Standards in our organization. Changing and adapting
+                    <br />is part of our job. We look forward to new opportunities and <br /> Create innovative solutions
+                  </p>
+                  <Link to="/contact" className="banner_link ">Get In Touch <i className="fa fa-long-arrow-right"></i></Link>
+                </div>
               </div>
+
             </div>
-          </section>
-        
+          </div>
+        </section>
+
         <section className="services space">
           <div className="container">
 
@@ -92,17 +77,17 @@ useEffect(() => {
                       We Provide IT solutions <br /> that performs.
 
                     </h4>
-                    <div className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices 
-                    like valuing customers's time, resources and having pleasing attitude.</p></div>
+                    <div className="mb-0"><p className="comp_info">Share your idea and we make it Real. We ensure great customer service means following best practices
+                      like valuing customer's time, resources and having a pleasing attitude.</p></div>
                     <h5 className="my-3">
                       Our Technologies
                     </h5>
                     <div className="meter red">
-	<span style={{width:" 80%"}}></span>
-</div>
+                      <span style={{ width: " 80%" }}></span>
+                    </div>
                   </div>
                   <div className="wow fadeInUp" data-wow-delay="0.3s">
-                    <p className="mb-2">Our leading Technolgies for software development</p>
+                    <p className="mb-2">Our leading Technologies for software development</p>
                     <ul className="p-0 tech_icons" >
                       <li><img width={"100"} height={"100"} src="assets/home/php.svg" alt="ultivic image" /></li>
                       <li><img width={"100"} height={"100"} src="assets/home/java.svg" alt="ultivic image" /></li>
@@ -130,11 +115,10 @@ useEffect(() => {
         </section>
         <section className="inner_about space body-blk position-relative">
           <div className="container">
-          <div className="gradient_circle"></div>
+            <div className="gradient_circle"></div>
             <div className="row align-items-center">
               <div className="col-lg-7">
                 <div className="about_img_box">
-
                   <div className="row">
                     <div className="col-md-6">
                       <div className="about_blog left_blog">
@@ -144,7 +128,7 @@ useEffect(() => {
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6><Link to="/blog/3" >How to become a better programmer</Link></h6>
-                              <Link to="/blog/3" >Read More</Link>
+                                <Link to="/blog/3" >Read more</Link>
                               </div>
                             </div>
                           </li>
@@ -153,7 +137,7 @@ useEffect(() => {
                             <div className="blog_info">
                               <div className="blog_info_inner">
                                 <h6>Start Your Career with Us</h6>
-                               <Link to="/career">know More</Link>
+                                <Link to="/career">know more</Link>
                               </div>
                             </div>
                           </li>
@@ -173,7 +157,6 @@ useEffect(() => {
                         </div>
                       </div>
                     </div>
-                  
                   </div>
                 </div>
               </div>
@@ -188,9 +171,9 @@ useEffect(() => {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                  We are Software Development Company, we deal with latest technologies to develop softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. Our mission is providing a sense of contentment to our clients
+                    We are a Software Development Company, we deal with latest technologies to develop softwares, mobile applications and games. We are specialized in iOS, Android and digital marketing. Our mission is providing a sense of contentment to our clients
                   </p>
-                  <p className="about_info clr-wht">
+                  <p className="about_info clr-wht mt-3">
                     Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim is to be the best in the Industry.
                   </p>
                 </div>
@@ -198,9 +181,7 @@ useEffect(() => {
             </div>
           </div>
         </section>
-
-          <Steps />
-      
+        <Steps />
         <section className=" portfolio">
           <div className="container">
             <div className="headings_outer text-center mb-5">
@@ -236,7 +217,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="container-fluid">
-          <div className="gradient_circle"></div>
+            <div className="gradient_circle"></div>
             <div className="row">
               <div className="col-xl-9 m-auto col-lg-12">
                 <Blogs />
