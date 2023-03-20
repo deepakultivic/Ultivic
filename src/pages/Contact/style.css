@@ -89,8 +89,11 @@ p.form_info {
     }
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) {
     .contact_form {
         padding: 25px;
+    }
+    .contact {
+        background-position: left bottom;
     }
 }

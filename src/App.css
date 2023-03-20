@@ -398,6 +398,9 @@ p.tech_anem {
   }
 }
 @media screen and (max-width: 767px) {
+  body .bg_overlay::before {
+    background: linear-gradient(to bottom, #00000059 100%, transparent 25%);
+}
   h2.common_heading {
     font-size: 20px;
     line-height: 30px;
@@ -448,7 +451,7 @@ p.tech_anem {
     text-align: center;
   }
   div.bg_overlay::before {
-    background: rgba(0, 0%, 0%, 30%);
+    background: rgba(0, 0, 0, 30%);
   }
   .bg_overlay .subhead_outer {
     text-align: center;

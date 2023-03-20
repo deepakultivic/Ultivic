@@ -90,6 +90,12 @@ h2.subhead span {
     color: #ce2128;
 }
 
+@media screen and (max-width: 767px) {
+    .career {
+        background-position: right center;
+    }
+
+}
 @media screen and (max-width: 575px) {
     .jobs {
         flex-direction: column;

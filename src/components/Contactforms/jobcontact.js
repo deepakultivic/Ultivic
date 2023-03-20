@@ -86,7 +86,7 @@ if (typeof input["email"] !== "undefined") {
     }
     else if(input["name"].trim().length <=2 ) {
         isValid=false;
-        errors["name"]="max 3 words";
+        errors["name"]="min 3 characters";
     }
 }   
 if (typeof input["mobile"] !== "undefined") {
@@ -106,7 +106,7 @@ if (typeof input["mobile"] !== "undefined") {
 
       console.log(resume.type);
       if (resume.type !== "undefined") {
-        if(resume.type == "application/msword" || resume.type == "application/pdf"){
+        if(resume.type == "application/msword" || resume.type == "application/pdf" || resume.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ){
 
         }else{
           isValid = false;

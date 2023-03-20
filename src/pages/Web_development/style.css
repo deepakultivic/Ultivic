@@ -70,6 +70,9 @@
 }
 
 @media (max-width: 767px) {
+  .web {
+    background-position: right;
+}
   .web::before {
     position: absolute;
     top: 0px;

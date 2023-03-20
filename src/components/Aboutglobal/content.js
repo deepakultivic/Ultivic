@@ -10,7 +10,7 @@ const content = [{
         imgsrc: "/assets/about/about_main.png",
         about_exp: "“There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.” – Milton Glaser",
         sub_heading: "Graphic Design",
-        common_heading: "What is Graphic Design ? ",
+        common_heading: "What is Graphic Design? ",
         about_info: "Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.",
 
     },
@@ -25,8 +25,8 @@ const content = [{
         imgsrc: "/assets/services/app.png",
         about_exp: "“The future of mobile is the future of online. It is how people access online content now.”",
         sub_heading: "App Development",
-        common_heading: "What is App Development ? ",
-        about_info: "Application development is the process of creating a computer program or a set of programs to perform the different tasks that a business requires which looks great, works fast and perform well with a seamless user experience. App developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are performing and the platforms on which they are working.",
+        common_heading: "What is App Development? ",
+        about_info: "Application development is the process of creating a computer program or a set of programs to perform the different tasks that a business requires which looks great, works fast, and perform well with a seamless user experience. App developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depend on the types of tasks they are performing and the platforms on which they are working.",
 
     },
     {

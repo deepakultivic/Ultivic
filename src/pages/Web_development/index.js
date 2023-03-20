@@ -68,7 +68,7 @@ if(timer === 0){
                   What is Web Development ?
 
                 </h4>
-                <p className="text-muted mb-0">Web development means building, creating and mantaining websites. It includes aspects such as web design, web publishing and database management. Web developers use numerous code languages. The language depends on the platforms.</p>
+                <p className="text-muted mb-0">Web development means building, creating, and maintaining websites. It includes aspects such as web design, web publishing, and database management. Web developers use numerous code languages. The language depends on the platforms.</p>
                 <h5 className="my-3">
                   Our Technologies
                 </h5>
@@ -131,7 +131,7 @@ if(timer === 0){
                   </div>
                   <div className='why_card_content'>
                     <h4> Regulation and Maintenace </h4>
-                    <p>Maintenance essentials include regular secure backups, security tools, traffic monitoring, privacy policies, incident response, updates. </p>
+                    <p>Maintenance essentials include regular secure backups, security tools, traffic monitoring, privacy policies, incident response, and updates. </p>
                   </div>
                 </div>
               </div>
@@ -143,8 +143,8 @@ if(timer === 0){
                     <img width={"100"} height={"100"} src="assets/about/test.svg" alt="ultivic logo" />
                   </div>
                   <div className='why_card_content'>
-                    <h4> Full cycle testing and delivery </h4>
-                    <p>The Software Testing Life Cycle provides a standardized, sophisticated and robust testing process . </p>
+                    <h4>Full cycle testing and delivery </h4>
+                    <p>The Software Testing Life Cycle provides a standardized, sophisticated, and robust testing process. </p>
                   </div>
                 </div>
               </div>

@@ -86,6 +86,7 @@ p.skills {
   color: #000;
   display: inline-block;
   padding: 4px 25px;
+  text-transform: capitalize;
 }
 .contact_cmn {
   background: #1e1e1e;

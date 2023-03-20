@@ -179,6 +179,7 @@ function Portfolio() {
                   </p>
               
                   <div className="portfolio_btn">
+                    <a className="fitzu-btn" target="_blank"  rel="noreferrer" href="https://apps.apple.com/app/id1595758328">Visit Site</a>
                   </div>
                 </div>
               </div>

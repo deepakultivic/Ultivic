@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
 import { ourteam } from '../../components/Services/pdata';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom';
 import './style.css'
 const Employee_template = () => {
 
@@ -93,7 +94,7 @@ const Employee_template = () => {
                       
                     </div>
                        <div className="col-md-4">
-                       <button className="btn  brn-sm">Contact</button>
+                       <button className="btn  brn-sm"><Link to="/contact">Contact</Link></button>
                        </div>
                        </div>
                    </div>

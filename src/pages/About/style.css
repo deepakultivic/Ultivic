@@ -66,8 +66,8 @@ span.counter span::before {
   position: absolute;
   content: "+";
   left: auto;
-  right: -22px;
-  top: -9px;
+  right: -33px;
+  top: -3px;
   color: #fff;
 }
 .inner_achivement .inner_achivement_sec .achive_cont {
@@ -664,6 +664,13 @@ section.about_counter::after{
   .gapcis_card {
     padding: 0 8px;
   }
+  .gallery_text, .grid-container {
+
+    padding: 20px;
+}
+.grid-container button.slick-arrow {
+  display: block !important;
+}
 }
 @media only screen and (max-width: 550px) {
   .team-members li {

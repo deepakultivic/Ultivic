@@ -32,10 +32,10 @@ setFooterBlog(myBogs);
             <Link to="/" className="footer_logo">
               <img src="/assets/header/logo-white.png" width="100" height="100" alt="CoolBrand" />
             </Link>
-            <p className="comp_info">"Share your IDEA and We Will Make It Real”. We ensure true worth of your valuable time and money you invested on us by delivering the perfect product</p>
+            <p className="comp_info">"Share your IDEA and We Will Make It Real”. We ensure the true worth of the valuable time and money you invested in us by delivering the perfect product.</p>
             <ul className="footer_icons">
               <li><a href="https://www.facebook.com/UltiVic" rel="noreferrer" target="_blank"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/ultivic_tech/?hl=en" rel="noreferrer" target="_blank"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/p/CeQ1lRoKZSy/" rel="noreferrer" target="_blank"><i className="fa fa-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/company/ultivic-technologies/mycompany" rel="noreferrer" target="_blank"><i className="fa fa-linkedin"></i></a></li>
             </ul>
             </div>
@@ -49,7 +49,7 @@ setFooterBlog(myBogs);
                   {footerBlog.map((item,index)=>{
                        const {title,id} = item;
                     return(
-                      <li key={index}>  <Link to={`/blog/${id}`}>{title.slice(0, 40)}</Link></li>
+                      <li key={index}>  <Link to={`/blog/${title}`}>{title.slice(0, 40)}</Link></li>
                     )
                   })}
                 </ul>
@@ -71,7 +71,7 @@ setFooterBlog(myBogs);
       </div>
       <div className="copyright">
         <div className="container">
-        <p>Copyright © 2022 Ultivic Pvt Ltd, All Rights Reserved.</p>      
+        <p>Copyright © {new Date().getFullYear()} Ultivic Pvt Ltd, All Rights Reserved.</p>      
         </div>  
       </div>
     </div>

@@ -73,10 +73,10 @@ function Graphic() {
               <div className="techn4ology_cont">
                 <div className="headings_outer mobile_center">
                   <h6 className="sub_heading placement">Technologies</h6>
-                  <h2 className="common_heading clr-wht">Why you should choose ultivic</h2>
+                  <h2 className="common_heading clr-wht">Why you should choose Ultivic</h2>
                 </div>
                 <p className="tech_info clr-wht">
-                  Ultivic believes in team work, perfection and  better results.We have a team with experience,skills and creativity.We use latest technologies of graphic designing and ensure quality products to our clients.Designs are customized as per customer’s demand and availability in given deadline.
+                  Ultivic believes in team work, perfection, and better results. We have a team with experience, skills, and creativity. We use the latest technologies of graphic designing and ensure quality products for our clients. Designs are customized as per customer’s demand and availability by a given deadline.
 
                 </p>
               </div>

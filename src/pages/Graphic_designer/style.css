@@ -82,6 +82,9 @@ section.grapic_work {
   .graphics_img {
     margin-bottom: 30px;
   }
+  .graphic {
+    background-position: left;
+}
 }
 
 @media (max-width: 767px) {

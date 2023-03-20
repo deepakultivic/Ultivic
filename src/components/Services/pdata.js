@@ -2,13 +2,13 @@ const pdata = [{
         imgsrc: "/assets/services/planning_web.jpg",
         sub_heading: "PLANNING & STRATEGY",
         common_heading: "We plan the structure and implement it",
-        planning_info: "Graphic design still revolves around age-old principles. It is crucial to apply visual hierarchy and page layout techniques to meet users’ specific needs and focus on interactive design for better user experience.",
+        planning_info: "Graphic design still revolves around age-old principles. It is crucial to apply visual hierarchy and page layout techniques to meet users’ specific needs and focus on interactive design for the better user experience.",
         planing_pts01: "Symmetry and Balance ",
         planing_pts02: "Flow",
         planing_pts03: "Repetitions ",
         planing_pts04: "Pattern",
         planing_pts05: "Typography",
-        planing_pts06: "Sucess",
+        planing_pts06: "Success",
     },
     {
         imgsrc: "/assets/services/MOBILE_ULTIVIC.png",
@@ -63,7 +63,7 @@ const tbdata = [{
     {
         textimgsrc: "/assets/services/illustrator.png",
         tech_box_heading: "Illustrator",
-        tech_box_info: "Adobe Illustrator is a popular vector graphics editor program for designing that primarily manipulates vector graphic",
+        tech_box_info: "Adobe Illustrator is a popular vector graphics editor program for designing that primarily manipulates vector graphic.",
     },
     {
         textimgsrc: "/assets/services/photoshop.png",
@@ -73,7 +73,7 @@ const tbdata = [{
     {
         textimgsrc: "/assets/services/experience.png",
         tech_box_heading: "Adobe XD",
-        tech_box_info: "Adobe XD is ideal for vector-based UI design, wireframing, interactive design, prototyping, and hi-fidelity web/app design, for solo designers or whole teams.",
+        tech_box_info: "Adobe XD is ideal for vector-based UI design, wireframing, interactive design, prototyping, and high-fidelity web/app design, for solo designers or whole teams.",
     },
     {
         textimgsrc: "/assets/services/figma.png",
@@ -89,7 +89,7 @@ const ourteam = [{
         emp_image: "assets/about/tarun.png",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript ",
-        emp_about: "Hi! I am tarun, working as backend developer from last two years. I am learning new technology with challenges by- writing high quality codes.My hobbies are dancing and singing .",
+        emp_about: "Hi! I am tarun, working as backend developer from last two years. I am learning new technology with challenges by writing high quality codes. My hobbies are dancing and singing .",
         skills : [
             "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
         ]
@@ -97,11 +97,11 @@ const ourteam = [{
     {
         emp_id:2,
         emp_name: "Savita",
-        emp_designation: "Backend Developer",
+        emp_designation: "Java Team Lead",
         emp_image: "assets/about/savita.png",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Php, Laravel, Java, javascript",
-        emp_about: "I Savita..being a java developer,I design, develop, and manage Java-based applications and software but apart from this, Other java developer responsibilities include Software maintenance and optimization, project management, leading and liaising, and vendor management. I am working as team lead with the support of my team.",
+        emp_about: "I am Savita. Being a java developer,I design, develop, and manage Java-based applications and software but apart from this, Other java developer responsibilities include Software maintenance and Optimization, Project Management, Leading and Liaising, and vendor management. I am working as a team lead with the support of my team.",
         skills : [
             "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
         ]
@@ -110,10 +110,10 @@ const ourteam = [{
 
     {
         emp_id:3,
-        emp_name: "vinay",
-        emp_designation: "iOS Developer",
+        emp_name: "Vinay",
+        emp_designation: "iOS Team Lead",
         emp_image: "assets/about/vinay.jpg",
-        emp_about: " I  Vinay,working with Ultivic private limited as IOS team lead. My duties are understanding of apple’s design and principles and interface guidelines.I am good in skills such as objective –c 0r swift and cocoa touch.",
+        emp_about: " I am Vinay,working with Ultivic private limited as IOS team lead. My duties are understanding of apple’s design and principles and interface guidelines.I am good in skills such as Objective –c 0r Swift and Cocoa touch.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Swift, Objectice-c",
         skills : [
@@ -124,9 +124,9 @@ const ourteam = [{
     {
         emp_id:4,
         emp_name: "Ashish",
-        emp_designation: "Mobile Team lead",
+        emp_designation: "Mobile Team Lead",
         emp_image: "assets/about/tarun.jpg",
-        emp_about: "I Ashish David,working as android team lead.My responsibilities at workstation is to design and build android mobile applications according to client’s requirement. As a team we together build and publish applications in app stores. We implement new technologies to maximize application performance. I handle working in coordination with the design and testing to develop products with few bugs.",
+        emp_about: "I am Ashish David, working as android team lead. My responsibilities at a workstation is to design and build android mobile applications according to the client’s requirement. As a team, we together build and publish applications in app stores. We implement new technologies to maximize application performance. I handle working in coordination with the design and testing to develop products with few bugs.",
         emp_eperinece: "Experience : 3 years",
         emp_expertice: " Skills : Java, kotlin, Flutter",
         skills : [
@@ -138,7 +138,7 @@ const ourteam = [{
         emp_name: "Nikhil",
         emp_designation: "Sr. Android Developer",
         emp_image: "assets/about/nikhil.jpg", 
-        emp_about: "Hye! This is Nikhil Soni. I am working as Sr. Android Developer from last 4 years. My strengths are working with different API’s and data sources and fix bugs with efficiency. My hobbies are bike riding and travelling new places.",
+        emp_about: "Hi, this is Nikhil Soni working as an Android Developer with a strong interest in designing, developing, and designing software. My experience ranges from front-end to back-end and includes Java, Kotlin, and Android. I have worked with a vast range of technology stacks. I am passionate about building high-quality software using each of these technologies.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Java, Kotlin",
         skills : [
@@ -151,7 +151,7 @@ const ourteam = [{
         emp_name: "Deepak",
         emp_designation: "Frontend Developer",
         emp_image: "assets/about/deepak.png",
-        emp_about: "I am Deepak Chauhan.I am working as front end developer.My team leads helped to improve my skills such as HTML, CSS, and JavaScript and frameworks. As a frontend developer,one should have good communication skills, creative and problem-solving and understanding of learning in a team.I am kind of creative and health conscious person. My new hobbies are gyming and travelling to hilly areas.",
+        emp_about: "I am Deepak Chauhan. I am working as a front end developer. My team leads helped to improve my skills such as HTML, CSS, and JavaScript and frameworks. As a frontend developer, one should have good communication skills, creativity and problem-solving, and an understanding of learning in a team. I am kind of creative and health conscious person. My new hobbies are gyming and travelling to hilly areas.",
         skills : [
             "Html/css","Photoshop","ReactJs","Wordpress","Figma","Shopify"
         ]
@@ -159,9 +159,9 @@ const ourteam = [{
     {
         emp_id:7,
         emp_name: "Aman Kumar",
-        emp_designation: "Ui/Ux Designer",
+        emp_designation: "UI/UX Designer",
         emp_image: "assets/about/aman.png",
-        emp_about: "I am Aman,working as graphic designer.My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.",
+        emp_about: "I am Aman, working as a graphic designer. My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.",
         emp_description :"Hi,I am Aman,working as graphic designer.My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.As a Graphic Designer,I look for  imaginative content that effectively resonates with the audience. I use numerous marketing tools to create beautiful work according to the customers’ needs.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
@@ -175,7 +175,7 @@ const ourteam = [{
         emp_id:8,
         emp_designation: "Java Developer",
         emp_image: "assets/about/himanshu_vansal.jpg",
-        emp_about: "Hi! I am Himanshu Vansal..I am working as java developer.I handle  development life cycle of a product and must be able to identify and analyse any issues or problems and be able to come up with an efficient solution.Everyday I face challenges and learn things with new spark.",
+        emp_about: "Hi! I am Himanshu Vansal. I am working as java developer. I handle the development life cycle of a product and must be able to identify and analyse any issues or problems and be able to come up with an efficient solution. Everyday I face challenges and learn things with a new spark.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [
@@ -201,7 +201,7 @@ const ourteam = [{
         emp_id:10,
         emp_designation: "Android Developer",
         emp_image: "assets/about/ankit.jpg",
-        emp_about: "I am Ankit.My hobby is gathering latest information related to my profession. My role is translating designs and wire frames into high quality code. I also ensure the best possible performance, quality and responsiveness of the application.",
+        emp_about: "I am Ankit. My hobby is gathering latest information related to my profession. My role is translating designs and wire frames into high-quality code. I also ensure the best possible performance, quality and responsiveness of the application.",
         emp_eperinece: "Experience : 2 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [
@@ -210,11 +210,11 @@ const ourteam = [{
 
     },
     {
-        emp_name: "Ajay Kumar",
+        emp_name: "Ajay Singh",
         emp_id:11,
         emp_designation: "Tester",
         emp_image: "assets/about/ajay.jpg",
-        emp_about: "This is Ajay Singh.I am working as Manual Tester. QA should have a keen eye for detail and excellent communication skills. One should be competent in executing test cases and are passionate about quality.",
+        emp_about: "Ajay Singh is a Quality Analyst, Quality Controller, Tester and Software Developer who enjoys working with customers to ensure they are happy with the quality of their products and services. Experienced in quality control, software development and website management. Qualified with a Masters degree in Information Technology. I have good analytical skills and I am available to work on various projects. I am good at managing the quality of ongoing projects, including the conversion of jobs and projects so that they are completed as per desired timelines.",
         emp_eperinece: "Experience : 1 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [
@@ -227,7 +227,7 @@ const ourteam = [{
         emp_id:12,
         emp_designation: "Android Developer",
         emp_image: "assets/about/jaskaran.jpg",
-        emp_about: " I am Jaskaran Singh .I am working as a fresher.My  roles are identifying and resolving bottlenecks, rectifying bugs and enhancing application performance.Performing unit and instrumentation tests on code.Collaborating with cross-functional teams to define and design new features.Staying up to date with new mobile technology trends, applications, and protocols",
+        emp_about: " I am Jaskaran Singh. I am working as a fresher. My roles are identifying and resolving bottlenecks, rectifying bugs, and enhancing application performance. Performing unit and instrumentation tests on code. Collaborating with cross-functional teams to define and design new features. Staying up to date with new mobile technology trends, applications, and protocols",
         emp_eperinece: "Experience : 1 years",
         emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
         skills : [

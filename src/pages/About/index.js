@@ -56,8 +56,7 @@ function About(props) {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
-        arrows: false,
+        arrows: true,
       }
     },
     {
@@ -66,8 +65,7 @@ function About(props) {
       settings: {
         slidesToShow: 4,
       slidesToScroll: 4,
-        dots: true,
-        arrows: false,
+        arrows: true,
       }
     },
     {
@@ -77,7 +75,7 @@ function About(props) {
         slidesToShow: 3,
       slidesToScroll: 3,
         dots: true,
-        arrows: false,
+        arrows: true,
       }
     },
   ]
@@ -157,7 +155,7 @@ function About(props) {
                     We Provide IT solutions <br /> that performs.
 
                   </h4>
-                  <p className="mb-0">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customer's time, resources and having pleasing attitude.</p>
+                  <p className="mb-0">Share your idea and we make it Real. We ensure great customer service means following best practices like valuing customer's time, and resources, and having pleasing attitude.</p>
 
                   <div className="row">
                     <div className="col-lg-6 mt-4 pt-2">
@@ -304,7 +302,7 @@ function About(props) {
               <div className="col-md-12">
                 <div className="gallery_text">
                   <h2 className=" mb-3">Memories that last</h2>
-                  <p className="text-white mb-4">One of the best ways to make yourself happy in the present is to recall happy times from the past. Photos are a great memory-prompt, and because we tend to take photos of happy occasions, they weight our memories to the good.</p>
+                  <p className="text-white mb-4">One of the best ways to make yourself happy in the present is to recall happy times from the past. Photos are a great memory-prompt, and because we tend to take photos of happy occasions, they weigh our memories to the good.</p>
                 </div>
               </div>
               <div className="col-md-12">

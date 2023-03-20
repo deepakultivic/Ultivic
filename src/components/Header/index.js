@@ -44,14 +44,14 @@ const handleToggle = () => {
             <NavLink exact activeClassName="active" className="nav-item nav-link" to="/">Home</NavLink>
             <NavLink activeClassName="active" className="nav-item nav-link" to="/about">About</NavLink>
             {/* <NavLink activeClassName="active" to="/portfolio" className="nav-item nav-link ">Portfolio</NavLink> */}
-            <li  onClick={handleToggle} className="nav-item nav-link mobile_dropdown">
+            {/* <li className="nav-item nav-link mobile_dropdown">
               Services <i className="	fa fa-angle-down"></i>
-              <ul className={show ? "drop_menu" : "drop_menu show"}>
+              <ul className="drop_menu" >
                 <li><NavLink activeClassName="active" to="/web">Web Development</NavLink></li>
                 <li><NavLink activeClassName="active" to="/graphic">Graphic Design</NavLink></li>
                 <li><NavLink activeClassName="active" to="/app">App Development</NavLink></li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav-item nav-link desktop_dropdown">
               Services <i className="	fa fa-angle-down"></i>
               <ul className= "drop_menu show">

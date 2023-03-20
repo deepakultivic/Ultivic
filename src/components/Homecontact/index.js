@@ -84,7 +84,7 @@ function Homecontact() {
     }
     if (!input["message"]) {
       isValid = false;
-      errors["message"] = "Please enter cover message .";
+      errors["message"] = "Please enter cover message.";
     }
     setError(errors);
     console.log(errors)
@@ -112,16 +112,16 @@ function Homecontact() {
                       </span>
                     </li>
                     <li>
-                      <Link to="tel:+91 8360249058">
+                      <a href="tel:+918360249058">
                         <i className="fa fa-phone"></i>
                         <span>+91 8360249058</span>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="mailto:hr@ultivic.com">
+                      <a href="mailto:hr@ultivic.com">
                         <i className="fa fa-envelope-o"></i>
                         <span>hr@ultivic.com</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
