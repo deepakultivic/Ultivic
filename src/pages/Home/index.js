@@ -127,8 +127,8 @@ function Home() {
                             <img width={"100"} height={"100"} src="/assets/home/about-03.jpg" alt="ultivic image" />
                             <div className="blog_info">
                               <div className="blog_info_inner">
-                                <h6><Link to="/blog/3" >How to become a better programmer</Link></h6>
-                                <Link to="/blog/3" >Read more</Link>
+                                <h6><Link to="/blog/How%20to%20become%20a%20better%20programmer" >How to become a better programmer</Link></h6>
+                                <Link to="/blog/How%20to%20become%20a%20better%20programmer" >Read more</Link>
                               </div>
                             </div>
                           </li>
@@ -171,10 +171,10 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are a Software Development Company, we deal with latest technologies to develop software, mobile applications and games. We are specialized in iOS, Android and digital marketing. Our mission is to provide a sense of contentment to our clients
+                    We are a Software Development Company, we deal with latest technologies to develop software, mobile applications, and games. We are specialized in iOS, Android, and digital marketing. Our mission is to provide a sense of contentment to our clients
                   </p>
                   <p className="about_info clr-wht mt-3">
-                    Founded in 2017 we have come a long way and miles to go with our client's support. Our passion and aim are to be the best in the Industry.
+                    Founded in 2017 we have come a long way and have miles to go with our client's support. Our passion and aim are to be the best in the Industry.
                   </p>
                 </div>
               </div>

@@ -6,7 +6,6 @@ import "./style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Loader from '../../components/Loader';
 function Web() {
  const [preloader, setPreloader] = useState(true)
  const [timer, setTimer] =useState(3);
@@ -26,8 +25,6 @@ if(timer === 0){
   clear();
 }
  }, [timer])
- 
- 
   var settings = {
     dots: false,
     infinite: true,

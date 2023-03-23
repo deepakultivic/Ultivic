@@ -8,7 +8,7 @@ const Header = () => {
   const [show, setShow]=useState('false')
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 50) {
+    if (offset > 10) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -44,14 +44,14 @@ const handleToggle = () => {
             <NavLink exact activeClassName="active" className="nav-item nav-link" to="/">Home</NavLink>
             <NavLink activeClassName="active" className="nav-item nav-link" to="/about">About</NavLink>
             {/* <NavLink activeClassName="active" to="/portfolio" className="nav-item nav-link ">Portfolio</NavLink> */}
-            {/* <li className="nav-item nav-link mobile_dropdown">
+            <li className="nav-item nav-link mobile_dropdown" onClick={handleToggle}>
               Services <i className="	fa fa-angle-down"></i>
-              <ul className="drop_menu" >
+              <ul className={show ? "menu" : "menu show"} >
                 <li><NavLink activeClassName="active" to="/web">Web Development</NavLink></li>
                 <li><NavLink activeClassName="active" to="/graphic">Graphic Design</NavLink></li>
                 <li><NavLink activeClassName="active" to="/app">App Development</NavLink></li>
               </ul>
-            </li> */}
+            </li>
             <li className="nav-item nav-link desktop_dropdown">
               Services <i className="	fa fa-angle-down"></i>
               <ul className= "drop_menu show">

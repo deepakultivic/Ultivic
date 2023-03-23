@@ -51,7 +51,7 @@ function Graphic() {
                   <h2 className="subhead">
                     Graphic <span>Designing</span>
                   </h2>
-                  <p>Buliding efficient, beautiful graphic design
+                  <p>Building efficient, beautiful graphic design
                   </p>
                 </div>
               </div>

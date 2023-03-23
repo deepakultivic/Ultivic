@@ -49,18 +49,19 @@ function Testimonials() {
 
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 991,
         settings: {
           slidesToShow: 1,
-          infinite: true,
+          // infinite: true,
           dots: false
         }
       },
@@ -80,18 +81,19 @@ function Testimonials() {
     <div className="container">
       <div className="row">
         <div className="col-12">
+          {  testimonial.length > 0 &&  Array.isArray(testimonial) &&
           <Slider {...settings}>
-            {
-              testimonial.map((curelem, index) => {
-                const { image, name, review, designation } = curelem;
+            { testimonial.map((curelem ,index) => {
+                console.log("curelem ===> ", curelem)
+                // const { image, name, review, designation } = curelem;
                 return (
-                  <div key={index}>
+                  <div>
                     <div className="testimonails_outer">
                       <div className="testimonials">
 
                         <div className="client-image">
                           <img
-                            src={image}
+                            src={curelem.image}
                             className="tfree-client-image wp-post-image"
                             alt="ultivic image"
                             width={"100"} height={"100"}
@@ -101,10 +103,10 @@ function Testimonials() {
 
                         <div className="client_text">
                           <p>
-                            {review}
+                            {curelem.review}
                           </p>
-                          <h4 className="client-name mt-2">{name}</h4>
-                          <p className="designation">{designation}</p>
+                          <h4 className="client-name mt-2">{curelem.name}</h4>
+                          <p className="designation">{curelem.designation}</p>
                         </div>
                       </div>
                     </div>
@@ -113,6 +115,7 @@ function Testimonials() {
               })
             }
           </Slider>
+}
         </div>
       </div>
     </div>

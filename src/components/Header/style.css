@@ -52,7 +52,7 @@ a.navbar-brand img {
   position: absolute;
   top: 28px;
   width: 200px;
-  right: 0;
+  left: 0;
 }
 .menu_bg p:hover {
   color: #c12128;
@@ -92,24 +92,11 @@ ul.drop_menu li:last-child a {
 .navbar-expand-lg {
   justify-content: unset;
 }
-div.navbar-nav .nav-item.nav-link.mobile_dropdown ul.drop_menu.show {
-  display: block;
-  width: 100%;
-}
-.navbar-nav .nav-item.nav-link.mobile_dropdown ul.drop_menu {
-  width: 50%;
-  right: 0;
-  background-color: transparent;
-  top: 53px;
-  display: none;
-}
 
 .menu_image {
   position: relative;
 }
-.mobile_dropdown {
-  display: none;
-}
+
 .menu_image p {
   font-size: 16px;
   font-weight: 500;
@@ -144,6 +131,9 @@ ul.drop_menu .menu_bg li a {
   color: #fff;
   margin-top: 14px;
 }
+.mobile_dropdown{
+  display: none;
+}
 @media screen and (max-width: 1440px) {
   a.navbar-brand img {
     width: 200px;
@@ -158,6 +148,9 @@ ul.drop_menu .menu_bg li a {
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 991px) {
+  .mobile_dropdown{
+    display: block;
+  }
     .desktop_dropdown ul.drop_menu li a {
         color: #fff;
         padding: 10px;
@@ -186,12 +179,10 @@ ul.drop_menu .menu_bg li a {
   .navbar-nav .nav-item.nav-link.active {
     color: #ce2128;
   }
-  .mobile_dropdown {
-    display: block;
-  }
-  /* .desktop_dropdown {
+
+  .desktop_dropdown {
     display: none;
-  } */
+  }
   .navbar .navbar-nav .nav-item.nav-link {
     padding: 1rem 2rem;
   }
@@ -226,6 +217,39 @@ ul.drop_menu .menu_bg li a {
     width: 100%;
     top: 82px;
   }
+  .mobile_dropdown ul.menu {
+    display: none;
+}
+
+.mobile_dropdown ul.menu.show {
+    display: block;
+}
+.mobile_dropdown ul.menu a {
+  color: #fff;
+  padding: 13px;
+  display: block;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 600;
+}
+.mobile_dropdown ul.menu a.active{
+  color: #ce2128;
+}
+.mobile_dropdown ul.menu li {
+  border-bottom: 1px solid #fff;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+li.nav-item.nav-link.mobile_dropdown i {
+  position: absolute;
+  right: 20px;
+}
+.mobile_dropdown ul.menu li:last-child a{
+  padding-bottom: 0px;
+}
+.mobile_dropdown ul.menu li:last-child {
+  border-bottom: unset;
+}
 }
 @media(max-width:576px){
     div#navbarCollapse {
@@ -233,9 +257,9 @@ ul.drop_menu .menu_bg li a {
     }
 }
 @media screen and (orientation:landscape)
-and (min-device-width: 767px)  {
+and (max-device-width: 767px)  {
     .collapse.show {
         overflow: auto;
-        height: 305px;
+        height: 279px;
     }
 }

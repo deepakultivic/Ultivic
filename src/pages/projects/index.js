@@ -2,7 +2,6 @@ import React ,{useState, useEffect} from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Subheader from '../../components/Subheader'
-import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

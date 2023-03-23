@@ -35,18 +35,7 @@ const Employee_template = () => {
                                     <div className="employe_information">
                                         <h6 className='text-white'>Hello</h6>
                                         <h2>I'm <span>{cur.emp_name} <br /> </span> {cur.emp_designation}</h2>
-                                        {/* <p className='text-white'>{cur.emp_about}</p> */}
-                                        {/* <ul className='mt-3'>
-                                           {  cur.skills.slice(0,4).map((cuSkill)=>{
-                                               console.log('sadasdsa',cuSkill)
-                                               return(
-                                                   <>
-                                                   <li>{cuSkill}</li>
-                                                   </>
-                                               )
-                                           })}
-                                        </ul> */}
-                                    </div>
+                                     </div>
                                 </div>
 
                               
@@ -94,7 +83,7 @@ const Employee_template = () => {
                       
                     </div>
                        <div className="col-md-4">
-                       <button className="btn  brn-sm"><Link to="/contact">Contact</Link></button>
+                       <button className="btn  brn-sm"><Link className='text-white' to="/contact">Contact</Link></button>
                        </div>
                        </div>
                    </div>

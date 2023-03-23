@@ -35,7 +35,7 @@ setFooterBlog(myBogs);
             <p className="comp_info">"Share your IDEA and We Will Make It Real”. We ensure the true worth of the valuable time and money you invested in us by delivering the perfect product.</p>
             <ul className="footer_icons">
               <li><a href="https://www.facebook.com/UltiVic" rel="noreferrer" target="_blank"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/p/CeQ1lRoKZSy/" rel="noreferrer" target="_blank"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/ultivic_pvt_ltd" rel="noreferrer" target="_blank"><i className="fa fa-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/company/ultivic-technologies/mycompany" rel="noreferrer" target="_blank"><i className="fa fa-linkedin"></i></a></li>
             </ul>
             </div>

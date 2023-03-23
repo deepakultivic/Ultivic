@@ -358,6 +358,9 @@ p.tech_anem {
 .gapcis_card {
   padding: 10px;
 }
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: .25;
+}
 @media screen and (max-width: 1440px) {
   h2.subhead {
     font-size: 42px;

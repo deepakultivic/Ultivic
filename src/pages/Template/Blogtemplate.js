@@ -122,7 +122,7 @@ function Blogtemplate(props) {
                     <a href="https://www.linkedin.com/company/ultivic-technologies/mycompany"><i className="fa fa-linkedin"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/ultivic_tech/?hl=en"><i className="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ultivic_pvt_ltd"><i className="fa fa-instagram"></i></a>
                   </li>
                 </ul>
                 <div className="recent_post">
