@@ -7,7 +7,7 @@ const Privacy = () => {
   return (
     <>
       <Header />
-      <Subheader title="Privacy Policy" img="assets/services/privacy-policy.jpg" clases="career bg_overlay" />
+      <Subheader title="Privacy" sub="Policy" img="assets/services/privacy-policy.jpg" clases="career bg_overlay" />
       <div className='privacy_wrapper space'>
        <div className="container">
        <p>At Ultivic Pvt Ltd, we are committed to protecting the privacy and security of your personal information. This Privacy Policy outlines the types of personal information we collect, how it is used, and the steps we take to ensure its security.</p>
