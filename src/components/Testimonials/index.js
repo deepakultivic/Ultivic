@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div className="next_arrow arrow_bg">
       <i
-        className="fa fa-angle-double-right"  
+        className="fa fa-angle-double-right"
 
         onClick={onClick}
       ></i>
@@ -54,8 +54,8 @@ function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
 
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 991,
@@ -74,20 +74,18 @@ function Testimonials() {
           nextArrow: false,
           prevArrow: false,
         }
-      }    
+      }
     ]
   };
   return (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          {  testimonial.length > 0 &&  Array.isArray(testimonial) &&
-          <Slider {...settings}>
-            { testimonial.map((curelem ,index) => {
-                console.log("curelem ===> ", curelem)
-                // const { image, name, review, designation } = curelem;
+          {testimonial.length > 0 && Array.isArray(testimonial) &&
+            <Slider {...settings}>
+              {testimonial.map((curelem, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <div className="testimonails_outer">
                       <div className="testimonials">
 
@@ -113,9 +111,9 @@ function Testimonials() {
                   </div>
                 )
               })
-            }
-          </Slider>
-}
+              }
+            </Slider>
+          }
         </div>
       </div>
     </div>

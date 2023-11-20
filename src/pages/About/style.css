@@ -196,6 +196,7 @@ section.inner_about.inner_achivement {
 }
 .about_img_box {
   position: relative;
+  z-index: 2;
 }
 .about_blog,
 .about_portfolio {
@@ -670,6 +671,9 @@ section.about_counter::after{
 }
 .grid-container button.slick-arrow {
   display: block !important;
+}
+span.counter span::before {
+  top: -1px;
 }
 }
 @media only screen and (max-width: 550px) {

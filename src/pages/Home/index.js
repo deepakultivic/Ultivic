@@ -171,7 +171,7 @@ function Home() {
                     </h2>
                   </div>
                   <p className="about_info clr-wht">
-                    We are a Software Development Company, we deal with latest technologies to develop software, mobile applications, and games. We are specialized in iOS, Android, and digital marketing. Our mission is to provide a sense of contentment to our clients
+                    We are a Software Development Company, we deal with the latest technologies to develop software, mobile applications, and games. We are specialized in iOS, Android, and digital marketing. Our mission is to provide a sense of contentment to our clients
                   </p>
                   <p className="about_info clr-wht mt-3">
                     Founded in 2017 we have come a long way and have miles to go with our client's support. Our passion and aim are to be the best in the Industry.

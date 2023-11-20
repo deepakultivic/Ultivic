@@ -27,6 +27,7 @@ import Employee_template from "./pages/Employee_template";
 import NoMatchPage from "./components/NoMatch/NoMatchPage";
 import Filter from "./pages/Portfolio/filter";
 import Leads from "./pages/Leads";
+import Privacy from "./pages/Privacy";
 // const NoMatchPage = () => {
 //   return (
 //     <h3>404 - Not found</h3>
@@ -71,6 +72,7 @@ function App(props) {
             <Route path="/carrer/:id" exact component={Jobs} />
             <Route path='/leads' exact component={Leads} />
             <Route path='/filter' exact component={Filter} />
+            <Route path='/privacy-policy' exact component={Privacy} />
             <Route component={NoMatchPage} />
           </Switch>
         </BrowserRouter>

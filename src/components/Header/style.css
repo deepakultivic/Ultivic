@@ -257,9 +257,16 @@ li.nav-item.nav-link.mobile_dropdown i {
     }
 }
 @media screen and (orientation:landscape)
+and (max-device-width: 991px)  {
+    .collapse.show {
+        overflow: auto;
+        height: 237px;
+    }
+}
+@media screen and (orientation:landscape)
 and (max-device-width: 767px)  {
     .collapse.show {
         overflow: auto;
-        height: 279px;
+        height: 237px;
     }
 }

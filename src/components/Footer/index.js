@@ -71,7 +71,8 @@ setFooterBlog(myBogs);
       </div>
       <div className="copyright">
         <div className="container">
-        <p>Copyright © {new Date().getFullYear()} Ultivic Pvt Ltd, All Rights Reserved.</p>      
+        <p>Copyright © {new Date().getFullYear()} Ultivic Pvt Ltd, All Rights Reserved.</p>  
+        <Link to='/privacy-policy'>Privacy Policy</Link>    
         </div>  
       </div>
     </div>

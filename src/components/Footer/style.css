@@ -98,6 +98,17 @@ ul.rent_news li::before {
 ul.rent_news.cont_info li::before {
     content: "";
 }
+.copyright div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright  a {
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 @media screen and (max-width:991px) {
     .footer_box {
@@ -112,5 +123,8 @@ ul.rent_news.cont_info li::before {
     }
 }
 @media screen and (max-width:767px){
-  
+    .copyright div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
