@@ -8,11 +8,12 @@ import './style.css'
 const Employee_template = () => {
 
     const emp_id=useParams();
+    console.log(emp_id.emp_name,"emp_id")
     const [emp_data,setEmp_data]=useState([]);
     useEffect(()=>{
-        if(emp_id.emp_id!==null){
+        if(emp_id?.emp_name!==null){
            
-            setEmp_data(ourteam.filter(curEmp=>curEmp.emp_id===parseInt(emp_id.emp_id)));
+            setEmp_data(ourteam.filter(curEmp=>curEmp.emp_name === emp_id?.emp_name));
             console.log(emp_data);
         }
     },[])

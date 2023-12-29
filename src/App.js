@@ -67,8 +67,8 @@ function App(props) {
             <Route path="/career" exact component={Career} />
             <Route path="/contact" exact component={Contact} />
             <Route path="/portfolio_template/:slug" exact component={Portfolio_template} />
-            <Route path="/employee_template/:emp_id" exact component={Employee_template} />
-            <Route exact path="/blog/:title" component={Blogtemplate} />
+            <Route path="/employee/:emp_name" exact component={Employee_template} />
+            <Route  path="/blog/:title" component={Blogtemplate} />
             <Route path="/carrer/:id" exact component={Jobs} />
             <Route path='/leads' exact component={Leads} />
             <Route path='/filter' exact component={Filter} />

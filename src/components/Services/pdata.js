@@ -86,19 +86,19 @@ const ourteam = [{
     emp_id:1,
     emp_name: "Tarun",
     emp_designation: "Backend Developer",
-    emp_image: "assets/about/tarun.png",
-    emp_eperinece: "Experience : 2 years",
+    emp_image: "assets/about/tarun.jpg",
+    emp_eperinece: "Experience : 3 years",
     emp_expertice: " Skills : Php, Laravel, Java, javascript ",
-    emp_about: "Hi! I am Tarun, working as a backend developer for the last two years. I am learning new technology with challenges by writing high-quality codes. My hobbies are dancing and singing.",
+    emp_about: "Hi! I am Tarun, working as a backend developer for the last three years. I am learning new technology with challenges by writing high-quality codes. My hobbies are dancing and singing.",
     skills : [
-        "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css"
+        "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Net Core","laravel","Mongo DB",""
     ]
 },
 {
     emp_id:2,
     emp_name: "Savita",
     emp_designation: "Java Team Lead",
-    emp_image: "assets/about/savita.png",
+    emp_image: "assets/about/savita.jpg",
     emp_eperinece: "Experience : 3 years",
     emp_expertice: " Skills : Php, Laravel, Java, javascript",
     emp_about: "I am Savita. Being a Java developer, I design, develop, and manage Java-based applications and software but apart from this other java developer responsibilities include Software maintenance and Optimization, Project Management, Leading and Liaising, and vendor management. I am working as a team lead with the support of my team.",
@@ -123,26 +123,26 @@ const ourteam = [{
 },
 {
     emp_id:4,
-    emp_name: "Ashish",
-    emp_designation: "Mobile Team Lead",
-    emp_image: "assets/about/tarun.jpg",
-    emp_about: "I am Ashish David, working as an android team lead. My responsibilities at a workstation are to design and build android mobile applications according to the client’s requirements. As a team, we together build and publish applications in app stores. We implement new technologies to maximize application performance. I handle working in coordination with the design and testing to develop products with few bugs.",
-    emp_eperinece: "Experience : 3 years",
-    emp_expertice: " Skills : Java, kotlin, Flutter",
+    emp_name: "Pritpal Singh",
+    emp_designation: "UI/UX Team Lead ",
+    emp_image: "assets/about/sohi.jpg",
+    emp_about: "I'm Pritpal Singh, your guide through the realms of user experience and design. As the UI/UX Team Lead, my mission is to blend creativity with functionality, transforming ideas into seamless, user-centric experiences. Let's embark on this design journey together, where every pixel tells a story and every interaction is crafted with purpose.",
+    emp_eperinece: "Experience : 5 years",
+    emp_expertice: " Skills : Adobe Creative Suite, Figma, Wordpress, Webflow, Bubble.io",
     skills : [
-        "Swift","Firebase","Objective-c","RxSwift","Model View ViewModel","MySQL","Realm","core data","Ble","Kotlin", "java","Flutter"
+        "Photoshop","illustrator","Figma","Premiere Pro","Adobe XD","After Effects","Webflow","Wordpress"
     ]
 },
 {
     emp_id:5,
-    emp_name: "Nikhil",
-    emp_designation: "Sr. Android Developer",
-    emp_image: "assets/about/nikhil.jpg", 
-    emp_about: "Hi, this is Nikhil Soni working as an Android Developer with a strong interest in designing, developing, and designing software. My experience ranges from front-end to back-end and includes Java, Kotlin, and Android. I have worked with a vast range of technology stacks. I am passionate about building high-quality software using each of these technologies.",
-    emp_eperinece: "Experience : 2 years",
-    emp_expertice: " Skills : Java, Kotlin",
+    emp_name: "Aman Kumar",
+    emp_designation: "Bubble.io Developer",
+    emp_image: "assets/about/aman.jpg", 
+    emp_about: " I'm Aman Kumar, your go-to Bubble.io developer. Passionate about turning visions into interactive realities, I thrive on the endless possibilities that Bubble.io offers. From robust web applications to dynamic prototypes, I'm here to make your digital dreams come true. Let's build something extraordinary together!",
+    emp_eperinece: "Experience : 4 years",
+    emp_expertice: " Skills : Php, Javascript, Jquery",
     skills : [
-        "Java", "Kotlin", "Android Jetpack", "Firebase" , "API's", "Room Database", "Android SDK and NDK"
+        "PHP", "Bubble.io", "Javascript", "Jquery" , "API's", "Database"
     ]
 
 }, 
@@ -158,28 +158,27 @@ const ourteam = [{
 },
 {
     emp_id:7,
-    emp_name: "Aman Kumar",
-    emp_designation: "UI/UX Designer",
-    emp_image: "assets/about/aman.png",
-    emp_about: "I am Aman, working as a graphic designer. My roles and responsibilities are developing various types of creative content for advertisements, projects and events. I make content by using latest techniques.",
-    emp_description :"Hi, I am Aman, working as a graphic designer. My roles and responsibilities are developing various types of creative content for advertisements, projects, and events. I make content by using the latest techniques. As a Graphic Designer, I look for imaginative content that effectively resonates with the audience. I use numerous marketing tools to create beautiful work according to the customers’ needs.",
-    emp_eperinece: "Experience : 2 years",
+    emp_name: "Hankish Lohia",
+    emp_designation: "MERN Stack Developer",
+    emp_image: "assets/about/hankish.jpg",
+    emp_about :"I'm Hankish Lohia, a MERN stack developer ready to bring your ideas to life in the digital realm. With expertise in MongoDB, Express.js, React.js, and Node.js, I'm here to craft seamless and scalable web applications. Let's create user-centric experiences, optimize performance, and embrace the power of the MERN stack together.",
+    emp_eperinece: "Experience : 3 years",
     emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
     skills : [
-        "Html/css","Photoshop","Wordpress","Figma","Adobe Illustrator","Adobe XD","Sketch","After Effect", "Premiere Pro","Sinema 4D"
+        "React","Javascript","Jquery","Nodejs","Nextjs","Express.js","MYSQL", "Mongo DB ","Typescript"
     ]
 
 },
 {
-    emp_name: "Himanshu ",
+    emp_name: "Damanpreet",
     emp_id:8,
-    emp_designation: "Java Developer",
-    emp_image: "assets/about/himanshu_vansal.jpg",
-    emp_about: "Hi! I am Himanshu Vansal. I am working as a Java developer. I handle the development life cycle of a product and must be able to identify and analyze any issues or problems and be able to come up with an efficient solution. Every day I face challenges and learn things with a new spark.",
+    emp_designation: "Human Resources",
+    emp_image: "assets/about/HR.JPG",
+    emp_about: "Hii ! I'm Damanpreet Kaur, Human resources representative with handover experience in managing employee benefits, employee hiring, onboarding and performance management. I am a Reliable and solution-focused professional with excellent interpersonal and rapport- building skills. I am convinced that nothing we do is more important than hiring and developing people.",
     emp_eperinece: "Experience : 2 years",
-    emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
+    emp_expertice: " Skills : Recruiting, Employee relations ,Onboarding",
     skills : [
-        "Php","mySQL","NodeJs","JavaScript","jQuery","Java","Html/css", "Spring Boot", "Hibernate/JPA", "React"
+        "Communication","Decision-making","Finance","Organisational","Business management","Recruiting","Employee relations "
     ]
 
 },
@@ -187,7 +186,7 @@ const ourteam = [{
     emp_name: "Himanshu Negi",
     emp_id:9,
     emp_designation: "Java Developer",
-    emp_image: "assets/about/himanshu_negi.jpg",
+    emp_image: "assets/about/negi.jpg",
     emp_about: "I Himanshu Negi as Java Developer take the charge of designing, developing, and maintaining Java-based programs. Because Java is so widely used, day-to-day responsibilities vary but can include owning a specific program. My team is quite supportive and lends a helping hand in improving my skills.",
     emp_eperinece: "Experience : 2 years",
     emp_expertice: "Java, react Js, Javascript",
@@ -197,41 +196,41 @@ const ourteam = [{
 
 },
 {
-    emp_name: "Ankit ",
+    emp_name: "Amir Khan",
     emp_id:10,
-    emp_designation: "Android Developer",
-    emp_image: "assets/about/ankit.jpg",
-    emp_about: "I am Ankit. My hobby is gathering latest information related to my profession. My role is translating designs and wire frames into high-quality code. I also ensure the best possible performance, quality and responsiveness of the application.",
-    emp_eperinece: "Experience : 2 years",
+    emp_designation: "Full Stack Developer",
+    emp_image: "assets/about/amir.jpg",
+    emp_about: "I am an Full Stack Developer with 5 years experience but most precious skills that I possess are critical thinking, technical and programming skills. I believe that my strong technical experience and education make me a highly competitive candidate. My key strengths that would support my success. ",
+    emp_eperinece: "Experience : 5 years",
     emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
     skills : [
-        "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","Ble","Kotlin", "java","Flutter"
+        "HTML","JavaScript","Ajax","PHP","Advanced PHP","Laravel","MySQL","WordPress","Nodejs ","ExpressJS ", "Reactjs", "Nextjs","Vuejs","API Integration","Codeigniter","Symfony","NodeJS","Sequelize","MongoDB"
     ]
 
 },
 {
-    emp_name: "Ajay Singh",
+    emp_name: "Mohit Kumar",
     emp_id:11,
     emp_designation: "Tester",
-    emp_image: "assets/about/ajay.jpg",
-    emp_about: "Ajay Singh is a Quality Analyst, Quality Controller, and Tester who enjoys working with customers to ensure they are happy with the quality of their products and services. Experienced in quality control, software development and website management. Qualified with a Masters degree in Information Technology. I have good analytical skills and I am available to work on various projects. I am good at managing the quality of ongoing projects, including the conversion of jobs and projects so that they are completed as per desired timelines.",
-    emp_eperinece: "Experience : 1 years",
+    emp_image: "assets/about/mohit.jpg",
+    emp_about: "I'm Quality Assurance Engineer with having 3+ years of experience. I have worked on 80+ projects with knowledge of Functional, Non-Functional, API and Performance Testing.",
+    emp_eperinece: "Experience : 3 years",
     emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
     skills : [
-        "Android/iOS Tester","Api Tester","Automation","Web App Tester"
+        "Android/iOS Tester","Api Tester","Automation","Web App Tester","Performance Testing"
     ]
 
 },
 {
-    emp_name: "Jaskaran ",
+    emp_name: "Komal Arora ",
     emp_id:12,
-    emp_designation: "Android Developer",
-    emp_image: "assets/about/jaskaran.jpg",
-    emp_about: "I am Jaskaran Singh. I am working as a fresher. My roles are identifying and resolving bottlenecks, rectifying bugs, and enhancing application performance. Performing unit and instrumentation tests on code. Collaborating with cross-functional teams to define and design new features. Staying up to date with new mobile technology trends, applications, and protocols.",
+    emp_designation: "Backend Developer",
+    emp_image: "assets/about/komal.jpg",
+    emp_about: "I am Komal Arora. I have worked on both Backend as well Frontend being part of Application Development team. I have 3+ years experience, In my experience i have developed and maintained projects with Core PHP and Laravel.",
     emp_eperinece: "Experience : 1 years",
     emp_expertice: " Skills : Photoshop, AI ,XD, Figma",
     skills : [
-        "Firebase","RxSwift","Model View ViewModel","MySQL","Realm","Ble","Kotlin", "java","Flutter"
+        "PHP","Laravel","Jquery","Javascript","Nodejs","HTML 5", "CSS","Ajax"
     ]
 
 },

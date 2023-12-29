@@ -259,7 +259,7 @@ function About(props) {
                           {emp.map((item, index) => {
                             return <div className="member-details" key={index} >
                               <div>
-                                <Link to={`/employee_template/${item.emp_id}`}> <img width={"100%"} height={"auto"} src={item.emp_image} alt="UI Designer" />
+                                <Link to={`/employee/${item.emp_name}`}> <img width={"100%"} height={"auto"} src={item.emp_image} alt="UI Designer" />
                                   <div className="member-info">
                                     <h3>{item.emp_name}</h3>
                                     <p>{item.emp_designation}</p>
